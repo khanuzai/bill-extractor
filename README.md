@@ -4,8 +4,9 @@ A pipeline that extracts structured data from utility bill PDFs using an LLM, th
 grades that extraction against hand-written parsers on a labeled test set. Later it
 adds RAG question-answering over the bills.
 
-**Status:** the schema, infrastructure, and synthetic bill generator are in place; the
-parsers, extraction, evaluation, storage, and API are not implemented yet.
+**Status:** the schema, infrastructure, synthetic bill generator, and baseline regex
+parser are in place; the extraction, evaluation, storage, and API are not implemented
+yet.
 
 ## Setup
 

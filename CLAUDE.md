@@ -27,6 +27,9 @@ src/
     templates/     Five bill layouts (Jinja2 HTML)
     cli.py         python -m src.generator.cli --count 200 --seed 42 --split
   parsers/       Hand-written parsers, used as the baseline to grade against
+    text.py          PDF -> text with PyMuPDF
+    regex_parser.py  Baseline regex parser -> ParseResult (fields are None when not found)
+    README.md        Which templates the baseline targets, and why the rest are excluded
   extraction/    LLM-based extraction (PDF text -> schema)
   evaluation/    Grades extraction output against labels and parsers
   storage/       PostgreSQL / pgvector persistence
@@ -59,5 +62,8 @@ label.
   no hidden I/O, no global state; pass inputs in and return results.
 - Never edit files in `data/` directly. Data is only written by the pipeline's own code
   (e.g. the generator).
+- The baseline regex parser targets only the `bordered_table` and `two_column`
+  templates. Never add rules for, or tune it against, `summary_box`, `two_page` or
+  `receipt` — they must stay unseen layouts (see `src/parsers/README.md`).
 - Dates are `date` and money/quantities are `Decimal` — never strings or floats.
 - Only add a dependency to `requirements.txt` when code actually uses it.

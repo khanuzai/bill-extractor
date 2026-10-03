@@ -1,0 +1,37 @@
+{
+  "id": "bill_0034",
+  "template": "two_page",
+  "bill": {
+    "provider": "West Shannonberg Municipal Water",
+    "account_number": "963 259 5327",
+    "billing_period_start": "2025-09-19",
+    "billing_period_end": "2025-10-17",
+    "due_date": "2025-11-07",
+    "usage_amount": "31.7",
+    "usage_unit": "m³",
+    "line_items": [
+      {
+        "description": "Water usage charge",
+        "amount": "90.03"
+      },
+      {
+        "description": "Stormwater fee",
+        "amount": "15.57"
+      },
+      {
+        "description": "Infrastructure renewal fee",
+        "amount": "16.64"
+      },
+      {
+        "description": "Loyalty credit",
+        "amount": "-19.56"
+      },
+      {
+        "description": "State and local taxes",
+        "amount": "9.78"
+      }
+    ],
+    "total_amount": "112.46",
+    "currency": "USD"
+  }
+}

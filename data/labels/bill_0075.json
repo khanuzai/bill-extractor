@@ -1,0 +1,33 @@
+{
+  "id": "bill_0075",
+  "template": "receipt",
+  "bill": {
+    "provider": "New Carlos Power & Light",
+    "account_number": "L8615335",
+    "billing_period_start": "2025-10-08",
+    "billing_period_end": "2025-11-05",
+    "due_date": "2025-11-19",
+    "usage_amount": "810",
+    "usage_unit": "kWh",
+    "line_items": [
+      {
+        "description": "Energy charge",
+        "amount": "243.00"
+      },
+      {
+        "description": "Renewable energy rider",
+        "amount": "25.95"
+      },
+      {
+        "description": "Basic customer charge",
+        "amount": "25.03"
+      },
+      {
+        "description": "Utility users tax",
+        "amount": "23.52"
+      }
+    ],
+    "total_amount": "317.50",
+    "currency": "USD"
+  }
+}

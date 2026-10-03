@@ -1,0 +1,25 @@
+{
+  "id": "bill_0082",
+  "template": "two_column",
+  "bill": {
+    "provider": "Fischer Electric Cooperative",
+    "account_number": "J8725887",
+    "billing_period_start": "2024-12-07",
+    "billing_period_end": "2025-01-04",
+    "due_date": "2025-01-29",
+    "usage_amount": "987",
+    "usage_unit": "kWh",
+    "line_items": [
+      {
+        "description": "Energy charge",
+        "amount": "217.14"
+      },
+      {
+        "description": "Utility users tax",
+        "amount": "15.20"
+      }
+    ],
+    "total_amount": "232.34",
+    "currency": "USD"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "bill_0059",
+  "template": "two_page",
+  "bill": {
+    "provider": "Thompson Valley Water District",
+    "account_number": "AC-59059-92",
+    "billing_period_start": "2024-06-12",
+    "billing_period_end": "2024-07-11",
+    "due_date": "2024-08-03",
+    "usage_amount": "22.3",
+    "usage_unit": "m³",
+    "line_items": [
+      {
+        "description": "Unpaid balance from last bill",
+        "amount": "91.02"
+      },
+      {
+        "description": "Water usage charge",
+        "amount": "46.61"
+      },
+      {
+        "description": "Meter service charge",
+        "amount": "12.03"
+      },
+      {
+        "description": "Infrastructure renewal fee",
+        "amount": "9.03"
+      },
+      {
+        "description": "State and local taxes",
+        "amount": "2.03"
+      }
+    ],
+    "total_amount": "160.72",
+    "currency": "USD"
+  }
+}

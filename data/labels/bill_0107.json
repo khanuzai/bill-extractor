@@ -1,0 +1,25 @@
+{
+  "id": "bill_0107",
+  "template": "two_column",
+  "bill": {
+    "provider": "Long Electric Cooperative",
+    "account_number": "666 832 7238",
+    "billing_period_start": "2025-04-09",
+    "billing_period_end": "2025-05-07",
+    "due_date": "2025-06-03",
+    "usage_amount": "906",
+    "usage_unit": "kWh",
+    "line_items": [
+      {
+        "description": "Energy charge",
+        "amount": "253.68"
+      },
+      {
+        "description": "State and local taxes",
+        "amount": "20.29"
+      }
+    ],
+    "total_amount": "273.97",
+    "currency": "USD"
+  }
+}

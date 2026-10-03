@@ -1,0 +1,33 @@
+{
+  "id": "bill_0050",
+  "template": "receipt",
+  "bill": {
+    "provider": "Johnson Valley Water District",
+    "account_number": "D4279788",
+    "billing_period_start": "2025-07-18",
+    "billing_period_end": "2025-08-16",
+    "due_date": "2025-08-30",
+    "usage_amount": "17.9",
+    "usage_unit": "m³",
+    "line_items": [
+      {
+        "description": "Metered water",
+        "amount": "67.30"
+      },
+      {
+        "description": "Infrastructure renewal fee",
+        "amount": "22.64"
+      },
+      {
+        "description": "Stormwater fee",
+        "amount": "19.52"
+      },
+      {
+        "description": "GST/HST",
+        "amount": "5.47"
+      }
+    ],
+    "total_amount": "114.93",
+    "currency": "CAD"
+  }
+}

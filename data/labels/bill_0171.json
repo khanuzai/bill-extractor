@@ -1,0 +1,29 @@
+{
+  "id": "bill_0171",
+  "template": "bordered_table",
+  "bill": {
+    "provider": "Lake Jessicaborough Water Authority",
+    "account_number": "A9262566",
+    "billing_period_start": "2025-07-20",
+    "billing_period_end": "2025-08-16",
+    "due_date": "2025-09-07",
+    "usage_amount": "27.5",
+    "usage_unit": "m³",
+    "line_items": [
+      {
+        "description": "Water usage charge",
+        "amount": "72.33"
+      },
+      {
+        "description": "Sewer service",
+        "amount": "12.91"
+      },
+      {
+        "description": "Utility users tax",
+        "amount": "4.26"
+      }
+    ],
+    "total_amount": "89.50",
+    "currency": "USD"
+  }
+}

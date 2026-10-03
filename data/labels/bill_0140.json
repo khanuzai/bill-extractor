@@ -1,0 +1,29 @@
+{
+  "id": "bill_0140",
+  "template": "receipt",
+  "bill": {
+    "provider": "Kline Electric Cooperative",
+    "account_number": "5619-318-3745",
+    "billing_period_start": "2024-04-27",
+    "billing_period_end": "2024-05-25",
+    "due_date": "2024-06-10",
+    "usage_amount": "356",
+    "usage_unit": "kWh",
+    "line_items": [
+      {
+        "description": "Electricity usage",
+        "amount": "85.44"
+      },
+      {
+        "description": "Basic customer charge",
+        "amount": "11.07"
+      },
+      {
+        "description": "Sales tax",
+        "amount": "7.72"
+      }
+    ],
+    "total_amount": "104.23",
+    "currency": "USD"
+  }
+}

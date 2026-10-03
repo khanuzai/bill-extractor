@@ -1,0 +1,29 @@
+{
+  "id": "bill_0145",
+  "template": "receipt",
+  "bill": {
+    "provider": "Fitzgeraldland Natural Gas",
+    "account_number": "9481-813-9890",
+    "billing_period_start": "2025-04-04",
+    "billing_period_end": "2025-05-04",
+    "due_date": "2025-05-30",
+    "usage_amount": "203.9",
+    "usage_unit": "m³",
+    "line_items": [
+      {
+        "description": "Gas consumption",
+        "amount": "130.50"
+      },
+      {
+        "description": "Distribution charge",
+        "amount": "19.27"
+      },
+      {
+        "description": "GST",
+        "amount": "11.98"
+      }
+    ],
+    "total_amount": "161.75",
+    "currency": "CAD"
+  }
+}

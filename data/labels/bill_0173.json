@@ -1,0 +1,25 @@
+{
+  "id": "bill_0173",
+  "template": "summary_box",
+  "bill": {
+    "provider": "Arizona Telecom",
+    "account_number": "E7283215",
+    "billing_period_start": "2026-06-28",
+    "billing_period_end": "2026-07-29",
+    "due_date": "2026-08-23",
+    "usage_amount": null,
+    "usage_unit": null,
+    "line_items": [
+      {
+        "description": "Home Internet plan",
+        "amount": "41.12"
+      },
+      {
+        "description": "Utility users tax",
+        "amount": "3.70"
+      }
+    ],
+    "total_amount": "44.82",
+    "currency": "USD"
+  }
+}

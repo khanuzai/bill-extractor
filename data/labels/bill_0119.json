@@ -1,0 +1,29 @@
+{
+  "id": "bill_0119",
+  "template": "two_page",
+  "bill": {
+    "provider": "Toddhaven Municipal Water",
+    "account_number": "492 424 3754",
+    "billing_period_start": "2025-09-13",
+    "billing_period_end": "2025-10-11",
+    "due_date": "2025-11-01",
+    "usage_amount": "30.7",
+    "usage_unit": "m³",
+    "line_items": [
+      {
+        "description": "Previous balance",
+        "amount": "182.26"
+      },
+      {
+        "description": "Water usage charge",
+        "amount": "58.33"
+      },
+      {
+        "description": "Utility users tax",
+        "amount": "5.25"
+      }
+    ],
+    "total_amount": "245.84",
+    "currency": "USD"
+  }
+}

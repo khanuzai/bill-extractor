@@ -1,0 +1,29 @@
+{
+  "id": "bill_0056",
+  "template": "bordered_table",
+  "bill": {
+    "provider": "Bonilla Electric Cooperative",
+    "account_number": "08320603850",
+    "billing_period_start": "2026-01-02",
+    "billing_period_end": "2026-01-29",
+    "due_date": null,
+    "usage_amount": "1102",
+    "usage_unit": "kWh",
+    "line_items": [
+      {
+        "description": "Electricity usage",
+        "amount": "220.40"
+      },
+      {
+        "description": "Delivery charge",
+        "amount": "25.15"
+      },
+      {
+        "description": "Utility users tax",
+        "amount": "17.19"
+      }
+    ],
+    "total_amount": "262.74",
+    "currency": "USD"
+  }
+}

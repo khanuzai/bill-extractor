@@ -1,0 +1,25 @@
+{
+  "id": "bill_0137",
+  "template": "two_column",
+  "bill": {
+    "provider": "Solomon Valley Water District",
+    "account_number": "AC-22438-64",
+    "billing_period_start": "2025-01-30",
+    "billing_period_end": "2025-03-01",
+    "due_date": null,
+    "usage_amount": "25.4",
+    "usage_unit": "m³",
+    "line_items": [
+      {
+        "description": "Metered water",
+        "amount": "105.92"
+      },
+      {
+        "description": "Utility users tax",
+        "amount": "10.59"
+      }
+    ],
+    "total_amount": "116.51",
+    "currency": "USD"
+  }
+}

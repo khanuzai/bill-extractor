@@ -1,0 +1,33 @@
+{
+  "id": "bill_0174",
+  "template": "two_page",
+  "bill": {
+    "provider": "Gonzalezhaven Fiber",
+    "account_number": "170 243 7654",
+    "billing_period_start": "2026-02-11",
+    "billing_period_end": "2026-03-10",
+    "due_date": null,
+    "usage_amount": null,
+    "usage_unit": null,
+    "line_items": [
+      {
+        "description": "Unpaid balance from last bill",
+        "amount": "73.00"
+      },
+      {
+        "description": "Unlimited Internet 300",
+        "amount": "77.70"
+      },
+      {
+        "description": "Regulatory recovery fee",
+        "amount": "6.88"
+      },
+      {
+        "description": "GST/HST",
+        "amount": "2.54"
+      }
+    ],
+    "total_amount": "160.12",
+    "currency": "CAD"
+  }
+}

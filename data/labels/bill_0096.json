@@ -1,0 +1,33 @@
+{
+  "id": "bill_0096",
+  "template": "bordered_table",
+  "bill": {
+    "provider": "Gonzalez Valley Water District",
+    "account_number": "Y4070164",
+    "billing_period_start": "2024-04-11",
+    "billing_period_end": "2024-05-11",
+    "due_date": null,
+    "usage_amount": "18.7",
+    "usage_unit": "m³",
+    "line_items": [
+      {
+        "description": "Water consumption",
+        "amount": "53.86"
+      },
+      {
+        "description": "Meter service charge",
+        "amount": "22.28"
+      },
+      {
+        "description": "Infrastructure renewal fee",
+        "amount": "8.28"
+      },
+      {
+        "description": "Utility users tax",
+        "amount": "7.60"
+      }
+    ],
+    "total_amount": "92.02",
+    "currency": "USD"
+  }
+}

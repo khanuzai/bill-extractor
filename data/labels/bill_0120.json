@@ -1,0 +1,25 @@
+{
+  "id": "bill_0120",
+  "template": "receipt",
+  "bill": {
+    "provider": "North Tara Municipal Water",
+    "account_number": "AC-47492-97",
+    "billing_period_start": "2024-05-14",
+    "billing_period_end": "2024-06-13",
+    "due_date": "2024-07-05",
+    "usage_amount": "35.3",
+    "usage_unit": "m³",
+    "line_items": [
+      {
+        "description": "Water consumption",
+        "amount": "117.90"
+      },
+      {
+        "description": "HST",
+        "amount": "5.90"
+      }
+    ],
+    "total_amount": "123.80",
+    "currency": "CAD"
+  }
+}

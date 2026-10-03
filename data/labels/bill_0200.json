@@ -1,0 +1,37 @@
+{
+  "id": "bill_0200",
+  "template": "receipt",
+  "bill": {
+    "provider": "WallNet Broadband",
+    "account_number": "014 672 3849",
+    "billing_period_start": "2026-03-26",
+    "billing_period_end": "2026-04-27",
+    "due_date": "2026-05-24",
+    "usage_amount": null,
+    "usage_unit": null,
+    "line_items": [
+      {
+        "description": "Previous balance",
+        "amount": "209.85"
+      },
+      {
+        "description": "Unlimited Internet 300",
+        "amount": "91.45"
+      },
+      {
+        "description": "Modem rental",
+        "amount": "10.72"
+      },
+      {
+        "description": "Static IP address",
+        "amount": "7.19"
+      },
+      {
+        "description": "State and local taxes",
+        "amount": "12.03"
+      }
+    ],
+    "total_amount": "331.24",
+    "currency": "USD"
+  }
+}

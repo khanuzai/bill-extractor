@@ -1,0 +1,37 @@
+{
+  "id": "bill_0042",
+  "template": "two_column",
+  "bill": {
+    "provider": "Nunez Valley Water District",
+    "account_number": "1398-373-5403",
+    "billing_period_start": "2024-05-11",
+    "billing_period_end": "2024-06-10",
+    "due_date": null,
+    "usage_amount": "29.1",
+    "usage_unit": "m³",
+    "line_items": [
+      {
+        "description": "Unpaid balance from last bill",
+        "amount": "37.90"
+      },
+      {
+        "description": "Metered water",
+        "amount": "114.36"
+      },
+      {
+        "description": "Stormwater fee",
+        "amount": "12.44"
+      },
+      {
+        "description": "Infrastructure renewal fee",
+        "amount": "12.94"
+      },
+      {
+        "description": "GST/HST",
+        "amount": "11.18"
+      }
+    ],
+    "total_amount": "188.82",
+    "currency": "CAD"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "bill_0158",
+  "template": "summary_box",
+  "bill": {
+    "provider": "Jaredton Power & Light",
+    "account_number": "656 360 0412",
+    "billing_period_start": "2025-10-20",
+    "billing_period_end": "2025-11-17",
+    "due_date": "2025-12-15",
+    "usage_amount": "398",
+    "usage_unit": "kWh",
+    "line_items": [
+      {
+        "description": "Energy charge",
+        "amount": "87.56"
+      },
+      {
+        "description": "Sales tax",
+        "amount": "7.88"
+      }
+    ],
+    "total_amount": "95.44",
+    "currency": "USD"
+  }
+}

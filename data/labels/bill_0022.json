@@ -1,0 +1,33 @@
+{
+  "id": "bill_0022",
+  "template": "two_column",
+  "bill": {
+    "provider": "Gordonton Power & Light",
+    "account_number": "Y4700766",
+    "billing_period_start": "2025-12-19",
+    "billing_period_end": "2026-01-19",
+    "due_date": null,
+    "usage_amount": "693",
+    "usage_unit": "kWh",
+    "line_items": [
+      {
+        "description": "Energy charge",
+        "amount": "83.16"
+      },
+      {
+        "description": "Transmission charge",
+        "amount": "7.15"
+      },
+      {
+        "description": "Renewable energy rider",
+        "amount": "5.10"
+      },
+      {
+        "description": "Utility users tax",
+        "amount": "10.50"
+      }
+    ],
+    "total_amount": "105.91",
+    "currency": "USD"
+  }
+}

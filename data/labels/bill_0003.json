@@ -1,0 +1,29 @@
+{
+  "id": "bill_0003",
+  "template": "summary_box",
+  "bill": {
+    "provider": "Port Colleenhaven Water Authority",
+    "account_number": "AC-28809-57",
+    "billing_period_start": "2026-02-23",
+    "billing_period_end": "2026-03-22",
+    "due_date": "2026-04-15",
+    "usage_amount": "42.9",
+    "usage_unit": "m³",
+    "line_items": [
+      {
+        "description": "Metered water",
+        "amount": "135.56"
+      },
+      {
+        "description": "Sewer service",
+        "amount": "14.52"
+      },
+      {
+        "description": "GST",
+        "amount": "10.51"
+      }
+    ],
+    "total_amount": "160.59",
+    "currency": "CAD"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "bill_0126",
+  "template": "bordered_table",
+  "bill": {
+    "provider": "South Carolina Telecom",
+    "account_number": "Y1187734",
+    "billing_period_start": "2025-04-10",
+    "billing_period_end": "2025-05-08",
+    "due_date": "2025-06-03",
+    "usage_amount": null,
+    "usage_unit": null,
+    "line_items": [
+      {
+        "description": "Unlimited Internet 300",
+        "amount": "49.99"
+      },
+      {
+        "description": "Wi-Fi extender rental",
+        "amount": "11.95"
+      },
+      {
+        "description": "Loyalty credit",
+        "amount": "-4.96"
+      },
+      {
+        "description": "HST",
+        "amount": "2.48"
+      }
+    ],
+    "total_amount": "59.46",
+    "currency": "CAD"
+  }
+}

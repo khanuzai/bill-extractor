@@ -1,0 +1,29 @@
+{
+  "id": "bill_0070",
+  "template": "receipt",
+  "bill": {
+    "provider": "Banksburgh Municipal Water",
+    "account_number": "2169-797-2965",
+    "billing_period_start": "2025-02-02",
+    "billing_period_end": "2025-03-05",
+    "due_date": "2025-03-23",
+    "usage_amount": "12.7",
+    "usage_unit": "m³",
+    "line_items": [
+      {
+        "description": "Balance forward",
+        "amount": "161.59"
+      },
+      {
+        "description": "Water usage charge",
+        "amount": "46.99"
+      },
+      {
+        "description": "Utility users tax",
+        "amount": "4.23"
+      }
+    ],
+    "total_amount": "212.81",
+    "currency": "USD"
+  }
+}

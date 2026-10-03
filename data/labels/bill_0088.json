@@ -1,0 +1,33 @@
+{
+  "id": "bill_0088",
+  "template": "summary_box",
+  "bill": {
+    "provider": "South Dakota Gas & Heating",
+    "account_number": "K4578317",
+    "billing_period_start": "2026-02-02",
+    "billing_period_end": "2026-03-01",
+    "due_date": "2026-03-15",
+    "usage_amount": "153.2",
+    "usage_unit": "m³",
+    "line_items": [
+      {
+        "description": "Natural gas usage",
+        "amount": "160.86"
+      },
+      {
+        "description": "Carbon levy",
+        "amount": "20.72"
+      },
+      {
+        "description": "Pipeline safety fee",
+        "amount": "8.03"
+      },
+      {
+        "description": "Utility users tax",
+        "amount": "9.48"
+      }
+    ],
+    "total_amount": "199.09",
+    "currency": "USD"
+  }
+}

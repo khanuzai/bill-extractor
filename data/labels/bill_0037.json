@@ -1,0 +1,25 @@
+{
+  "id": "bill_0037",
+  "template": "two_column",
+  "bill": {
+    "provider": "Harris Valley Water District",
+    "account_number": "AC-84219-93",
+    "billing_period_start": "2025-09-08",
+    "billing_period_end": "2025-10-08",
+    "due_date": "2025-11-05",
+    "usage_amount": "25.6",
+    "usage_unit": "m³",
+    "line_items": [
+      {
+        "description": "Water usage charge",
+        "amount": "65.02"
+      },
+      {
+        "description": "Sales tax",
+        "amount": "5.20"
+      }
+    ],
+    "total_amount": "70.22",
+    "currency": "USD"
+  }
+}

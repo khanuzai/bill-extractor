@@ -1,0 +1,33 @@
+{
+  "id": "bill_0134",
+  "template": "two_page",
+  "bill": {
+    "provider": "ThomasNet Broadband",
+    "account_number": "AC-02745-64",
+    "billing_period_start": "2024-12-25",
+    "billing_period_end": "2025-01-23",
+    "due_date": "2025-02-08",
+    "usage_amount": null,
+    "usage_unit": null,
+    "line_items": [
+      {
+        "description": "Fiber 500 monthly plan",
+        "amount": "85.82"
+      },
+      {
+        "description": "Static IP address",
+        "amount": "9.45"
+      },
+      {
+        "description": "Wi-Fi extender rental",
+        "amount": "23.13"
+      },
+      {
+        "description": "State and local taxes",
+        "amount": "11.84"
+      }
+    ],
+    "total_amount": "130.24",
+    "currency": "USD"
+  }
+}

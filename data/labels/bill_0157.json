@@ -1,0 +1,37 @@
+{
+  "id": "bill_0157",
+  "template": "two_column",
+  "bill": {
+    "provider": "Colorado Telecom",
+    "account_number": "AC-75469-26",
+    "billing_period_start": "2025-06-07",
+    "billing_period_end": "2025-07-06",
+    "due_date": "2025-07-29",
+    "usage_amount": null,
+    "usage_unit": null,
+    "line_items": [
+      {
+        "description": "Previous balance",
+        "amount": "158.05"
+      },
+      {
+        "description": "Home Internet plan",
+        "amount": "98.70"
+      },
+      {
+        "description": "Regulatory recovery fee",
+        "amount": "10.76"
+      },
+      {
+        "description": "Billing adjustment",
+        "amount": "-18.61"
+      },
+      {
+        "description": "Sales tax",
+        "amount": "12.04"
+      }
+    ],
+    "total_amount": "260.94",
+    "currency": "USD"
+  }
+}

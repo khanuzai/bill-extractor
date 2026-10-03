@@ -1,0 +1,29 @@
+{
+  "id": "bill_0048",
+  "template": "summary_box",
+  "bill": {
+    "provider": "Robertland Water Authority",
+    "account_number": "05457387571",
+    "billing_period_start": "2025-11-11",
+    "billing_period_end": "2025-12-12",
+    "due_date": "2026-01-04",
+    "usage_amount": "19.3",
+    "usage_unit": "m³",
+    "line_items": [
+      {
+        "description": "Water usage charge",
+        "amount": "78.74"
+      },
+      {
+        "description": "Infrastructure renewal fee",
+        "amount": "26.60"
+      },
+      {
+        "description": "Sales tax",
+        "amount": "3.16"
+      }
+    ],
+    "total_amount": "108.50",
+    "currency": "USD"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "bill_0095",
+  "template": "receipt",
+  "bill": {
+    "provider": "Duncan Electric Cooperative",
+    "account_number": "Y8331465",
+    "billing_period_start": "2024-09-20",
+    "billing_period_end": "2024-10-20",
+    "due_date": "2024-11-05",
+    "usage_amount": "319",
+    "usage_unit": "kWh",
+    "line_items": [
+      {
+        "description": "Unpaid balance from last bill",
+        "amount": "154.37"
+      },
+      {
+        "description": "Electricity supply",
+        "amount": "82.94"
+      },
+      {
+        "description": "Delivery charge",
+        "amount": "18.85"
+      },
+      {
+        "description": "Renewable energy rider",
+        "amount": "13.25"
+      },
+      {
+        "description": "State and local taxes",
+        "amount": "5.75"
+      }
+    ],
+    "total_amount": "275.16",
+    "currency": "USD"
+  }
+}

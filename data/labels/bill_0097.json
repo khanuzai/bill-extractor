@@ -1,0 +1,25 @@
+{
+  "id": "bill_0097",
+  "template": "two_column",
+  "bill": {
+    "provider": "Butler Valley Water District",
+    "account_number": "06495782329",
+    "billing_period_start": "2025-07-24",
+    "billing_period_end": "2025-08-23",
+    "due_date": "2025-09-20",
+    "usage_amount": "9.5",
+    "usage_unit": "m³",
+    "line_items": [
+      {
+        "description": "Water consumption",
+        "amount": "30.69"
+      },
+      {
+        "description": "GST/HST",
+        "amount": "1.53"
+      }
+    ],
+    "total_amount": "32.22",
+    "currency": "CAD"
+  }
+}

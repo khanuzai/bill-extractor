@@ -1,0 +1,33 @@
+{
+  "id": "bill_0026",
+  "template": "bordered_table",
+  "bill": {
+    "provider": "West Williamport Fiber",
+    "account_number": "5411-998-6798",
+    "billing_period_start": "2025-11-23",
+    "billing_period_end": "2025-12-23",
+    "due_date": "2026-01-16",
+    "usage_amount": null,
+    "usage_unit": null,
+    "line_items": [
+      {
+        "description": "Home Internet plan",
+        "amount": "86.23"
+      },
+      {
+        "description": "Regulatory recovery fee",
+        "amount": "15.44"
+      },
+      {
+        "description": "Wi-Fi extender rental",
+        "amount": "8.68"
+      },
+      {
+        "description": "HST",
+        "amount": "14.35"
+      }
+    ],
+    "total_amount": "124.70",
+    "currency": "CAD"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "bill_0108",
+  "template": "summary_box",
+  "bill": {
+    "provider": "North Ashleystad Fiber",
+    "account_number": "2847-818-9137",
+    "billing_period_start": "2024-07-24",
+    "billing_period_end": "2024-08-23",
+    "due_date": null,
+    "usage_amount": null,
+    "usage_unit": null,
+    "line_items": [
+      {
+        "description": "Home Internet plan",
+        "amount": "80.79"
+      },
+      {
+        "description": "Utility users tax",
+        "amount": "8.89"
+      }
+    ],
+    "total_amount": "89.68",
+    "currency": "USD"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "bill_0035",
+  "template": "receipt",
+  "bill": {
+    "provider": "New William Natural Gas",
+    "account_number": "2578-729-8259",
+    "billing_period_start": "2024-09-19",
+    "billing_period_end": "2024-10-19",
+    "due_date": "2024-11-10",
+    "usage_amount": "245.2",
+    "usage_unit": "m³",
+    "line_items": [
+      {
+        "description": "Gas consumption",
+        "amount": "196.16"
+      },
+      {
+        "description": "Distribution charge",
+        "amount": "6.46"
+      },
+      {
+        "description": "Pipeline safety fee",
+        "amount": "18.63"
+      },
+      {
+        "description": "Sales tax",
+        "amount": "24.34"
+      }
+    ],
+    "total_amount": "245.59",
+    "currency": "USD"
+  }
+}

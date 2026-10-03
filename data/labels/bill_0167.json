@@ -1,0 +1,41 @@
+{
+  "id": "bill_0167",
+  "template": "two_column",
+  "bill": {
+    "provider": "James Electric Cooperative",
+    "account_number": "4098-366-5528",
+    "billing_period_start": "2024-12-09",
+    "billing_period_end": "2025-01-10",
+    "due_date": "2025-02-04",
+    "usage_amount": "931",
+    "usage_unit": "kWh",
+    "line_items": [
+      {
+        "description": "Previous balance",
+        "amount": "48.49"
+      },
+      {
+        "description": "Electricity supply",
+        "amount": "288.61"
+      },
+      {
+        "description": "Transmission charge",
+        "amount": "11.65"
+      },
+      {
+        "description": "Delivery charge",
+        "amount": "13.11"
+      },
+      {
+        "description": "Billing adjustment",
+        "amount": "-87.74"
+      },
+      {
+        "description": "Utility users tax",
+        "amount": "12.53"
+      }
+    ],
+    "total_amount": "286.65",
+    "currency": "USD"
+  }
+}

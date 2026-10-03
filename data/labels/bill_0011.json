@@ -1,0 +1,33 @@
+{
+  "id": "bill_0011",
+  "template": "bordered_table",
+  "bill": {
+    "provider": "South Mark Fiber",
+    "account_number": "AC-64170-80",
+    "billing_period_start": "2026-02-04",
+    "billing_period_end": "2026-03-04",
+    "due_date": "2026-03-27",
+    "usage_amount": null,
+    "usage_unit": null,
+    "line_items": [
+      {
+        "description": "Unlimited Internet 300",
+        "amount": "114.28"
+      },
+      {
+        "description": "Modem rental",
+        "amount": "20.05"
+      },
+      {
+        "description": "Wi-Fi extender rental",
+        "amount": "8.05"
+      },
+      {
+        "description": "HST",
+        "amount": "9.97"
+      }
+    ],
+    "total_amount": "152.35",
+    "currency": "CAD"
+  }
+}

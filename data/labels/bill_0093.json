@@ -1,0 +1,25 @@
+{
+  "id": "bill_0093",
+  "template": "summary_box",
+  "bill": {
+    "provider": "Hawaii Energy",
+    "account_number": "08685289755",
+    "billing_period_start": "2025-04-29",
+    "billing_period_end": "2025-05-27",
+    "due_date": "2025-06-13",
+    "usage_amount": "659",
+    "usage_unit": "kWh",
+    "line_items": [
+      {
+        "description": "Electricity supply",
+        "amount": "191.11"
+      },
+      {
+        "description": "GST",
+        "amount": "7.64"
+      }
+    ],
+    "total_amount": "198.75",
+    "currency": "CAD"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "bill_0198",
+  "template": "summary_box",
+  "bill": {
+    "provider": "Margaretville Water Authority",
+    "account_number": "6500-425-4882",
+    "billing_period_start": "2026-06-02",
+    "billing_period_end": "2026-07-02",
+    "due_date": "2026-07-30",
+    "usage_amount": "31.8",
+    "usage_unit": "m³",
+    "line_items": [
+      {
+        "description": "Metered water",
+        "amount": "81.41"
+      },
+      {
+        "description": "Stormwater fee",
+        "amount": "14.93"
+      },
+      {
+        "description": "Loyalty credit",
+        "amount": "-13.49"
+      },
+      {
+        "description": "State and local taxes",
+        "amount": "9.63"
+      }
+    ],
+    "total_amount": "92.48",
+    "currency": "USD"
+  }
+}

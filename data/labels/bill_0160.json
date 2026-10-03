@@ -1,0 +1,33 @@
+{
+  "id": "bill_0160",
+  "template": "receipt",
+  "bill": {
+    "provider": "Gill Valley Water District",
+    "account_number": "AC-71509-97",
+    "billing_period_start": "2026-03-17",
+    "billing_period_end": "2026-04-16",
+    "due_date": "2026-05-04",
+    "usage_amount": "33.5",
+    "usage_unit": "m³",
+    "line_items": [
+      {
+        "description": "Metered water",
+        "amount": "77.72"
+      },
+      {
+        "description": "Stormwater fee",
+        "amount": "6.38"
+      },
+      {
+        "description": "Infrastructure renewal fee",
+        "amount": "27.07"
+      },
+      {
+        "description": "Utility users tax",
+        "amount": "10.01"
+      }
+    ],
+    "total_amount": "121.18",
+    "currency": "USD"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "bill_0155",
+  "template": "receipt",
+  "bill": {
+    "provider": "Port Karen Power & Light",
+    "account_number": "4456-690-7826",
+    "billing_period_start": "2026-04-24",
+    "billing_period_end": "2026-05-21",
+    "due_date": null,
+    "usage_amount": "228",
+    "usage_unit": "kWh",
+    "line_items": [
+      {
+        "description": "Energy charge",
+        "amount": "63.84"
+      },
+      {
+        "description": "Basic customer charge",
+        "amount": "15.98"
+      },
+      {
+        "description": "HST",
+        "amount": "10.38"
+      }
+    ],
+    "total_amount": "90.20",
+    "currency": "CAD"
+  }
+}

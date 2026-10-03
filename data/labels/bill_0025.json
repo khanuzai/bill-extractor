@@ -1,0 +1,33 @@
+{
+  "id": "bill_0025",
+  "template": "receipt",
+  "bill": {
+    "provider": "Roberts Valley Water District",
+    "account_number": "5297-516-1369",
+    "billing_period_start": "2024-01-08",
+    "billing_period_end": "2024-02-09",
+    "due_date": "2024-02-29",
+    "usage_amount": "27.4",
+    "usage_unit": "m³",
+    "line_items": [
+      {
+        "description": "Metered water",
+        "amount": "81.38"
+      },
+      {
+        "description": "Meter service charge",
+        "amount": "18.76"
+      },
+      {
+        "description": "Sewer service",
+        "amount": "4.23"
+      },
+      {
+        "description": "Sales tax",
+        "amount": "4.17"
+      }
+    ],
+    "total_amount": "108.54",
+    "currency": "USD"
+  }
+}

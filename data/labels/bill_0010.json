@@ -1,0 +1,33 @@
+{
+  "id": "bill_0010",
+  "template": "receipt",
+  "bill": {
+    "provider": "East Edwardfurt Fiber",
+    "account_number": "01665876036",
+    "billing_period_start": "2025-11-08",
+    "billing_period_end": "2025-12-08",
+    "due_date": "2025-12-29",
+    "usage_amount": null,
+    "usage_unit": null,
+    "line_items": [
+      {
+        "description": "Home Internet plan",
+        "amount": "60.24"
+      },
+      {
+        "description": "Wi-Fi extender rental",
+        "amount": "12.29"
+      },
+      {
+        "description": "Billing adjustment",
+        "amount": "-10.15"
+      },
+      {
+        "description": "HST",
+        "amount": "5.08"
+      }
+    ],
+    "total_amount": "67.46",
+    "currency": "CAD"
+  }
+}

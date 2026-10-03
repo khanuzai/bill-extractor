@@ -1,0 +1,29 @@
+{
+  "id": "bill_0113",
+  "template": "summary_box",
+  "bill": {
+    "provider": "Brownside Municipal Water",
+    "account_number": "N7005050",
+    "billing_period_start": "2026-03-27",
+    "billing_period_end": "2026-04-28",
+    "due_date": "2026-05-23",
+    "usage_amount": "12.3",
+    "usage_unit": "m³",
+    "line_items": [
+      {
+        "description": "Previous balance",
+        "amount": "20.31"
+      },
+      {
+        "description": "Metered water",
+        "amount": "49.69"
+      },
+      {
+        "description": "State and local taxes",
+        "amount": "5.96"
+      }
+    ],
+    "total_amount": "75.96",
+    "currency": "USD"
+  }
+}

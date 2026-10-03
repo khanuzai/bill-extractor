@@ -1,0 +1,33 @@
+{
+  "id": "bill_0192",
+  "template": "two_column",
+  "bill": {
+    "provider": "Massachusetts Telecom",
+    "account_number": "08164938318",
+    "billing_period_start": "2024-06-12",
+    "billing_period_end": "2024-07-11",
+    "due_date": "2024-07-31",
+    "usage_amount": null,
+    "usage_unit": null,
+    "line_items": [
+      {
+        "description": "Balance forward",
+        "amount": "133.88"
+      },
+      {
+        "description": "Fiber 500 monthly plan",
+        "amount": "69.29"
+      },
+      {
+        "description": "Loyalty credit",
+        "amount": "-10.39"
+      },
+      {
+        "description": "Sales tax",
+        "amount": "2.08"
+      }
+    ],
+    "total_amount": "194.86",
+    "currency": "USD"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "bill_0151",
+  "template": "bordered_table",
+  "bill": {
+    "provider": "East Terrance Municipal Water",
+    "account_number": "AC-08920-38",
+    "billing_period_start": "2025-03-14",
+    "billing_period_end": "2025-04-14",
+    "due_date": "2025-05-05",
+    "usage_amount": "15",
+    "usage_unit": "m³",
+    "line_items": [
+      {
+        "description": "Water consumption",
+        "amount": "30.30"
+      },
+      {
+        "description": "Sales tax",
+        "amount": "3.94"
+      }
+    ],
+    "total_amount": "34.24",
+    "currency": "USD"
+  }
+}

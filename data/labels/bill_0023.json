@@ -1,0 +1,25 @@
+{
+  "id": "bill_0023",
+  "template": "summary_box",
+  "bill": {
+    "provider": "Georgia Energy",
+    "account_number": "111 161 5280",
+    "billing_period_start": "2024-04-14",
+    "billing_period_end": "2024-05-16",
+    "due_date": "2024-06-09",
+    "usage_amount": "590",
+    "usage_unit": "kWh",
+    "line_items": [
+      {
+        "description": "Electricity usage",
+        "amount": "141.60"
+      },
+      {
+        "description": "HST",
+        "amount": "12.74"
+      }
+    ],
+    "total_amount": "154.34",
+    "currency": "CAD"
+  }
+}

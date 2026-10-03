@@ -1,0 +1,33 @@
+{
+  "id": "bill_0029",
+  "template": "two_page",
+  "bill": {
+    "provider": "West Sarahmouth Power & Light",
+    "account_number": "4727-790-1043",
+    "billing_period_start": "2024-09-05",
+    "billing_period_end": "2024-10-06",
+    "due_date": "2024-10-22",
+    "usage_amount": "337",
+    "usage_unit": "kWh",
+    "line_items": [
+      {
+        "description": "Unpaid balance from last bill",
+        "amount": "134.53"
+      },
+      {
+        "description": "Electricity usage",
+        "amount": "60.66"
+      },
+      {
+        "description": "Delivery charge",
+        "amount": "19.49"
+      },
+      {
+        "description": "HST",
+        "amount": "3.21"
+      }
+    ],
+    "total_amount": "217.89",
+    "currency": "CAD"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "bill_0061",
+  "template": "bordered_table",
+  "bill": {
+    "provider": "West Andrewview Water Authority",
+    "account_number": "AC-26218-15",
+    "billing_period_start": "2024-04-08",
+    "billing_period_end": "2024-05-05",
+    "due_date": "2024-05-19",
+    "usage_amount": "29.4",
+    "usage_unit": "m³",
+    "line_items": [
+      {
+        "description": "Water usage charge",
+        "amount": "77.91"
+      },
+      {
+        "description": "Infrastructure renewal fee",
+        "amount": "16.88"
+      },
+      {
+        "description": "Billing adjustment",
+        "amount": "-18.96"
+      },
+      {
+        "description": "Sales tax",
+        "amount": "4.74"
+      }
+    ],
+    "total_amount": "80.57",
+    "currency": "USD"
+  }
+}

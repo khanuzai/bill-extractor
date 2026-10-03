@@ -1,0 +1,29 @@
+{
+  "id": "bill_0148",
+  "template": "summary_box",
+  "bill": {
+    "provider": "Smith Electric Cooperative",
+    "account_number": "4531-943-3750",
+    "billing_period_start": "2025-08-14",
+    "billing_period_end": "2025-09-10",
+    "due_date": null,
+    "usage_amount": "1061",
+    "usage_unit": "kWh",
+    "line_items": [
+      {
+        "description": "Energy charge",
+        "amount": "339.52"
+      },
+      {
+        "description": "Transmission charge",
+        "amount": "27.12"
+      },
+      {
+        "description": "GST/HST",
+        "amount": "11.00"
+      }
+    ],
+    "total_amount": "377.64",
+    "currency": "CAD"
+  }
+}

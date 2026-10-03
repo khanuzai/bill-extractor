@@ -1,0 +1,29 @@
+{
+  "id": "bill_0100",
+  "template": "receipt",
+  "bill": {
+    "provider": "Alabama Gas & Heating",
+    "account_number": "W4077780",
+    "billing_period_start": "2024-12-12",
+    "billing_period_end": "2025-01-09",
+    "due_date": "2025-02-06",
+    "usage_amount": "81.4",
+    "usage_unit": "m³",
+    "line_items": [
+      {
+        "description": "Gas supply charge",
+        "amount": "52.91"
+      },
+      {
+        "description": "Autopay discount",
+        "amount": "-7.41"
+      },
+      {
+        "description": "Sales tax",
+        "amount": "5.29"
+      }
+    ],
+    "total_amount": "50.79",
+    "currency": "USD"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "bill_0019",
+  "template": "two_page",
+  "bill": {
+    "provider": "Kidd Gas Company",
+    "account_number": "3695-944-0640",
+    "billing_period_start": "2025-08-04",
+    "billing_period_end": "2025-09-03",
+    "due_date": "2025-09-21",
+    "usage_amount": "210.5",
+    "usage_unit": "m³",
+    "line_items": [
+      {
+        "description": "Gas consumption",
+        "amount": "170.51"
+      },
+      {
+        "description": "Fixed monthly charge",
+        "amount": "20.59"
+      },
+      {
+        "description": "Distribution charge",
+        "amount": "16.65"
+      },
+      {
+        "description": "Utility users tax",
+        "amount": "18.70"
+      }
+    ],
+    "total_amount": "226.45",
+    "currency": "USD"
+  }
+}

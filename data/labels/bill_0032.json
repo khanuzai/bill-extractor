@@ -1,0 +1,33 @@
+{
+  "id": "bill_0032",
+  "template": "two_column",
+  "bill": {
+    "provider": "Maine Telecom",
+    "account_number": "AC-22583-13",
+    "billing_period_start": "2024-04-17",
+    "billing_period_end": "2024-05-16",
+    "due_date": "2024-06-10",
+    "usage_amount": null,
+    "usage_unit": null,
+    "line_items": [
+      {
+        "description": "Unlimited Internet 300",
+        "amount": "90.11"
+      },
+      {
+        "description": "Wi-Fi extender rental",
+        "amount": "7.52"
+      },
+      {
+        "description": "Modem rental",
+        "amount": "8.05"
+      },
+      {
+        "description": "GST/HST",
+        "amount": "10.57"
+      }
+    ],
+    "total_amount": "116.25",
+    "currency": "CAD"
+  }
+}

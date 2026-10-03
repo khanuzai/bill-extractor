@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>{{ bill.provider }} invoice</title>
+<style>
+  @page { size: Letter; margin: 0.75in; }
+  body { font-family: Verdana, Helvetica, sans-serif; font-size: 9.5pt; color: #2b2b2b; }
+  .banner { background: #2e6b4f; color: #fff; padding: 14px 18px; font-size: 17pt; font-weight: bold; }
+  table.columns { margin-top: 22px; }
+  table.columns td { border: 0; padding: 0; vertical-align: top; }
+  td.left { width: 58%; padding-right: 30px !important; }
+  .summary { border: 2px solid #2e6b4f; padding: 12px 14px; text-align: right; line-height: 1.6; }
+  .summary .label { font-size: 8pt; text-transform: uppercase; color: #666; }
+  .summary .owing { font-size: 18pt; font-weight: bold; color: #2e6b4f; }
+  .address { line-height: 1.45; margin-bottom: 18px; }
+  h3 { font-size: 10pt; margin: 0 0 6px; color: #2e6b4f; }
+  .usage { background: #eef5f1; padding: 8px 10px; }
+  .details { padding-top: 26px; }
+  table { width: 100%; border-collapse: collapse; }
+  .details td { padding: 5px 0; border-bottom: 1px dotted #aaa; }
+  td.num { text-align: right; }
+  .legal { margin-top: 30px; font-size: 7.5pt; color: #777; }
+</style>
+</head>
+<body>
+  <div class="banner">{{ bill.provider }}</div>
+
+  <table class="columns"><tr>
+    <td class="left">
+      <div class="address">
+        <strong>{{ extras.customer_name }}</strong><br>
+        {% for line in extras.address_lines %}{{ line }}<br>{% endfor %}
+      </div>
+      {% if bill.usage_amount is not none %}
+      <div class="usage">
+        <h3>Your usage</h3>
+        Meter {{ extras.meter_number }} recorded
+        <strong>{{ bill.usage_amount | usage }} {{ bill.usage_unit }}</strong>
+        between {{ bill.billing_period_start | date_abbr }} and {{ bill.billing_period_end | date_abbr }}.
+      </div>
+      {% else %}
+      <div class="usage">
+        <h3>Your service</h3>
+        Service from {{ bill.billing_period_start | date_abbr }} to {{ bill.billing_period_end | date_abbr }}.
+      </div>
+      {% endif %}
+    </td>
+
+    <td><div class="summary">
+      <div class="label">Invoice date</div>
+      {{ extras.statement_date | date_abbr }}
+      <div class="label">Account no.</div>
+      {{ bill.account_number }}
+      {% if bill.due_date is not none %}
+      <div class="label">Pay by</div>
+      {{ bill.due_date | date_abbr }}
+      {% endif %}
+      <div class="label">Balance Owing ({{ bill.currency }})</div>
+      <div class="owing">${{ bill.total_amount | money_cr }}</div>
+    </div></td>
+  </tr></table>
+
+  <div class="details">
+    <h3>Account activity</h3>
+    <table>
+      {% for item in bill.line_items %}
+      <tr>
+        <td>{{ item.description }}</td>
+        <td class="num">{{ item.amount | money_cr }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </div>
+
+  <div class="legal">
+    CR denotes a credit. Late payments may be subject to interest. {{ bill.provider }} is a
+    regulated utility service provider.
+  </div>
+</body>
+</html>

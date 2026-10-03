@@ -1,0 +1,25 @@
+{
+  "id": "bill_0014",
+  "template": "two_page",
+  "bill": {
+    "provider": "Harrison Gas Company",
+    "account_number": "AC-20471-16",
+    "billing_period_start": "2024-11-24",
+    "billing_period_end": "2024-12-23",
+    "due_date": "2025-01-06",
+    "usage_amount": "71.8",
+    "usage_unit": "m³",
+    "line_items": [
+      {
+        "description": "Gas supply charge",
+        "amount": "57.44"
+      },
+      {
+        "description": "Utility users tax",
+        "amount": "2.87"
+      }
+    ],
+    "total_amount": "60.31",
+    "currency": "USD"
+  }
+}

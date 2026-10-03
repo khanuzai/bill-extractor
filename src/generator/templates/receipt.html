@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>{{ bill.provider }} receipt</title>
+<style>
+  @page { size: 4in 9in; margin: 0.3in; }
+  body { font-family: "Courier New", Courier, monospace; font-size: 8pt; line-height: 1.25; color: #000; }
+  .center { text-align: center; }
+  .name { font-size: 10pt; font-weight: bold; text-transform: uppercase; }
+  hr { border: 0; border-top: 1px dashed #000; margin: 5px 0; }
+  table { width: 100%; border-collapse: collapse; }
+  td { padding: 0; vertical-align: top; }
+  td.r { text-align: right; white-space: nowrap; }
+  .total td { font-size: 10pt; font-weight: bold; }
+</style>
+</head>
+<body>
+  <div class="center name">{{ bill.provider }}</div>
+  <div class="center">BILLING STATEMENT</div>
+  <hr>
+  <div>{{ extras.customer_name | upper }}</div>
+  {% for line in extras.address_lines %}<div>{{ line | upper }}</div>{% endfor %}
+  <hr>
+  <table>
+  <tr><td>ISSUED</td><td class="r">{{ extras.statement_date | date_us }}</td></tr>
+  <tr><td>PERIOD</td><td class="r">{{ bill.billing_period_start | date_us }}-{{ bill.billing_period_end | date_us }}</td></tr>
+  {% if bill.usage_amount is not none %}
+  <tr><td>MTR {{ extras.meter_number }}</td><td class="r">{{ bill.usage_amount | usage }} {{ bill.usage_unit }}</td></tr>
+  {% endif %}
+  </table>
+  <hr>
+  <table>
+  {% for item in bill.line_items %}
+  <tr><td>{{ item.description | upper }}</td><td class="r">{{ item.amount | money }}</td></tr>
+  {% endfor %}
+  </table>
+  <hr>
+  <table>
+  <tr class="total"><td>TOTAL DUE</td><td class="r">{{ bill.currency }} {{ bill.total_amount | money }}</td></tr>
+  {% if bill.due_date is not none %}
+  <tr><td>DUE</td><td class="r">{{ bill.due_date | date_us }}</td></tr>
+  {% endif %}
+  </table>
+  <hr>
+  <div class="center">ACCT {{ bill.account_number }}</div>
+  <div class="center">THANK YOU</div>
+</body>
+</html>

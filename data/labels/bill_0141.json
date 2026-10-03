@@ -1,0 +1,33 @@
+{
+  "id": "bill_0141",
+  "template": "bordered_table",
+  "bill": {
+    "provider": "Justinburgh Municipal Water",
+    "account_number": "532 863 2666",
+    "billing_period_start": "2024-09-23",
+    "billing_period_end": "2024-10-23",
+    "due_date": "2024-11-18",
+    "usage_amount": "13",
+    "usage_unit": "m³",
+    "line_items": [
+      {
+        "description": "Previous balance",
+        "amount": "155.88"
+      },
+      {
+        "description": "Metered water",
+        "amount": "33.54"
+      },
+      {
+        "description": "Meter service charge",
+        "amount": "8.14"
+      },
+      {
+        "description": "State and local taxes",
+        "amount": "1.25"
+      }
+    ],
+    "total_amount": "198.81",
+    "currency": "USD"
+  }
+}

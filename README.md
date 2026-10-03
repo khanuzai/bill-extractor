@@ -4,15 +4,17 @@ A pipeline that extracts structured data from utility bill PDFs using an LLM, th
 grades that extraction against hand-written parsers on a labeled test set. Later it
 adds RAG question-answering over the bills.
 
-**Status:** skeleton only — schema and infrastructure are in place; the generator,
+**Status:** the schema, infrastructure, and synthetic bill generator are in place; the
 parsers, extraction, evaluation, storage, and API are not implemented yet.
 
 ## Setup
 
-Requires Python 3.11+ and Docker.
+Requires Python 3.11+ and Docker. WeasyPrint (PDF rendering) also needs the Pango
+system library.
 
 ```sh
-# 1. Create a virtual environment and install dependencies
+# 1. Install Pango, then create a virtual environment and install dependencies
+brew install pango            # macOS; see the WeasyPrint docs for other platforms
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
@@ -23,6 +25,25 @@ cp .env.example .env
 
 # 3. Start PostgreSQL with pgvector
 docker compose up -d
+```
+
+## Generating the test set
+
+```sh
+python -m src.generator.cli --count 200 --seed 42 --split
+```
+
+Writes `data/generated/{id}.pdf` and `data/labels/{id}.json`, rotating evenly through
+the five templates in `src/generator/templates/`. Each label holds the bill's id, the
+template it was rendered with, and the `UtilityBill` the PDF was rendered from. With
+`--split`, `data/labels/dev_ids.json` and `data/labels/test_ids.json` hold a 50/50 id
+split balanced across templates. The same seed always produces identical files; each
+run replaces the previous run's `bill_*` files.
+
+## Tests
+
+```sh
+python -m pytest
 ```
 
 ## Layout

@@ -1,0 +1,29 @@
+{
+  "id": "bill_0080",
+  "template": "receipt",
+  "bill": {
+    "provider": "Lake Jerrymouth Municipal Water",
+    "account_number": "739 260 3029",
+    "billing_period_start": "2025-03-15",
+    "billing_period_end": "2025-04-15",
+    "due_date": "2025-04-29",
+    "usage_amount": "15.1",
+    "usage_unit": "m³",
+    "line_items": [
+      {
+        "description": "Unpaid balance from last bill",
+        "amount": "104.01"
+      },
+      {
+        "description": "Water consumption",
+        "amount": "61.16"
+      },
+      {
+        "description": "State and local taxes",
+        "amount": "3.06"
+      }
+    ],
+    "total_amount": "168.23",
+    "currency": "USD"
+  }
+}

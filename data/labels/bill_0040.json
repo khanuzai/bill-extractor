@@ -1,0 +1,29 @@
+{
+  "id": "bill_0040",
+  "template": "receipt",
+  "bill": {
+    "provider": "Andersen Gas Company",
+    "account_number": "4622-656-7661",
+    "billing_period_start": "2025-02-20",
+    "billing_period_end": "2025-03-19",
+    "due_date": "2025-04-10",
+    "usage_amount": "146.2",
+    "usage_unit": "m³",
+    "line_items": [
+      {
+        "description": "Gas supply charge",
+        "amount": "200.29"
+      },
+      {
+        "description": "Carbon levy",
+        "amount": "2.62"
+      },
+      {
+        "description": "Sales tax",
+        "amount": "6.09"
+      }
+    ],
+    "total_amount": "209.00",
+    "currency": "USD"
+  }
+}

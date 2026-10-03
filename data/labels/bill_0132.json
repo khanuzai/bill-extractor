@@ -1,0 +1,29 @@
+{
+  "id": "bill_0132",
+  "template": "two_column",
+  "bill": {
+    "provider": "West Virginia Telecom",
+    "account_number": "04295431652",
+    "billing_period_start": "2024-05-03",
+    "billing_period_end": "2024-06-02",
+    "due_date": "2024-06-19",
+    "usage_amount": null,
+    "usage_unit": null,
+    "line_items": [
+      {
+        "description": "Previous balance",
+        "amount": "181.20"
+      },
+      {
+        "description": "Home Internet plan",
+        "amount": "65.69"
+      },
+      {
+        "description": "GST/HST",
+        "amount": "8.54"
+      }
+    ],
+    "total_amount": "255.43",
+    "currency": "CAD"
+  }
+}

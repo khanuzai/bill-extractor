@@ -1,0 +1,25 @@
+{
+  "id": "bill_0008",
+  "template": "summary_box",
+  "bill": {
+    "provider": "New Ryanmouth Water Authority",
+    "account_number": "6934-060-8835",
+    "billing_period_start": "2026-05-30",
+    "billing_period_end": "2026-06-28",
+    "due_date": "2026-07-17",
+    "usage_amount": "28.4",
+    "usage_unit": "m³",
+    "line_items": [
+      {
+        "description": "Water consumption",
+        "amount": "99.12"
+      },
+      {
+        "description": "HST",
+        "amount": "11.89"
+      }
+    ],
+    "total_amount": "111.01",
+    "currency": "CAD"
+  }
+}

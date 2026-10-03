@@ -1,0 +1,33 @@
+{
+  "id": "bill_0115",
+  "template": "receipt",
+  "bill": {
+    "provider": "Brianville Power & Light",
+    "account_number": "722 005 4364",
+    "billing_period_start": "2025-12-13",
+    "billing_period_end": "2026-01-11",
+    "due_date": null,
+    "usage_amount": "632",
+    "usage_unit": "kWh",
+    "line_items": [
+      {
+        "description": "Energy charge",
+        "amount": "107.44"
+      },
+      {
+        "description": "Delivery charge",
+        "amount": "17.32"
+      },
+      {
+        "description": "Renewable energy rider",
+        "amount": "24.60"
+      },
+      {
+        "description": "Utility users tax",
+        "amount": "19.42"
+      }
+    ],
+    "total_amount": "168.78",
+    "currency": "USD"
+  }
+}

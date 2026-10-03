@@ -1,0 +1,33 @@
+{
+  "id": "bill_0102",
+  "template": "two_column",
+  "bill": {
+    "provider": "Maryland Gas & Heating",
+    "account_number": "AC-88501-55",
+    "billing_period_start": "2026-06-11",
+    "billing_period_end": "2026-07-08",
+    "due_date": null,
+    "usage_amount": "68.3",
+    "usage_unit": "m³",
+    "line_items": [
+      {
+        "description": "Gas supply charge",
+        "amount": "94.94"
+      },
+      {
+        "description": "Pipeline safety fee",
+        "amount": "4.36"
+      },
+      {
+        "description": "Fixed monthly charge",
+        "amount": "16.17"
+      },
+      {
+        "description": "GST/HST",
+        "amount": "6.93"
+      }
+    ],
+    "total_amount": "122.40",
+    "currency": "CAD"
+  }
+}

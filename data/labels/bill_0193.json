@@ -1,0 +1,33 @@
+{
+  "id": "bill_0193",
+  "template": "summary_box",
+  "bill": {
+    "provider": "HarrisonNet Broadband",
+    "account_number": "AC-45561-85",
+    "billing_period_start": "2024-10-24",
+    "billing_period_end": "2024-11-23",
+    "due_date": "2024-12-10",
+    "usage_amount": null,
+    "usage_unit": null,
+    "line_items": [
+      {
+        "description": "Fiber 500 monthly plan",
+        "amount": "63.34"
+      },
+      {
+        "description": "Modem rental",
+        "amount": "14.14"
+      },
+      {
+        "description": "Static IP address",
+        "amount": "7.86"
+      },
+      {
+        "description": "Utility users tax",
+        "amount": "9.39"
+      }
+    ],
+    "total_amount": "94.73",
+    "currency": "USD"
+  }
+}

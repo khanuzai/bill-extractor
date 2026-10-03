@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>{{ bill.provider }} statement</title>
+<style>
+  @page { size: Letter; margin: 1in; }
+  body { font-family: Georgia, "Times New Roman", serif; font-size: 11pt; color: #222; }
+  h1 { font-size: 22pt; font-weight: normal; margin: 0; }
+  .tagline { font-style: italic; color: #666; margin-bottom: 26px; }
+  .greeting { margin-bottom: 20px; line-height: 1.45; }
+  h2 { font-size: 12pt; font-weight: normal; font-style: italic; margin: 24px 0 8px;
+       border-bottom: 1px solid #999; padding-bottom: 3px; }
+  dl { margin: 0; }
+  .row { overflow: hidden; padding: 4px 0; }
+  dt { float: left; width: 62%; }
+  dd { margin: 0; float: right; width: 38%; text-align: right; }
+  .row.total { margin-top: 8px; padding-top: 8px; border-top: 1px solid #222; font-weight: bold; }
+  .footer { margin-top: 34px; font-size: 9pt; color: #666; }
+</style>
+</head>
+<body>
+  <h1>{{ bill.provider }}</h1>
+  <div class="tagline">Your monthly statement</div>
+
+  <div class="greeting">
+    {{ extras.customer_name }}<br>
+    {% for line in extras.address_lines %}{{ line }}<br>{% endfor %}
+  </div>
+
+  <h2>Your account</h2>
+  <dl>
+    <div class="row"><dt>Statement issued</dt><dd>{{ extras.statement_date | date_long }}</dd></div>
+    <div class="row"><dt>Billing period from</dt><dd>{{ bill.billing_period_start | date_long }}</dd></div>
+    <div class="row"><dt>Billing period to</dt><dd>{{ bill.billing_period_end | date_long }}</dd></div>
+    <div class="row"><dt>Account</dt><dd>{{ bill.account_number }}</dd></div>
+    {% if bill.usage_amount is not none %}
+    <div class="row"><dt>Meter number</dt><dd>{{ extras.meter_number }}</dd></div>
+    <div class="row"><dt>Consumption</dt><dd>{{ bill.usage_amount | usage }} {{ bill.usage_unit }}</dd></div>
+    {% endif %}
+    <div class="row">
+      <dt>Payment due</dt>
+      <dd>{% if bill.due_date is not none %}{{ bill.due_date | date_long }}{% else %}Upon receipt{% endif %}</dd>
+    </div>
+  </dl>
+
+  <h2>What you owe</h2>
+  <dl>
+    {% for item in bill.line_items %}
+    <div class="row"><dt>{{ item.description }}</dt><dd>${{ item.amount | money_parens }}</dd></div>
+    {% endfor %}
+    <div class="row total"><dt>Total Balance</dt><dd>${{ bill.total_amount | money_parens }} {{ bill.currency }}</dd></div>
+  </dl>
+
+  <div class="footer">
+    Amounts in parentheses are credits to your account. Thank you for choosing {{ bill.provider }}.
+  </div>
+</body>
+</html>

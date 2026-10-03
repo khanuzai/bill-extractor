@@ -1,0 +1,29 @@
+{
+  "id": "bill_0199",
+  "template": "two_page",
+  "bill": {
+    "provider": "Nebraska Gas & Heating",
+    "account_number": "080 612 9439",
+    "billing_period_start": "2024-03-18",
+    "billing_period_end": "2024-04-18",
+    "due_date": "2024-05-16",
+    "usage_amount": "243.5",
+    "usage_unit": "m³",
+    "line_items": [
+      {
+        "description": "Natural gas usage",
+        "amount": "165.58"
+      },
+      {
+        "description": "Distribution charge",
+        "amount": "8.17"
+      },
+      {
+        "description": "Utility users tax",
+        "amount": "19.11"
+      }
+    ],
+    "total_amount": "192.86",
+    "currency": "USD"
+  }
+}

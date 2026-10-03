@@ -1,0 +1,33 @@
+{
+  "id": "bill_0069",
+  "template": "two_page",
+  "bill": {
+    "provider": "Crawford Gas Company",
+    "account_number": "530 011 9721",
+    "billing_period_start": "2026-03-29",
+    "billing_period_end": "2026-04-29",
+    "due_date": "2026-05-24",
+    "usage_amount": "135.7",
+    "usage_unit": "m³",
+    "line_items": [
+      {
+        "description": "Balance forward",
+        "amount": "183.42"
+      },
+      {
+        "description": "Gas supply charge",
+        "amount": "80.06"
+      },
+      {
+        "description": "Fixed monthly charge",
+        "amount": "27.44"
+      },
+      {
+        "description": "Utility users tax",
+        "amount": "8.60"
+      }
+    ],
+    "total_amount": "299.52",
+    "currency": "USD"
+  }
+}

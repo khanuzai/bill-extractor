@@ -1,0 +1,33 @@
+{
+  "id": "bill_0189",
+  "template": "two_page",
+  "bill": {
+    "provider": "South Dakota Telecom",
+    "account_number": "265 826 3128",
+    "billing_period_start": "2024-01-24",
+    "billing_period_end": "2024-02-22",
+    "due_date": "2024-03-20",
+    "usage_amount": null,
+    "usage_unit": null,
+    "line_items": [
+      {
+        "description": "Home Internet plan",
+        "amount": "107.16"
+      },
+      {
+        "description": "Regulatory recovery fee",
+        "amount": "9.48"
+      },
+      {
+        "description": "Static IP address",
+        "amount": "25.93"
+      },
+      {
+        "description": "State and local taxes",
+        "amount": "12.83"
+      }
+    ],
+    "total_amount": "155.40",
+    "currency": "USD"
+  }
+}

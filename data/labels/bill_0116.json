@@ -1,0 +1,29 @@
+{
+  "id": "bill_0116",
+  "template": "bordered_table",
+  "bill": {
+    "provider": "CantrellNet Broadband",
+    "account_number": "AC-20904-21",
+    "billing_period_start": "2024-12-08",
+    "billing_period_end": "2025-01-05",
+    "due_date": "2025-01-20",
+    "usage_amount": null,
+    "usage_unit": null,
+    "line_items": [
+      {
+        "description": "Fiber 500 monthly plan",
+        "amount": "79.67"
+      },
+      {
+        "description": "Static IP address",
+        "amount": "11.35"
+      },
+      {
+        "description": "HST",
+        "amount": "8.19"
+      }
+    ],
+    "total_amount": "99.21",
+    "currency": "CAD"
+  }
+}

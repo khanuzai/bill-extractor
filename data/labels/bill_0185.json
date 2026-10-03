@@ -1,0 +1,33 @@
+{
+  "id": "bill_0185",
+  "template": "receipt",
+  "bill": {
+    "provider": "Ortizberg Municipal Water",
+    "account_number": "Y5516874",
+    "billing_period_start": "2024-09-12",
+    "billing_period_end": "2024-10-11",
+    "due_date": null,
+    "usage_amount": "17.1",
+    "usage_unit": "m³",
+    "line_items": [
+      {
+        "description": "Water usage charge",
+        "amount": "70.97"
+      },
+      {
+        "description": "Meter service charge",
+        "amount": "20.60"
+      },
+      {
+        "description": "Service interruption credit",
+        "amount": "-7.33"
+      },
+      {
+        "description": "Sales tax",
+        "amount": "2.75"
+      }
+    ],
+    "total_amount": "86.99",
+    "currency": "USD"
+  }
+}

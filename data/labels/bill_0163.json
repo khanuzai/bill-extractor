@@ -1,0 +1,29 @@
+{
+  "id": "bill_0163",
+  "template": "summary_box",
+  "bill": {
+    "provider": "Tennessee Telecom",
+    "account_number": "633 705 0249",
+    "billing_period_start": "2026-06-18",
+    "billing_period_end": "2026-07-15",
+    "due_date": "2026-08-04",
+    "usage_amount": null,
+    "usage_unit": null,
+    "line_items": [
+      {
+        "description": "Fiber 500 monthly plan",
+        "amount": "115.48"
+      },
+      {
+        "description": "Static IP address",
+        "amount": "10.45"
+      },
+      {
+        "description": "Utility users tax",
+        "amount": "10.07"
+      }
+    ],
+    "total_amount": "136.00",
+    "currency": "USD"
+  }
+}

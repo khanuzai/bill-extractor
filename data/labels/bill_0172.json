@@ -1,0 +1,33 @@
+{
+  "id": "bill_0172",
+  "template": "two_column",
+  "bill": {
+    "provider": "South Ashley Water Authority",
+    "account_number": "AC-39672-75",
+    "billing_period_start": "2025-07-07",
+    "billing_period_end": "2025-08-03",
+    "due_date": "2025-08-19",
+    "usage_amount": "27.9",
+    "usage_unit": "m³",
+    "line_items": [
+      {
+        "description": "Water usage charge",
+        "amount": "75.89"
+      },
+      {
+        "description": "Infrastructure renewal fee",
+        "amount": "26.76"
+      },
+      {
+        "description": "Stormwater fee",
+        "amount": "7.72"
+      },
+      {
+        "description": "Utility users tax",
+        "amount": "5.52"
+      }
+    ],
+    "total_amount": "115.89",
+    "currency": "USD"
+  }
+}

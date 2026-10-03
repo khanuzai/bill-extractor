@@ -1,0 +1,33 @@
+{
+  "id": "bill_0092",
+  "template": "two_column",
+  "bill": {
+    "provider": "Arizona Gas & Heating",
+    "account_number": "01731096789",
+    "billing_period_start": "2024-02-27",
+    "billing_period_end": "2024-03-29",
+    "due_date": "2024-04-25",
+    "usage_amount": "234.6",
+    "usage_unit": "m³",
+    "line_items": [
+      {
+        "description": "Natural gas usage",
+        "amount": "309.67"
+      },
+      {
+        "description": "Fixed monthly charge",
+        "amount": "14.09"
+      },
+      {
+        "description": "Carbon levy",
+        "amount": "15.71"
+      },
+      {
+        "description": "Utility users tax",
+        "amount": "13.58"
+      }
+    ],
+    "total_amount": "353.05",
+    "currency": "USD"
+  }
+}

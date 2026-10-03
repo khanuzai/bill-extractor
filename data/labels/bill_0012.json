@@ -1,0 +1,33 @@
+{
+  "id": "bill_0012",
+  "template": "two_column",
+  "bill": {
+    "provider": "Nevada Energy",
+    "account_number": "AC-18506-71",
+    "billing_period_start": "2024-05-29",
+    "billing_period_end": "2024-06-27",
+    "due_date": "2024-07-12",
+    "usage_amount": "788",
+    "usage_unit": "kWh",
+    "line_items": [
+      {
+        "description": "Unpaid balance from last bill",
+        "amount": "217.53"
+      },
+      {
+        "description": "Electricity supply",
+        "amount": "228.52"
+      },
+      {
+        "description": "Transmission charge",
+        "amount": "10.62"
+      },
+      {
+        "description": "GST",
+        "amount": "16.74"
+      }
+    ],
+    "total_amount": "473.41",
+    "currency": "CAD"
+  }
+}

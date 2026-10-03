@@ -1,0 +1,29 @@
+{
+  "id": "bill_0021",
+  "template": "bordered_table",
+  "bill": {
+    "provider": "Lake Michaelstad Fiber",
+    "account_number": "01713900532",
+    "billing_period_start": "2025-10-23",
+    "billing_period_end": "2025-11-22",
+    "due_date": null,
+    "usage_amount": null,
+    "usage_unit": null,
+    "line_items": [
+      {
+        "description": "Home Internet plan",
+        "amount": "80.07"
+      },
+      {
+        "description": "Regulatory recovery fee",
+        "amount": "3.84"
+      },
+      {
+        "description": "State and local taxes",
+        "amount": "8.39"
+      }
+    ],
+    "total_amount": "92.30",
+    "currency": "USD"
+  }
+}

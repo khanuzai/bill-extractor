@@ -1,0 +1,25 @@
+{
+  "id": "bill_0060",
+  "template": "receipt",
+  "bill": {
+    "provider": "Grantside Municipal Water",
+    "account_number": "AC-39264-42",
+    "billing_period_start": "2024-12-06",
+    "billing_period_end": "2025-01-07",
+    "due_date": "2025-01-27",
+    "usage_amount": "25.2",
+    "usage_unit": "m³",
+    "line_items": [
+      {
+        "description": "Water usage charge",
+        "amount": "84.17"
+      },
+      {
+        "description": "GST",
+        "amount": "7.58"
+      }
+    ],
+    "total_amount": "91.75",
+    "currency": "CAD"
+  }
+}

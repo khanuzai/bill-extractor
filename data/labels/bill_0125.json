@@ -1,0 +1,33 @@
+{
+  "id": "bill_0125",
+  "template": "receipt",
+  "bill": {
+    "provider": "Perez Gas Company",
+    "account_number": "AC-63175-20",
+    "billing_period_start": "2025-01-06",
+    "billing_period_end": "2025-02-04",
+    "due_date": "2025-02-19",
+    "usage_amount": "232.8",
+    "usage_unit": "m³",
+    "line_items": [
+      {
+        "description": "Natural gas usage",
+        "amount": "144.34"
+      },
+      {
+        "description": "Carbon levy",
+        "amount": "25.32"
+      },
+      {
+        "description": "Loyalty credit",
+        "amount": "-33.93"
+      },
+      {
+        "description": "Sales tax",
+        "amount": "15.27"
+      }
+    ],
+    "total_amount": "151.00",
+    "currency": "USD"
+  }
+}

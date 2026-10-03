@@ -1,0 +1,33 @@
+{
+  "id": "bill_0197",
+  "template": "two_column",
+  "bill": {
+    "provider": "Alaska Energy",
+    "account_number": "06325703965",
+    "billing_period_start": "2025-11-01",
+    "billing_period_end": "2025-12-01",
+    "due_date": "2025-12-22",
+    "usage_amount": "677",
+    "usage_unit": "kWh",
+    "line_items": [
+      {
+        "description": "Balance forward",
+        "amount": "110.67"
+      },
+      {
+        "description": "Electricity usage",
+        "amount": "216.64"
+      },
+      {
+        "description": "Renewable energy rider",
+        "amount": "21.29"
+      },
+      {
+        "description": "Utility users tax",
+        "amount": "26.17"
+      }
+    ],
+    "total_amount": "374.77",
+    "currency": "USD"
+  }
+}

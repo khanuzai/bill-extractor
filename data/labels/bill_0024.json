@@ -1,0 +1,37 @@
+{
+  "id": "bill_0024",
+  "template": "two_page",
+  "bill": {
+    "provider": "Larrymouth Water Authority",
+    "account_number": "J1022901",
+    "billing_period_start": "2024-09-05",
+    "billing_period_end": "2024-10-04",
+    "due_date": "2024-11-01",
+    "usage_amount": "8.3",
+    "usage_unit": "m³",
+    "line_items": [
+      {
+        "description": "Unpaid balance from last bill",
+        "amount": "82.49"
+      },
+      {
+        "description": "Water consumption",
+        "amount": "22.58"
+      },
+      {
+        "description": "Infrastructure renewal fee",
+        "amount": "8.31"
+      },
+      {
+        "description": "Sewer service",
+        "amount": "3.75"
+      },
+      {
+        "description": "Sales tax",
+        "amount": "3.46"
+      }
+    ],
+    "total_amount": "120.59",
+    "currency": "USD"
+  }
+}

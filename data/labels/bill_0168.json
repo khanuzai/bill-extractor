@@ -1,0 +1,29 @@
+{
+  "id": "bill_0168",
+  "template": "summary_box",
+  "bill": {
+    "provider": "North Dakota Gas & Heating",
+    "account_number": "AC-43861-25",
+    "billing_period_start": "2026-05-01",
+    "billing_period_end": "2026-05-29",
+    "due_date": "2026-06-23",
+    "usage_amount": "93.3",
+    "usage_unit": "m³",
+    "line_items": [
+      {
+        "description": "Gas consumption",
+        "amount": "99.83"
+      },
+      {
+        "description": "Carbon levy",
+        "amount": "9.02"
+      },
+      {
+        "description": "HST",
+        "amount": "8.71"
+      }
+    ],
+    "total_amount": "117.56",
+    "currency": "CAD"
+  }
+}

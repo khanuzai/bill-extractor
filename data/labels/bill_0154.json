@@ -1,0 +1,29 @@
+{
+  "id": "bill_0154",
+  "template": "two_page",
+  "bill": {
+    "provider": "Onealshire Fiber",
+    "account_number": "AC-81214-78",
+    "billing_period_start": "2025-06-13",
+    "billing_period_end": "2025-07-15",
+    "due_date": "2025-08-12",
+    "usage_amount": null,
+    "usage_unit": null,
+    "line_items": [
+      {
+        "description": "Previous balance",
+        "amount": "160.13"
+      },
+      {
+        "description": "Fiber 500 monthly plan",
+        "amount": "93.21"
+      },
+      {
+        "description": "State and local taxes",
+        "amount": "8.39"
+      }
+    ],
+    "total_amount": "261.73",
+    "currency": "USD"
+  }
+}

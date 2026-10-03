@@ -1,0 +1,25 @@
+{
+  "id": "bill_0065",
+  "template": "receipt",
+  "bill": {
+    "provider": "Williamsshire Natural Gas",
+    "account_number": "03346800722",
+    "billing_period_start": "2025-06-25",
+    "billing_period_end": "2025-07-23",
+    "due_date": "2025-08-19",
+    "usage_amount": "245.8",
+    "usage_unit": "m³",
+    "line_items": [
+      {
+        "description": "Natural gas usage",
+        "amount": "218.76"
+      },
+      {
+        "description": "Sales tax",
+        "amount": "8.75"
+      }
+    ],
+    "total_amount": "227.51",
+    "currency": "USD"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "bill_0018",
+  "template": "summary_box",
+  "bill": {
+    "provider": "Matthewfurt Municipal Water",
+    "account_number": "H6578091",
+    "billing_period_start": "2026-03-07",
+    "billing_period_end": "2026-04-06",
+    "due_date": "2026-04-21",
+    "usage_amount": "31.3",
+    "usage_unit": "m³",
+    "line_items": [
+      {
+        "description": "Metered water",
+        "amount": "58.53"
+      },
+      {
+        "description": "GST/HST",
+        "amount": "2.93"
+      }
+    ],
+    "total_amount": "61.46",
+    "currency": "CAD"
+  }
+}

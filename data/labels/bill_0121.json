@@ -1,0 +1,37 @@
+{
+  "id": "bill_0121",
+  "template": "bordered_table",
+  "bill": {
+    "provider": "Lake Pamela Natural Gas",
+    "account_number": "426 629 9123",
+    "billing_period_start": "2025-07-03",
+    "billing_period_end": "2025-08-03",
+    "due_date": "2025-08-17",
+    "usage_amount": "167.8",
+    "usage_unit": "m³",
+    "line_items": [
+      {
+        "description": "Balance forward",
+        "amount": "127.13"
+      },
+      {
+        "description": "Gas supply charge",
+        "amount": "159.41"
+      },
+      {
+        "description": "Pipeline safety fee",
+        "amount": "18.31"
+      },
+      {
+        "description": "Fixed monthly charge",
+        "amount": "17.77"
+      },
+      {
+        "description": "Utility users tax",
+        "amount": "19.55"
+      }
+    ],
+    "total_amount": "342.17",
+    "currency": "USD"
+  }
+}

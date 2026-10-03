@@ -1,0 +1,29 @@
+{
+  "id": "bill_0039",
+  "template": "two_page",
+  "bill": {
+    "provider": "East Timothy Power & Light",
+    "account_number": "AC-68783-39",
+    "billing_period_start": "2024-11-23",
+    "billing_period_end": "2024-12-21",
+    "due_date": "2025-01-04",
+    "usage_amount": "1103",
+    "usage_unit": "kWh",
+    "line_items": [
+      {
+        "description": "Energy charge",
+        "amount": "220.60"
+      },
+      {
+        "description": "Renewable energy rider",
+        "amount": "7.30"
+      },
+      {
+        "description": "Utility users tax",
+        "amount": "18.23"
+      }
+    ],
+    "total_amount": "246.13",
+    "currency": "USD"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "bill_0004",
+  "template": "two_page",
+  "bill": {
+    "provider": "Lake Selena Power & Light",
+    "account_number": "07631165667",
+    "billing_period_start": "2024-02-28",
+    "billing_period_end": "2024-03-26",
+    "due_date": "2024-04-18",
+    "usage_amount": "601",
+    "usage_unit": "kWh",
+    "line_items": [
+      {
+        "description": "Energy charge",
+        "amount": "66.11"
+      },
+      {
+        "description": "Delivery charge",
+        "amount": "5.26"
+      },
+      {
+        "description": "Transmission charge",
+        "amount": "3.78"
+      },
+      {
+        "description": "Autopay discount",
+        "amount": "-9.02"
+      },
+      {
+        "description": "Sales tax",
+        "amount": "9.77"
+      }
+    ],
+    "total_amount": "75.90",
+    "currency": "USD"
+  }
+}

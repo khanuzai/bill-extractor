@@ -1,0 +1,29 @@
+{
+  "id": "bill_0078",
+  "template": "summary_box",
+  "bill": {
+    "provider": "Johnbury Natural Gas",
+    "account_number": "452 577 7547",
+    "billing_period_start": "2025-07-18",
+    "billing_period_end": "2025-08-15",
+    "due_date": "2025-09-03",
+    "usage_amount": "154.4",
+    "usage_unit": "m³",
+    "line_items": [
+      {
+        "description": "Gas consumption",
+        "amount": "189.91"
+      },
+      {
+        "description": "Fixed monthly charge",
+        "amount": "25.66"
+      },
+      {
+        "description": "State and local taxes",
+        "amount": "19.40"
+      }
+    ],
+    "total_amount": "234.97",
+    "currency": "USD"
+  }
+}

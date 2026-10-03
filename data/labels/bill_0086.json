@@ -1,0 +1,29 @@
+{
+  "id": "bill_0086",
+  "template": "bordered_table",
+  "bill": {
+    "provider": "Oregon Telecom",
+    "account_number": "6120-347-1754",
+    "billing_period_start": "2025-12-29",
+    "billing_period_end": "2026-01-30",
+    "due_date": "2026-02-15",
+    "usage_amount": null,
+    "usage_unit": null,
+    "line_items": [
+      {
+        "description": "Fiber 500 monthly plan",
+        "amount": "40.78"
+      },
+      {
+        "description": "Wi-Fi extender rental",
+        "amount": "8.00"
+      },
+      {
+        "description": "Utility users tax",
+        "amount": "5.37"
+      }
+    ],
+    "total_amount": "54.15",
+    "currency": "USD"
+  }
+}

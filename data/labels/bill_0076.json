@@ -1,0 +1,33 @@
+{
+  "id": "bill_0076",
+  "template": "bordered_table",
+  "bill": {
+    "provider": "New Maria Power & Light",
+    "account_number": "120 750 1102",
+    "billing_period_start": "2025-08-16",
+    "billing_period_end": "2025-09-14",
+    "due_date": null,
+    "usage_amount": "346",
+    "usage_unit": "kWh",
+    "line_items": [
+      {
+        "description": "Electricity supply",
+        "amount": "55.36"
+      },
+      {
+        "description": "Delivery charge",
+        "amount": "5.18"
+      },
+      {
+        "description": "Renewable energy rider",
+        "amount": "11.13"
+      },
+      {
+        "description": "Sales tax",
+        "amount": "9.32"
+      }
+    ],
+    "total_amount": "80.99",
+    "currency": "USD"
+  }
+}

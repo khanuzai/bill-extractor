@@ -1,0 +1,29 @@
+{
+  "id": "bill_0047",
+  "template": "two_column",
+  "bill": {
+    "provider": "Lake Katrina Natural Gas",
+    "account_number": "374 167 2434",
+    "billing_period_start": "2024-06-10",
+    "billing_period_end": "2024-07-10",
+    "due_date": "2024-07-29",
+    "usage_amount": "221.1",
+    "usage_unit": "m³",
+    "line_items": [
+      {
+        "description": "Gas supply charge",
+        "amount": "260.90"
+      },
+      {
+        "description": "Pipeline safety fee",
+        "amount": "13.98"
+      },
+      {
+        "description": "Utility users tax",
+        "amount": "11.00"
+      }
+    ],
+    "total_amount": "285.88",
+    "currency": "USD"
+  }
+}

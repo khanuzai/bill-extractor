@@ -1,0 +1,29 @@
+{
+  "id": "bill_0184",
+  "template": "two_page",
+  "bill": {
+    "provider": "New Lindseyberg Municipal Water",
+    "account_number": "904 227 1133",
+    "billing_period_start": "2024-10-08",
+    "billing_period_end": "2024-11-06",
+    "due_date": "2024-12-02",
+    "usage_amount": "28.3",
+    "usage_unit": "m³",
+    "line_items": [
+      {
+        "description": "Water consumption",
+        "amount": "123.39"
+      },
+      {
+        "description": "Infrastructure renewal fee",
+        "amount": "17.07"
+      },
+      {
+        "description": "Sales tax",
+        "amount": "5.62"
+      }
+    ],
+    "total_amount": "146.08",
+    "currency": "USD"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "bill_0104",
+  "template": "two_page",
+  "bill": {
+    "provider": "WilsonNet Broadband",
+    "account_number": "J8138585",
+    "billing_period_start": "2024-04-03",
+    "billing_period_end": "2024-05-05",
+    "due_date": "2024-05-30",
+    "usage_amount": null,
+    "usage_unit": null,
+    "line_items": [
+      {
+        "description": "Unlimited Internet 300",
+        "amount": "87.30"
+      },
+      {
+        "description": "Static IP address",
+        "amount": "10.71"
+      },
+      {
+        "description": "Wi-Fi extender rental",
+        "amount": "10.38"
+      },
+      {
+        "description": "GST",
+        "amount": "10.84"
+      }
+    ],
+    "total_amount": "119.23",
+    "currency": "CAD"
+  }
+}

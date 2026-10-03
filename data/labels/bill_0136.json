@@ -1,0 +1,25 @@
+{
+  "id": "bill_0136",
+  "template": "bordered_table",
+  "bill": {
+    "provider": "DavisNet Broadband",
+    "account_number": "03610326642",
+    "billing_period_start": "2025-10-28",
+    "billing_period_end": "2025-11-29",
+    "due_date": "2025-12-27",
+    "usage_amount": null,
+    "usage_unit": null,
+    "line_items": [
+      {
+        "description": "Fiber 500 monthly plan",
+        "amount": "86.61"
+      },
+      {
+        "description": "Sales tax",
+        "amount": "6.06"
+      }
+    ],
+    "total_amount": "92.67",
+    "currency": "USD"
+  }
+}

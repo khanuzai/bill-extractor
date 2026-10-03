@@ -38,17 +38,20 @@ class UtilityBill(BaseModel):
     billing_period_end: date
     """The last day of service this bill covers (often labelled "Service to")."""
 
-    due_date: date
+    due_date: date | None
     """The date payment must be received by to avoid late fees. Distinct from the
-    statement/issue date."""
+    statement/issue date. None when the bill prints no due date (e.g. "due upon
+    receipt" or an account paid by automatic withdrawal)."""
 
-    usage_amount: Decimal
+    usage_amount: Decimal | None
     """How much of the utility was consumed during the billing period, in the unit
-    given by `usage_unit` — the metered quantity, not a money value."""
+    given by `usage_unit` — the metered quantity, not a money value. None for
+    flat-fee services with no metered usage, such as internet."""
 
-    usage_unit: str
+    usage_unit: str | None
     """The unit of measure for `usage_amount`, as printed on the bill, e.g. "kWh" for
-    electricity, "therms" or "m3" for gas, "gal" or "CCF" for water."""
+    electricity, "therms" or "m³" for gas, "gal" or "m³" for water. None exactly when
+    `usage_amount` is None."""
 
     line_items: list[LineItem]
     """The itemised charges and credits that make up the bill, in the order they
@@ -62,3 +65,19 @@ class UtilityBill(BaseModel):
     currency: str = Field(pattern=r"^[A-Z]{3}$")
     """The ISO 4217 code for the currency all money values on the bill are in,
     e.g. "USD", "GBP", "EUR"."""
+
+
+class BillLabel(BaseModel):
+    """A ground-truth label for one generated bill PDF."""
+
+    model_config = ConfigDict(use_attribute_docstrings=True)
+
+    id: str
+    """The bill's identifier; the PDF and label files are both named after it."""
+
+    template: str
+    """The name of the layout template the PDF was rendered with, so results can be
+    broken down by layout."""
+
+    bill: UtilityBill
+    """The structured data the PDF was rendered from — the expected extraction."""

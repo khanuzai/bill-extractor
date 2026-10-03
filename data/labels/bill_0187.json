@@ -1,0 +1,33 @@
+{
+  "id": "bill_0187",
+  "template": "two_column",
+  "bill": {
+    "provider": "South Dakota Gas & Heating",
+    "account_number": "W1033682",
+    "billing_period_start": "2025-08-31",
+    "billing_period_end": "2025-10-01",
+    "due_date": "2025-10-17",
+    "usage_amount": "149.6",
+    "usage_unit": "m³",
+    "line_items": [
+      {
+        "description": "Gas supply charge",
+        "amount": "68.82"
+      },
+      {
+        "description": "Fixed monthly charge",
+        "amount": "22.95"
+      },
+      {
+        "description": "Service interruption credit",
+        "amount": "-23.86"
+      },
+      {
+        "description": "Utility users tax",
+        "amount": "6.42"
+      }
+    ],
+    "total_amount": "74.33",
+    "currency": "USD"
+  }
+}

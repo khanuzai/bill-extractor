@@ -1,0 +1,37 @@
+{
+  "id": "bill_0133",
+  "template": "summary_box",
+  "bill": {
+    "provider": "Holloway Gas Company",
+    "account_number": "06262044397",
+    "billing_period_start": "2024-12-01",
+    "billing_period_end": "2025-01-01",
+    "due_date": null,
+    "usage_amount": "235.3",
+    "usage_unit": "m³",
+    "line_items": [
+      {
+        "description": "Balance forward",
+        "amount": "106.35"
+      },
+      {
+        "description": "Natural gas usage",
+        "amount": "235.30"
+      },
+      {
+        "description": "Pipeline safety fee",
+        "amount": "11.69"
+      },
+      {
+        "description": "Distribution charge",
+        "amount": "10.82"
+      },
+      {
+        "description": "State and local taxes",
+        "amount": "23.20"
+      }
+    ],
+    "total_amount": "387.36",
+    "currency": "USD"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "bill_0085",
+  "template": "receipt",
+  "bill": {
+    "provider": "North Alicia Power & Light",
+    "account_number": "8562-718-7500",
+    "billing_period_start": "2025-05-08",
+    "billing_period_end": "2025-06-04",
+    "due_date": "2025-07-01",
+    "usage_amount": "795",
+    "usage_unit": "kWh",
+    "line_items": [
+      {
+        "description": "Electricity supply",
+        "amount": "206.70"
+      },
+      {
+        "description": "Transmission charge",
+        "amount": "9.99"
+      },
+      {
+        "description": "HST",
+        "amount": "15.17"
+      }
+    ],
+    "total_amount": "231.86",
+    "currency": "CAD"
+  }
+}

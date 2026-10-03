@@ -1,0 +1,29 @@
+{
+  "id": "bill_0110",
+  "template": "receipt",
+  "bill": {
+    "provider": "Suzanneton Fiber",
+    "account_number": "AC-69454-41",
+    "billing_period_start": "2025-11-16",
+    "billing_period_end": "2025-12-17",
+    "due_date": "2026-01-03",
+    "usage_amount": null,
+    "usage_unit": null,
+    "line_items": [
+      {
+        "description": "Unlimited Internet 300",
+        "amount": "97.79"
+      },
+      {
+        "description": "Regulatory recovery fee",
+        "amount": "8.44"
+      },
+      {
+        "description": "HST",
+        "amount": "7.44"
+      }
+    ],
+    "total_amount": "113.67",
+    "currency": "CAD"
+  }
+}

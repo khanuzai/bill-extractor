@@ -1,0 +1,29 @@
+{
+  "id": "bill_0001",
+  "template": "bordered_table",
+  "bill": {
+    "provider": "Robinsonshire Power & Light",
+    "account_number": "06542351161",
+    "billing_period_start": "2024-09-07",
+    "billing_period_end": "2024-10-05",
+    "due_date": "2024-10-21",
+    "usage_amount": "328",
+    "usage_unit": "kWh",
+    "line_items": [
+      {
+        "description": "Previous balance",
+        "amount": "88.23"
+      },
+      {
+        "description": "Electricity usage",
+        "amount": "95.12"
+      },
+      {
+        "description": "Utility users tax",
+        "amount": "2.85"
+      }
+    ],
+    "total_amount": "186.20",
+    "currency": "USD"
+  }
+}

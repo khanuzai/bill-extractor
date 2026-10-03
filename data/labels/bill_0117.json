@@ -1,0 +1,25 @@
+{
+  "id": "bill_0117",
+  "template": "two_column",
+  "bill": {
+    "provider": "Mendozaville Municipal Water",
+    "account_number": "8063-254-3107",
+    "billing_period_start": "2024-07-21",
+    "billing_period_end": "2024-08-21",
+    "due_date": "2024-09-06",
+    "usage_amount": "8.2",
+    "usage_unit": "m³",
+    "line_items": [
+      {
+        "description": "Water consumption",
+        "amount": "32.23"
+      },
+      {
+        "description": "State and local taxes",
+        "amount": "3.55"
+      }
+    ],
+    "total_amount": "35.78",
+    "currency": "USD"
+  }
+}

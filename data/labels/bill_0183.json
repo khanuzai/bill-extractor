@@ -1,0 +1,33 @@
+{
+  "id": "bill_0183",
+  "template": "summary_box",
+  "bill": {
+    "provider": "Edwards Valley Water District",
+    "account_number": "620 563 4111",
+    "billing_period_start": "2025-04-02",
+    "billing_period_end": "2025-05-04",
+    "due_date": "2025-05-21",
+    "usage_amount": "16",
+    "usage_unit": "m³",
+    "line_items": [
+      {
+        "description": "Water consumption",
+        "amount": "51.04"
+      },
+      {
+        "description": "Infrastructure renewal fee",
+        "amount": "11.17"
+      },
+      {
+        "description": "Sewer service",
+        "amount": "18.90"
+      },
+      {
+        "description": "GST",
+        "amount": "4.06"
+      }
+    ],
+    "total_amount": "85.17",
+    "currency": "CAD"
+  }
+}

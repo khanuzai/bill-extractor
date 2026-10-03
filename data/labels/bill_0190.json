@@ -1,0 +1,33 @@
+{
+  "id": "bill_0190",
+  "template": "receipt",
+  "bill": {
+    "provider": "Hoville Water Authority",
+    "account_number": "AC-21175-36",
+    "billing_period_start": "2025-08-17",
+    "billing_period_end": "2025-09-14",
+    "due_date": "2025-10-02",
+    "usage_amount": "20.5",
+    "usage_unit": "m³",
+    "line_items": [
+      {
+        "description": "Water usage charge",
+        "amount": "76.47"
+      },
+      {
+        "description": "Sewer service",
+        "amount": "5.89"
+      },
+      {
+        "description": "Stormwater fee",
+        "amount": "8.38"
+      },
+      {
+        "description": "State and local taxes",
+        "amount": "10.89"
+      }
+    ],
+    "total_amount": "101.63",
+    "currency": "USD"
+  }
+}

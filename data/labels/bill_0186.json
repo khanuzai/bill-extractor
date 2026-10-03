@@ -1,0 +1,33 @@
+{
+  "id": "bill_0186",
+  "template": "bordered_table",
+  "bill": {
+    "provider": "Brownstad Natural Gas",
+    "account_number": "00306442121",
+    "billing_period_start": "2024-02-28",
+    "billing_period_end": "2024-03-28",
+    "due_date": "2024-04-20",
+    "usage_amount": "215",
+    "usage_unit": "m³",
+    "line_items": [
+      {
+        "description": "Balance forward",
+        "amount": "59.68"
+      },
+      {
+        "description": "Natural gas usage",
+        "amount": "126.85"
+      },
+      {
+        "description": "Distribution charge",
+        "amount": "24.82"
+      },
+      {
+        "description": "Utility users tax",
+        "amount": "12.13"
+      }
+    ],
+    "total_amount": "223.48",
+    "currency": "USD"
+  }
+}

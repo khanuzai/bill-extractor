@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>{{ bill.provider }} bill</title>
+<style>
+  @page { size: Letter; margin: 0.8in; }
+  body { font-family: Helvetica, Arial, sans-serif; font-size: 10.5pt; color: #1a1a1a; }
+  .header { border-bottom: 3px solid #1f4e79; padding-bottom: 10px; overflow: hidden; }
+  .provider { float: left; font-size: 20pt; font-weight: bold; color: #1f4e79; }
+  .account { float: right; text-align: right; font-size: 9.5pt; line-height: 1.5; }
+  .account strong { font-size: 11pt; }
+  .customer { margin: 22px 0; line-height: 1.4; }
+  h2 { font-size: 11pt; color: #1f4e79; text-transform: uppercase; margin: 22px 0 6px; }
+  table { width: 100%; border-collapse: collapse; }
+  th, td { border: 1px solid #555; padding: 6px 9px; }
+  th { background: #dfe9f3; text-align: left; }
+  td.num, th.num { text-align: right; }
+  tr.total td { font-weight: bold; background: #f1f1f1; font-size: 12pt; }
+  .note { margin-top: 26px; font-size: 8.5pt; color: #555; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <div class="provider">{{ bill.provider }}</div>
+    <div class="account">
+      Account Number<br>
+      <strong>{{ bill.account_number }}</strong><br>
+      Statement Date: {{ extras.statement_date | date_us }}
+    </div>
+  </div>
+
+  <div class="customer">
+    {{ extras.customer_name }}<br>
+    {% for line in extras.address_lines %}{{ line }}<br>{% endfor %}
+  </div>
+
+  <h2>Billing Summary</h2>
+  <table>
+    <tr>
+      <th>Service Period</th>
+      <td>{{ bill.billing_period_start | date_us }} - {{ bill.billing_period_end | date_us }}</td>
+    </tr>
+    {% if bill.usage_amount is not none %}
+    <tr>
+      <th>Meter</th>
+      <td>{{ extras.meter_number }}</td>
+    </tr>
+    <tr>
+      <th>Usage This Period</th>
+      <td>{{ bill.usage_amount | usage }} {{ bill.usage_unit }}</td>
+    </tr>
+    {% endif %}
+    {% if bill.due_date is not none %}
+    <tr>
+      <th>Due Date</th>
+      <td>{{ bill.due_date | date_us }}</td>
+    </tr>
+    {% endif %}
+  </table>
+
+  <h2>Charges</h2>
+  <table>
+    <tr>
+      <th>Description</th>
+      <th class="num">Amount ({{ bill.currency }})</th>
+    </tr>
+    {% for item in bill.line_items %}
+    <tr>
+      <td>{{ item.description }}</td>
+      <td class="num">{{ item.amount | money }}</td>
+    </tr>
+    {% endfor %}
+    <tr class="total">
+      <td>Amount Due</td>
+      <td class="num">{{ bill.total_amount | money }}</td>
+    </tr>
+  </table>
+
+  <p class="note">
+    All amounts are in {{ bill.currency }}. Questions about this bill? Contact
+    {{ bill.provider }} customer care and quote your account number.
+  </p>
+</body>
+</html>

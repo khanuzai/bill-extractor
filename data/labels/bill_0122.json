@@ -1,0 +1,25 @@
+{
+  "id": "bill_0122",
+  "template": "two_column",
+  "bill": {
+    "provider": "Trevorland Water Authority",
+    "account_number": "T7964715",
+    "billing_period_start": "2025-08-06",
+    "billing_period_end": "2025-09-07",
+    "due_date": "2025-09-28",
+    "usage_amount": "42",
+    "usage_unit": "m³",
+    "line_items": [
+      {
+        "description": "Water usage charge",
+        "amount": "137.34"
+      },
+      {
+        "description": "State and local taxes",
+        "amount": "8.24"
+      }
+    ],
+    "total_amount": "145.58",
+    "currency": "USD"
+  }
+}

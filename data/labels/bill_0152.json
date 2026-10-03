@@ -1,0 +1,25 @@
+{
+  "id": "bill_0152",
+  "template": "two_column",
+  "bill": {
+    "provider": "Fritz Electric Cooperative",
+    "account_number": "1508-124-7395",
+    "billing_period_start": "2026-04-18",
+    "billing_period_end": "2026-05-20",
+    "due_date": "2026-06-06",
+    "usage_amount": "1105",
+    "usage_unit": "kWh",
+    "line_items": [
+      {
+        "description": "Energy charge",
+        "amount": "331.50"
+      },
+      {
+        "description": "Utility users tax",
+        "amount": "26.52"
+      }
+    ],
+    "total_amount": "358.02",
+    "currency": "USD"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "bill_0166",
+  "template": "bordered_table",
+  "bill": {
+    "provider": "Utah Telecom",
+    "account_number": "H7271783",
+    "billing_period_start": "2025-12-24",
+    "billing_period_end": "2026-01-22",
+    "due_date": "2026-02-11",
+    "usage_amount": null,
+    "usage_unit": null,
+    "line_items": [
+      {
+        "description": "Unlimited Internet 300",
+        "amount": "117.11"
+      },
+      {
+        "description": "Modem rental",
+        "amount": "18.26"
+      },
+      {
+        "description": "Regulatory recovery fee",
+        "amount": "14.53"
+      },
+      {
+        "description": "GST",
+        "amount": "16.49"
+      }
+    ],
+    "total_amount": "166.39",
+    "currency": "CAD"
+  }
+}

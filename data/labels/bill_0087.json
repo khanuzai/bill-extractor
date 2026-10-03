@@ -1,0 +1,33 @@
+{
+  "id": "bill_0087",
+  "template": "two_column",
+  "bill": {
+    "provider": "New Hampshire Energy",
+    "account_number": "AC-98762-20",
+    "billing_period_start": "2024-09-18",
+    "billing_period_end": "2024-10-20",
+    "due_date": "2024-11-05",
+    "usage_amount": "840",
+    "usage_unit": "kWh",
+    "line_items": [
+      {
+        "description": "Electricity supply",
+        "amount": "201.60"
+      },
+      {
+        "description": "Transmission charge",
+        "amount": "5.74"
+      },
+      {
+        "description": "Delivery charge",
+        "amount": "9.13"
+      },
+      {
+        "description": "Sales tax",
+        "amount": "28.14"
+      }
+    ],
+    "total_amount": "244.61",
+    "currency": "USD"
+  }
+}

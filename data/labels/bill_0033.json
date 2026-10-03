@@ -1,0 +1,25 @@
+{
+  "id": "bill_0033",
+  "template": "summary_box",
+  "bill": {
+    "provider": "Sarahbury Water Authority",
+    "account_number": "AC-14384-24",
+    "billing_period_start": "2026-01-25",
+    "billing_period_end": "2026-02-25",
+    "due_date": "2026-03-21",
+    "usage_amount": "14.6",
+    "usage_unit": "m³",
+    "line_items": [
+      {
+        "description": "Metered water",
+        "amount": "58.55"
+      },
+      {
+        "description": "State and local taxes",
+        "amount": "4.10"
+      }
+    ],
+    "total_amount": "62.65",
+    "currency": "USD"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "bill_0144",
+  "template": "two_page",
+  "bill": {
+    "provider": "ArmstrongNet Broadband",
+    "account_number": "S2154544",
+    "billing_period_start": "2024-05-11",
+    "billing_period_end": "2024-06-08",
+    "due_date": "2024-06-29",
+    "usage_amount": null,
+    "usage_unit": null,
+    "line_items": [
+      {
+        "description": "Home Internet plan",
+        "amount": "50.58"
+      },
+      {
+        "description": "Modem rental",
+        "amount": "11.20"
+      },
+      {
+        "description": "Regulatory recovery fee",
+        "amount": "21.15"
+      },
+      {
+        "description": "HST",
+        "amount": "9.12"
+      }
+    ],
+    "total_amount": "92.05",
+    "currency": "CAD"
+  }
+}

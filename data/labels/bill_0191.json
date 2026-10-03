@@ -1,0 +1,33 @@
+{
+  "id": "bill_0191",
+  "template": "bordered_table",
+  "bill": {
+    "provider": "Jeanport Power & Light",
+    "account_number": "863 423 4619",
+    "billing_period_start": "2025-04-16",
+    "billing_period_end": "2025-05-14",
+    "due_date": "2025-05-31",
+    "usage_amount": "385",
+    "usage_unit": "kWh",
+    "line_items": [
+      {
+        "description": "Unpaid balance from last bill",
+        "amount": "53.47"
+      },
+      {
+        "description": "Energy charge",
+        "amount": "65.45"
+      },
+      {
+        "description": "Basic customer charge",
+        "amount": "11.50"
+      },
+      {
+        "description": "State and local taxes",
+        "amount": "7.70"
+      }
+    ],
+    "total_amount": "138.12",
+    "currency": "USD"
+  }
+}

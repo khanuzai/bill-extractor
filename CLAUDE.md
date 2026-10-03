@@ -12,6 +12,9 @@ adds RAG question-answering over the bills.
 - PostgreSQL with pgvector, run via Docker Compose
 - PyMuPDF (PDF text extraction)
 - Anthropic API (LLM extraction)
+- Faker, Jinja2, WeasyPrint (synthetic bill generation; WeasyPrint needs the Pango
+  system library — `brew install pango`)
+- pytest
 
 ## Layout
 
@@ -19,6 +22,10 @@ adds RAG question-answering over the bills.
 src/
   schema.py      Pydantic models for a utility bill — the shared contract for every stage
   generator/     Generates synthetic bill PDFs and their labels
+    data.py        Random UtilityBill data; its docstring defines the amount rule
+    render.py      UtilityBill -> HTML template -> PDF
+    templates/     Five bill layouts (Jinja2 HTML)
+    cli.py         python -m src.generator.cli --count 200 --seed 42 --split
   parsers/       Hand-written parsers, used as the baseline to grade against
   extraction/    LLM-based extraction (PDF text -> schema)
   evaluation/    Grades extraction output against labels and parsers
@@ -35,6 +42,12 @@ decisions.md         Log of design decisions and why they were made
 ```
 
 Imports are rooted at the repo: `from src.schema import UtilityBill`.
+
+Run tests with `python -m pytest` from the repo root.
+
+The generated `UtilityBill` is the ground-truth label: data is generated first and the
+PDF is rendered from it. Never parse anything back out of a generated PDF to build a
+label.
 
 ## Rules
 

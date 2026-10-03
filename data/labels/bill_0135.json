@@ -1,0 +1,25 @@
+{
+  "id": "bill_0135",
+  "template": "receipt",
+  "bill": {
+    "provider": "Singleton Electric Cooperative",
+    "account_number": "5134-228-4993",
+    "billing_period_start": "2024-02-19",
+    "billing_period_end": "2024-03-18",
+    "due_date": "2024-04-01",
+    "usage_amount": "484",
+    "usage_unit": "kWh",
+    "line_items": [
+      {
+        "description": "Electricity usage",
+        "amount": "121.00"
+      },
+      {
+        "description": "Sales tax",
+        "amount": "3.63"
+      }
+    ],
+    "total_amount": "124.63",
+    "currency": "USD"
+  }
+}

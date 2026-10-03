@@ -1,0 +1,33 @@
+{
+  "id": "bill_0055",
+  "template": "receipt",
+  "bill": {
+    "provider": "Baker Gas Company",
+    "account_number": "7785-079-2524",
+    "billing_period_start": "2025-10-06",
+    "billing_period_end": "2025-11-07",
+    "due_date": "2025-11-21",
+    "usage_amount": "162",
+    "usage_unit": "m³",
+    "line_items": [
+      {
+        "description": "Gas consumption",
+        "amount": "179.82"
+      },
+      {
+        "description": "Carbon levy",
+        "amount": "17.73"
+      },
+      {
+        "description": "Distribution charge",
+        "amount": "7.69"
+      },
+      {
+        "description": "State and local taxes",
+        "amount": "8.21"
+      }
+    ],
+    "total_amount": "213.45",
+    "currency": "USD"
+  }
+}

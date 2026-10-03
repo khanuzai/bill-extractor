@@ -1,0 +1,29 @@
+{
+  "id": "bill_0062",
+  "template": "two_column",
+  "bill": {
+    "provider": "Davis Gas Company",
+    "account_number": "256 527 0477",
+    "billing_period_start": "2024-01-04",
+    "billing_period_end": "2024-01-31",
+    "due_date": "2024-02-18",
+    "usage_amount": "216.7",
+    "usage_unit": "m³",
+    "line_items": [
+      {
+        "description": "Unpaid balance from last bill",
+        "amount": "107.62"
+      },
+      {
+        "description": "Gas supply charge",
+        "amount": "151.69"
+      },
+      {
+        "description": "State and local taxes",
+        "amount": "15.17"
+      }
+    ],
+    "total_amount": "274.48",
+    "currency": "USD"
+  }
+}

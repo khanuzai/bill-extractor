@@ -1,0 +1,33 @@
+{
+  "id": "bill_0162",
+  "template": "two_column",
+  "bill": {
+    "provider": "New Jersey Telecom",
+    "account_number": "AC-74689-71",
+    "billing_period_start": "2026-06-04",
+    "billing_period_end": "2026-07-04",
+    "due_date": "2026-07-24",
+    "usage_amount": null,
+    "usage_unit": null,
+    "line_items": [
+      {
+        "description": "Unlimited Internet 300",
+        "amount": "76.14"
+      },
+      {
+        "description": "Wi-Fi extender rental",
+        "amount": "22.24"
+      },
+      {
+        "description": "Modem rental",
+        "amount": "3.31"
+      },
+      {
+        "description": "Sales tax",
+        "amount": "4.07"
+      }
+    ],
+    "total_amount": "105.76",
+    "currency": "USD"
+  }
+}

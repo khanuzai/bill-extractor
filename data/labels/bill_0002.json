@@ -1,0 +1,29 @@
+{
+  "id": "bill_0002",
+  "template": "two_column",
+  "bill": {
+    "provider": "Perez Valley Water District",
+    "account_number": "AC-64139-53",
+    "billing_period_start": "2025-09-14",
+    "billing_period_end": "2025-10-11",
+    "due_date": "2025-11-03",
+    "usage_amount": "35.3",
+    "usage_unit": "m³",
+    "line_items": [
+      {
+        "description": "Water consumption",
+        "amount": "107.67"
+      },
+      {
+        "description": "Infrastructure renewal fee",
+        "amount": "13.55"
+      },
+      {
+        "description": "GST/HST",
+        "amount": "13.33"
+      }
+    ],
+    "total_amount": "134.55",
+    "currency": "CAD"
+  }
+}

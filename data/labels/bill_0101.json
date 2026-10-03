@@ -1,0 +1,33 @@
+{
+  "id": "bill_0101",
+  "template": "bordered_table",
+  "bill": {
+    "provider": "Louisiana Gas & Heating",
+    "account_number": "AC-86833-90",
+    "billing_period_start": "2024-09-16",
+    "billing_period_end": "2024-10-18",
+    "due_date": "2024-11-12",
+    "usage_amount": "92.6",
+    "usage_unit": "m³",
+    "line_items": [
+      {
+        "description": "Gas consumption",
+        "amount": "95.38"
+      },
+      {
+        "description": "Carbon levy",
+        "amount": "6.31"
+      },
+      {
+        "description": "Distribution charge",
+        "amount": "14.75"
+      },
+      {
+        "description": "Sales tax",
+        "amount": "4.66"
+      }
+    ],
+    "total_amount": "121.10",
+    "currency": "USD"
+  }
+}

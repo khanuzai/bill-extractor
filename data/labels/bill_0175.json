@@ -1,0 +1,33 @@
+{
+  "id": "bill_0175",
+  "template": "receipt",
+  "bill": {
+    "provider": "Florida Energy",
+    "account_number": "05803056906",
+    "billing_period_start": "2024-06-30",
+    "billing_period_end": "2024-07-30",
+    "due_date": "2024-08-23",
+    "usage_amount": "393",
+    "usage_unit": "kWh",
+    "line_items": [
+      {
+        "description": "Electricity usage",
+        "amount": "94.32"
+      },
+      {
+        "description": "Transmission charge",
+        "amount": "7.71"
+      },
+      {
+        "description": "Renewable energy rider",
+        "amount": "15.80"
+      },
+      {
+        "description": "Utility users tax",
+        "amount": "10.60"
+      }
+    ],
+    "total_amount": "128.43",
+    "currency": "USD"
+  }
+}

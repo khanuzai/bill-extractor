@@ -1,0 +1,37 @@
+{
+  "id": "bill_0038",
+  "template": "summary_box",
+  "bill": {
+    "provider": "New Jersey Energy",
+    "account_number": "AC-31527-42",
+    "billing_period_start": "2024-06-08",
+    "billing_period_end": "2024-07-06",
+    "due_date": "2024-08-03",
+    "usage_amount": "963",
+    "usage_unit": "kWh",
+    "line_items": [
+      {
+        "description": "Energy charge",
+        "amount": "250.38"
+      },
+      {
+        "description": "Renewable energy rider",
+        "amount": "2.87"
+      },
+      {
+        "description": "Delivery charge",
+        "amount": "14.72"
+      },
+      {
+        "description": "Autopay discount",
+        "amount": "-40.20"
+      },
+      {
+        "description": "GST",
+        "amount": "26.80"
+      }
+    ],
+    "total_amount": "254.57",
+    "currency": "CAD"
+  }
+}

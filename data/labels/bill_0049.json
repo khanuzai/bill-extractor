@@ -1,0 +1,33 @@
+{
+  "id": "bill_0049",
+  "template": "two_page",
+  "bill": {
+    "provider": "Candicefurt Fiber",
+    "account_number": "AC-79249-91",
+    "billing_period_start": "2025-10-04",
+    "billing_period_end": "2025-11-01",
+    "due_date": "2025-11-19",
+    "usage_amount": null,
+    "usage_unit": null,
+    "line_items": [
+      {
+        "description": "Fiber 500 monthly plan",
+        "amount": "106.24"
+      },
+      {
+        "description": "Modem rental",
+        "amount": "10.15"
+      },
+      {
+        "description": "Regulatory recovery fee",
+        "amount": "17.48"
+      },
+      {
+        "description": "Utility users tax",
+        "amount": "9.37"
+      }
+    ],
+    "total_amount": "143.24",
+    "currency": "USD"
+  }
+}

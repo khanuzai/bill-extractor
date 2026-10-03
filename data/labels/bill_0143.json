@@ -1,0 +1,33 @@
+{
+  "id": "bill_0143",
+  "template": "summary_box",
+  "bill": {
+    "provider": "GarciaNet Broadband",
+    "account_number": "C3571266",
+    "billing_period_start": "2024-08-03",
+    "billing_period_end": "2024-09-04",
+    "due_date": "2024-09-27",
+    "usage_amount": null,
+    "usage_unit": null,
+    "line_items": [
+      {
+        "description": "Home Internet plan",
+        "amount": "113.25"
+      },
+      {
+        "description": "Static IP address",
+        "amount": "14.75"
+      },
+      {
+        "description": "Wi-Fi extender rental",
+        "amount": "14.15"
+      },
+      {
+        "description": "Utility users tax",
+        "amount": "17.06"
+      }
+    ],
+    "total_amount": "159.21",
+    "currency": "USD"
+  }
+}

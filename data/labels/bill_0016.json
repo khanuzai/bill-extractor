@@ -1,0 +1,33 @@
+{
+  "id": "bill_0016",
+  "template": "bordered_table",
+  "bill": {
+    "provider": "Millerview Natural Gas",
+    "account_number": "808 760 3859",
+    "billing_period_start": "2025-02-01",
+    "billing_period_end": "2025-03-03",
+    "due_date": "2025-03-18",
+    "usage_amount": "187.2",
+    "usage_unit": "m³",
+    "line_items": [
+      {
+        "description": "Natural gas usage",
+        "amount": "162.86"
+      },
+      {
+        "description": "Distribution charge",
+        "amount": "16.00"
+      },
+      {
+        "description": "Pipeline safety fee",
+        "amount": "19.36"
+      },
+      {
+        "description": "GST",
+        "amount": "17.84"
+      }
+    ],
+    "total_amount": "216.06",
+    "currency": "CAD"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "bill_0089",
+  "template": "two_page",
+  "bill": {
+    "provider": "Nebraska Telecom",
+    "account_number": "01224179749",
+    "billing_period_start": "2025-10-13",
+    "billing_period_end": "2025-11-14",
+    "due_date": "2025-12-04",
+    "usage_amount": null,
+    "usage_unit": null,
+    "line_items": [
+      {
+        "description": "Unlimited Internet 300",
+        "amount": "58.06"
+      },
+      {
+        "description": "Utility users tax",
+        "amount": "6.97"
+      }
+    ],
+    "total_amount": "65.03",
+    "currency": "USD"
+  }
+}

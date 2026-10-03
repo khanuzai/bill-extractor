@@ -1,0 +1,37 @@
+{
+  "id": "bill_0177",
+  "template": "two_column",
+  "bill": {
+    "provider": "Virginia Gas & Heating",
+    "account_number": "AC-85571-61",
+    "billing_period_start": "2024-03-20",
+    "billing_period_end": "2024-04-16",
+    "due_date": "2024-05-02",
+    "usage_amount": "69.2",
+    "usage_unit": "m³",
+    "line_items": [
+      {
+        "description": "Unpaid balance from last bill",
+        "amount": "214.83"
+      },
+      {
+        "description": "Gas consumption",
+        "amount": "34.60"
+      },
+      {
+        "description": "Fixed monthly charge",
+        "amount": "20.75"
+      },
+      {
+        "description": "Distribution charge",
+        "amount": "6.54"
+      },
+      {
+        "description": "State and local taxes",
+        "amount": "6.19"
+      }
+    ],
+    "total_amount": "282.91",
+    "currency": "USD"
+  }
+}

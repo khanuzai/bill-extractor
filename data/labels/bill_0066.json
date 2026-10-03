@@ -1,0 +1,25 @@
+{
+  "id": "bill_0066",
+  "template": "bordered_table",
+  "bill": {
+    "provider": "Erintown Municipal Water",
+    "account_number": "AC-66609-93",
+    "billing_period_start": "2025-08-06",
+    "billing_period_end": "2025-09-04",
+    "due_date": "2025-09-22",
+    "usage_amount": "41.3",
+    "usage_unit": "m³",
+    "line_items": [
+      {
+        "description": "Water consumption",
+        "amount": "137.12"
+      },
+      {
+        "description": "GST",
+        "amount": "4.11"
+      }
+    ],
+    "total_amount": "141.23",
+    "currency": "CAD"
+  }
+}

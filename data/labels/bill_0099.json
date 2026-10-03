@@ -1,0 +1,33 @@
+{
+  "id": "bill_0099",
+  "template": "two_page",
+  "bill": {
+    "provider": "South Kelly Fiber",
+    "account_number": "V2771812",
+    "billing_period_start": "2026-03-10",
+    "billing_period_end": "2026-04-07",
+    "due_date": "2026-04-29",
+    "usage_amount": null,
+    "usage_unit": null,
+    "line_items": [
+      {
+        "description": "Fiber 500 monthly plan",
+        "amount": "100.21"
+      },
+      {
+        "description": "Wi-Fi extender rental",
+        "amount": "4.51"
+      },
+      {
+        "description": "Regulatory recovery fee",
+        "amount": "10.27"
+      },
+      {
+        "description": "Sales tax",
+        "amount": "8.05"
+      }
+    ],
+    "total_amount": "123.04",
+    "currency": "USD"
+  }
+}

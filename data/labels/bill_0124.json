@@ -1,0 +1,29 @@
+{
+  "id": "bill_0124",
+  "template": "two_page",
+  "bill": {
+    "provider": "Lake Michael Power & Light",
+    "account_number": "AC-95528-93",
+    "billing_period_start": "2025-04-12",
+    "billing_period_end": "2025-05-09",
+    "due_date": "2025-05-30",
+    "usage_amount": "668",
+    "usage_unit": "kWh",
+    "line_items": [
+      {
+        "description": "Energy charge",
+        "amount": "80.16"
+      },
+      {
+        "description": "Delivery charge",
+        "amount": "6.45"
+      },
+      {
+        "description": "GST",
+        "amount": "5.20"
+      }
+    ],
+    "total_amount": "91.81",
+    "currency": "CAD"
+  }
+}

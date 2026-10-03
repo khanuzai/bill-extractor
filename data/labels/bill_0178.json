@@ -1,0 +1,25 @@
+{
+  "id": "bill_0178",
+  "template": "summary_box",
+  "bill": {
+    "provider": "New Johnton Natural Gas",
+    "account_number": "04033810595",
+    "billing_period_start": "2024-01-09",
+    "billing_period_end": "2024-02-09",
+    "due_date": "2024-03-01",
+    "usage_amount": "235",
+    "usage_unit": "m³",
+    "line_items": [
+      {
+        "description": "Natural gas usage",
+        "amount": "183.30"
+      },
+      {
+        "description": "State and local taxes",
+        "amount": "7.33"
+      }
+    ],
+    "total_amount": "190.63",
+    "currency": "USD"
+  }
+}

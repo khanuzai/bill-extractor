@@ -1,0 +1,29 @@
+{
+  "id": "bill_0156",
+  "template": "bordered_table",
+  "bill": {
+    "provider": "Fowlerport Municipal Water",
+    "account_number": "C2097023",
+    "billing_period_start": "2024-01-22",
+    "billing_period_end": "2024-02-18",
+    "due_date": "2024-03-17",
+    "usage_amount": "24.9",
+    "usage_unit": "m³",
+    "line_items": [
+      {
+        "description": "Water usage charge",
+        "amount": "94.62"
+      },
+      {
+        "description": "Billing adjustment",
+        "amount": "-16.09"
+      },
+      {
+        "description": "State and local taxes",
+        "amount": "9.46"
+      }
+    ],
+    "total_amount": "87.99",
+    "currency": "USD"
+  }
+}

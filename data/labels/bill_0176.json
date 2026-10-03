@@ -1,0 +1,29 @@
+{
+  "id": "bill_0176",
+  "template": "bordered_table",
+  "bill": {
+    "provider": "North Carolina Gas & Heating",
+    "account_number": "041 454 5635",
+    "billing_period_start": "2024-12-31",
+    "billing_period_end": "2025-01-29",
+    "due_date": "2025-02-15",
+    "usage_amount": "194.6",
+    "usage_unit": "m³",
+    "line_items": [
+      {
+        "description": "Previous balance",
+        "amount": "136.63"
+      },
+      {
+        "description": "Gas consumption",
+        "amount": "91.46"
+      },
+      {
+        "description": "Utility users tax",
+        "amount": "6.40"
+      }
+    ],
+    "total_amount": "234.49",
+    "currency": "USD"
+  }
+}

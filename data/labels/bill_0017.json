@@ -1,0 +1,25 @@
+{
+  "id": "bill_0017",
+  "template": "two_column",
+  "bill": {
+    "provider": "Pennsylvania Telecom",
+    "account_number": "U7278755",
+    "billing_period_start": "2025-05-17",
+    "billing_period_end": "2025-06-16",
+    "due_date": "2025-07-03",
+    "usage_amount": null,
+    "usage_unit": null,
+    "line_items": [
+      {
+        "description": "Home Internet plan",
+        "amount": "81.62"
+      },
+      {
+        "description": "Sales tax",
+        "amount": "7.35"
+      }
+    ],
+    "total_amount": "88.97",
+    "currency": "USD"
+  }
+}

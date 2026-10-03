@@ -1,0 +1,25 @@
+{
+  "id": "bill_0064",
+  "template": "two_page",
+  "bill": {
+    "provider": "Garrison Gas Company",
+    "account_number": "3247-546-9137",
+    "billing_period_start": "2025-09-12",
+    "billing_period_end": "2025-10-12",
+    "due_date": "2025-10-26",
+    "usage_amount": "155.7",
+    "usage_unit": "m³",
+    "line_items": [
+      {
+        "description": "Gas supply charge",
+        "amount": "207.08"
+      },
+      {
+        "description": "State and local taxes",
+        "amount": "16.57"
+      }
+    ],
+    "total_amount": "223.65",
+    "currency": "USD"
+  }
+}

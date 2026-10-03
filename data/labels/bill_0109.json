@@ -1,0 +1,33 @@
+{
+  "id": "bill_0109",
+  "template": "two_page",
+  "bill": {
+    "provider": "Smith Valley Water District",
+    "account_number": "Z2927524",
+    "billing_period_start": "2025-05-28",
+    "billing_period_end": "2025-06-24",
+    "due_date": "2025-07-18",
+    "usage_amount": "16.6",
+    "usage_unit": "m³",
+    "line_items": [
+      {
+        "description": "Metered water",
+        "amount": "34.20"
+      },
+      {
+        "description": "Sewer service",
+        "amount": "14.24"
+      },
+      {
+        "description": "Autopay discount",
+        "amount": "-3.39"
+      },
+      {
+        "description": "GST/HST",
+        "amount": "3.39"
+      }
+    ],
+    "total_amount": "48.44",
+    "currency": "CAD"
+  }
+}

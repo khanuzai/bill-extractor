@@ -1,0 +1,25 @@
+{
+  "id": "bill_0098",
+  "template": "summary_box",
+  "bill": {
+    "provider": "Missouri Gas & Heating",
+    "account_number": "722 330 6046",
+    "billing_period_start": "2025-11-25",
+    "billing_period_end": "2025-12-26",
+    "due_date": "2026-01-18",
+    "usage_amount": "114.5",
+    "usage_unit": "m³",
+    "line_items": [
+      {
+        "description": "Gas supply charge",
+        "amount": "138.55"
+      },
+      {
+        "description": "State and local taxes",
+        "amount": "13.86"
+      }
+    ],
+    "total_amount": "152.41",
+    "currency": "USD"
+  }
+}

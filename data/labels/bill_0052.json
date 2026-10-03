@@ -1,0 +1,25 @@
+{
+  "id": "bill_0052",
+  "template": "two_column",
+  "bill": {
+    "provider": "Bryantchester Water Authority",
+    "account_number": "04241541520",
+    "billing_period_start": "2024-04-28",
+    "billing_period_end": "2024-05-28",
+    "due_date": "2024-06-23",
+    "usage_amount": "42.9",
+    "usage_unit": "m³",
+    "line_items": [
+      {
+        "description": "Water consumption",
+        "amount": "87.52"
+      },
+      {
+        "description": "State and local taxes",
+        "amount": "2.63"
+      }
+    ],
+    "total_amount": "90.15",
+    "currency": "USD"
+  }
+}

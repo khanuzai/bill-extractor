@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>{{ bill.provider }} bill</title>
+<style>
+  @page { size: Letter; margin: 0.9in;
+          @bottom-center { content: "Page " counter(page) " of " counter(pages);
+                           font-family: Helvetica, Arial, sans-serif; font-size: 8pt; color: #777; } }
+  body { font-family: Helvetica, Arial, sans-serif; font-size: 10.5pt; color: #111; }
+  .logo { font-size: 24pt; font-weight: bold; letter-spacing: -0.5px; color: #b0431f; }
+  .rule { height: 4px; background: #b0431f; margin: 8px 0 28px; }
+  .address { line-height: 1.45; margin-bottom: 40px; }
+  .pay { text-align: center; border-top: 1px solid #bbb; border-bottom: 1px solid #bbb; padding: 26px 0; }
+  .pay .label { font-size: 12pt; color: #555; }
+  .pay .amount { font-size: 30pt; font-weight: bold; margin: 8px 0; }
+  .pay .due { font-size: 11pt; }
+  .message { margin-top: 30px; line-height: 1.5; color: #444; }
+  .page2 { page-break-before: always; }
+  h2 { font-size: 13pt; color: #b0431f; margin: 0 0 12px; }
+  .meta { margin-bottom: 26px; line-height: 1.7; }
+  .meta span { display: inline-block; width: 150px; color: #666; }
+  table { width: 100%; border-collapse: collapse; margin-bottom: 26px; }
+  th { text-align: left; border-bottom: 2px solid #111; padding: 5px 0; font-size: 9pt; text-transform: uppercase; }
+  td { padding: 6px 0; border-bottom: 1px solid #ddd; }
+  .num { text-align: right; }
+  .stub { border: 1px dashed #777; padding: 12px 16px; line-height: 1.6; font-size: 9.5pt; }
+</style>
+</head>
+<body>
+  <div class="logo">{{ bill.provider }}</div>
+  <div class="rule"></div>
+
+  <div class="address">
+    {{ extras.customer_name }}<br>
+    {% for line in extras.address_lines %}{{ line }}<br>{% endfor %}
+  </div>
+
+  <div class="pay">
+    <div class="label">Please Pay This Amount</div>
+    <div class="amount">${{ bill.total_amount | money }}</div>
+    <div class="due">
+      {% if bill.due_date is not none %}by {{ bill.due_date | date_iso }}{% else %}No payment date applies to this bill{% endif %}
+    </div>
+  </div>
+
+  <div class="message">
+    Bill issued {{ extras.statement_date | date_iso }}. A full breakdown of your charges and your
+    account details are on the next page. All amounts are shown in {{ bill.currency }}.
+  </div>
+
+  <div class="page2">
+    <h2>Bill details</h2>
+    <div class="meta">
+      <span>Billing period</span>{{ bill.billing_period_start | date_iso }} to {{ bill.billing_period_end | date_iso }}<br>
+      {% if bill.usage_amount is not none %}
+      <span>Meter</span>{{ extras.meter_number }}<br>
+      <span>Total usage</span>{{ bill.usage_amount | usage }} {{ bill.usage_unit }}<br>
+      {% endif %}
+    </div>
+
+    <table>
+      <tr><th>Item</th><th class="num">{{ bill.currency }}</th></tr>
+      {% for item in bill.line_items %}
+      <tr>
+        <td>{{ item.description }}</td>
+        <td class="num">{{ item.amount | money }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+
+    <div class="stub">
+      <strong>Payment slip</strong> &mdash; return this portion with your payment.<br>
+      Customer: {{ extras.customer_name }}<br>
+      Account number: {{ bill.account_number }}<br>
+      Payable to: {{ bill.provider }}
+    </div>
+  </div>
+</body>
+</html>

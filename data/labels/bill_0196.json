@@ -1,0 +1,29 @@
+{
+  "id": "bill_0196",
+  "template": "bordered_table",
+  "bill": {
+    "provider": "Gross Electric Cooperative",
+    "account_number": "08974325122",
+    "billing_period_start": "2024-08-05",
+    "billing_period_end": "2024-09-05",
+    "due_date": "2024-09-20",
+    "usage_amount": "978",
+    "usage_unit": "kWh",
+    "line_items": [
+      {
+        "description": "Unpaid balance from last bill",
+        "amount": "99.90"
+      },
+      {
+        "description": "Electricity usage",
+        "amount": "224.94"
+      },
+      {
+        "description": "State and local taxes",
+        "amount": "11.25"
+      }
+    ],
+    "total_amount": "336.09",
+    "currency": "USD"
+  }
+}

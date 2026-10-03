@@ -1,0 +1,25 @@
+{
+  "id": "bill_0009",
+  "template": "two_page",
+  "bill": {
+    "provider": "Zacharymouth Water Authority",
+    "account_number": "04332003791",
+    "billing_period_start": "2025-12-16",
+    "billing_period_end": "2026-01-16",
+    "due_date": "2026-02-09",
+    "usage_amount": "30.6",
+    "usage_unit": "m³",
+    "line_items": [
+      {
+        "description": "Metered water",
+        "amount": "124.24"
+      },
+      {
+        "description": "Utility users tax",
+        "amount": "6.21"
+      }
+    ],
+    "total_amount": "130.45",
+    "currency": "USD"
+  }
+}

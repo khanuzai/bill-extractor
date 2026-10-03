@@ -1,0 +1,37 @@
+{
+  "id": "bill_0031",
+  "template": "bordered_table",
+  "bill": {
+    "provider": "Arizona Gas & Heating",
+    "account_number": "AC-96401-65",
+    "billing_period_start": "2025-03-29",
+    "billing_period_end": "2025-04-29",
+    "due_date": "2025-05-17",
+    "usage_amount": "193.8",
+    "usage_unit": "m³",
+    "line_items": [
+      {
+        "description": "Balance forward",
+        "amount": "228.57"
+      },
+      {
+        "description": "Natural gas usage",
+        "amount": "106.59"
+      },
+      {
+        "description": "Fixed monthly charge",
+        "amount": "14.53"
+      },
+      {
+        "description": "Carbon levy",
+        "amount": "15.65"
+      },
+      {
+        "description": "Utility users tax",
+        "amount": "13.68"
+      }
+    ],
+    "total_amount": "379.02",
+    "currency": "USD"
+  }
+}

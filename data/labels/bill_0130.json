@@ -1,0 +1,29 @@
+{
+  "id": "bill_0130",
+  "template": "receipt",
+  "bill": {
+    "provider": "Young Gas Company",
+    "account_number": "H1898471",
+    "billing_period_start": "2024-01-27",
+    "billing_period_end": "2024-02-25",
+    "due_date": "2024-03-20",
+    "usage_amount": "37.2",
+    "usage_unit": "m³",
+    "line_items": [
+      {
+        "description": "Previous balance",
+        "amount": "114.86"
+      },
+      {
+        "description": "Natural gas usage",
+        "amount": "50.96"
+      },
+      {
+        "description": "Sales tax",
+        "amount": "2.04"
+      }
+    ],
+    "total_amount": "167.86",
+    "currency": "USD"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "bill_0106",
+  "template": "bordered_table",
+  "bill": {
+    "provider": "Delaware Gas & Heating",
+    "account_number": "K9758172",
+    "billing_period_start": "2025-05-14",
+    "billing_period_end": "2025-06-13",
+    "due_date": null,
+    "usage_amount": "105.2",
+    "usage_unit": "m³",
+    "line_items": [
+      {
+        "description": "Gas consumption",
+        "amount": "139.92"
+      },
+      {
+        "description": "Pipeline safety fee",
+        "amount": "25.73"
+      },
+      {
+        "description": "State and local taxes",
+        "amount": "9.94"
+      }
+    ],
+    "total_amount": "175.59",
+    "currency": "USD"
+  }
+}

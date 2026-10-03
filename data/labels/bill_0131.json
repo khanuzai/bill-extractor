@@ -1,0 +1,29 @@
+{
+  "id": "bill_0131",
+  "template": "bordered_table",
+  "bill": {
+    "provider": "Montana Energy",
+    "account_number": "AC-41343-27",
+    "billing_period_start": "2026-04-04",
+    "billing_period_end": "2026-05-01",
+    "due_date": "2026-05-28",
+    "usage_amount": "261",
+    "usage_unit": "kWh",
+    "line_items": [
+      {
+        "description": "Energy charge",
+        "amount": "83.52"
+      },
+      {
+        "description": "Transmission charge",
+        "amount": "15.16"
+      },
+      {
+        "description": "State and local taxes",
+        "amount": "12.83"
+      }
+    ],
+    "total_amount": "111.51",
+    "currency": "USD"
+  }
+}

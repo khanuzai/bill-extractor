@@ -1,0 +1,29 @@
+{
+  "id": "bill_0005",
+  "template": "receipt",
+  "bill": {
+    "provider": "Arkansas Telecom",
+    "account_number": "T8050097",
+    "billing_period_start": "2024-07-13",
+    "billing_period_end": "2024-08-12",
+    "due_date": null,
+    "usage_amount": null,
+    "usage_unit": null,
+    "line_items": [
+      {
+        "description": "Fiber 500 monthly plan",
+        "amount": "71.03"
+      },
+      {
+        "description": "Regulatory recovery fee",
+        "amount": "21.13"
+      },
+      {
+        "description": "Utility users tax",
+        "amount": "10.14"
+      }
+    ],
+    "total_amount": "102.30",
+    "currency": "USD"
+  }
+}

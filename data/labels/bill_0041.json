@@ -1,0 +1,25 @@
+{
+  "id": "bill_0041",
+  "template": "bordered_table",
+  "bill": {
+    "provider": "Jimshire Natural Gas",
+    "account_number": "AC-34283-64",
+    "billing_period_start": "2024-04-01",
+    "billing_period_end": "2024-04-28",
+    "due_date": "2024-05-19",
+    "usage_amount": "39.9",
+    "usage_unit": "m³",
+    "line_items": [
+      {
+        "description": "Gas consumption",
+        "amount": "30.32"
+      },
+      {
+        "description": "State and local taxes",
+        "amount": "1.82"
+      }
+    ],
+    "total_amount": "32.14",
+    "currency": "USD"
+  }
+}

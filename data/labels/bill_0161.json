@@ -1,0 +1,25 @@
+{
+  "id": "bill_0161",
+  "template": "bordered_table",
+  "bill": {
+    "provider": "Franklin Valley Water District",
+    "account_number": "G5270171",
+    "billing_period_start": "2025-12-17",
+    "billing_period_end": "2026-01-13",
+    "due_date": "2026-02-04",
+    "usage_amount": "29.2",
+    "usage_unit": "m³",
+    "line_items": [
+      {
+        "description": "Water consumption",
+        "amount": "95.48"
+      },
+      {
+        "description": "State and local taxes",
+        "amount": "5.73"
+      }
+    ],
+    "total_amount": "101.21",
+    "currency": "USD"
+  }
+}

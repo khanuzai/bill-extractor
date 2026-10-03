@@ -1,0 +1,37 @@
+{
+  "id": "bill_0083",
+  "template": "summary_box",
+  "bill": {
+    "provider": "Johnson Valley Water District",
+    "account_number": "2146-566-9380",
+    "billing_period_start": "2024-03-13",
+    "billing_period_end": "2024-04-09",
+    "due_date": "2024-05-04",
+    "usage_amount": "28.5",
+    "usage_unit": "m³",
+    "line_items": [
+      {
+        "description": "Unpaid balance from last bill",
+        "amount": "181.78"
+      },
+      {
+        "description": "Water usage charge",
+        "amount": "127.11"
+      },
+      {
+        "description": "Sewer service",
+        "amount": "22.74"
+      },
+      {
+        "description": "Infrastructure renewal fee",
+        "amount": "20.48"
+      },
+      {
+        "description": "Utility users tax",
+        "amount": "5.11"
+      }
+    ],
+    "total_amount": "357.22",
+    "currency": "USD"
+  }
+}

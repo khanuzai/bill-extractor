@@ -1,0 +1,25 @@
+{
+  "id": "bill_0071",
+  "template": "bordered_table",
+  "bill": {
+    "provider": "Port Travisbury Natural Gas",
+    "account_number": "8386-631-7797",
+    "billing_period_start": "2025-08-27",
+    "billing_period_end": "2025-09-28",
+    "due_date": "2025-10-18",
+    "usage_amount": "248.6",
+    "usage_unit": "m³",
+    "line_items": [
+      {
+        "description": "Gas supply charge",
+        "amount": "305.78"
+      },
+      {
+        "description": "Sales tax",
+        "amount": "30.58"
+      }
+    ],
+    "total_amount": "336.36",
+    "currency": "USD"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "bill_0112",
+  "template": "two_column",
+  "bill": {
+    "provider": "HernandezNet Broadband",
+    "account_number": "908 776 6183",
+    "billing_period_start": "2025-05-07",
+    "billing_period_end": "2025-06-06",
+    "due_date": "2025-06-23",
+    "usage_amount": null,
+    "usage_unit": null,
+    "line_items": [
+      {
+        "description": "Unpaid balance from last bill",
+        "amount": "94.11"
+      },
+      {
+        "description": "Unlimited Internet 300",
+        "amount": "48.69"
+      },
+      {
+        "description": "Regulatory recovery fee",
+        "amount": "3.92"
+      },
+      {
+        "description": "Modem rental",
+        "amount": "5.48"
+      },
+      {
+        "description": "Sales tax",
+        "amount": "1.74"
+      }
+    ],
+    "total_amount": "153.94",
+    "currency": "USD"
+  }
+}

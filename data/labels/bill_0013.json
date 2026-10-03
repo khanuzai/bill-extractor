@@ -1,0 +1,37 @@
+{
+  "id": "bill_0013",
+  "template": "summary_box",
+  "bill": {
+    "provider": "WestNet Broadband",
+    "account_number": "4363-495-7885",
+    "billing_period_start": "2024-06-14",
+    "billing_period_end": "2024-07-12",
+    "due_date": "2024-07-31",
+    "usage_amount": null,
+    "usage_unit": null,
+    "line_items": [
+      {
+        "description": "Unlimited Internet 300",
+        "amount": "67.87"
+      },
+      {
+        "description": "Regulatory recovery fee",
+        "amount": "2.91"
+      },
+      {
+        "description": "Wi-Fi extender rental",
+        "amount": "23.66"
+      },
+      {
+        "description": "Service interruption credit",
+        "amount": "-26.44"
+      },
+      {
+        "description": "GST",
+        "amount": "9.44"
+      }
+    ],
+    "total_amount": "77.44",
+    "currency": "CAD"
+  }
+}

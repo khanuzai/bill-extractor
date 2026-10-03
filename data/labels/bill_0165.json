@@ -1,0 +1,33 @@
+{
+  "id": "bill_0165",
+  "template": "receipt",
+  "bill": {
+    "provider": "Rogers Electric Cooperative",
+    "account_number": "AC-53566-90",
+    "billing_period_start": "2025-03-11",
+    "billing_period_end": "2025-04-12",
+    "due_date": "2025-05-08",
+    "usage_amount": "275",
+    "usage_unit": "kWh",
+    "line_items": [
+      {
+        "description": "Energy charge",
+        "amount": "52.25"
+      },
+      {
+        "description": "Delivery charge",
+        "amount": "11.14"
+      },
+      {
+        "description": "Transmission charge",
+        "amount": "23.89"
+      },
+      {
+        "description": "Sales tax",
+        "amount": "9.60"
+      }
+    ],
+    "total_amount": "96.88",
+    "currency": "USD"
+  }
+}

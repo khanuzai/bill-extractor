@@ -1,0 +1,29 @@
+{
+  "id": "bill_0077",
+  "template": "two_column",
+  "bill": {
+    "provider": "ArmstrongNet Broadband",
+    "account_number": "X8143536",
+    "billing_period_start": "2025-08-24",
+    "billing_period_end": "2025-09-23",
+    "due_date": "2025-10-09",
+    "usage_amount": null,
+    "usage_unit": null,
+    "line_items": [
+      {
+        "description": "Home Internet plan",
+        "amount": "51.16"
+      },
+      {
+        "description": "Regulatory recovery fee",
+        "amount": "8.40"
+      },
+      {
+        "description": "Sales tax",
+        "amount": "7.74"
+      }
+    ],
+    "total_amount": "67.30",
+    "currency": "USD"
+  }
+}

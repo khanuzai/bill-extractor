@@ -1,0 +1,33 @@
+{
+  "id": "bill_0147",
+  "template": "two_column",
+  "bill": {
+    "provider": "Campbell Gas Company",
+    "account_number": "U9141612",
+    "billing_period_start": "2025-01-21",
+    "billing_period_end": "2025-02-21",
+    "due_date": null,
+    "usage_amount": "210.3",
+    "usage_unit": "m³",
+    "line_items": [
+      {
+        "description": "Natural gas usage",
+        "amount": "260.77"
+      },
+      {
+        "description": "Fixed monthly charge",
+        "amount": "4.96"
+      },
+      {
+        "description": "Distribution charge",
+        "amount": "22.25"
+      },
+      {
+        "description": "Sales tax",
+        "amount": "37.44"
+      }
+    ],
+    "total_amount": "325.42",
+    "currency": "USD"
+  }
+}

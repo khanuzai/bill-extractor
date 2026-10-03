@@ -1,0 +1,33 @@
+{
+  "id": "bill_0063",
+  "template": "summary_box",
+  "bill": {
+    "provider": "Louisiana Gas & Heating",
+    "account_number": "P7099861",
+    "billing_period_start": "2025-11-20",
+    "billing_period_end": "2025-12-18",
+    "due_date": "2026-01-03",
+    "usage_amount": "98.9",
+    "usage_unit": "m³",
+    "line_items": [
+      {
+        "description": "Unpaid balance from last bill",
+        "amount": "60.45"
+      },
+      {
+        "description": "Gas supply charge",
+        "amount": "60.33"
+      },
+      {
+        "description": "Distribution charge",
+        "amount": "20.33"
+      },
+      {
+        "description": "Sales tax",
+        "amount": "5.65"
+      }
+    ],
+    "total_amount": "146.76",
+    "currency": "USD"
+  }
+}

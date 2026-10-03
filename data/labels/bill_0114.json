@@ -1,0 +1,29 @@
+{
+  "id": "bill_0114",
+  "template": "two_page",
+  "bill": {
+    "provider": "Maryborough Natural Gas",
+    "account_number": "05114262582",
+    "billing_period_start": "2024-02-28",
+    "billing_period_end": "2024-03-26",
+    "due_date": "2024-04-10",
+    "usage_amount": "110.3",
+    "usage_unit": "m³",
+    "line_items": [
+      {
+        "description": "Gas supply charge",
+        "amount": "58.46"
+      },
+      {
+        "description": "Carbon levy",
+        "amount": "18.96"
+      },
+      {
+        "description": "GST",
+        "amount": "9.29"
+      }
+    ],
+    "total_amount": "86.71",
+    "currency": "CAD"
+  }
+}

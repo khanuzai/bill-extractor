@@ -1,0 +1,25 @@
+{
+  "id": "bill_0036",
+  "template": "bordered_table",
+  "bill": {
+    "provider": "SalasNet Broadband",
+    "account_number": "2838-578-6527",
+    "billing_period_start": "2025-09-12",
+    "billing_period_end": "2025-10-09",
+    "due_date": "2025-11-01",
+    "usage_amount": null,
+    "usage_unit": null,
+    "line_items": [
+      {
+        "description": "Fiber 500 monthly plan",
+        "amount": "48.99"
+      },
+      {
+        "description": "Utility users tax",
+        "amount": "4.41"
+      }
+    ],
+    "total_amount": "53.40",
+    "currency": "USD"
+  }
+}

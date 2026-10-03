@@ -1,0 +1,29 @@
+{
+  "id": "bill_0180",
+  "template": "receipt",
+  "bill": {
+    "provider": "New Kennethhaven Natural Gas",
+    "account_number": "00303662543",
+    "billing_period_start": "2025-05-27",
+    "billing_period_end": "2025-06-26",
+    "due_date": "2025-07-23",
+    "usage_amount": "155.8",
+    "usage_unit": "m³",
+    "line_items": [
+      {
+        "description": "Unpaid balance from last bill",
+        "amount": "99.64"
+      },
+      {
+        "description": "Gas supply charge",
+        "amount": "165.15"
+      },
+      {
+        "description": "State and local taxes",
+        "amount": "6.61"
+      }
+    ],
+    "total_amount": "271.40",
+    "currency": "USD"
+  }
+}

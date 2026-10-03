@@ -1,0 +1,33 @@
+{
+  "id": "bill_0170",
+  "template": "receipt",
+  "bill": {
+    "provider": "Evans Electric Cooperative",
+    "account_number": "06034084872",
+    "billing_period_start": "2024-07-07",
+    "billing_period_end": "2024-08-08",
+    "due_date": "2024-09-05",
+    "usage_amount": "518",
+    "usage_unit": "kWh",
+    "line_items": [
+      {
+        "description": "Unpaid balance from last bill",
+        "amount": "79.57"
+      },
+      {
+        "description": "Electricity supply",
+        "amount": "56.98"
+      },
+      {
+        "description": "Renewable energy rider",
+        "amount": "7.53"
+      },
+      {
+        "description": "GST",
+        "amount": "2.58"
+      }
+    ],
+    "total_amount": "146.66",
+    "currency": "CAD"
+  }
+}

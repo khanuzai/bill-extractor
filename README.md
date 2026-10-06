@@ -4,9 +4,9 @@ A pipeline that extracts structured data from utility bill PDFs using an LLM, th
 grades that extraction against hand-written parsers on a labeled test set. Later it
 adds RAG question-answering over the bills.
 
-**Status:** the schema, infrastructure, synthetic bill generator, and baseline regex
-parser are in place; the extraction, evaluation, storage, and API are not implemented
-yet.
+**Status:** the schema, infrastructure, synthetic bill generator, baseline regex
+parser, and LLM extraction are in place; the evaluation, storage, and API are not
+implemented yet.
 
 ## Setup
 
@@ -40,6 +40,16 @@ template it was rendered with, and the `UtilityBill` the PDF was rendered from. 
 `--split`, `data/labels/dev_ids.json` and `data/labels/test_ids.json` hold a 50/50 id
 split balanced across templates. The same seed always produces identical files; each
 run replaces the previous run's `bill_*` files.
+
+## Extracting a bill by hand
+
+```sh
+python -m src.extraction.cli data/generated/<id>.pdf
+```
+
+Prints an `ExtractionResult` as JSON: the extracted bill (or `null` with an `error`),
+token usage, and latency. Needs `ANTHROPIC_API_KEY` in `.env`. Use ids from
+`data/labels/dev_ids.json` only; the CLI refuses test-set bills.
 
 ## Tests
 

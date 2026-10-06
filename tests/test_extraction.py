@@ -1,20 +1,23 @@
 """Extraction tests. The API client is always a mock: no test makes a real API call."""
 
+import inspect
 import json
 from pathlib import Path
 from types import SimpleNamespace
 from typing import Any
-from unittest.mock import MagicMock
+from unittest.mock import MagicMock, create_autospec
 
 import anthropic
 import httpx2
 import pytest
+from anthropic.resources.messages import Messages
 
 from src.extraction import cli
 from src.extraction.client import (
     BACKOFF_SECONDS,
     MAX_ATTEMPTS,
     ExtractionConfig,
+    _request_params,
     load_config,
     make_client,
     request_extraction,
@@ -40,8 +43,13 @@ def _message(text: str, stop_reason: str = "end_turn") -> SimpleNamespace:
 
 
 def _client(*outcomes: Any) -> MagicMock:
-    """A mock client whose messages.create returns or raises each outcome in turn."""
+    """A mock client whose messages.create returns or raises each outcome in turn.
+
+    `messages` is autospecced from the installed SDK, so calling create() with an
+    argument the SDK does not accept raises TypeError, exactly as the real client does.
+    """
     client = MagicMock()
+    client.messages = create_autospec(Messages, instance=True)
     client.messages.create.side_effect = list(outcomes)
     return client
 
@@ -114,7 +122,7 @@ def test_request_uses_structured_output_and_returns_usage(bill: UtilityBill) -> 
     assert kwargs["messages"] == [{"role": "user", "content": prompt.user_message}]
     assert kwargs["output_config"]["format"] == {"type": "json_schema", "schema": prompt.output_schema}
     assert kwargs["output_config"]["effort"] == "low"
-    assert "temperature" not in kwargs
+    assert "extra_body" not in kwargs
     assert "tool_choice" not in kwargs
 
     assert response.payload == json.loads(bill.model_dump_json())
@@ -123,12 +131,47 @@ def test_request_uses_structured_output_and_returns_usage(bill: UtilityBill) -> 
     assert response.usage.latency_seconds >= 0
 
 
-def test_temperature_is_sent_only_when_configured() -> None:
+def test_mock_rejects_arguments_the_sdk_does_not_accept() -> None:
     client = _client(_message("{}"))
-    request_extraction(client, build_prompt("text"), ExtractionConfig(model="claude-haiku-4-5", effort=None, temperature=0.0))
+    with pytest.raises(TypeError, match="temperature"):
+        client.messages.create(model="claude-haiku-4-5", max_tokens=16, messages=[], temperature=0.0)
+
+
+@pytest.mark.parametrize(
+    "config",
+    [
+        ExtractionConfig(),
+        ExtractionConfig(model="claude-haiku-4-5", effort=None, temperature=0.0),
+        ExtractionConfig(model="claude-opus-5-5", effort="high", temperature=None),
+    ],
+)
+def test_every_request_parameter_exists_in_the_installed_sdk(config: ExtractionConfig) -> None:
+    accepted = set(inspect.signature(Messages.create).parameters)
+    assert set(_request_params(build_prompt("text"), config)) <= accepted
+
+
+def test_temperature_goes_in_extra_body_for_models_that_accept_it() -> None:
+    client = _client(_message("{}"))
+    config = ExtractionConfig(model="claude-haiku-4-5", effort=None, temperature=0.0)
+
+    request_extraction(client, build_prompt("text"), config)
+
     kwargs = client.messages.create.call_args.kwargs
-    assert kwargs["temperature"] == 0.0
+    assert kwargs["extra_body"] == {"temperature": 0.0}
+    assert "temperature" not in kwargs
     assert "effort" not in kwargs["output_config"]
+
+
+def test_temperature_is_ignored_with_a_warning_for_models_that_reject_it() -> None:
+    client = _client(_message("{}"))
+    config = ExtractionConfig(model="claude-opus-5-5", temperature=0.0)
+
+    with pytest.warns(UserWarning, match="EXTRACTION_TEMPERATURE=0.0 ignored.*claude-opus-5-5"):
+        response = request_extraction(client, build_prompt("text"), config)
+
+    assert response.payload == {}
+    kwargs = client.messages.create.call_args.kwargs
+    assert "extra_body" not in kwargs and "temperature" not in kwargs
 
 
 @pytest.mark.parametrize(

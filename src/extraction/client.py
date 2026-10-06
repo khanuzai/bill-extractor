@@ -3,6 +3,7 @@
 import json
 import os
 import time
+import warnings
 from collections.abc import Callable
 from dataclasses import dataclass
 from typing import Any
@@ -18,6 +19,16 @@ DEFAULT_MAX_TOKENS = 16000
 
 MAX_ATTEMPTS = 3
 BACKOFF_SECONDS = 2.0
+
+# Models that still accept a sampling temperature. Every newer model rejects the
+# parameter with a 400, so for any model not listed here it is left out.
+TEMPERATURE_MODEL_PREFIXES: tuple[str, ...] = (
+    "claude-haiku-4-5",
+    "claude-sonnet-4-5",
+    "claude-sonnet-4-6",
+    "claude-opus-4-5",
+    "claude-opus-4-6",
+)
 
 # Failures worth retrying: rate limits, timeouts, dropped connections, 5xx/overloaded.
 TRANSIENT_ERRORS: tuple[type[anthropic.APIError], ...] = (
@@ -62,7 +73,8 @@ def load_config() -> ExtractionConfig:
     """Read model settings from the environment (and .env), falling back to defaults.
 
     EXTRACTION_EFFORT and EXTRACTION_TEMPERATURE set to an empty string mean "do not
-    send this parameter".
+    send this parameter". A temperature is only sent to models that accept one; for
+    other models it is ignored with a warning.
     """
     load_dotenv()
     effort = os.environ.get("EXTRACTION_EFFORT", DEFAULT_EFFORT)
@@ -84,6 +96,11 @@ def make_client() -> anthropic.Anthropic:
     return anthropic.Anthropic(api_key=api_key, max_retries=0)
 
 
+def supports_temperature(model: str) -> bool:
+    """Whether the API accepts a `temperature` for this model."""
+    return model.startswith(TEMPERATURE_MODEL_PREFIXES)
+
+
 def _request_params(prompt: ExtractionPrompt, config: ExtractionConfig) -> dict[str, Any]:
     output_config: dict[str, Any] = {"format": {"type": "json_schema", "schema": prompt.output_schema}}
     if config.effort is not None:
@@ -96,7 +113,15 @@ def _request_params(prompt: ExtractionPrompt, config: ExtractionConfig) -> dict[
         "output_config": output_config,
     }
     if config.temperature is not None:
-        params["temperature"] = config.temperature
+        if supports_temperature(config.model):
+            # anthropic 1.x has no `temperature` argument; the API still takes the field.
+            params["extra_body"] = {"temperature": config.temperature}
+        else:
+            warnings.warn(
+                f"EXTRACTION_TEMPERATURE={config.temperature} ignored: model {config.model!r} "
+                "does not accept a sampling temperature. Use EXTRACTION_EFFORT to control it instead.",
+                stacklevel=2,
+            )
     return params
 
 

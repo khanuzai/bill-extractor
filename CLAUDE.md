@@ -38,12 +38,18 @@ src/
                      on failed checks; never raises on bad output
     cli.py           python -m src.extraction.cli <dev-set pdf>
   evaluation/    Grades extraction output against labels and parsers
+    score.py         Scoring rules: per-field correct/missing/wrong, item-level line items
+    cost.py          Token prices -> USD
+    records.py       What a run records per bill
+    run.py           python -m src.evaluation.run [--limit N]; test set only, LLM cache
+    report.py        Markdown results tables
   storage/       PostgreSQL / pgvector persistence
   api/           FastAPI app
 data/
   raw/           Source bill PDFs
   generated/     Output of the generator
-  labels/        Ground-truth labels for the test set
+  labels/        Ground-truth labels, plus dev_ids.json / test_ids.json
+  results/       Evaluation output (committed): results.json/.md, llm_cache.json
 tests/           Unit tests
 docker-compose.yml   pgvector/pgvector:pg16 with a named volume
 .env.example         Template for the required env vars
@@ -76,6 +82,8 @@ label.
   Never read, run on, or inspect test-set bills (`data/labels/test_ids.json`): not
   their PDFs, their extracted text, their labels, or the model's output for them.
 - Tests never call the real Anthropic API; mock the client.
+- The test set is scored once, by `src.evaluation.run`. Never tune a prompt, check or
+  parser on its results.
 - Dates are `date` and money/quantities are `Decimal` — never strings or floats.
 - Only add a dependency to `requirements.txt` when code actually uses it.
 - Never read, print, or echo the contents of `.env`. Read config through `os.environ` only.

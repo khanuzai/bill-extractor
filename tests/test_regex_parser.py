@@ -5,11 +5,10 @@ import pytest
 
 from src.generator.data import generate_bill, generate_extras, make_faker
 from src.generator.render import TEMPLATES, render_pdf
-from src.parsers.regex_parser import ParseResult, parse_bill_text, parse_date, parse_money
+from src.parsers.regex_parser import TARGET_TEMPLATES, ParseResult, parse_bill_text, parse_date, parse_money
 from src.parsers.text import extract_text
 from src.schema import UtilityBill
 
-TARGET_TEMPLATES = ("bordered_table", "two_column")
 UNSEEN_TEMPLATES = ("summary_box", "two_page", "receipt")
 BILLS_PER_TEMPLATE = 40
 BILL_FIELDS = tuple(UtilityBill.model_fields)

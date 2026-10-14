@@ -19,6 +19,12 @@ the docstrings in `schema.py` appear in the generated JSON schema, which then ge
 ## 2026-10-03 geberate data first and then render PDF from it
 the labels are correct by construction. reading answers back out of a generated PDF would bake the same errors youre trying to measure into the ground truth. 
 
+## 2026-10-13 
+text compared case and whitespace-insensitive; dates and numbers exact
+three outcomes per field: correct, missing, wrong — because loud failure and silent failure are different problems
+None matching None counts as correct; a value invented where the label is None counts as wrong
+line items scored all-or-nothing in the main table, with a separate item-level breakdown
+
 
 
 ## Known limitations

@@ -14,6 +14,9 @@ from pydantic import BaseModel, computed_field
 
 from src.schema import LineItem
 
+# The only generator templates these rules were written for; see README.md.
+TARGET_TEMPLATES: tuple[str, ...] = ("bordered_table", "two_column")
+
 # The gap between a label and the value printed beside it on the same line.
 GAP = r"[ \t]{2,}"
 

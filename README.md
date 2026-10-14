@@ -5,8 +5,8 @@ grades that extraction against hand-written parsers on a labeled test set. Later
 adds RAG question-answering over the bills.
 
 **Status:** the schema, infrastructure, synthetic bill generator, baseline regex
-parser, and LLM extraction are in place; the evaluation, storage, and API are not
-implemented yet.
+parser, LLM extraction with validation retries, and the evaluation harness are in
+place; storage and the API are not implemented yet.
 
 ## Setup
 
@@ -52,6 +52,18 @@ Prints an `ExtractionResult` as JSON on stdout: the extracted bill (or `null` wi
 usage and latency summed over all attempts. A readable summary of the validation
 report and retry count goes to stderr. Needs `ANTHROPIC_API_KEY` in `.env`. Use ids from
 `data/labels/dev_ids.json` only; the CLI refuses test-set bills.
+
+## Evaluating on the test set
+
+```sh
+python -m src.evaluation.run --limit 5   # smoke run -> data/results/smoke_results.{json,md}
+python -m src.evaluation.run             # full run  -> data/results/results.{json,md}
+```
+
+Scores the regex baseline and the LLM pipeline on every bill in
+`data/labels/test_ids.json` and prints the API cost. LLM results are cached by bill id
+in `data/results/llm_cache.json`, so the full run does not re-bill the bills the smoke
+run already extracted. The test set is scored once; don't tune anything on it.
 
 ## Tests
 

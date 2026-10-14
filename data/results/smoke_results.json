@@ -1,0 +1,447 @@
+{
+  "model": "claude-haiku-4-5",
+  "limit": 5,
+  "bills": [
+    {
+      "id": "bill_0001",
+      "template": "bordered_table",
+      "regex": {
+        "score": {
+          "fields": {
+            "provider": "correct",
+            "account_number": "correct",
+            "billing_period_start": "correct",
+            "billing_period_end": "correct",
+            "due_date": "correct",
+            "usage_amount": "correct",
+            "usage_unit": "correct",
+            "line_items": "correct",
+            "total_amount": "correct",
+            "currency": "correct"
+          },
+          "items": {
+            "label_items": 3,
+            "predicted_items": 3,
+            "recovered": 3,
+            "wrong_amount": 0,
+            "missed": 0,
+            "invented": 0
+          },
+          "all_correct": true
+        },
+        "found": [
+          "provider",
+          "account_number",
+          "billing_period_start",
+          "billing_period_end",
+          "due_date",
+          "usage_amount",
+          "usage_unit",
+          "line_items",
+          "total_amount",
+          "currency"
+        ],
+        "latency_seconds": 0.006722291000187397
+      },
+      "llm": {
+        "score": {
+          "fields": {
+            "provider": "correct",
+            "account_number": "correct",
+            "billing_period_start": "correct",
+            "billing_period_end": "correct",
+            "due_date": "correct",
+            "usage_amount": "correct",
+            "usage_unit": "correct",
+            "line_items": "correct",
+            "total_amount": "correct",
+            "currency": "correct"
+          },
+          "items": {
+            "label_items": 3,
+            "predicted_items": 3,
+            "recovered": 3,
+            "wrong_amount": 0,
+            "missed": 0,
+            "invented": 0
+          },
+          "all_correct": true
+        },
+        "error": null,
+        "validation": {
+          "passed": [
+            "line_items_sum",
+            "billing_period_order",
+            "due_date_window",
+            "total_positive",
+            "line_items_present",
+            "amount_precision"
+          ],
+          "failures": {},
+          "failed": [],
+          "all_passed": true
+        },
+        "retries": 0,
+        "attempts": [
+          {
+            "failed_checks": [],
+            "error": null
+          }
+        ],
+        "input_tokens": 2018,
+        "output_tokens": 161,
+        "latency_seconds": 2.878372750012204,
+        "model": "claude-haiku-4-5-20251001",
+        "cost_usd": "0.002823",
+        "cached": false
+      }
+    },
+    {
+      "id": "bill_0002",
+      "template": "two_column",
+      "regex": {
+        "score": {
+          "fields": {
+            "provider": "correct",
+            "account_number": "correct",
+            "billing_period_start": "correct",
+            "billing_period_end": "correct",
+            "due_date": "correct",
+            "usage_amount": "correct",
+            "usage_unit": "correct",
+            "line_items": "correct",
+            "total_amount": "correct",
+            "currency": "correct"
+          },
+          "items": {
+            "label_items": 3,
+            "predicted_items": 3,
+            "recovered": 3,
+            "wrong_amount": 0,
+            "missed": 0,
+            "invented": 0
+          },
+          "all_correct": true
+        },
+        "found": [
+          "provider",
+          "account_number",
+          "billing_period_start",
+          "billing_period_end",
+          "due_date",
+          "usage_amount",
+          "usage_unit",
+          "line_items",
+          "total_amount",
+          "currency"
+        ],
+        "latency_seconds": 0.009354125009849668
+      },
+      "llm": {
+        "score": {
+          "fields": {
+            "provider": "correct",
+            "account_number": "correct",
+            "billing_period_start": "correct",
+            "billing_period_end": "correct",
+            "due_date": "correct",
+            "usage_amount": "correct",
+            "usage_unit": "correct",
+            "line_items": "correct",
+            "total_amount": "correct",
+            "currency": "correct"
+          },
+          "items": {
+            "label_items": 3,
+            "predicted_items": 3,
+            "recovered": 3,
+            "wrong_amount": 0,
+            "missed": 0,
+            "invented": 0
+          },
+          "all_correct": true
+        },
+        "error": null,
+        "validation": {
+          "passed": [
+            "line_items_sum",
+            "billing_period_order",
+            "due_date_window",
+            "total_positive",
+            "line_items_present",
+            "amount_precision"
+          ],
+          "failures": {},
+          "failed": [],
+          "all_passed": true
+        },
+        "retries": 0,
+        "attempts": [
+          {
+            "failed_checks": [],
+            "error": null
+          }
+        ],
+        "input_tokens": 2016,
+        "output_tokens": 136,
+        "latency_seconds": 2.610115041024983,
+        "model": "claude-haiku-4-5-20251001",
+        "cost_usd": "0.002696",
+        "cached": false
+      }
+    },
+    {
+      "id": "bill_0004",
+      "template": "two_page",
+      "regex": {
+        "score": {
+          "fields": {
+            "provider": "missing",
+            "account_number": "missing",
+            "billing_period_start": "missing",
+            "billing_period_end": "missing",
+            "due_date": "missing",
+            "usage_amount": "missing",
+            "usage_unit": "missing",
+            "line_items": "missing",
+            "total_amount": "missing",
+            "currency": "missing"
+          },
+          "items": {
+            "label_items": 5,
+            "predicted_items": 0,
+            "recovered": 0,
+            "wrong_amount": 0,
+            "missed": 5,
+            "invented": 0
+          },
+          "all_correct": false
+        },
+        "found": [],
+        "latency_seconds": 0.007581792073324323
+      },
+      "llm": {
+        "score": {
+          "fields": {
+            "provider": "correct",
+            "account_number": "correct",
+            "billing_period_start": "correct",
+            "billing_period_end": "correct",
+            "due_date": "correct",
+            "usage_amount": "correct",
+            "usage_unit": "correct",
+            "line_items": "correct",
+            "total_amount": "correct",
+            "currency": "correct"
+          },
+          "items": {
+            "label_items": 5,
+            "predicted_items": 5,
+            "recovered": 5,
+            "wrong_amount": 0,
+            "missed": 0,
+            "invented": 0
+          },
+          "all_correct": true
+        },
+        "error": null,
+        "validation": {
+          "passed": [
+            "line_items_sum",
+            "billing_period_order",
+            "due_date_window",
+            "total_positive",
+            "line_items_present",
+            "amount_precision"
+          ],
+          "failures": {},
+          "failed": [],
+          "all_passed": true
+        },
+        "retries": 0,
+        "attempts": [
+          {
+            "failed_checks": [],
+            "error": null
+          }
+        ],
+        "input_tokens": 2064,
+        "output_tokens": 193,
+        "latency_seconds": 2.5333919171243906,
+        "model": "claude-haiku-4-5-20251001",
+        "cost_usd": "0.003029",
+        "cached": false
+      }
+    },
+    {
+      "id": "bill_0009",
+      "template": "two_page",
+      "regex": {
+        "score": {
+          "fields": {
+            "provider": "missing",
+            "account_number": "missing",
+            "billing_period_start": "missing",
+            "billing_period_end": "missing",
+            "due_date": "missing",
+            "usage_amount": "missing",
+            "usage_unit": "missing",
+            "line_items": "missing",
+            "total_amount": "missing",
+            "currency": "missing"
+          },
+          "items": {
+            "label_items": 2,
+            "predicted_items": 0,
+            "recovered": 0,
+            "wrong_amount": 0,
+            "missed": 2,
+            "invented": 0
+          },
+          "all_correct": false
+        },
+        "found": [],
+        "latency_seconds": 0.006612125085666776
+      },
+      "llm": {
+        "score": {
+          "fields": {
+            "provider": "correct",
+            "account_number": "correct",
+            "billing_period_start": "correct",
+            "billing_period_end": "correct",
+            "due_date": "correct",
+            "usage_amount": "correct",
+            "usage_unit": "correct",
+            "line_items": "correct",
+            "total_amount": "correct",
+            "currency": "correct"
+          },
+          "items": {
+            "label_items": 2,
+            "predicted_items": 2,
+            "recovered": 2,
+            "wrong_amount": 0,
+            "missed": 0,
+            "invented": 0
+          },
+          "all_correct": true
+        },
+        "error": null,
+        "validation": {
+          "passed": [
+            "line_items_sum",
+            "billing_period_order",
+            "due_date_window",
+            "total_positive",
+            "line_items_present",
+            "amount_precision"
+          ],
+          "failures": {},
+          "failed": [],
+          "all_passed": true
+        },
+        "retries": 0,
+        "attempts": [
+          {
+            "failed_checks": [],
+            "error": null
+          }
+        ],
+        "input_tokens": 2032,
+        "output_tokens": 145,
+        "latency_seconds": 2.2175199170596898,
+        "model": "claude-haiku-4-5-20251001",
+        "cost_usd": "0.002757",
+        "cached": false
+      }
+    },
+    {
+      "id": "bill_0010",
+      "template": "receipt",
+      "regex": {
+        "score": {
+          "fields": {
+            "provider": "missing",
+            "account_number": "missing",
+            "billing_period_start": "missing",
+            "billing_period_end": "missing",
+            "due_date": "missing",
+            "usage_amount": "correct",
+            "usage_unit": "correct",
+            "line_items": "missing",
+            "total_amount": "missing",
+            "currency": "missing"
+          },
+          "items": {
+            "label_items": 4,
+            "predicted_items": 0,
+            "recovered": 0,
+            "wrong_amount": 0,
+            "missed": 4,
+            "invented": 0
+          },
+          "all_correct": false
+        },
+        "found": [],
+        "latency_seconds": 0.005930999992415309
+      },
+      "llm": {
+        "score": {
+          "fields": {
+            "provider": "correct",
+            "account_number": "correct",
+            "billing_period_start": "correct",
+            "billing_period_end": "correct",
+            "due_date": "correct",
+            "usage_amount": "correct",
+            "usage_unit": "correct",
+            "line_items": "correct",
+            "total_amount": "correct",
+            "currency": "correct"
+          },
+          "items": {
+            "label_items": 4,
+            "predicted_items": 4,
+            "recovered": 4,
+            "wrong_amount": 0,
+            "missed": 0,
+            "invented": 0
+          },
+          "all_correct": true
+        },
+        "error": null,
+        "validation": {
+          "passed": [
+            "line_items_sum",
+            "billing_period_order",
+            "due_date_window",
+            "total_positive",
+            "line_items_present",
+            "amount_precision"
+          ],
+          "failures": {},
+          "failed": [],
+          "all_passed": true
+        },
+        "retries": 0,
+        "attempts": [
+          {
+            "failed_checks": [],
+            "error": null
+          }
+        ],
+        "input_tokens": 1965,
+        "output_tokens": 185,
+        "latency_seconds": 2.422673458000645,
+        "model": "claude-haiku-4-5-20251001",
+        "cost_usd": "0.00289",
+        "cached": false
+      }
+    }
+  ],
+  "new_api_calls": 5,
+  "cost_this_run_usd": "0.014195",
+  "cost_total_usd": "0.014195",
+  "unpriced_bills": 0
+}

@@ -1,0 +1,5485 @@
+{
+  "model": "claude-haiku-4-5",
+  "results": {
+    "bill_0001": {
+      "bill": {
+        "provider": "Robinsonshire Power & Light",
+        "account_number": "06542351161",
+        "billing_period_start": "2024-09-07",
+        "billing_period_end": "2024-10-05",
+        "due_date": "2024-10-21",
+        "usage_amount": "328",
+        "usage_unit": "kWh",
+        "line_items": [
+          {
+            "description": "Previous balance",
+            "amount": "88.23"
+          },
+          {
+            "description": "Electricity usage",
+            "amount": "95.12"
+          },
+          {
+            "description": "Utility users tax",
+            "amount": "2.85"
+          }
+        ],
+        "total_amount": "186.20",
+        "currency": "USD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 2018,
+      "output_tokens": 161,
+      "latency_seconds": 2.878372750012204,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\": \"Robinsonshire Power & Light\", \"account_number\": \"06542351161\", \"billing_period_start\": \"2024-09-07\", \"billing_period_end\": \"2024-10-05\", \"due_date\": \"2024-10-21\", \"usage_amount\": \"328\", \"usage_unit\": \"kWh\", \"line_items\": [{\"description\": \"Previous balance\", \"amount\": \"88.23\"}, {\"description\": \"Electricity usage\", \"amount\": \"95.12\"}, {\"description\": \"Utility users tax\", \"amount\": \"2.85\"}], \"total_amount\": \"186.20\", \"currency\": \"USD\"}"
+    },
+    "bill_0002": {
+      "bill": {
+        "provider": "Perez Valley Water District",
+        "account_number": "AC-64139-53",
+        "billing_period_start": "2025-09-14",
+        "billing_period_end": "2025-10-11",
+        "due_date": "2025-11-03",
+        "usage_amount": "35.3",
+        "usage_unit": "m³",
+        "line_items": [
+          {
+            "description": "Water consumption",
+            "amount": "107.67"
+          },
+          {
+            "description": "Infrastructure renewal fee",
+            "amount": "13.55"
+          },
+          {
+            "description": "GST/HST",
+            "amount": "13.33"
+          }
+        ],
+        "total_amount": "134.55",
+        "currency": "CAD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 2016,
+      "output_tokens": 136,
+      "latency_seconds": 2.610115041024983,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\":\"Perez Valley Water District\",\"account_number\":\"AC-64139-53\",\"billing_period_start\":\"2025-09-14\",\"billing_period_end\":\"2025-10-11\",\"due_date\":\"2025-11-03\",\"usage_amount\":\"35.3\",\"usage_unit\":\"m³\",\"line_items\":[{\"description\":\"Water consumption\",\"amount\":\"107.67\"},{\"description\":\"Infrastructure renewal fee\",\"amount\":\"13.55\"},{\"description\":\"GST/HST\",\"amount\":\"13.33\"}],\"total_amount\":\"134.55\",\"currency\":\"CAD\"}"
+    },
+    "bill_0004": {
+      "bill": {
+        "provider": "Lake Selena Power & Light",
+        "account_number": "07631165667",
+        "billing_period_start": "2024-02-28",
+        "billing_period_end": "2024-03-26",
+        "due_date": "2024-04-18",
+        "usage_amount": "601",
+        "usage_unit": "kWh",
+        "line_items": [
+          {
+            "description": "Energy charge",
+            "amount": "66.11"
+          },
+          {
+            "description": "Delivery charge",
+            "amount": "5.26"
+          },
+          {
+            "description": "Transmission charge",
+            "amount": "3.78"
+          },
+          {
+            "description": "Autopay discount",
+            "amount": "-9.02"
+          },
+          {
+            "description": "Sales tax",
+            "amount": "9.77"
+          }
+        ],
+        "total_amount": "75.90",
+        "currency": "USD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 2064,
+      "output_tokens": 193,
+      "latency_seconds": 2.5333919171243906,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\": \"Lake Selena Power & Light\", \"account_number\": \"07631165667\", \"billing_period_start\": \"2024-02-28\", \"billing_period_end\": \"2024-03-26\", \"due_date\": \"2024-04-18\", \"usage_amount\": \"601\", \"usage_unit\": \"kWh\", \"line_items\": [{\"description\": \"Energy charge\", \"amount\": \"66.11\"}, {\"description\": \"Delivery charge\", \"amount\": \"5.26\"}, {\"description\": \"Transmission charge\", \"amount\": \"3.78\"}, {\"description\": \"Autopay discount\", \"amount\": \"-9.02\"}, {\"description\": \"Sales tax\", \"amount\": \"9.77\"}], \"total_amount\": \"75.90\", \"currency\": \"USD\"}"
+    },
+    "bill_0009": {
+      "bill": {
+        "provider": "Zacharymouth Water Authority",
+        "account_number": "04332003791",
+        "billing_period_start": "2025-12-16",
+        "billing_period_end": "2026-01-16",
+        "due_date": "2026-02-09",
+        "usage_amount": "30.6",
+        "usage_unit": "m³",
+        "line_items": [
+          {
+            "description": "Metered water",
+            "amount": "124.24"
+          },
+          {
+            "description": "Utility users tax",
+            "amount": "6.21"
+          }
+        ],
+        "total_amount": "130.45",
+        "currency": "USD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 2032,
+      "output_tokens": 145,
+      "latency_seconds": 2.2175199170596898,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\": \"Zacharymouth Water Authority\", \"account_number\": \"04332003791\", \"billing_period_start\": \"2025-12-16\", \"billing_period_end\": \"2026-01-16\", \"due_date\": \"2026-02-09\", \"usage_amount\": \"30.6\", \"usage_unit\": \"m³\", \"line_items\": [{\"description\": \"Metered water\", \"amount\": \"124.24\"}, {\"description\": \"Utility users tax\", \"amount\": \"6.21\"}], \"total_amount\": \"130.45\", \"currency\": \"USD\"}"
+    },
+    "bill_0010": {
+      "bill": {
+        "provider": "EAST EDWARDFURT FIBER",
+        "account_number": "01665876036",
+        "billing_period_start": "2025-11-08",
+        "billing_period_end": "2025-12-08",
+        "due_date": "2025-12-29",
+        "usage_amount": null,
+        "usage_unit": null,
+        "line_items": [
+          {
+            "description": "HOME INTERNET PLAN",
+            "amount": "60.24"
+          },
+          {
+            "description": "WI-FI EXTENDER RENTAL",
+            "amount": "12.29"
+          },
+          {
+            "description": "BILLING ADJUSTMENT",
+            "amount": "-10.15"
+          },
+          {
+            "description": "HST",
+            "amount": "5.08"
+          }
+        ],
+        "total_amount": "67.46",
+        "currency": "CAD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 1965,
+      "output_tokens": 185,
+      "latency_seconds": 2.422673458000645,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\": \"EAST EDWARDFURT FIBER\", \"account_number\": \"01665876036\", \"billing_period_start\": \"2025-11-08\", \"billing_period_end\": \"2025-12-08\", \"due_date\": \"2025-12-29\", \"usage_amount\": null, \"usage_unit\": null, \"line_items\": [{\"description\": \"HOME INTERNET PLAN\", \"amount\": \"60.24\"}, {\"description\": \"WI-FI EXTENDER RENTAL\", \"amount\": \"12.29\"}, {\"description\": \"BILLING ADJUSTMENT\", \"amount\": \"-10.15\"}, {\"description\": \"HST\", \"amount\": \"5.08\"}], \"total_amount\": \"67.46\", \"currency\": \"CAD\"}"
+    },
+    "bill_0013": {
+      "bill": {
+        "provider": "WestNet Broadband",
+        "account_number": "4363-495-7885",
+        "billing_period_start": "2024-06-14",
+        "billing_period_end": "2024-07-12",
+        "due_date": "2024-07-31",
+        "usage_amount": null,
+        "usage_unit": null,
+        "line_items": [
+          {
+            "description": "Unlimited Internet 300",
+            "amount": "67.87"
+          },
+          {
+            "description": "Regulatory recovery fee",
+            "amount": "2.91"
+          },
+          {
+            "description": "Wi-Fi extender rental",
+            "amount": "23.66"
+          },
+          {
+            "description": "Service interruption credit",
+            "amount": "-26.44"
+          },
+          {
+            "description": "GST",
+            "amount": "9.44"
+          }
+        ],
+        "total_amount": "77.44",
+        "currency": "CAD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 2038,
+      "output_tokens": 166,
+      "latency_seconds": 2.5176315831486136,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\":\"WestNet Broadband\",\"account_number\":\"4363-495-7885\",\"billing_period_start\":\"2024-06-14\",\"billing_period_end\":\"2024-07-12\",\"due_date\":\"2024-07-31\",\"usage_amount\":null,\"usage_unit\":null,\"line_items\":[{\"description\":\"Unlimited Internet 300\",\"amount\":\"67.87\"},{\"description\":\"Regulatory recovery fee\",\"amount\":\"2.91\"},{\"description\":\"Wi-Fi extender rental\",\"amount\":\"23.66\"},{\"description\":\"Service interruption credit\",\"amount\":\"-26.44\"},{\"description\":\"GST\",\"amount\":\"9.44\"}],\"total_amount\":\"77.44\",\"currency\":\"CAD\"}"
+    },
+    "bill_0016": {
+      "bill": {
+        "provider": "Millerview Natural Gas",
+        "account_number": "808 760 3859",
+        "billing_period_start": "2025-02-01",
+        "billing_period_end": "2025-03-03",
+        "due_date": "2025-03-18",
+        "usage_amount": "187.2",
+        "usage_unit": "m³",
+        "line_items": [
+          {
+            "description": "Natural gas usage",
+            "amount": "162.86"
+          },
+          {
+            "description": "Distribution charge",
+            "amount": "16.00"
+          },
+          {
+            "description": "Pipeline safety fee",
+            "amount": "19.36"
+          },
+          {
+            "description": "GST",
+            "amount": "17.84"
+          }
+        ],
+        "total_amount": "216.06",
+        "currency": "CAD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 2027,
+      "output_tokens": 177,
+      "latency_seconds": 2.621491667116061,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\": \"Millerview Natural Gas\", \"account_number\": \"808 760 3859\", \"billing_period_start\": \"2025-02-01\", \"billing_period_end\": \"2025-03-03\", \"due_date\": \"2025-03-18\", \"usage_amount\": \"187.2\", \"usage_unit\": \"m³\", \"line_items\": [{\"description\": \"Natural gas usage\", \"amount\": \"162.86\"}, {\"description\": \"Distribution charge\", \"amount\": \"16.00\"}, {\"description\": \"Pipeline safety fee\", \"amount\": \"19.36\"}, {\"description\": \"GST\", \"amount\": \"17.84\"}], \"total_amount\": \"216.06\", \"currency\": \"CAD\"}"
+    },
+    "bill_0017": {
+      "bill": {
+        "provider": "Pennsylvania Telecom",
+        "account_number": "U7278755",
+        "billing_period_start": "2025-05-17",
+        "billing_period_end": "2025-06-16",
+        "due_date": "2025-07-03",
+        "usage_amount": null,
+        "usage_unit": null,
+        "line_items": [
+          {
+            "description": "Home Internet plan",
+            "amount": "81.62"
+          },
+          {
+            "description": "Sales tax",
+            "amount": "7.35"
+          }
+        ],
+        "total_amount": "88.97",
+        "currency": "USD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 1964,
+      "output_tokens": 135,
+      "latency_seconds": 2.109313749941066,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\": \"Pennsylvania Telecom\", \"account_number\": \"U7278755\", \"billing_period_start\": \"2025-05-17\", \"billing_period_end\": \"2025-06-16\", \"due_date\": \"2025-07-03\", \"usage_amount\": null, \"usage_unit\": null, \"line_items\": [{\"description\": \"Home Internet plan\", \"amount\": \"81.62\"}, {\"description\": \"Sales tax\", \"amount\": \"7.35\"}], \"total_amount\": \"88.97\", \"currency\": \"USD\"}"
+    },
+    "bill_0018": {
+      "bill": {
+        "provider": "Matthewfurt Municipal Water",
+        "account_number": "H6578091",
+        "billing_period_start": "2026-03-07",
+        "billing_period_end": "2026-04-06",
+        "due_date": "2026-04-21",
+        "usage_amount": "31.3",
+        "usage_unit": "m³",
+        "line_items": [
+          {
+            "description": "Metered water",
+            "amount": "58.53"
+          },
+          {
+            "description": "GST/HST",
+            "amount": "2.93"
+          }
+        ],
+        "total_amount": "61.46",
+        "currency": "CAD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 2014,
+      "output_tokens": 124,
+      "latency_seconds": 2.6692804999183863,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\":\"Matthewfurt Municipal Water\",\"account_number\":\"H6578091\",\"billing_period_start\":\"2026-03-07\",\"billing_period_end\":\"2026-04-06\",\"due_date\":\"2026-04-21\",\"usage_amount\":\"31.3\",\"usage_unit\":\"m³\",\"line_items\":[{\"description\":\"Metered water\",\"amount\":\"58.53\"},{\"description\":\"GST/HST\",\"amount\":\"2.93\"}],\"total_amount\":\"61.46\",\"currency\":\"CAD\"}"
+    },
+    "bill_0022": {
+      "bill": {
+        "provider": "Gordonton Power & Light",
+        "account_number": "Y4700766",
+        "billing_period_start": "2025-12-19",
+        "billing_period_end": "2026-01-19",
+        "due_date": null,
+        "usage_amount": "693",
+        "usage_unit": "kWh",
+        "line_items": [
+          {
+            "description": "Energy charge",
+            "amount": "83.16"
+          },
+          {
+            "description": "Transmission charge",
+            "amount": "7.15"
+          },
+          {
+            "description": "Renewable energy rider",
+            "amount": "5.10"
+          },
+          {
+            "description": "Utility users tax",
+            "amount": "10.50"
+          }
+        ],
+        "total_amount": "105.91",
+        "currency": "USD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 2015,
+      "output_tokens": 140,
+      "latency_seconds": 2.226506375009194,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\":\"Gordonton Power & Light\",\"account_number\":\"Y4700766\",\"billing_period_start\":\"2025-12-19\",\"billing_period_end\":\"2026-01-19\",\"due_date\":null,\"usage_amount\":\"693\",\"usage_unit\":\"kWh\",\"line_items\":[{\"description\":\"Energy charge\",\"amount\":\"83.16\"},{\"description\":\"Transmission charge\",\"amount\":\"7.15\"},{\"description\":\"Renewable energy rider\",\"amount\":\"5.10\"},{\"description\":\"Utility users tax\",\"amount\":\"10.50\"}],\"total_amount\":\"105.91\",\"currency\":\"USD\"}"
+    },
+    "bill_0023": {
+      "bill": {
+        "provider": "Georgia Energy",
+        "account_number": "111 161 5280",
+        "billing_period_start": "2024-04-14",
+        "billing_period_end": "2024-05-16",
+        "due_date": "2024-06-09",
+        "usage_amount": "590",
+        "usage_unit": "kWh",
+        "line_items": [
+          {
+            "description": "Electricity usage",
+            "amount": "141.60"
+          },
+          {
+            "description": "HST",
+            "amount": "12.74"
+          }
+        ],
+        "total_amount": "154.34",
+        "currency": "CAD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 2002,
+      "output_tokens": 116,
+      "latency_seconds": 2.1012187090236694,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\":\"Georgia Energy\",\"account_number\":\"111 161 5280\",\"billing_period_start\":\"2024-04-14\",\"billing_period_end\":\"2024-05-16\",\"due_date\":\"2024-06-09\",\"usage_amount\":\"590\",\"usage_unit\":\"kWh\",\"line_items\":[{\"description\":\"Electricity usage\",\"amount\":\"141.60\"},{\"description\":\"HST\",\"amount\":\"12.74\"}],\"total_amount\":\"154.34\",\"currency\":\"CAD\"}"
+    },
+    "bill_0024": {
+      "bill": {
+        "provider": "Larrymouth Water Authority",
+        "account_number": "J1022901",
+        "billing_period_start": "2024-09-05",
+        "billing_period_end": "2024-10-04",
+        "due_date": "2024-11-01",
+        "usage_amount": "8.3",
+        "usage_unit": "m³",
+        "line_items": [
+          {
+            "description": "Unpaid balance from last bill",
+            "amount": "82.49"
+          },
+          {
+            "description": "Water consumption",
+            "amount": "22.58"
+          },
+          {
+            "description": "Infrastructure renewal fee",
+            "amount": "8.31"
+          },
+          {
+            "description": "Sewer service",
+            "amount": "3.75"
+          },
+          {
+            "description": "Sales tax",
+            "amount": "3.46"
+          }
+        ],
+        "total_amount": "120.59",
+        "currency": "USD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 2063,
+      "output_tokens": 197,
+      "latency_seconds": 3.0130898330826312,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\": \"Larrymouth Water Authority\", \"account_number\": \"J1022901\", \"billing_period_start\": \"2024-09-05\", \"billing_period_end\": \"2024-10-04\", \"due_date\": \"2024-11-01\", \"usage_amount\": \"8.3\", \"usage_unit\": \"m³\", \"line_items\": [{\"description\": \"Unpaid balance from last bill\", \"amount\": \"82.49\"}, {\"description\": \"Water consumption\", \"amount\": \"22.58\"}, {\"description\": \"Infrastructure renewal fee\", \"amount\": \"8.31\"}, {\"description\": \"Sewer service\", \"amount\": \"3.75\"}, {\"description\": \"Sales tax\", \"amount\": \"3.46\"}], \"total_amount\": \"120.59\", \"currency\": \"USD\"}"
+    },
+    "bill_0025": {
+      "bill": {
+        "provider": "ROBERTS VALLEY WATER DISTRICT",
+        "account_number": "5297-516-1369",
+        "billing_period_start": "2024-01-08",
+        "billing_period_end": "2024-02-09",
+        "due_date": "2024-02-29",
+        "usage_amount": "27.4",
+        "usage_unit": "m³",
+        "line_items": [
+          {
+            "description": "METERED WATER",
+            "amount": "81.38"
+          },
+          {
+            "description": "METER SERVICE CHARGE",
+            "amount": "18.76"
+          },
+          {
+            "description": "SEWER SERVICE",
+            "amount": "4.23"
+          },
+          {
+            "description": "SALES TAX",
+            "amount": "4.17"
+          }
+        ],
+        "total_amount": "108.54",
+        "currency": "USD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 1974,
+      "output_tokens": 188,
+      "latency_seconds": 3.087020750157535,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\": \"ROBERTS VALLEY WATER DISTRICT\", \"account_number\": \"5297-516-1369\", \"billing_period_start\": \"2024-01-08\", \"billing_period_end\": \"2024-02-09\", \"due_date\": \"2024-02-29\", \"usage_amount\": \"27.4\", \"usage_unit\": \"m³\", \"line_items\": [{\"description\": \"METERED WATER\", \"amount\": \"81.38\"}, {\"description\": \"METER SERVICE CHARGE\", \"amount\": \"18.76\"}, {\"description\": \"SEWER SERVICE\", \"amount\": \"4.23\"}, {\"description\": \"SALES TAX\", \"amount\": \"4.17\"}], \"total_amount\": \"108.54\", \"currency\": \"USD\"}"
+    },
+    "bill_0027": {
+      "bill": {
+        "provider": "Cameronville Power & Light",
+        "account_number": "AC-49251-92",
+        "billing_period_start": "2024-06-06",
+        "billing_period_end": "2024-07-04",
+        "due_date": "2024-07-29",
+        "usage_amount": "1049",
+        "usage_unit": "kWh",
+        "line_items": [
+          {
+            "description": "Electricity supply",
+            "amount": "283.23"
+          },
+          {
+            "description": "Basic customer charge",
+            "amount": "17.77"
+          },
+          {
+            "description": "Transmission charge",
+            "amount": "14.08"
+          },
+          {
+            "description": "Utility users tax",
+            "amount": "40.96"
+          }
+        ],
+        "total_amount": "356.04",
+        "currency": "USD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 2025,
+      "output_tokens": 181,
+      "latency_seconds": 2.5860001670662314,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\": \"Cameronville Power & Light\", \"account_number\": \"AC-49251-92\", \"billing_period_start\": \"2024-06-06\", \"billing_period_end\": \"2024-07-04\", \"due_date\": \"2024-07-29\", \"usage_amount\": \"1049\", \"usage_unit\": \"kWh\", \"line_items\": [{\"description\": \"Electricity supply\", \"amount\": \"283.23\"}, {\"description\": \"Basic customer charge\", \"amount\": \"17.77\"}, {\"description\": \"Transmission charge\", \"amount\": \"14.08\"}, {\"description\": \"Utility users tax\", \"amount\": \"40.96\"}], \"total_amount\": \"356.04\", \"currency\": \"USD\"}"
+    },
+    "bill_0028": {
+      "bill": {
+        "provider": "Georgia Gas & Heating",
+        "account_number": "02927065379",
+        "billing_period_start": "2025-11-28",
+        "billing_period_end": "2025-12-26",
+        "due_date": "2026-01-12",
+        "usage_amount": "83.4",
+        "usage_unit": "m³",
+        "line_items": [
+          {
+            "description": "Natural gas usage",
+            "amount": "45.04"
+          },
+          {
+            "description": "State and local taxes",
+            "amount": "4.95"
+          }
+        ],
+        "total_amount": "49.99",
+        "currency": "USD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 2003,
+      "output_tokens": 119,
+      "latency_seconds": 2.1226072078570724,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\":\"Georgia Gas & Heating\",\"account_number\":\"02927065379\",\"billing_period_start\":\"2025-11-28\",\"billing_period_end\":\"2025-12-26\",\"due_date\":\"2026-01-12\",\"usage_amount\":\"83.4\",\"usage_unit\":\"m³\",\"line_items\":[{\"description\":\"Natural gas usage\",\"amount\":\"45.04\"},{\"description\":\"State and local taxes\",\"amount\":\"4.95\"}],\"total_amount\":\"49.99\",\"currency\":\"USD\"}"
+    },
+    "bill_0029": {
+      "bill": {
+        "provider": "West Sarahmouth Power & Light",
+        "account_number": "4727-790-1043",
+        "billing_period_start": "2024-09-05",
+        "billing_period_end": "2024-10-06",
+        "due_date": "2024-10-22",
+        "usage_amount": "337",
+        "usage_unit": "kWh",
+        "line_items": [
+          {
+            "description": "Unpaid balance from last bill",
+            "amount": "134.53"
+          },
+          {
+            "description": "Electricity usage",
+            "amount": "60.66"
+          },
+          {
+            "description": "Delivery charge",
+            "amount": "19.49"
+          },
+          {
+            "description": "HST",
+            "amount": "3.21"
+          }
+        ],
+        "total_amount": "217.89",
+        "currency": "CAD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 2068,
+      "output_tokens": 185,
+      "latency_seconds": 2.76429033302702,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\": \"West Sarahmouth Power & Light\", \"account_number\": \"4727-790-1043\", \"billing_period_start\": \"2024-09-05\", \"billing_period_end\": \"2024-10-06\", \"due_date\": \"2024-10-22\", \"usage_amount\": \"337\", \"usage_unit\": \"kWh\", \"line_items\": [{\"description\": \"Unpaid balance from last bill\", \"amount\": \"134.53\"}, {\"description\": \"Electricity usage\", \"amount\": \"60.66\"}, {\"description\": \"Delivery charge\", \"amount\": \"19.49\"}, {\"description\": \"HST\", \"amount\": \"3.21\"}], \"total_amount\": \"217.89\", \"currency\": \"CAD\"}"
+    },
+    "bill_0031": {
+      "bill": {
+        "provider": "Arizona Gas & Heating",
+        "account_number": "AC-96401-65",
+        "billing_period_start": "2025-03-29",
+        "billing_period_end": "2025-04-29",
+        "due_date": "2025-05-17",
+        "usage_amount": "193.8",
+        "usage_unit": "m³",
+        "line_items": [
+          {
+            "description": "Balance forward",
+            "amount": "228.57"
+          },
+          {
+            "description": "Natural gas usage",
+            "amount": "106.59"
+          },
+          {
+            "description": "Fixed monthly charge",
+            "amount": "14.53"
+          },
+          {
+            "description": "Carbon levy",
+            "amount": "15.65"
+          },
+          {
+            "description": "Utility users tax",
+            "amount": "13.68"
+          }
+        ],
+        "total_amount": "379.02",
+        "currency": "USD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 2043,
+      "output_tokens": 194,
+      "latency_seconds": 3.055572709068656,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\": \"Arizona Gas & Heating\", \"account_number\": \"AC-96401-65\", \"billing_period_start\": \"2025-03-29\", \"billing_period_end\": \"2025-04-29\", \"due_date\": \"2025-05-17\", \"usage_amount\": \"193.8\", \"usage_unit\": \"m³\", \"line_items\": [{\"description\": \"Balance forward\", \"amount\": \"228.57\"}, {\"description\": \"Natural gas usage\", \"amount\": \"106.59\"}, {\"description\": \"Fixed monthly charge\", \"amount\": \"14.53\"}, {\"description\": \"Carbon levy\", \"amount\": \"15.65\"}, {\"description\": \"Utility users tax\", \"amount\": \"13.68\"}], \"total_amount\": \"379.02\", \"currency\": \"USD\"}"
+    },
+    "bill_0032": {
+      "bill": {
+        "provider": "Maine Telecom",
+        "account_number": "AC-22583-13",
+        "billing_period_start": "2024-04-17",
+        "billing_period_end": "2024-05-16",
+        "due_date": "2024-06-10",
+        "usage_amount": null,
+        "usage_unit": null,
+        "line_items": [
+          {
+            "description": "Unlimited Internet 300",
+            "amount": "90.11"
+          },
+          {
+            "description": "Wi-Fi extender rental",
+            "amount": "7.52"
+          },
+          {
+            "description": "Modem rental",
+            "amount": "8.05"
+          },
+          {
+            "description": "GST/HST",
+            "amount": "10.57"
+          }
+        ],
+        "total_amount": "116.25",
+        "currency": "CAD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 2011,
+      "output_tokens": 181,
+      "latency_seconds": 2.431763666914776,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\": \"Maine Telecom\", \"account_number\": \"AC-22583-13\", \"billing_period_start\": \"2024-04-17\", \"billing_period_end\": \"2024-05-16\", \"due_date\": \"2024-06-10\", \"usage_amount\": null, \"usage_unit\": null, \"line_items\": [{\"description\": \"Unlimited Internet 300\", \"amount\": \"90.11\"}, {\"description\": \"Wi-Fi extender rental\", \"amount\": \"7.52\"}, {\"description\": \"Modem rental\", \"amount\": \"8.05\"}, {\"description\": \"GST/HST\", \"amount\": \"10.57\"}], \"total_amount\": \"116.25\", \"currency\": \"CAD\"}"
+    },
+    "bill_0035": {
+      "bill": {
+        "provider": "NEW WILLIAM NATURAL GAS",
+        "account_number": "2578-729-8259",
+        "billing_period_start": "2024-09-19",
+        "billing_period_end": "2024-10-19",
+        "due_date": "2024-11-10",
+        "usage_amount": "245.2",
+        "usage_unit": "m³",
+        "line_items": [
+          {
+            "description": "GAS CONSUMPTION",
+            "amount": "196.16"
+          },
+          {
+            "description": "DISTRIBUTION CHARGE",
+            "amount": "6.46"
+          },
+          {
+            "description": "PIPELINE SAFETY FEE",
+            "amount": "18.63"
+          },
+          {
+            "description": "SALES TAX",
+            "amount": "24.34"
+          }
+        ],
+        "total_amount": "245.59",
+        "currency": "USD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 1974,
+      "output_tokens": 156,
+      "latency_seconds": 2.772012749919668,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\":\"NEW WILLIAM NATURAL GAS\",\"account_number\":\"2578-729-8259\",\"billing_period_start\":\"2024-09-19\",\"billing_period_end\":\"2024-10-19\",\"due_date\":\"2024-11-10\",\"usage_amount\":\"245.2\",\"usage_unit\":\"m³\",\"line_items\":[{\"description\":\"GAS CONSUMPTION\",\"amount\":\"196.16\"},{\"description\":\"DISTRIBUTION CHARGE\",\"amount\":\"6.46\"},{\"description\":\"PIPELINE SAFETY FEE\",\"amount\":\"18.63\"},{\"description\":\"SALES TAX\",\"amount\":\"24.34\"}],\"total_amount\":\"245.59\",\"currency\":\"USD\"}"
+    },
+    "bill_0036": {
+      "bill": {
+        "provider": "SalasNet Broadband",
+        "account_number": "2838-578-6527",
+        "billing_period_start": "2025-09-12",
+        "billing_period_end": "2025-10-09",
+        "due_date": "2025-11-01",
+        "usage_amount": null,
+        "usage_unit": null,
+        "line_items": [
+          {
+            "description": "Fiber 500 monthly plan",
+            "amount": "48.99"
+          },
+          {
+            "description": "Utility users tax",
+            "amount": "4.41"
+          }
+        ],
+        "total_amount": "53.40",
+        "currency": "USD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 1985,
+      "output_tokens": 147,
+      "latency_seconds": 2.2849269579164684,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\": \"SalasNet Broadband\", \"account_number\": \"2838-578-6527\", \"billing_period_start\": \"2025-09-12\", \"billing_period_end\": \"2025-10-09\", \"due_date\": \"2025-11-01\", \"usage_amount\": null, \"usage_unit\": null, \"line_items\": [{\"description\": \"Fiber 500 monthly plan\", \"amount\": \"48.99\"}, {\"description\": \"Utility users tax\", \"amount\": \"4.41\"}], \"total_amount\": \"53.40\", \"currency\": \"USD\"}"
+    },
+    "bill_0037": {
+      "bill": {
+        "provider": "Harris Valley Water District",
+        "account_number": "AC-84219-93",
+        "billing_period_start": "2025-09-08",
+        "billing_period_end": "2025-10-08",
+        "due_date": "2025-11-05",
+        "usage_amount": "25.6",
+        "usage_unit": "m³",
+        "line_items": [
+          {
+            "description": "Water usage charge",
+            "amount": "65.02"
+          },
+          {
+            "description": "Sales tax",
+            "amount": "5.20"
+          }
+        ],
+        "total_amount": "70.22",
+        "currency": "USD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 1995,
+      "output_tokens": 118,
+      "latency_seconds": 2.0725860001984984,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\":\"Harris Valley Water District\",\"account_number\":\"AC-84219-93\",\"billing_period_start\":\"2025-09-08\",\"billing_period_end\":\"2025-10-08\",\"due_date\":\"2025-11-05\",\"usage_amount\":\"25.6\",\"usage_unit\":\"m³\",\"line_items\":[{\"description\":\"Water usage charge\",\"amount\":\"65.02\"},{\"description\":\"Sales tax\",\"amount\":\"5.20\"}],\"total_amount\":\"70.22\",\"currency\":\"USD\"}"
+    },
+    "bill_0039": {
+      "bill": {
+        "provider": "East Timothy Power & Light",
+        "account_number": "AC-68783-39",
+        "billing_period_start": "2024-11-23",
+        "billing_period_end": "2024-12-21",
+        "due_date": "2025-01-04",
+        "usage_amount": "1103",
+        "usage_unit": "kWh",
+        "line_items": [
+          {
+            "description": "Energy charge",
+            "amount": "220.60"
+          },
+          {
+            "description": "Renewable energy rider",
+            "amount": "7.30"
+          },
+          {
+            "description": "Utility users tax",
+            "amount": "18.23"
+          }
+        ],
+        "total_amount": "246.13",
+        "currency": "USD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 2034,
+      "output_tokens": 134,
+      "latency_seconds": 2.8477169170510024,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\":\"East Timothy Power & Light\",\"account_number\":\"AC-68783-39\",\"billing_period_start\":\"2024-11-23\",\"billing_period_end\":\"2024-12-21\",\"due_date\":\"2025-01-04\",\"usage_amount\":\"1103\",\"usage_unit\":\"kWh\",\"line_items\":[{\"description\":\"Energy charge\",\"amount\":\"220.60\"},{\"description\":\"Renewable energy rider\",\"amount\":\"7.30\"},{\"description\":\"Utility users tax\",\"amount\":\"18.23\"}],\"total_amount\":\"246.13\",\"currency\":\"USD\"}"
+    },
+    "bill_0042": {
+      "bill": {
+        "provider": "Nunez Valley Water District",
+        "account_number": "1398-373-5403",
+        "billing_period_start": "2024-05-11",
+        "billing_period_end": "2024-06-10",
+        "due_date": null,
+        "usage_amount": "29.1",
+        "usage_unit": "m³",
+        "line_items": [
+          {
+            "description": "Unpaid balance from last bill",
+            "amount": "37.90"
+          },
+          {
+            "description": "Metered water",
+            "amount": "114.36"
+          },
+          {
+            "description": "Stormwater fee",
+            "amount": "12.44"
+          },
+          {
+            "description": "Infrastructure renewal fee",
+            "amount": "12.94"
+          },
+          {
+            "description": "GST/HST",
+            "amount": "11.18"
+          }
+        ],
+        "total_amount": "188.82",
+        "currency": "CAD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 2042,
+      "output_tokens": 166,
+      "latency_seconds": 2.6394383339211345,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\":\"Nunez Valley Water District\",\"account_number\":\"1398-373-5403\",\"billing_period_start\":\"2024-05-11\",\"billing_period_end\":\"2024-06-10\",\"due_date\":null,\"usage_amount\":\"29.1\",\"usage_unit\":\"m³\",\"line_items\":[{\"description\":\"Unpaid balance from last bill\",\"amount\":\"37.90\"},{\"description\":\"Metered water\",\"amount\":\"114.36\"},{\"description\":\"Stormwater fee\",\"amount\":\"12.44\"},{\"description\":\"Infrastructure renewal fee\",\"amount\":\"12.94\"},{\"description\":\"GST/HST\",\"amount\":\"11.18\"}],\"total_amount\":\"188.82\",\"currency\":\"CAD\"}"
+    },
+    "bill_0044": {
+      "bill": {
+        "provider": "Miller Electric Cooperative",
+        "account_number": "933 410 1666",
+        "billing_period_start": "2025-01-09",
+        "billing_period_end": "2025-02-05",
+        "due_date": "2025-02-27",
+        "usage_amount": "737",
+        "usage_unit": "kWh",
+        "line_items": [
+          {
+            "description": "Electricity supply",
+            "amount": "81.07"
+          },
+          {
+            "description": "Transmission charge",
+            "amount": "6.88"
+          },
+          {
+            "description": "Delivery charge",
+            "amount": "6.44"
+          },
+          {
+            "description": "Utility users tax",
+            "amount": "11.33"
+          }
+        ],
+        "total_amount": "105.72",
+        "currency": "USD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 2048,
+      "output_tokens": 177,
+      "latency_seconds": 2.576276500010863,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\": \"Miller Electric Cooperative\", \"account_number\": \"933 410 1666\", \"billing_period_start\": \"2025-01-09\", \"billing_period_end\": \"2025-02-05\", \"due_date\": \"2025-02-27\", \"usage_amount\": \"737\", \"usage_unit\": \"kWh\", \"line_items\": [{\"description\": \"Electricity supply\", \"amount\": \"81.07\"}, {\"description\": \"Transmission charge\", \"amount\": \"6.88\"}, {\"description\": \"Delivery charge\", \"amount\": \"6.44\"}, {\"description\": \"Utility users tax\", \"amount\": \"11.33\"}], \"total_amount\": \"105.72\", \"currency\": \"USD\"}"
+    },
+    "bill_0047": {
+      "bill": {
+        "provider": "Lake Katrina Natural Gas",
+        "account_number": "374 167 2434",
+        "billing_period_start": "2024-06-10",
+        "billing_period_end": "2024-07-10",
+        "due_date": "2024-07-29",
+        "usage_amount": "221.1",
+        "usage_unit": "m³",
+        "line_items": [
+          {
+            "description": "Gas supply charge",
+            "amount": "260.90"
+          },
+          {
+            "description": "Pipeline safety fee",
+            "amount": "13.98"
+          },
+          {
+            "description": "Utility users tax",
+            "amount": "11.00"
+          }
+        ],
+        "total_amount": "285.88",
+        "currency": "USD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 2019,
+      "output_tokens": 135,
+      "latency_seconds": 2.1610046250279993,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\":\"Lake Katrina Natural Gas\",\"account_number\":\"374 167 2434\",\"billing_period_start\":\"2024-06-10\",\"billing_period_end\":\"2024-07-10\",\"due_date\":\"2024-07-29\",\"usage_amount\":\"221.1\",\"usage_unit\":\"m³\",\"line_items\":[{\"description\":\"Gas supply charge\",\"amount\":\"260.90\"},{\"description\":\"Pipeline safety fee\",\"amount\":\"13.98\"},{\"description\":\"Utility users tax\",\"amount\":\"11.00\"}],\"total_amount\":\"285.88\",\"currency\":\"USD\"}"
+    },
+    "bill_0050": {
+      "bill": {
+        "provider": "JOHNSON VALLEY WATER DISTRICT",
+        "account_number": "D4279788",
+        "billing_period_start": "2025-07-18",
+        "billing_period_end": "2025-08-16",
+        "due_date": "2025-08-30",
+        "usage_amount": "17.9",
+        "usage_unit": "m³",
+        "line_items": [
+          {
+            "description": "METERED WATER",
+            "amount": "67.30"
+          },
+          {
+            "description": "INFRASTRUCTURE RENEWAL FEE",
+            "amount": "22.64"
+          },
+          {
+            "description": "STORMWATER FEE",
+            "amount": "19.52"
+          },
+          {
+            "description": "GST/HST",
+            "amount": "5.47"
+          }
+        ],
+        "total_amount": "114.93",
+        "currency": "CAD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 1979,
+      "output_tokens": 192,
+      "latency_seconds": 2.5615442499984056,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\": \"JOHNSON VALLEY WATER DISTRICT\", \"account_number\": \"D4279788\", \"billing_period_start\": \"2025-07-18\", \"billing_period_end\": \"2025-08-16\", \"due_date\": \"2025-08-30\", \"usage_amount\": \"17.9\", \"usage_unit\": \"m³\", \"line_items\": [{\"description\": \"METERED WATER\", \"amount\": \"67.30\"}, {\"description\": \"INFRASTRUCTURE RENEWAL FEE\", \"amount\": \"22.64\"}, {\"description\": \"STORMWATER FEE\", \"amount\": \"19.52\"}, {\"description\": \"GST/HST\", \"amount\": \"5.47\"}], \"total_amount\": \"114.93\", \"currency\": \"CAD\"}"
+    },
+    "bill_0052": {
+      "bill": {
+        "provider": "Bryantchester Water Authority",
+        "account_number": "04241541520",
+        "billing_period_start": "2024-04-28",
+        "billing_period_end": "2024-05-28",
+        "due_date": "2024-06-23",
+        "usage_amount": "42.9",
+        "usage_unit": "m³",
+        "line_items": [
+          {
+            "description": "Water consumption",
+            "amount": "87.52"
+          },
+          {
+            "description": "State and local taxes",
+            "amount": "2.63"
+          }
+        ],
+        "total_amount": "90.15",
+        "currency": "USD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 1996,
+      "output_tokens": 143,
+      "latency_seconds": 2.459894542116672,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\": \"Bryantchester Water Authority\", \"account_number\": \"04241541520\", \"billing_period_start\": \"2024-04-28\", \"billing_period_end\": \"2024-05-28\", \"due_date\": \"2024-06-23\", \"usage_amount\": \"42.9\", \"usage_unit\": \"m³\", \"line_items\": [{\"description\": \"Water consumption\", \"amount\": \"87.52\"}, {\"description\": \"State and local taxes\", \"amount\": \"2.63\"}], \"total_amount\": \"90.15\", \"currency\": \"USD\"}"
+    },
+    "bill_0053": {
+      "bill": {
+        "provider": "Indiana Energy",
+        "account_number": "1219-656-5234",
+        "billing_period_start": "2024-04-03",
+        "billing_period_end": "2024-05-02",
+        "due_date": "2024-05-21",
+        "usage_amount": "430",
+        "usage_unit": "kWh",
+        "line_items": [
+          {
+            "description": "Unpaid balance from last bill",
+            "amount": "65.77"
+          },
+          {
+            "description": "Energy charge",
+            "amount": "98.90"
+          },
+          {
+            "description": "Basic customer charge",
+            "amount": "24.22"
+          },
+          {
+            "description": "Delivery charge",
+            "amount": "25.57"
+          },
+          {
+            "description": "GST",
+            "amount": "8.92"
+          }
+        ],
+        "total_amount": "223.38",
+        "currency": "CAD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 2038,
+      "output_tokens": 159,
+      "latency_seconds": 2.436103875050321,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\":\"Indiana Energy\",\"account_number\":\"1219-656-5234\",\"billing_period_start\":\"2024-04-03\",\"billing_period_end\":\"2024-05-02\",\"due_date\":\"2024-05-21\",\"usage_amount\":\"430\",\"usage_unit\":\"kWh\",\"line_items\":[{\"description\":\"Unpaid balance from last bill\",\"amount\":\"65.77\"},{\"description\":\"Energy charge\",\"amount\":\"98.90\"},{\"description\":\"Basic customer charge\",\"amount\":\"24.22\"},{\"description\":\"Delivery charge\",\"amount\":\"25.57\"},{\"description\":\"GST\",\"amount\":\"8.92\"}],\"total_amount\":\"223.38\",\"currency\":\"CAD\"}"
+    },
+    "bill_0054": {
+      "bill": {
+        "provider": "Hendersonfurt Fiber",
+        "account_number": "G9241418",
+        "billing_period_start": "2025-12-02",
+        "billing_period_end": "2025-12-29",
+        "due_date": null,
+        "usage_amount": null,
+        "usage_unit": null,
+        "line_items": [
+          {
+            "description": "Fiber 500 monthly plan",
+            "amount": "61.46"
+          },
+          {
+            "description": "GST",
+            "amount": "5.53"
+          }
+        ],
+        "total_amount": "66.99",
+        "currency": "CAD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 2014,
+      "output_tokens": 137,
+      "latency_seconds": 2.300818582996726,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\": \"Hendersonfurt Fiber\", \"account_number\": \"G9241418\", \"billing_period_start\": \"2025-12-02\", \"billing_period_end\": \"2025-12-29\", \"due_date\": null, \"usage_amount\": null, \"usage_unit\": null, \"line_items\": [{\"description\": \"Fiber 500 monthly plan\", \"amount\": \"61.46\"}, {\"description\": \"GST\", \"amount\": \"5.53\"}], \"total_amount\": \"66.99\", \"currency\": \"CAD\"}"
+    },
+    "bill_0055": {
+      "bill": {
+        "provider": "BAKER GAS COMPANY",
+        "account_number": "7785-079-2524",
+        "billing_period_start": "2025-10-06",
+        "billing_period_end": "2025-11-07",
+        "due_date": "2025-11-21",
+        "usage_amount": "162",
+        "usage_unit": "m³",
+        "line_items": [
+          {
+            "description": "GAS CONSUMPTION",
+            "amount": "179.82"
+          },
+          {
+            "description": "CARBON LEVY",
+            "amount": "17.73"
+          },
+          {
+            "description": "DISTRIBUTION CHARGE",
+            "amount": "7.69"
+          },
+          {
+            "description": "STATE AND LOCAL TAXES",
+            "amount": "8.21"
+          }
+        ],
+        "total_amount": "213.45",
+        "currency": "USD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 1967,
+      "output_tokens": 183,
+      "latency_seconds": 2.513707166071981,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\": \"BAKER GAS COMPANY\", \"account_number\": \"7785-079-2524\", \"billing_period_start\": \"2025-10-06\", \"billing_period_end\": \"2025-11-07\", \"due_date\": \"2025-11-21\", \"usage_amount\": \"162\", \"usage_unit\": \"m³\", \"line_items\": [{\"description\": \"GAS CONSUMPTION\", \"amount\": \"179.82\"}, {\"description\": \"CARBON LEVY\", \"amount\": \"17.73\"}, {\"description\": \"DISTRIBUTION CHARGE\", \"amount\": \"7.69\"}, {\"description\": \"STATE AND LOCAL TAXES\", \"amount\": \"8.21\"}], \"total_amount\": \"213.45\", \"currency\": \"USD\"}"
+    },
+    "bill_0056": {
+      "bill": {
+        "provider": "Bonilla Electric Cooperative",
+        "account_number": "08320603850",
+        "billing_period_start": "2026-01-02",
+        "billing_period_end": "2026-01-29",
+        "due_date": null,
+        "usage_amount": "1102",
+        "usage_unit": "kWh",
+        "line_items": [
+          {
+            "description": "Electricity usage",
+            "amount": "220.40"
+          },
+          {
+            "description": "Delivery charge",
+            "amount": "25.15"
+          },
+          {
+            "description": "Utility users tax",
+            "amount": "17.19"
+          }
+        ],
+        "total_amount": "262.74",
+        "currency": "USD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 2004,
+      "output_tokens": 128,
+      "latency_seconds": 2.2064666249789298,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\":\"Bonilla Electric Cooperative\",\"account_number\":\"08320603850\",\"billing_period_start\":\"2026-01-02\",\"billing_period_end\":\"2026-01-29\",\"due_date\":null,\"usage_amount\":\"1102\",\"usage_unit\":\"kWh\",\"line_items\":[{\"description\":\"Electricity usage\",\"amount\":\"220.40\"},{\"description\":\"Delivery charge\",\"amount\":\"25.15\"},{\"description\":\"Utility users tax\",\"amount\":\"17.19\"}],\"total_amount\":\"262.74\",\"currency\":\"USD\"}"
+    },
+    "bill_0057": {
+      "bill": {
+        "provider": "East Shannonmouth Power & Light",
+        "account_number": "AC-37474-11",
+        "billing_period_start": "2026-05-28",
+        "billing_period_end": "2026-06-25",
+        "due_date": "2026-07-13",
+        "usage_amount": "795",
+        "usage_unit": "kWh",
+        "line_items": [
+          {
+            "description": "Previous balance",
+            "amount": "56.60"
+          },
+          {
+            "description": "Electricity supply",
+            "amount": "182.85"
+          },
+          {
+            "description": "Renewable energy rider",
+            "amount": "21.04"
+          },
+          {
+            "description": "Basic customer charge",
+            "amount": "13.63"
+          },
+          {
+            "description": "State and local taxes",
+            "amount": "26.10"
+          }
+        ],
+        "total_amount": "300.22",
+        "currency": "USD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 2037,
+      "output_tokens": 198,
+      "latency_seconds": 2.929902165895328,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\": \"East Shannonmouth Power & Light\", \"account_number\": \"AC-37474-11\", \"billing_period_start\": \"2026-05-28\", \"billing_period_end\": \"2026-06-25\", \"due_date\": \"2026-07-13\", \"usage_amount\": \"795\", \"usage_unit\": \"kWh\", \"line_items\": [{\"description\": \"Previous balance\", \"amount\": \"56.60\"}, {\"description\": \"Electricity supply\", \"amount\": \"182.85\"}, {\"description\": \"Renewable energy rider\", \"amount\": \"21.04\"}, {\"description\": \"Basic customer charge\", \"amount\": \"13.63\"}, {\"description\": \"State and local taxes\", \"amount\": \"26.10\"}], \"total_amount\": \"300.22\", \"currency\": \"USD\"}"
+    },
+    "bill_0058": {
+      "bill": {
+        "provider": "Port Mariamouth Power & Light",
+        "account_number": "2966-706-6253",
+        "billing_period_start": "2025-12-12",
+        "billing_period_end": "2026-01-09",
+        "due_date": "2026-01-25",
+        "usage_amount": "970",
+        "usage_unit": "kWh",
+        "line_items": [
+          {
+            "description": "Electricity supply",
+            "amount": "213.40"
+          },
+          {
+            "description": "Delivery charge",
+            "amount": "26.50"
+          },
+          {
+            "description": "Renewable energy rider",
+            "amount": "13.10"
+          },
+          {
+            "description": "Billing adjustment",
+            "amount": "-17.71"
+          },
+          {
+            "description": "Sales tax",
+            "amount": "32.89"
+          }
+        ],
+        "total_amount": "268.18",
+        "currency": "USD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 2048,
+      "output_tokens": 163,
+      "latency_seconds": 2.5811782078817487,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\":\"Port Mariamouth Power & Light\",\"account_number\":\"2966-706-6253\",\"billing_period_start\":\"2025-12-12\",\"billing_period_end\":\"2026-01-09\",\"due_date\":\"2026-01-25\",\"usage_amount\":\"970\",\"usage_unit\":\"kWh\",\"line_items\":[{\"description\":\"Electricity supply\",\"amount\":\"213.40\"},{\"description\":\"Delivery charge\",\"amount\":\"26.50\"},{\"description\":\"Renewable energy rider\",\"amount\":\"13.10\"},{\"description\":\"Billing adjustment\",\"amount\":\"-17.71\"},{\"description\":\"Sales tax\",\"amount\":\"32.89\"}],\"total_amount\":\"268.18\",\"currency\":\"USD\"}"
+    },
+    "bill_0059": {
+      "bill": {
+        "provider": "Thompson Valley Water District",
+        "account_number": "AC-59059-92",
+        "billing_period_start": "2024-06-12",
+        "billing_period_end": "2024-07-11",
+        "due_date": "2024-08-03",
+        "usage_amount": "22.3",
+        "usage_unit": "m³",
+        "line_items": [
+          {
+            "description": "Unpaid balance from last bill",
+            "amount": "91.02"
+          },
+          {
+            "description": "Water usage charge",
+            "amount": "46.61"
+          },
+          {
+            "description": "Meter service charge",
+            "amount": "12.03"
+          },
+          {
+            "description": "Infrastructure renewal fee",
+            "amount": "9.03"
+          },
+          {
+            "description": "State and local taxes",
+            "amount": "2.03"
+          }
+        ],
+        "total_amount": "160.72",
+        "currency": "USD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 2066,
+      "output_tokens": 200,
+      "latency_seconds": 2.6177473329007626,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\": \"Thompson Valley Water District\", \"account_number\": \"AC-59059-92\", \"billing_period_start\": \"2024-06-12\", \"billing_period_end\": \"2024-07-11\", \"due_date\": \"2024-08-03\", \"usage_amount\": \"22.3\", \"usage_unit\": \"m³\", \"line_items\": [{\"description\": \"Unpaid balance from last bill\", \"amount\": \"91.02\"}, {\"description\": \"Water usage charge\", \"amount\": \"46.61\"}, {\"description\": \"Meter service charge\", \"amount\": \"12.03\"}, {\"description\": \"Infrastructure renewal fee\", \"amount\": \"9.03\"}, {\"description\": \"State and local taxes\", \"amount\": \"2.03\"}], \"total_amount\": \"160.72\", \"currency\": \"USD\"}"
+    },
+    "bill_0060": {
+      "bill": {
+        "provider": "GRANTSIDE MUNICIPAL WATER",
+        "account_number": "AC-39264-42",
+        "billing_period_start": "2024-12-06",
+        "billing_period_end": "2025-01-07",
+        "due_date": "2025-01-27",
+        "usage_amount": "25.2",
+        "usage_unit": "m³",
+        "line_items": [
+          {
+            "description": "WATER USAGE CHARGE",
+            "amount": "84.17"
+          },
+          {
+            "description": "GST",
+            "amount": "7.58"
+          }
+        ],
+        "total_amount": "91.75",
+        "currency": "CAD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 1948,
+      "output_tokens": 150,
+      "latency_seconds": 2.3228473749477416,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\": \"GRANTSIDE MUNICIPAL WATER\", \"account_number\": \"AC-39264-42\", \"billing_period_start\": \"2024-12-06\", \"billing_period_end\": \"2025-01-07\", \"due_date\": \"2025-01-27\", \"usage_amount\": \"25.2\", \"usage_unit\": \"m³\", \"line_items\": [{\"description\": \"WATER USAGE CHARGE\", \"amount\": \"84.17\"}, {\"description\": \"GST\", \"amount\": \"7.58\"}], \"total_amount\": \"91.75\", \"currency\": \"CAD\"}"
+    },
+    "bill_0062": {
+      "bill": {
+        "provider": "Davis Gas Company",
+        "account_number": "256 527 0477",
+        "billing_period_start": "2024-01-04",
+        "billing_period_end": "2024-01-31",
+        "due_date": "2024-02-18",
+        "usage_amount": "216.7",
+        "usage_unit": "m³",
+        "line_items": [
+          {
+            "description": "Unpaid balance from last bill",
+            "amount": "107.62"
+          },
+          {
+            "description": "Gas supply charge",
+            "amount": "151.69"
+          },
+          {
+            "description": "State and local taxes",
+            "amount": "15.17"
+          }
+        ],
+        "total_amount": "274.48",
+        "currency": "USD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 2010,
+      "output_tokens": 164,
+      "latency_seconds": 2.3543423330411315,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\": \"Davis Gas Company\", \"account_number\": \"256 527 0477\", \"billing_period_start\": \"2024-01-04\", \"billing_period_end\": \"2024-01-31\", \"due_date\": \"2024-02-18\", \"usage_amount\": \"216.7\", \"usage_unit\": \"m³\", \"line_items\": [{\"description\": \"Unpaid balance from last bill\", \"amount\": \"107.62\"}, {\"description\": \"Gas supply charge\", \"amount\": \"151.69\"}, {\"description\": \"State and local taxes\", \"amount\": \"15.17\"}], \"total_amount\": \"274.48\", \"currency\": \"USD\"}"
+    },
+    "bill_0063": {
+      "bill": {
+        "provider": "Louisiana Gas & Heating",
+        "account_number": "P7099861",
+        "billing_period_start": "2025-11-20",
+        "billing_period_end": "2025-12-18",
+        "due_date": "2026-01-03",
+        "usage_amount": "98.9",
+        "usage_unit": "m³",
+        "line_items": [
+          {
+            "description": "Unpaid balance from last bill",
+            "amount": "60.45"
+          },
+          {
+            "description": "Gas supply charge",
+            "amount": "60.33"
+          },
+          {
+            "description": "Distribution charge",
+            "amount": "20.33"
+          },
+          {
+            "description": "Sales tax",
+            "amount": "5.65"
+          }
+        ],
+        "total_amount": "146.76",
+        "currency": "USD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 2031,
+      "output_tokens": 178,
+      "latency_seconds": 2.4976943749934435,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\": \"Louisiana Gas & Heating\", \"account_number\": \"P7099861\", \"billing_period_start\": \"2025-11-20\", \"billing_period_end\": \"2025-12-18\", \"due_date\": \"2026-01-03\", \"usage_amount\": \"98.9\", \"usage_unit\": \"m³\", \"line_items\": [{\"description\": \"Unpaid balance from last bill\", \"amount\": \"60.45\"}, {\"description\": \"Gas supply charge\", \"amount\": \"60.33\"}, {\"description\": \"Distribution charge\", \"amount\": \"20.33\"}, {\"description\": \"Sales tax\", \"amount\": \"5.65\"}], \"total_amount\": \"146.76\", \"currency\": \"USD\"}"
+    },
+    "bill_0065": {
+      "bill": {
+        "provider": "WILLIAMSSHIRE NATURAL GAS",
+        "account_number": "03346800722",
+        "billing_period_start": "2025-06-25",
+        "billing_period_end": "2025-07-23",
+        "due_date": "2025-08-19",
+        "usage_amount": "245.8",
+        "usage_unit": "m³",
+        "line_items": [
+          {
+            "description": "NATURAL GAS USAGE",
+            "amount": "218.76"
+          },
+          {
+            "description": "SALES TAX",
+            "amount": "8.75"
+          }
+        ],
+        "total_amount": "227.51",
+        "currency": "USD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 1952,
+      "output_tokens": 149,
+      "latency_seconds": 2.421068625058979,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\": \"WILLIAMSSHIRE NATURAL GAS\", \"account_number\": \"03346800722\", \"billing_period_start\": \"2025-06-25\", \"billing_period_end\": \"2025-07-23\", \"due_date\": \"2025-08-19\", \"usage_amount\": \"245.8\", \"usage_unit\": \"m³\", \"line_items\": [{\"description\": \"NATURAL GAS USAGE\", \"amount\": \"218.76\"}, {\"description\": \"SALES TAX\", \"amount\": \"8.75\"}], \"total_amount\": \"227.51\", \"currency\": \"USD\"}"
+    },
+    "bill_0069": {
+      "bill": {
+        "provider": "Crawford Gas Company",
+        "account_number": "530 011 9721",
+        "billing_period_start": "2026-03-29",
+        "billing_period_end": "2026-04-29",
+        "due_date": "2026-05-24",
+        "usage_amount": "135.7",
+        "usage_unit": "m³",
+        "line_items": [
+          {
+            "description": "Balance forward",
+            "amount": "183.42"
+          },
+          {
+            "description": "Gas supply charge",
+            "amount": "80.06"
+          },
+          {
+            "description": "Fixed monthly charge",
+            "amount": "27.44"
+          },
+          {
+            "description": "Utility users tax",
+            "amount": "8.60"
+          }
+        ],
+        "total_amount": "299.52",
+        "currency": "USD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 2051,
+      "output_tokens": 176,
+      "latency_seconds": 2.7845162090379745,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\": \"Crawford Gas Company\", \"account_number\": \"530 011 9721\", \"billing_period_start\": \"2026-03-29\", \"billing_period_end\": \"2026-04-29\", \"due_date\": \"2026-05-24\", \"usage_amount\": \"135.7\", \"usage_unit\": \"m³\", \"line_items\": [{\"description\": \"Balance forward\", \"amount\": \"183.42\"}, {\"description\": \"Gas supply charge\", \"amount\": \"80.06\"}, {\"description\": \"Fixed monthly charge\", \"amount\": \"27.44\"}, {\"description\": \"Utility users tax\", \"amount\": \"8.60\"}], \"total_amount\": \"299.52\", \"currency\": \"USD\"}"
+    },
+    "bill_0070": {
+      "bill": {
+        "provider": "BANKSBURGH MUNICIPAL WATER",
+        "account_number": "2169-797-2965",
+        "billing_period_start": "2025-02-02",
+        "billing_period_end": "2025-03-05",
+        "due_date": "2025-03-23",
+        "usage_amount": "12.7",
+        "usage_unit": "m³",
+        "line_items": [
+          {
+            "description": "BALANCE FORWARD",
+            "amount": "161.59"
+          },
+          {
+            "description": "WATER USAGE CHARGE",
+            "amount": "46.99"
+          },
+          {
+            "description": "UTILITY USERS TAX",
+            "amount": "4.23"
+          }
+        ],
+        "total_amount": "212.81",
+        "currency": "USD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 1966,
+      "output_tokens": 172,
+      "latency_seconds": 2.4384187501855195,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\": \"BANKSBURGH MUNICIPAL WATER\", \"account_number\": \"2169-797-2965\", \"billing_period_start\": \"2025-02-02\", \"billing_period_end\": \"2025-03-05\", \"due_date\": \"2025-03-23\", \"usage_amount\": \"12.7\", \"usage_unit\": \"m³\", \"line_items\": [{\"description\": \"BALANCE FORWARD\", \"amount\": \"161.59\"}, {\"description\": \"WATER USAGE CHARGE\", \"amount\": \"46.99\"}, {\"description\": \"UTILITY USERS TAX\", \"amount\": \"4.23\"}], \"total_amount\": \"212.81\", \"currency\": \"USD\"}"
+    },
+    "bill_0071": {
+      "bill": {
+        "provider": "Port Travisbury Natural Gas",
+        "account_number": "8386-631-7797",
+        "billing_period_start": "2025-08-27",
+        "billing_period_end": "2025-09-28",
+        "due_date": "2025-10-18",
+        "usage_amount": "248.6",
+        "usage_unit": "m³",
+        "line_items": [
+          {
+            "description": "Gas supply charge",
+            "amount": "305.78"
+          },
+          {
+            "description": "Sales tax",
+            "amount": "30.58"
+          }
+        ],
+        "total_amount": "336.36",
+        "currency": "USD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 2003,
+      "output_tokens": 122,
+      "latency_seconds": 2.1575820420403033,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\":\"Port Travisbury Natural Gas\",\"account_number\":\"8386-631-7797\",\"billing_period_start\":\"2025-08-27\",\"billing_period_end\":\"2025-09-28\",\"due_date\":\"2025-10-18\",\"usage_amount\":\"248.6\",\"usage_unit\":\"m³\",\"line_items\":[{\"description\":\"Gas supply charge\",\"amount\":\"305.78\"},{\"description\":\"Sales tax\",\"amount\":\"30.58\"}],\"total_amount\":\"336.36\",\"currency\":\"USD\"}"
+    },
+    "bill_0073": {
+      "bill": {
+        "provider": "South Carrie Natural Gas",
+        "account_number": "AC-85833-39",
+        "billing_period_start": "2024-04-26",
+        "billing_period_end": "2024-05-26",
+        "due_date": "2024-06-19",
+        "usage_amount": "151.8",
+        "usage_unit": "m³",
+        "line_items": [
+          {
+            "description": "Natural gas usage",
+            "amount": "165.46"
+          },
+          {
+            "description": "Fixed monthly charge",
+            "amount": "13.70"
+          },
+          {
+            "description": "HST",
+            "amount": "12.54"
+          }
+        ],
+        "total_amount": "191.70",
+        "currency": "CAD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 2018,
+      "output_tokens": 134,
+      "latency_seconds": 2.1789738330990076,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\":\"South Carrie Natural Gas\",\"account_number\":\"AC-85833-39\",\"billing_period_start\":\"2024-04-26\",\"billing_period_end\":\"2024-05-26\",\"due_date\":\"2024-06-19\",\"usage_amount\":\"151.8\",\"usage_unit\":\"m³\",\"line_items\":[{\"description\":\"Natural gas usage\",\"amount\":\"165.46\"},{\"description\":\"Fixed monthly charge\",\"amount\":\"13.70\"},{\"description\":\"HST\",\"amount\":\"12.54\"}],\"total_amount\":\"191.70\",\"currency\":\"CAD\"}"
+    },
+    "bill_0074": {
+      "bill": {
+        "provider": "Schwartz Valley Water District",
+        "account_number": "665 800 4397",
+        "billing_period_start": "2024-05-26",
+        "billing_period_end": "2024-06-24",
+        "due_date": "2024-07-18",
+        "usage_amount": "11.1",
+        "usage_unit": "m³",
+        "line_items": [
+          {
+            "description": "Water consumption",
+            "amount": "36.74"
+          },
+          {
+            "description": "Sewer service",
+            "amount": "21.03"
+          },
+          {
+            "description": "Stormwater fee",
+            "amount": "6.69"
+          },
+          {
+            "description": "GST/HST",
+            "amount": "7.09"
+          }
+        ],
+        "total_amount": "71.55",
+        "currency": "CAD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 2055,
+      "output_tokens": 184,
+      "latency_seconds": 2.996618082979694,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\": \"Schwartz Valley Water District\", \"account_number\": \"665 800 4397\", \"billing_period_start\": \"2024-05-26\", \"billing_period_end\": \"2024-06-24\", \"due_date\": \"2024-07-18\", \"usage_amount\": \"11.1\", \"usage_unit\": \"m³\", \"line_items\": [{\"description\": \"Water consumption\", \"amount\": \"36.74\"}, {\"description\": \"Sewer service\", \"amount\": \"21.03\"}, {\"description\": \"Stormwater fee\", \"amount\": \"6.69\"}, {\"description\": \"GST/HST\", \"amount\": \"7.09\"}], \"total_amount\": \"71.55\", \"currency\": \"CAD\"}"
+    },
+    "bill_0075": {
+      "bill": {
+        "provider": "NEW CARLOS POWER & LIGHT",
+        "account_number": "L8615335",
+        "billing_period_start": "2025-10-08",
+        "billing_period_end": "2025-11-05",
+        "due_date": "2025-11-19",
+        "usage_amount": "810",
+        "usage_unit": "kWh",
+        "line_items": [
+          {
+            "description": "ENERGY CHARGE",
+            "amount": "243.00"
+          },
+          {
+            "description": "RENEWABLE ENERGY RIDER",
+            "amount": "25.95"
+          },
+          {
+            "description": "BASIC CUSTOMER CHARGE",
+            "amount": "25.03"
+          },
+          {
+            "description": "UTILITY USERS TAX",
+            "amount": "23.52"
+          }
+        ],
+        "total_amount": "317.50",
+        "currency": "USD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 1971,
+      "output_tokens": 188,
+      "latency_seconds": 2.474343625130132,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\": \"NEW CARLOS POWER & LIGHT\", \"account_number\": \"L8615335\", \"billing_period_start\": \"2025-10-08\", \"billing_period_end\": \"2025-11-05\", \"due_date\": \"2025-11-19\", \"usage_amount\": \"810\", \"usage_unit\": \"kWh\", \"line_items\": [{\"description\": \"ENERGY CHARGE\", \"amount\": \"243.00\"}, {\"description\": \"RENEWABLE ENERGY RIDER\", \"amount\": \"25.95\"}, {\"description\": \"BASIC CUSTOMER CHARGE\", \"amount\": \"25.03\"}, {\"description\": \"UTILITY USERS TAX\", \"amount\": \"23.52\"}], \"total_amount\": \"317.50\", \"currency\": \"USD\"}"
+    },
+    "bill_0077": {
+      "bill": {
+        "provider": "ArmstrongNet Broadband",
+        "account_number": "X8143536",
+        "billing_period_start": "2025-08-24",
+        "billing_period_end": "2025-09-23",
+        "due_date": "2025-10-09",
+        "usage_amount": null,
+        "usage_unit": null,
+        "line_items": [
+          {
+            "description": "Home Internet plan",
+            "amount": "51.16"
+          },
+          {
+            "description": "Regulatory recovery fee",
+            "amount": "8.40"
+          },
+          {
+            "description": "Sales tax",
+            "amount": "7.74"
+          }
+        ],
+        "total_amount": "67.30",
+        "currency": "USD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 1987,
+      "output_tokens": 131,
+      "latency_seconds": 2.086715041892603,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\":\"ArmstrongNet Broadband\",\"account_number\":\"X8143536\",\"billing_period_start\":\"2025-08-24\",\"billing_period_end\":\"2025-09-23\",\"due_date\":\"2025-10-09\",\"usage_amount\":null,\"usage_unit\":null,\"line_items\":[{\"description\":\"Home Internet plan\",\"amount\":\"51.16\"},{\"description\":\"Regulatory recovery fee\",\"amount\":\"8.40\"},{\"description\":\"Sales tax\",\"amount\":\"7.74\"}],\"total_amount\":\"67.30\",\"currency\":\"USD\"}"
+    },
+    "bill_0079": {
+      "bill": {
+        "provider": "East Ashley Fiber",
+        "account_number": "503 731 4530",
+        "billing_period_start": "2025-12-04",
+        "billing_period_end": "2026-01-05",
+        "due_date": "2026-02-01",
+        "usage_amount": null,
+        "usage_unit": null,
+        "line_items": [
+          {
+            "description": "Previous balance",
+            "amount": "213.20"
+          },
+          {
+            "description": "Home Internet plan",
+            "amount": "78.05"
+          },
+          {
+            "description": "Modem rental",
+            "amount": "17.40"
+          },
+          {
+            "description": "Static IP address",
+            "amount": "23.06"
+          },
+          {
+            "description": "State and local taxes",
+            "amount": "13.04"
+          }
+        ],
+        "total_amount": "344.75",
+        "currency": "USD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 2047,
+      "output_tokens": 190,
+      "latency_seconds": 2.558145541930571,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\": \"East Ashley Fiber\", \"account_number\": \"503 731 4530\", \"billing_period_start\": \"2025-12-04\", \"billing_period_end\": \"2026-01-05\", \"due_date\": \"2026-02-01\", \"usage_amount\": null, \"usage_unit\": null, \"line_items\": [{\"description\": \"Previous balance\", \"amount\": \"213.20\"}, {\"description\": \"Home Internet plan\", \"amount\": \"78.05\"}, {\"description\": \"Modem rental\", \"amount\": \"17.40\"}, {\"description\": \"Static IP address\", \"amount\": \"23.06\"}, {\"description\": \"State and local taxes\", \"amount\": \"13.04\"}], \"total_amount\": \"344.75\", \"currency\": \"USD\"}"
+    },
+    "bill_0081": {
+      "bill": {
+        "provider": "New Cole Municipal Water",
+        "account_number": "W0881172",
+        "billing_period_start": "2025-09-16",
+        "billing_period_end": "2025-10-16",
+        "due_date": "2025-11-08",
+        "usage_amount": "19.7",
+        "usage_unit": "m³",
+        "line_items": [
+          {
+            "description": "Previous balance",
+            "amount": "183.28"
+          },
+          {
+            "description": "Water usage charge",
+            "amount": "73.48"
+          },
+          {
+            "description": "Utility users tax",
+            "amount": "8.08"
+          }
+        ],
+        "total_amount": "264.84",
+        "currency": "USD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 2014,
+      "output_tokens": 158,
+      "latency_seconds": 2.288106583058834,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\": \"New Cole Municipal Water\", \"account_number\": \"W0881172\", \"billing_period_start\": \"2025-09-16\", \"billing_period_end\": \"2025-10-16\", \"due_date\": \"2025-11-08\", \"usage_amount\": \"19.7\", \"usage_unit\": \"m³\", \"line_items\": [{\"description\": \"Previous balance\", \"amount\": \"183.28\"}, {\"description\": \"Water usage charge\", \"amount\": \"73.48\"}, {\"description\": \"Utility users tax\", \"amount\": \"8.08\"}], \"total_amount\": \"264.84\", \"currency\": \"USD\"}"
+    },
+    "bill_0082": {
+      "bill": {
+        "provider": "Fischer Electric Cooperative",
+        "account_number": "J8725887",
+        "billing_period_start": "2024-12-07",
+        "billing_period_end": "2025-01-04",
+        "due_date": "2025-01-29",
+        "usage_amount": "987",
+        "usage_unit": "kWh",
+        "line_items": [
+          {
+            "description": "Energy charge",
+            "amount": "217.14"
+          },
+          {
+            "description": "Utility users tax",
+            "amount": "15.20"
+          }
+        ],
+        "total_amount": "232.34",
+        "currency": "USD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 1990,
+      "output_tokens": 116,
+      "latency_seconds": 2.0340332500636578,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\":\"Fischer Electric Cooperative\",\"account_number\":\"J8725887\",\"billing_period_start\":\"2024-12-07\",\"billing_period_end\":\"2025-01-04\",\"due_date\":\"2025-01-29\",\"usage_amount\":\"987\",\"usage_unit\":\"kWh\",\"line_items\":[{\"description\":\"Energy charge\",\"amount\":\"217.14\"},{\"description\":\"Utility users tax\",\"amount\":\"15.20\"}],\"total_amount\":\"232.34\",\"currency\":\"USD\"}"
+    },
+    "bill_0086": {
+      "bill": {
+        "provider": "Oregon Telecom",
+        "account_number": "6120-347-1754",
+        "billing_period_start": "2025-12-29",
+        "billing_period_end": "2026-01-30",
+        "due_date": "2026-02-15",
+        "usage_amount": null,
+        "usage_unit": null,
+        "line_items": [
+          {
+            "description": "Fiber 500 monthly plan",
+            "amount": "40.78"
+          },
+          {
+            "description": "Wi-Fi extender rental",
+            "amount": "8.00"
+          },
+          {
+            "description": "Utility users tax",
+            "amount": "5.37"
+          }
+        ],
+        "total_amount": "54.15",
+        "currency": "USD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 1995,
+      "output_tokens": 164,
+      "latency_seconds": 2.405148999998346,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\": \"Oregon Telecom\", \"account_number\": \"6120-347-1754\", \"billing_period_start\": \"2025-12-29\", \"billing_period_end\": \"2026-01-30\", \"due_date\": \"2026-02-15\", \"usage_amount\": null, \"usage_unit\": null, \"line_items\": [{\"description\": \"Fiber 500 monthly plan\", \"amount\": \"40.78\"}, {\"description\": \"Wi-Fi extender rental\", \"amount\": \"8.00\"}, {\"description\": \"Utility users tax\", \"amount\": \"5.37\"}], \"total_amount\": \"54.15\", \"currency\": \"USD\"}"
+    },
+    "bill_0091": {
+      "bill": {
+        "provider": "Deannaside Power & Light",
+        "account_number": "358 573 0652",
+        "billing_period_start": "2024-08-09",
+        "billing_period_end": "2024-09-05",
+        "due_date": "2024-09-28",
+        "usage_amount": "1123",
+        "usage_unit": "kWh",
+        "line_items": [
+          {
+            "description": "Previous balance",
+            "amount": "236.77"
+          },
+          {
+            "description": "Energy charge",
+            "amount": "336.90"
+          },
+          {
+            "description": "Delivery charge",
+            "amount": "12.68"
+          },
+          {
+            "description": "State and local taxes",
+            "amount": "45.45"
+          }
+        ],
+        "total_amount": "631.80",
+        "currency": "USD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 2035,
+      "output_tokens": 148,
+      "latency_seconds": 2.3107712499331683,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\":\"Deannaside Power & Light\",\"account_number\":\"358 573 0652\",\"billing_period_start\":\"2024-08-09\",\"billing_period_end\":\"2024-09-05\",\"due_date\":\"2024-09-28\",\"usage_amount\":\"1123\",\"usage_unit\":\"kWh\",\"line_items\":[{\"description\":\"Previous balance\",\"amount\":\"236.77\"},{\"description\":\"Energy charge\",\"amount\":\"336.90\"},{\"description\":\"Delivery charge\",\"amount\":\"12.68\"},{\"description\":\"State and local taxes\",\"amount\":\"45.45\"}],\"total_amount\":\"631.80\",\"currency\":\"USD\"}"
+    },
+    "bill_0093": {
+      "bill": {
+        "provider": "Hawaii Energy",
+        "account_number": "08685289755",
+        "billing_period_start": "2025-04-29",
+        "billing_period_end": "2025-05-27",
+        "due_date": "2025-06-13",
+        "usage_amount": "659",
+        "usage_unit": "kWh",
+        "line_items": [
+          {
+            "description": "Electricity supply",
+            "amount": "191.11"
+          },
+          {
+            "description": "GST",
+            "amount": "7.64"
+          }
+        ],
+        "total_amount": "198.75",
+        "currency": "CAD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 1996,
+      "output_tokens": 138,
+      "latency_seconds": 2.711500084027648,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\": \"Hawaii Energy\", \"account_number\": \"08685289755\", \"billing_period_start\": \"2025-04-29\", \"billing_period_end\": \"2025-05-27\", \"due_date\": \"2025-06-13\", \"usage_amount\": \"659\", \"usage_unit\": \"kWh\", \"line_items\": [{\"description\": \"Electricity supply\", \"amount\": \"191.11\"}, {\"description\": \"GST\", \"amount\": \"7.64\"}], \"total_amount\": \"198.75\", \"currency\": \"CAD\"}"
+    },
+    "bill_0095": {
+      "bill": {
+        "provider": "DUNCAN ELECTRIC COOPERATIVE",
+        "account_number": "Y8331465",
+        "billing_period_start": "2024-09-20",
+        "billing_period_end": "2024-10-20",
+        "due_date": "2024-11-05",
+        "usage_amount": "319",
+        "usage_unit": "kWh",
+        "line_items": [
+          {
+            "description": "UNPAID BALANCE FROM LAST BILL",
+            "amount": "154.37"
+          },
+          {
+            "description": "ELECTRICITY SUPPLY",
+            "amount": "82.94"
+          },
+          {
+            "description": "DELIVERY CHARGE",
+            "amount": "18.85"
+          },
+          {
+            "description": "RENEWABLE ENERGY RIDER",
+            "amount": "13.25"
+          },
+          {
+            "description": "STATE AND LOCAL TAXES",
+            "amount": "5.75"
+          }
+        ],
+        "total_amount": "275.16",
+        "currency": "USD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 1987,
+      "output_tokens": 171,
+      "latency_seconds": 2.47831999999471,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\":\"DUNCAN ELECTRIC COOPERATIVE\",\"account_number\":\"Y8331465\",\"billing_period_start\":\"2024-09-20\",\"billing_period_end\":\"2024-10-20\",\"due_date\":\"2024-11-05\",\"usage_amount\":\"319\",\"usage_unit\":\"kWh\",\"line_items\":[{\"description\":\"UNPAID BALANCE FROM LAST BILL\",\"amount\":\"154.37\"},{\"description\":\"ELECTRICITY SUPPLY\",\"amount\":\"82.94\"},{\"description\":\"DELIVERY CHARGE\",\"amount\":\"18.85\"},{\"description\":\"RENEWABLE ENERGY RIDER\",\"amount\":\"13.25\"},{\"description\":\"STATE AND LOCAL TAXES\",\"amount\":\"5.75\"}],\"total_amount\":\"275.16\",\"currency\":\"USD\"}"
+    },
+    "bill_0098": {
+      "bill": {
+        "provider": "Missouri Gas & Heating",
+        "account_number": "722 330 6046",
+        "billing_period_start": "2025-11-25",
+        "billing_period_end": "2025-12-26",
+        "due_date": "2026-01-18",
+        "usage_amount": "114.5",
+        "usage_unit": "m³",
+        "line_items": [
+          {
+            "description": "Gas supply charge",
+            "amount": "138.55"
+          },
+          {
+            "description": "State and local taxes",
+            "amount": "13.86"
+          }
+        ],
+        "total_amount": "152.41",
+        "currency": "USD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 2005,
+      "output_tokens": 121,
+      "latency_seconds": 2.033096458064392,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\":\"Missouri Gas & Heating\",\"account_number\":\"722 330 6046\",\"billing_period_start\":\"2025-11-25\",\"billing_period_end\":\"2025-12-26\",\"due_date\":\"2026-01-18\",\"usage_amount\":\"114.5\",\"usage_unit\":\"m³\",\"line_items\":[{\"description\":\"Gas supply charge\",\"amount\":\"138.55\"},{\"description\":\"State and local taxes\",\"amount\":\"13.86\"}],\"total_amount\":\"152.41\",\"currency\":\"USD\"}"
+    },
+    "bill_0100": {
+      "bill": {
+        "provider": "ALABAMA GAS & HEATING",
+        "account_number": "W4077780",
+        "billing_period_start": "2024-12-12",
+        "billing_period_end": "2025-01-09",
+        "due_date": "2025-02-06",
+        "usage_amount": "81.4",
+        "usage_unit": "m³",
+        "line_items": [
+          {
+            "description": "GAS SUPPLY CHARGE",
+            "amount": "52.91"
+          },
+          {
+            "description": "AUTOPAY DISCOUNT",
+            "amount": "-7.41"
+          },
+          {
+            "description": "SALES TAX",
+            "amount": "5.29"
+          }
+        ],
+        "total_amount": "50.79",
+        "currency": "USD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 1969,
+      "output_tokens": 167,
+      "latency_seconds": 2.475268041016534,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\": \"ALABAMA GAS & HEATING\", \"account_number\": \"W4077780\", \"billing_period_start\": \"2024-12-12\", \"billing_period_end\": \"2025-01-09\", \"due_date\": \"2025-02-06\", \"usage_amount\": \"81.4\", \"usage_unit\": \"m³\", \"line_items\": [{\"description\": \"GAS SUPPLY CHARGE\", \"amount\": \"52.91\"}, {\"description\": \"AUTOPAY DISCOUNT\", \"amount\": \"-7.41\"}, {\"description\": \"SALES TAX\", \"amount\": \"5.29\"}], \"total_amount\": \"50.79\", \"currency\": \"USD\"}"
+    },
+    "bill_0102": {
+      "bill": {
+        "provider": "Maryland Gas & Heating",
+        "account_number": "AC-88501-55",
+        "billing_period_start": "2026-06-11",
+        "billing_period_end": "2026-07-08",
+        "due_date": null,
+        "usage_amount": "68.3",
+        "usage_unit": "m³",
+        "line_items": [
+          {
+            "description": "Gas supply charge",
+            "amount": "94.94"
+          },
+          {
+            "description": "Pipeline safety fee",
+            "amount": "4.36"
+          },
+          {
+            "description": "Fixed monthly charge",
+            "amount": "16.17"
+          },
+          {
+            "description": "GST/HST",
+            "amount": "6.93"
+          }
+        ],
+        "total_amount": "122.40",
+        "currency": "CAD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 2019,
+      "output_tokens": 175,
+      "latency_seconds": 2.4309642501175404,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\": \"Maryland Gas & Heating\", \"account_number\": \"AC-88501-55\", \"billing_period_start\": \"2026-06-11\", \"billing_period_end\": \"2026-07-08\", \"due_date\": null, \"usage_amount\": \"68.3\", \"usage_unit\": \"m³\", \"line_items\": [{\"description\": \"Gas supply charge\", \"amount\": \"94.94\"}, {\"description\": \"Pipeline safety fee\", \"amount\": \"4.36\"}, {\"description\": \"Fixed monthly charge\", \"amount\": \"16.17\"}, {\"description\": \"GST/HST\", \"amount\": \"6.93\"}], \"total_amount\": \"122.40\", \"currency\": \"CAD\"}"
+    },
+    "bill_0104": {
+      "bill": {
+        "provider": "WilsonNet Broadband",
+        "account_number": "J8138585",
+        "billing_period_start": "2024-04-03",
+        "billing_period_end": "2024-05-05",
+        "due_date": "2024-05-30",
+        "usage_amount": null,
+        "usage_unit": null,
+        "line_items": [
+          {
+            "description": "Unlimited Internet 300",
+            "amount": "87.30"
+          },
+          {
+            "description": "Static IP address",
+            "amount": "10.71"
+          },
+          {
+            "description": "Wi-Fi extender rental",
+            "amount": "10.38"
+          },
+          {
+            "description": "GST",
+            "amount": "10.84"
+          }
+        ],
+        "total_amount": "119.23",
+        "currency": "CAD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 2036,
+      "output_tokens": 148,
+      "latency_seconds": 2.3968182501848787,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\":\"WilsonNet Broadband\",\"account_number\":\"J8138585\",\"billing_period_start\":\"2024-04-03\",\"billing_period_end\":\"2024-05-05\",\"due_date\":\"2024-05-30\",\"usage_amount\":null,\"usage_unit\":null,\"line_items\":[{\"description\":\"Unlimited Internet 300\",\"amount\":\"87.30\"},{\"description\":\"Static IP address\",\"amount\":\"10.71\"},{\"description\":\"Wi-Fi extender rental\",\"amount\":\"10.38\"},{\"description\":\"GST\",\"amount\":\"10.84\"}],\"total_amount\":\"119.23\",\"currency\":\"CAD\"}"
+    },
+    "bill_0105": {
+      "bill": {
+        "provider": "DAVISNET BROADBAND",
+        "account_number": "733 294 5625",
+        "billing_period_start": "2024-10-11",
+        "billing_period_end": "2024-11-08",
+        "due_date": "2024-12-03",
+        "usage_amount": null,
+        "usage_unit": null,
+        "line_items": [
+          {
+            "description": "HOME INTERNET PLAN",
+            "amount": "106.28"
+          },
+          {
+            "description": "UTILITY USERS TAX",
+            "amount": "10.63"
+          }
+        ],
+        "total_amount": "116.91",
+        "currency": "USD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 1944,
+      "output_tokens": 146,
+      "latency_seconds": 2.218248249962926,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\": \"DAVISNET BROADBAND\", \"account_number\": \"733 294 5625\", \"billing_period_start\": \"2024-10-11\", \"billing_period_end\": \"2024-11-08\", \"due_date\": \"2024-12-03\", \"usage_amount\": null, \"usage_unit\": null, \"line_items\": [{\"description\": \"HOME INTERNET PLAN\", \"amount\": \"106.28\"}, {\"description\": \"UTILITY USERS TAX\", \"amount\": \"10.63\"}], \"total_amount\": \"116.91\", \"currency\": \"USD\"}"
+    },
+    "bill_0107": {
+      "bill": {
+        "provider": "Long Electric Cooperative",
+        "account_number": "666 832 7238",
+        "billing_period_start": "2025-04-09",
+        "billing_period_end": "2025-05-07",
+        "due_date": "2025-06-03",
+        "usage_amount": "906",
+        "usage_unit": "kWh",
+        "line_items": [
+          {
+            "description": "Energy charge",
+            "amount": "253.68"
+          },
+          {
+            "description": "State and local taxes",
+            "amount": "20.29"
+          }
+        ],
+        "total_amount": "273.97",
+        "currency": "USD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 1993,
+      "output_tokens": 118,
+      "latency_seconds": 2.1068641250021756,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\":\"Long Electric Cooperative\",\"account_number\":\"666 832 7238\",\"billing_period_start\":\"2025-04-09\",\"billing_period_end\":\"2025-05-07\",\"due_date\":\"2025-06-03\",\"usage_amount\":\"906\",\"usage_unit\":\"kWh\",\"line_items\":[{\"description\":\"Energy charge\",\"amount\":\"253.68\"},{\"description\":\"State and local taxes\",\"amount\":\"20.29\"}],\"total_amount\":\"273.97\",\"currency\":\"USD\"}"
+    },
+    "bill_0110": {
+      "bill": {
+        "provider": "SUZANNETON FIBER",
+        "account_number": "AC-69454-41",
+        "billing_period_start": "2025-11-16",
+        "billing_period_end": "2025-12-17",
+        "due_date": "2026-01-03",
+        "usage_amount": null,
+        "usage_unit": null,
+        "line_items": [
+          {
+            "description": "UNLIMITED INTERNET 300",
+            "amount": "97.79"
+          },
+          {
+            "description": "REGULATORY RECOVERY FEE",
+            "amount": "8.44"
+          },
+          {
+            "description": "HST",
+            "amount": "7.44"
+          }
+        ],
+        "total_amount": "113.67",
+        "currency": "CAD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 1943,
+      "output_tokens": 164,
+      "latency_seconds": 2.3585853329859674,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\": \"SUZANNETON FIBER\", \"account_number\": \"AC-69454-41\", \"billing_period_start\": \"2025-11-16\", \"billing_period_end\": \"2025-12-17\", \"due_date\": \"2026-01-03\", \"usage_amount\": null, \"usage_unit\": null, \"line_items\": [{\"description\": \"UNLIMITED INTERNET 300\", \"amount\": \"97.79\"}, {\"description\": \"REGULATORY RECOVERY FEE\", \"amount\": \"8.44\"}, {\"description\": \"HST\", \"amount\": \"7.44\"}], \"total_amount\": \"113.67\", \"currency\": \"CAD\"}"
+    },
+    "bill_0111": {
+      "bill": {
+        "provider": "BennettNet Broadband",
+        "account_number": "X2124471",
+        "billing_period_start": "2024-04-04",
+        "billing_period_end": "2024-05-04",
+        "due_date": "2024-05-23",
+        "usage_amount": null,
+        "usage_unit": null,
+        "line_items": [
+          {
+            "description": "Unpaid balance from last bill",
+            "amount": "42.12"
+          },
+          {
+            "description": "Unlimited Internet 300",
+            "amount": "63.19"
+          },
+          {
+            "description": "Billing adjustment",
+            "amount": "-15.17"
+          },
+          {
+            "description": "Utility users tax",
+            "amount": "7.58"
+          }
+        ],
+        "total_amount": "97.72",
+        "currency": "USD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 2015,
+      "output_tokens": 151,
+      "latency_seconds": 2.786054458003491,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\":\"BennettNet Broadband\",\"account_number\":\"X2124471\",\"billing_period_start\":\"2024-04-04\",\"billing_period_end\":\"2024-05-04\",\"due_date\":\"2024-05-23\",\"usage_amount\":null,\"usage_unit\":null,\"line_items\":[{\"description\":\"Unpaid balance from last bill\",\"amount\":\"42.12\"},{\"description\":\"Unlimited Internet 300\",\"amount\":\"63.19\"},{\"description\":\"Billing adjustment\",\"amount\":\"-15.17\"},{\"description\":\"Utility users tax\",\"amount\":\"7.58\"}],\"total_amount\":\"97.72\",\"currency\":\"USD\"}"
+    },
+    "bill_0112": {
+      "bill": {
+        "provider": "HernandezNet Broadband",
+        "account_number": "908 776 6183",
+        "billing_period_start": "2025-05-07",
+        "billing_period_end": "2025-06-06",
+        "due_date": "2025-06-23",
+        "usage_amount": null,
+        "usage_unit": null,
+        "line_items": [
+          {
+            "description": "Unpaid balance from last bill",
+            "amount": "94.11"
+          },
+          {
+            "description": "Unlimited Internet 300",
+            "amount": "48.69"
+          },
+          {
+            "description": "Regulatory recovery fee",
+            "amount": "3.92"
+          },
+          {
+            "description": "Modem rental",
+            "amount": "5.48"
+          },
+          {
+            "description": "Sales tax",
+            "amount": "1.74"
+          }
+        ],
+        "total_amount": "153.94",
+        "currency": "USD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 2025,
+      "output_tokens": 166,
+      "latency_seconds": 2.481228542048484,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\":\"HernandezNet Broadband\",\"account_number\":\"908 776 6183\",\"billing_period_start\":\"2025-05-07\",\"billing_period_end\":\"2025-06-06\",\"due_date\":\"2025-06-23\",\"usage_amount\":null,\"usage_unit\":null,\"line_items\":[{\"description\":\"Unpaid balance from last bill\",\"amount\":\"94.11\"},{\"description\":\"Unlimited Internet 300\",\"amount\":\"48.69\"},{\"description\":\"Regulatory recovery fee\",\"amount\":\"3.92\"},{\"description\":\"Modem rental\",\"amount\":\"5.48\"},{\"description\":\"Sales tax\",\"amount\":\"1.74\"}],\"total_amount\":\"153.94\",\"currency\":\"USD\"}"
+    },
+    "bill_0113": {
+      "bill": {
+        "provider": "Brownside Municipal Water",
+        "account_number": "N7005050",
+        "billing_period_start": "2026-03-27",
+        "billing_period_end": "2026-04-28",
+        "due_date": "2026-05-23",
+        "usage_amount": "12.3",
+        "usage_unit": "m³",
+        "line_items": [
+          {
+            "description": "Previous balance",
+            "amount": "20.31"
+          },
+          {
+            "description": "Metered water",
+            "amount": "49.69"
+          },
+          {
+            "description": "State and local taxes",
+            "amount": "5.96"
+          }
+        ],
+        "total_amount": "75.96",
+        "currency": "USD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 2021,
+      "output_tokens": 160,
+      "latency_seconds": 2.2969509169925004,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\": \"Brownside Municipal Water\", \"account_number\": \"N7005050\", \"billing_period_start\": \"2026-03-27\", \"billing_period_end\": \"2026-04-28\", \"due_date\": \"2026-05-23\", \"usage_amount\": \"12.3\", \"usage_unit\": \"m³\", \"line_items\": [{\"description\": \"Previous balance\", \"amount\": \"20.31\"}, {\"description\": \"Metered water\", \"amount\": \"49.69\"}, {\"description\": \"State and local taxes\", \"amount\": \"5.96\"}], \"total_amount\": \"75.96\", \"currency\": \"USD\"}"
+    },
+    "bill_0114": {
+      "bill": {
+        "provider": "Maryborough Natural Gas",
+        "account_number": "05114262582",
+        "billing_period_start": "2024-02-28",
+        "billing_period_end": "2024-03-26",
+        "due_date": "2024-04-10",
+        "usage_amount": "110.3",
+        "usage_unit": "m³",
+        "line_items": [
+          {
+            "description": "Gas supply charge",
+            "amount": "58.46"
+          },
+          {
+            "description": "Carbon levy",
+            "amount": "18.96"
+          },
+          {
+            "description": "GST",
+            "amount": "9.29"
+          }
+        ],
+        "total_amount": "86.71",
+        "currency": "CAD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 2039,
+      "output_tokens": 131,
+      "latency_seconds": 2.0849727080203593,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\":\"Maryborough Natural Gas\",\"account_number\":\"05114262582\",\"billing_period_start\":\"2024-02-28\",\"billing_period_end\":\"2024-03-26\",\"due_date\":\"2024-04-10\",\"usage_amount\":\"110.3\",\"usage_unit\":\"m³\",\"line_items\":[{\"description\":\"Gas supply charge\",\"amount\":\"58.46\"},{\"description\":\"Carbon levy\",\"amount\":\"18.96\"},{\"description\":\"GST\",\"amount\":\"9.29\"}],\"total_amount\":\"86.71\",\"currency\":\"CAD\"}"
+    },
+    "bill_0115": {
+      "bill": {
+        "provider": "BRIANVILLE POWER & LIGHT",
+        "account_number": "722 005 4364",
+        "billing_period_start": "2025-12-13",
+        "billing_period_end": "2026-01-11",
+        "due_date": null,
+        "usage_amount": "632",
+        "usage_unit": "kWh",
+        "line_items": [
+          {
+            "description": "ENERGY CHARGE",
+            "amount": "107.44"
+          },
+          {
+            "description": "DELIVERY CHARGE",
+            "amount": "17.32"
+          },
+          {
+            "description": "RENEWABLE ENERGY RIDER",
+            "amount": "24.60"
+          },
+          {
+            "description": "UTILITY USERS TAX",
+            "amount": "19.42"
+          }
+        ],
+        "total_amount": "168.78",
+        "currency": "USD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 1958,
+      "output_tokens": 183,
+      "latency_seconds": 2.5608417079783976,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\": \"BRIANVILLE POWER & LIGHT\", \"account_number\": \"722 005 4364\", \"billing_period_start\": \"2025-12-13\", \"billing_period_end\": \"2026-01-11\", \"due_date\": null, \"usage_amount\": \"632\", \"usage_unit\": \"kWh\", \"line_items\": [{\"description\": \"ENERGY CHARGE\", \"amount\": \"107.44\"}, {\"description\": \"DELIVERY CHARGE\", \"amount\": \"17.32\"}, {\"description\": \"RENEWABLE ENERGY RIDER\", \"amount\": \"24.60\"}, {\"description\": \"UTILITY USERS TAX\", \"amount\": \"19.42\"}], \"total_amount\": \"168.78\", \"currency\": \"USD\"}"
+    },
+    "bill_0118": {
+      "bill": {
+        "provider": "New Jennaborough Natural Gas",
+        "account_number": "08179335548",
+        "billing_period_start": "2024-03-14",
+        "billing_period_end": "2024-04-12",
+        "due_date": "2024-05-07",
+        "usage_amount": "230.8",
+        "usage_unit": "m³",
+        "line_items": [
+          {
+            "description": "Balance forward",
+            "amount": "164.48"
+          },
+          {
+            "description": "Natural gas usage",
+            "amount": "302.35"
+          },
+          {
+            "description": "HST",
+            "amount": "24.19"
+          }
+        ],
+        "total_amount": "491.02",
+        "currency": "CAD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 2023,
+      "output_tokens": 160,
+      "latency_seconds": 2.5269127499777824,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\": \"New Jennaborough Natural Gas\", \"account_number\": \"08179335548\", \"billing_period_start\": \"2024-03-14\", \"billing_period_end\": \"2024-04-12\", \"due_date\": \"2024-05-07\", \"usage_amount\": \"230.8\", \"usage_unit\": \"m³\", \"line_items\": [{\"description\": \"Balance forward\", \"amount\": \"164.48\"}, {\"description\": \"Natural gas usage\", \"amount\": \"302.35\"}, {\"description\": \"HST\", \"amount\": \"24.19\"}], \"total_amount\": \"491.02\", \"currency\": \"CAD\"}"
+    },
+    "bill_0119": {
+      "bill": {
+        "provider": "Toddhaven Municipal Water",
+        "account_number": "492 424 3754",
+        "billing_period_start": "2025-09-13",
+        "billing_period_end": "2025-10-11",
+        "due_date": "2025-11-01",
+        "usage_amount": "30.7",
+        "usage_unit": "m³",
+        "line_items": [
+          {
+            "description": "Previous balance",
+            "amount": "182.26"
+          },
+          {
+            "description": "Water usage charge",
+            "amount": "58.33"
+          },
+          {
+            "description": "Utility users tax",
+            "amount": "5.25"
+          }
+        ],
+        "total_amount": "245.84",
+        "currency": "USD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 2040,
+      "output_tokens": 162,
+      "latency_seconds": 2.5519132500048727,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\": \"Toddhaven Municipal Water\", \"account_number\": \"492 424 3754\", \"billing_period_start\": \"2025-09-13\", \"billing_period_end\": \"2025-10-11\", \"due_date\": \"2025-11-01\", \"usage_amount\": \"30.7\", \"usage_unit\": \"m³\", \"line_items\": [{\"description\": \"Previous balance\", \"amount\": \"182.26\"}, {\"description\": \"Water usage charge\", \"amount\": \"58.33\"}, {\"description\": \"Utility users tax\", \"amount\": \"5.25\"}], \"total_amount\": \"245.84\", \"currency\": \"USD\"}"
+    },
+    "bill_0120": {
+      "bill": {
+        "provider": "NORTH TARA MUNICIPAL WATER",
+        "account_number": "AC-47492-97",
+        "billing_period_start": "2024-05-14",
+        "billing_period_end": "2024-06-13",
+        "due_date": "2024-07-05",
+        "usage_amount": "35.3",
+        "usage_unit": "m³",
+        "line_items": [
+          {
+            "description": "WATER CONSUMPTION",
+            "amount": "117.90"
+          },
+          {
+            "description": "HST",
+            "amount": "5.90"
+          }
+        ],
+        "total_amount": "123.80",
+        "currency": "CAD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 1949,
+      "output_tokens": 149,
+      "latency_seconds": 2.469075500033796,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\": \"NORTH TARA MUNICIPAL WATER\", \"account_number\": \"AC-47492-97\", \"billing_period_start\": \"2024-05-14\", \"billing_period_end\": \"2024-06-13\", \"due_date\": \"2024-07-05\", \"usage_amount\": \"35.3\", \"usage_unit\": \"m³\", \"line_items\": [{\"description\": \"WATER CONSUMPTION\", \"amount\": \"117.90\"}, {\"description\": \"HST\", \"amount\": \"5.90\"}], \"total_amount\": \"123.80\", \"currency\": \"CAD\"}"
+    },
+    "bill_0121": {
+      "bill": {
+        "provider": "Lake Pamela Natural Gas",
+        "account_number": "426 629 9123",
+        "billing_period_start": "2025-07-03",
+        "billing_period_end": "2025-08-03",
+        "due_date": "2025-08-17",
+        "usage_amount": "167.8",
+        "usage_unit": "m³",
+        "line_items": [
+          {
+            "description": "Balance forward",
+            "amount": "127.13"
+          },
+          {
+            "description": "Gas supply charge",
+            "amount": "159.41"
+          },
+          {
+            "description": "Pipeline safety fee",
+            "amount": "18.31"
+          },
+          {
+            "description": "Fixed monthly charge",
+            "amount": "17.77"
+          },
+          {
+            "description": "Utility users tax",
+            "amount": "19.55"
+          }
+        ],
+        "total_amount": "342.17",
+        "currency": "USD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 2045,
+      "output_tokens": 196,
+      "latency_seconds": 2.605378875043243,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\": \"Lake Pamela Natural Gas\", \"account_number\": \"426 629 9123\", \"billing_period_start\": \"2025-07-03\", \"billing_period_end\": \"2025-08-03\", \"due_date\": \"2025-08-17\", \"usage_amount\": \"167.8\", \"usage_unit\": \"m³\", \"line_items\": [{\"description\": \"Balance forward\", \"amount\": \"127.13\"}, {\"description\": \"Gas supply charge\", \"amount\": \"159.41\"}, {\"description\": \"Pipeline safety fee\", \"amount\": \"18.31\"}, {\"description\": \"Fixed monthly charge\", \"amount\": \"17.77\"}, {\"description\": \"Utility users tax\", \"amount\": \"19.55\"}], \"total_amount\": \"342.17\", \"currency\": \"USD\"}"
+    },
+    "bill_0123": {
+      "bill": {
+        "provider": "North Jeffery Municipal Water",
+        "account_number": "C9888167",
+        "billing_period_start": "2025-09-16",
+        "billing_period_end": "2025-10-15",
+        "due_date": "2025-11-02",
+        "usage_amount": "43.2",
+        "usage_unit": "m³",
+        "line_items": [
+          {
+            "description": "Water consumption",
+            "amount": "157.68"
+          },
+          {
+            "description": "Meter service charge",
+            "amount": "3.02"
+          },
+          {
+            "description": "Sewer service",
+            "amount": "8.10"
+          },
+          {
+            "description": "HST",
+            "amount": "16.88"
+          }
+        ],
+        "total_amount": "185.68",
+        "currency": "CAD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 2032,
+      "output_tokens": 146,
+      "latency_seconds": 2.2734417910687625,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\":\"North Jeffery Municipal Water\",\"account_number\":\"C9888167\",\"billing_period_start\":\"2025-09-16\",\"billing_period_end\":\"2025-10-15\",\"due_date\":\"2025-11-02\",\"usage_amount\":\"43.2\",\"usage_unit\":\"m³\",\"line_items\":[{\"description\":\"Water consumption\",\"amount\":\"157.68\"},{\"description\":\"Meter service charge\",\"amount\":\"3.02\"},{\"description\":\"Sewer service\",\"amount\":\"8.10\"},{\"description\":\"HST\",\"amount\":\"16.88\"}],\"total_amount\":\"185.68\",\"currency\":\"CAD\"}"
+    },
+    "bill_0128": {
+      "bill": {
+        "provider": "Crawford Electric Cooperative",
+        "account_number": "AC-29456-37",
+        "billing_period_start": "2024-02-04",
+        "billing_period_end": "2024-03-07",
+        "due_date": "2024-04-03",
+        "usage_amount": "1012",
+        "usage_unit": "kWh",
+        "line_items": [
+          {
+            "description": "Energy charge",
+            "amount": "192.28"
+          },
+          {
+            "description": "Transmission charge",
+            "amount": "3.41"
+          },
+          {
+            "description": "Renewable energy rider",
+            "amount": "15.46"
+          },
+          {
+            "description": "State and local taxes",
+            "amount": "25.34"
+          }
+        ],
+        "total_amount": "236.49",
+        "currency": "USD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 2030,
+      "output_tokens": 146,
+      "latency_seconds": 2.2328590410761535,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\":\"Crawford Electric Cooperative\",\"account_number\":\"AC-29456-37\",\"billing_period_start\":\"2024-02-04\",\"billing_period_end\":\"2024-03-07\",\"due_date\":\"2024-04-03\",\"usage_amount\":\"1012\",\"usage_unit\":\"kWh\",\"line_items\":[{\"description\":\"Energy charge\",\"amount\":\"192.28\"},{\"description\":\"Transmission charge\",\"amount\":\"3.41\"},{\"description\":\"Renewable energy rider\",\"amount\":\"15.46\"},{\"description\":\"State and local taxes\",\"amount\":\"25.34\"}],\"total_amount\":\"236.49\",\"currency\":\"USD\"}"
+    },
+    "bill_0131": {
+      "bill": {
+        "provider": "Montana Energy",
+        "account_number": "AC-41343-27",
+        "billing_period_start": "2026-04-04",
+        "billing_period_end": "2026-05-01",
+        "due_date": "2026-05-28",
+        "usage_amount": "261",
+        "usage_unit": "kWh",
+        "line_items": [
+          {
+            "description": "Energy charge",
+            "amount": "83.52"
+          },
+          {
+            "description": "Transmission charge",
+            "amount": "15.16"
+          },
+          {
+            "description": "State and local taxes",
+            "amount": "12.83"
+          }
+        ],
+        "total_amount": "111.51",
+        "currency": "USD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 2006,
+      "output_tokens": 157,
+      "latency_seconds": 2.233974958071485,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\": \"Montana Energy\", \"account_number\": \"AC-41343-27\", \"billing_period_start\": \"2026-04-04\", \"billing_period_end\": \"2026-05-01\", \"due_date\": \"2026-05-28\", \"usage_amount\": \"261\", \"usage_unit\": \"kWh\", \"line_items\": [{\"description\": \"Energy charge\", \"amount\": \"83.52\"}, {\"description\": \"Transmission charge\", \"amount\": \"15.16\"}, {\"description\": \"State and local taxes\", \"amount\": \"12.83\"}], \"total_amount\": \"111.51\", \"currency\": \"USD\"}"
+    },
+    "bill_0133": {
+      "bill": {
+        "provider": "Holloway Gas Company",
+        "account_number": "06262044397",
+        "billing_period_start": "2024-12-01",
+        "billing_period_end": "2025-01-01",
+        "due_date": null,
+        "usage_amount": "235.3",
+        "usage_unit": "m³",
+        "line_items": [
+          {
+            "description": "Balance forward",
+            "amount": "106.35"
+          },
+          {
+            "description": "Natural gas usage",
+            "amount": "235.30"
+          },
+          {
+            "description": "Pipeline safety fee",
+            "amount": "11.69"
+          },
+          {
+            "description": "Distribution charge",
+            "amount": "10.82"
+          },
+          {
+            "description": "State and local taxes",
+            "amount": "23.20"
+          }
+        ],
+        "total_amount": "387.36",
+        "currency": "USD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 2019,
+      "output_tokens": 151,
+      "latency_seconds": 2.438078374834731,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\":\"Holloway Gas Company\",\"account_number\":\"06262044397\",\"billing_period_start\":\"2024-12-01\",\"billing_period_end\":\"2025-01-01\",\"due_date\":null,\"usage_amount\":\"235.3\",\"usage_unit\":\"m³\",\"line_items\":[{\"description\":\"Balance forward\",\"amount\":\"106.35\"},{\"description\":\"Natural gas usage\",\"amount\":\"235.30\"},{\"description\":\"Pipeline safety fee\",\"amount\":\"11.69\"},{\"description\":\"Distribution charge\",\"amount\":\"10.82\"},{\"description\":\"State and local taxes\",\"amount\":\"23.20\"}],\"total_amount\":\"387.36\",\"currency\":\"USD\"}"
+    },
+    "bill_0135": {
+      "bill": {
+        "provider": "SINGLETON ELECTRIC COOPERATIVE",
+        "account_number": "5134-228-4993",
+        "billing_period_start": "2024-02-19",
+        "billing_period_end": "2024-03-18",
+        "due_date": "2024-04-01",
+        "usage_amount": "484",
+        "usage_unit": "kWh",
+        "line_items": [
+          {
+            "description": "ELECTRICITY USAGE",
+            "amount": "121.00"
+          },
+          {
+            "description": "SALES TAX",
+            "amount": "3.63"
+          }
+        ],
+        "total_amount": "124.63",
+        "currency": "USD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 1955,
+      "output_tokens": 147,
+      "latency_seconds": 2.3706387910060585,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\": \"SINGLETON ELECTRIC COOPERATIVE\", \"account_number\": \"5134-228-4993\", \"billing_period_start\": \"2024-02-19\", \"billing_period_end\": \"2024-03-18\", \"due_date\": \"2024-04-01\", \"usage_amount\": \"484\", \"usage_unit\": \"kWh\", \"line_items\": [{\"description\": \"ELECTRICITY USAGE\", \"amount\": \"121.00\"}, {\"description\": \"SALES TAX\", \"amount\": \"3.63\"}], \"total_amount\": \"124.63\", \"currency\": \"USD\"}"
+    },
+    "bill_0136": {
+      "bill": {
+        "provider": "DavisNet Broadband",
+        "account_number": "03610326642",
+        "billing_period_start": "2025-10-28",
+        "billing_period_end": "2025-11-29",
+        "due_date": "2025-12-27",
+        "usage_amount": null,
+        "usage_unit": null,
+        "line_items": [
+          {
+            "description": "Fiber 500 monthly plan",
+            "amount": "86.61"
+          },
+          {
+            "description": "Sales tax",
+            "amount": "6.06"
+          }
+        ],
+        "total_amount": "92.67",
+        "currency": "USD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 1982,
+      "output_tokens": 142,
+      "latency_seconds": 2.540998167125508,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\": \"DavisNet Broadband\", \"account_number\": \"03610326642\", \"billing_period_start\": \"2025-10-28\", \"billing_period_end\": \"2025-11-29\", \"due_date\": \"2025-12-27\", \"usage_amount\": null, \"usage_unit\": null, \"line_items\": [{\"description\": \"Fiber 500 monthly plan\", \"amount\": \"86.61\"}, {\"description\": \"Sales tax\", \"amount\": \"6.06\"}], \"total_amount\": \"92.67\", \"currency\": \"USD\"}"
+    },
+    "bill_0138": {
+      "bill": {
+        "provider": "South Carolina Gas & Heating",
+        "account_number": "AC-64122-03",
+        "billing_period_start": "2024-03-12",
+        "billing_period_end": "2024-04-12",
+        "due_date": "2024-04-30",
+        "usage_amount": "63.5",
+        "usage_unit": "m³",
+        "line_items": [
+          {
+            "description": "Previous balance",
+            "amount": "16.35"
+          },
+          {
+            "description": "Gas consumption",
+            "amount": "63.50"
+          },
+          {
+            "description": "Sales tax",
+            "amount": "6.35"
+          }
+        ],
+        "total_amount": "86.20",
+        "currency": "USD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 2018,
+      "output_tokens": 131,
+      "latency_seconds": 2.3090350420679897,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\":\"South Carolina Gas & Heating\",\"account_number\":\"AC-64122-03\",\"billing_period_start\":\"2024-03-12\",\"billing_period_end\":\"2024-04-12\",\"due_date\":\"2024-04-30\",\"usage_amount\":\"63.5\",\"usage_unit\":\"m³\",\"line_items\":[{\"description\":\"Previous balance\",\"amount\":\"16.35\"},{\"description\":\"Gas consumption\",\"amount\":\"63.50\"},{\"description\":\"Sales tax\",\"amount\":\"6.35\"}],\"total_amount\":\"86.20\",\"currency\":\"USD\"}"
+    },
+    "bill_0141": {
+      "bill": {
+        "provider": "Justinburgh Municipal Water",
+        "account_number": "532 863 2666",
+        "billing_period_start": "2024-09-23",
+        "billing_period_end": "2024-10-23",
+        "due_date": "2024-11-18",
+        "usage_amount": "13",
+        "usage_unit": "m³",
+        "line_items": [
+          {
+            "description": "Previous balance",
+            "amount": "155.88"
+          },
+          {
+            "description": "Metered water",
+            "amount": "33.54"
+          },
+          {
+            "description": "Meter service charge",
+            "amount": "8.14"
+          },
+          {
+            "description": "State and local taxes",
+            "amount": "1.25"
+          }
+        ],
+        "total_amount": "198.81",
+        "currency": "USD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 2027,
+      "output_tokens": 147,
+      "latency_seconds": 2.232921291841194,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\":\"Justinburgh Municipal Water\",\"account_number\":\"532 863 2666\",\"billing_period_start\":\"2024-09-23\",\"billing_period_end\":\"2024-10-23\",\"due_date\":\"2024-11-18\",\"usage_amount\":\"13\",\"usage_unit\":\"m³\",\"line_items\":[{\"description\":\"Previous balance\",\"amount\":\"155.88\"},{\"description\":\"Metered water\",\"amount\":\"33.54\"},{\"description\":\"Meter service charge\",\"amount\":\"8.14\"},{\"description\":\"State and local taxes\",\"amount\":\"1.25\"}],\"total_amount\":\"198.81\",\"currency\":\"USD\"}"
+    },
+    "bill_0143": {
+      "bill": {
+        "provider": "GarciaNet Broadband",
+        "account_number": "C3571266",
+        "billing_period_start": "2024-08-03",
+        "billing_period_end": "2024-09-04",
+        "due_date": "2024-09-27",
+        "usage_amount": null,
+        "usage_unit": null,
+        "line_items": [
+          {
+            "description": "Home Internet plan",
+            "amount": "113.25"
+          },
+          {
+            "description": "Static IP address",
+            "amount": "14.75"
+          },
+          {
+            "description": "Wi-Fi extender rental",
+            "amount": "14.15"
+          },
+          {
+            "description": "Utility users tax",
+            "amount": "17.06"
+          }
+        ],
+        "total_amount": "159.21",
+        "currency": "USD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 2019,
+      "output_tokens": 147,
+      "latency_seconds": 2.7519502909854054,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\":\"GarciaNet Broadband\",\"account_number\":\"C3571266\",\"billing_period_start\":\"2024-08-03\",\"billing_period_end\":\"2024-09-04\",\"due_date\":\"2024-09-27\",\"usage_amount\":null,\"usage_unit\":null,\"line_items\":[{\"description\":\"Home Internet plan\",\"amount\":\"113.25\"},{\"description\":\"Static IP address\",\"amount\":\"14.75\"},{\"description\":\"Wi-Fi extender rental\",\"amount\":\"14.15\"},{\"description\":\"Utility users tax\",\"amount\":\"17.06\"}],\"total_amount\":\"159.21\",\"currency\":\"USD\"}"
+    },
+    "bill_0146": {
+      "bill": {
+        "provider": "Howardton Power & Light",
+        "account_number": "AC-26546-10",
+        "billing_period_start": "2024-10-16",
+        "billing_period_end": "2024-11-14",
+        "due_date": "2024-11-29",
+        "usage_amount": "353",
+        "usage_unit": "kWh",
+        "line_items": [
+          {
+            "description": "Energy charge",
+            "amount": "98.84"
+          },
+          {
+            "description": "Basic customer charge",
+            "amount": "9.98"
+          },
+          {
+            "description": "Service interruption credit",
+            "amount": "-15.23"
+          },
+          {
+            "description": "GST/HST",
+            "amount": "14.15"
+          }
+        ],
+        "total_amount": "107.74",
+        "currency": "CAD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 2038,
+      "output_tokens": 151,
+      "latency_seconds": 2.3121598749421537,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\":\"Howardton Power & Light\",\"account_number\":\"AC-26546-10\",\"billing_period_start\":\"2024-10-16\",\"billing_period_end\":\"2024-11-14\",\"due_date\":\"2024-11-29\",\"usage_amount\":\"353\",\"usage_unit\":\"kWh\",\"line_items\":[{\"description\":\"Energy charge\",\"amount\":\"98.84\"},{\"description\":\"Basic customer charge\",\"amount\":\"9.98\"},{\"description\":\"Service interruption credit\",\"amount\":\"-15.23\"},{\"description\":\"GST/HST\",\"amount\":\"14.15\"}],\"total_amount\":\"107.74\",\"currency\":\"CAD\"}"
+    },
+    "bill_0147": {
+      "bill": {
+        "provider": "Campbell Gas Company",
+        "account_number": "U9141612",
+        "billing_period_start": "2025-01-21",
+        "billing_period_end": "2025-02-21",
+        "due_date": null,
+        "usage_amount": "210.3",
+        "usage_unit": "m³",
+        "line_items": [
+          {
+            "description": "Natural gas usage",
+            "amount": "260.77"
+          },
+          {
+            "description": "Fixed monthly charge",
+            "amount": "4.96"
+          },
+          {
+            "description": "Distribution charge",
+            "amount": "22.25"
+          },
+          {
+            "description": "Sales tax",
+            "amount": "37.44"
+          }
+        ],
+        "total_amount": "325.42",
+        "currency": "USD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 2011,
+      "output_tokens": 166,
+      "latency_seconds": 3.0758893750607967,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\": \"Campbell Gas Company\", \"account_number\": \"U9141612\", \"billing_period_start\": \"2025-01-21\", \"billing_period_end\": \"2025-02-21\", \"due_date\": null, \"usage_amount\": \"210.3\", \"usage_unit\": \"m³\", \"line_items\": [{\"description\": \"Natural gas usage\", \"amount\": \"260.77\"}, {\"description\": \"Fixed monthly charge\", \"amount\": \"4.96\"}, {\"description\": \"Distribution charge\", \"amount\": \"22.25\"}, {\"description\": \"Sales tax\", \"amount\": \"37.44\"}], \"total_amount\": \"325.42\", \"currency\": \"USD\"}"
+    },
+    "bill_0152": {
+      "bill": {
+        "provider": "Fritz Electric Cooperative",
+        "account_number": "1508-124-7395",
+        "billing_period_start": "2026-04-18",
+        "billing_period_end": "2026-05-20",
+        "due_date": "2026-06-06",
+        "usage_amount": "1105",
+        "usage_unit": "kWh",
+        "line_items": [
+          {
+            "description": "Energy charge",
+            "amount": "331.50"
+          },
+          {
+            "description": "Utility users tax",
+            "amount": "26.52"
+          }
+        ],
+        "total_amount": "358.02",
+        "currency": "USD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 1996,
+      "output_tokens": 120,
+      "latency_seconds": 2.4442761251702905,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\":\"Fritz Electric Cooperative\",\"account_number\":\"1508-124-7395\",\"billing_period_start\":\"2026-04-18\",\"billing_period_end\":\"2026-05-20\",\"due_date\":\"2026-06-06\",\"usage_amount\":\"1105\",\"usage_unit\":\"kWh\",\"line_items\":[{\"description\":\"Energy charge\",\"amount\":\"331.50\"},{\"description\":\"Utility users tax\",\"amount\":\"26.52\"}],\"total_amount\":\"358.02\",\"currency\":\"USD\"}"
+    },
+    "bill_0154": {
+      "bill": {
+        "provider": "Onealshire Fiber",
+        "account_number": "AC-81214-78",
+        "billing_period_start": "2025-06-13",
+        "billing_period_end": "2025-07-15",
+        "due_date": "2025-08-12",
+        "usage_amount": null,
+        "usage_unit": null,
+        "line_items": [
+          {
+            "description": "Previous balance",
+            "amount": "160.13"
+          },
+          {
+            "description": "Fiber 500 monthly plan",
+            "amount": "93.21"
+          },
+          {
+            "description": "State and local taxes",
+            "amount": "8.39"
+          }
+        ],
+        "total_amount": "261.73",
+        "currency": "USD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 2026,
+      "output_tokens": 161,
+      "latency_seconds": 2.34219783404842,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\": \"Onealshire Fiber\", \"account_number\": \"AC-81214-78\", \"billing_period_start\": \"2025-06-13\", \"billing_period_end\": \"2025-07-15\", \"due_date\": \"2025-08-12\", \"usage_amount\": null, \"usage_unit\": null, \"line_items\": [{\"description\": \"Previous balance\", \"amount\": \"160.13\"}, {\"description\": \"Fiber 500 monthly plan\", \"amount\": \"93.21\"}, {\"description\": \"State and local taxes\", \"amount\": \"8.39\"}], \"total_amount\": \"261.73\", \"currency\": \"USD\"}"
+    },
+    "bill_0156": {
+      "bill": {
+        "provider": "Fowlerport Municipal Water",
+        "account_number": "C2097023",
+        "billing_period_start": "2024-01-22",
+        "billing_period_end": "2024-02-18",
+        "due_date": "2024-03-17",
+        "usage_amount": "24.9",
+        "usage_unit": "m³",
+        "line_items": [
+          {
+            "description": "Water usage charge",
+            "amount": "94.62"
+          },
+          {
+            "description": "Billing adjustment",
+            "amount": "-16.09"
+          },
+          {
+            "description": "State and local taxes",
+            "amount": "9.46"
+          }
+        ],
+        "total_amount": "87.99",
+        "currency": "USD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 2012,
+      "output_tokens": 134,
+      "latency_seconds": 2.163854958023876,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\":\"Fowlerport Municipal Water\",\"account_number\":\"C2097023\",\"billing_period_start\":\"2024-01-22\",\"billing_period_end\":\"2024-02-18\",\"due_date\":\"2024-03-17\",\"usage_amount\":\"24.9\",\"usage_unit\":\"m³\",\"line_items\":[{\"description\":\"Water usage charge\",\"amount\":\"94.62\"},{\"description\":\"Billing adjustment\",\"amount\":\"-16.09\"},{\"description\":\"State and local taxes\",\"amount\":\"9.46\"}],\"total_amount\":\"87.99\",\"currency\":\"USD\"}"
+    },
+    "bill_0159": {
+      "bill": {
+        "provider": "Fisher Gas Company",
+        "account_number": "AC-31312-20",
+        "billing_period_start": "2024-02-01",
+        "billing_period_end": "2024-03-04",
+        "due_date": "2024-03-26",
+        "usage_amount": "39.5",
+        "usage_unit": "m³",
+        "line_items": [
+          {
+            "description": "Previous balance",
+            "amount": "27.94"
+          },
+          {
+            "description": "Gas consumption",
+            "amount": "49.77"
+          },
+          {
+            "description": "Distribution charge",
+            "amount": "15.12"
+          },
+          {
+            "description": "Fixed monthly charge",
+            "amount": "20.68"
+          },
+          {
+            "description": "State and local taxes",
+            "amount": "5.13"
+          }
+        ],
+        "total_amount": "118.64",
+        "currency": "USD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 2052,
+      "output_tokens": 155,
+      "latency_seconds": 2.34256274998188,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\":\"Fisher Gas Company\",\"account_number\":\"AC-31312-20\",\"billing_period_start\":\"2024-02-01\",\"billing_period_end\":\"2024-03-04\",\"due_date\":\"2024-03-26\",\"usage_amount\":\"39.5\",\"usage_unit\":\"m³\",\"line_items\":[{\"description\":\"Previous balance\",\"amount\":\"27.94\"},{\"description\":\"Gas consumption\",\"amount\":\"49.77\"},{\"description\":\"Distribution charge\",\"amount\":\"15.12\"},{\"description\":\"Fixed monthly charge\",\"amount\":\"20.68\"},{\"description\":\"State and local taxes\",\"amount\":\"5.13\"}],\"total_amount\":\"118.64\",\"currency\":\"USD\"}"
+    },
+    "bill_0161": {
+      "bill": {
+        "provider": "Franklin Valley Water District",
+        "account_number": "G5270171",
+        "billing_period_start": "2025-12-17",
+        "billing_period_end": "2026-01-13",
+        "due_date": "2026-02-04",
+        "usage_amount": "29.2",
+        "usage_unit": "m³",
+        "line_items": [
+          {
+            "description": "Water consumption",
+            "amount": "95.48"
+          },
+          {
+            "description": "State and local taxes",
+            "amount": "5.73"
+          }
+        ],
+        "total_amount": "101.21",
+        "currency": "USD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 1993,
+      "output_tokens": 117,
+      "latency_seconds": 2.473794750170782,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\":\"Franklin Valley Water District\",\"account_number\":\"G5270171\",\"billing_period_start\":\"2025-12-17\",\"billing_period_end\":\"2026-01-13\",\"due_date\":\"2026-02-04\",\"usage_amount\":\"29.2\",\"usage_unit\":\"m³\",\"line_items\":[{\"description\":\"Water consumption\",\"amount\":\"95.48\"},{\"description\":\"State and local taxes\",\"amount\":\"5.73\"}],\"total_amount\":\"101.21\",\"currency\":\"USD\"}"
+    },
+    "bill_0163": {
+      "bill": {
+        "provider": "Tennessee Telecom",
+        "account_number": "633 705 0249",
+        "billing_period_start": "2026-06-18",
+        "billing_period_end": "2026-07-15",
+        "due_date": "2026-08-04",
+        "usage_amount": null,
+        "usage_unit": null,
+        "line_items": [
+          {
+            "description": "Fiber 500 monthly plan",
+            "amount": "115.48"
+          },
+          {
+            "description": "Static IP address",
+            "amount": "10.45"
+          },
+          {
+            "description": "Utility users tax",
+            "amount": "10.07"
+          }
+        ],
+        "total_amount": "136.00",
+        "currency": "USD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 2000,
+      "output_tokens": 160,
+      "latency_seconds": 2.3422189590055496,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\": \"Tennessee Telecom\", \"account_number\": \"633 705 0249\", \"billing_period_start\": \"2026-06-18\", \"billing_period_end\": \"2026-07-15\", \"due_date\": \"2026-08-04\", \"usage_amount\": null, \"usage_unit\": null, \"line_items\": [{\"description\": \"Fiber 500 monthly plan\", \"amount\": \"115.48\"}, {\"description\": \"Static IP address\", \"amount\": \"10.45\"}, {\"description\": \"Utility users tax\", \"amount\": \"10.07\"}], \"total_amount\": \"136.00\", \"currency\": \"USD\"}"
+    },
+    "bill_0164": {
+      "bill": {
+        "provider": "East Lisatown Fiber",
+        "account_number": "864 622 5223",
+        "billing_period_start": "2025-10-30",
+        "billing_period_end": "2025-12-01",
+        "due_date": null,
+        "usage_amount": null,
+        "usage_unit": null,
+        "line_items": [
+          {
+            "description": "Home Internet plan",
+            "amount": "92.10"
+          },
+          {
+            "description": "Static IP address",
+            "amount": "13.51"
+          },
+          {
+            "description": "Utility users tax",
+            "amount": "9.50"
+          }
+        ],
+        "total_amount": "115.11",
+        "currency": "USD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 2026,
+      "output_tokens": 153,
+      "latency_seconds": 2.328059374820441,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\": \"East Lisatown Fiber\", \"account_number\": \"864 622 5223\", \"billing_period_start\": \"2025-10-30\", \"billing_period_end\": \"2025-12-01\", \"due_date\": null, \"usage_amount\": null, \"usage_unit\": null, \"line_items\": [{\"description\": \"Home Internet plan\", \"amount\": \"92.10\"}, {\"description\": \"Static IP address\", \"amount\": \"13.51\"}, {\"description\": \"Utility users tax\", \"amount\": \"9.50\"}], \"total_amount\": \"115.11\", \"currency\": \"USD\"}"
+    },
+    "bill_0166": {
+      "bill": {
+        "provider": "Utah Telecom",
+        "account_number": "H7271783",
+        "billing_period_start": "2025-12-24",
+        "billing_period_end": "2026-01-22",
+        "due_date": "2026-02-11",
+        "usage_amount": null,
+        "usage_unit": null,
+        "line_items": [
+          {
+            "description": "Unlimited Internet 300",
+            "amount": "117.11"
+          },
+          {
+            "description": "Modem rental",
+            "amount": "18.26"
+          },
+          {
+            "description": "Regulatory recovery fee",
+            "amount": "14.53"
+          },
+          {
+            "description": "GST",
+            "amount": "16.49"
+          }
+        ],
+        "total_amount": "166.39",
+        "currency": "CAD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 2004,
+      "output_tokens": 174,
+      "latency_seconds": 2.379879750078544,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\": \"Utah Telecom\", \"account_number\": \"H7271783\", \"billing_period_start\": \"2025-12-24\", \"billing_period_end\": \"2026-01-22\", \"due_date\": \"2026-02-11\", \"usage_amount\": null, \"usage_unit\": null, \"line_items\": [{\"description\": \"Unlimited Internet 300\", \"amount\": \"117.11\"}, {\"description\": \"Modem rental\", \"amount\": \"18.26\"}, {\"description\": \"Regulatory recovery fee\", \"amount\": \"14.53\"}, {\"description\": \"GST\", \"amount\": \"16.49\"}], \"total_amount\": \"166.39\", \"currency\": \"CAD\"}"
+    },
+    "bill_0167": {
+      "bill": {
+        "provider": "James Electric Cooperative",
+        "account_number": "4098-366-5528",
+        "billing_period_start": "2024-12-09",
+        "billing_period_end": "2025-01-10",
+        "due_date": "2025-02-04",
+        "usage_amount": "931",
+        "usage_unit": "kWh",
+        "line_items": [
+          {
+            "description": "Previous balance",
+            "amount": "48.49"
+          },
+          {
+            "description": "Electricity supply",
+            "amount": "288.61"
+          },
+          {
+            "description": "Transmission charge",
+            "amount": "11.65"
+          },
+          {
+            "description": "Delivery charge",
+            "amount": "13.11"
+          },
+          {
+            "description": "Billing adjustment",
+            "amount": "-87.74"
+          },
+          {
+            "description": "Utility users tax",
+            "amount": "12.53"
+          }
+        ],
+        "total_amount": "286.65",
+        "currency": "USD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 2047,
+      "output_tokens": 211,
+      "latency_seconds": 2.681506416061893,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\": \"James Electric Cooperative\", \"account_number\": \"4098-366-5528\", \"billing_period_start\": \"2024-12-09\", \"billing_period_end\": \"2025-01-10\", \"due_date\": \"2025-02-04\", \"usage_amount\": \"931\", \"usage_unit\": \"kWh\", \"line_items\": [{\"description\": \"Previous balance\", \"amount\": \"48.49\"}, {\"description\": \"Electricity supply\", \"amount\": \"288.61\"}, {\"description\": \"Transmission charge\", \"amount\": \"11.65\"}, {\"description\": \"Delivery charge\", \"amount\": \"13.11\"}, {\"description\": \"Billing adjustment\", \"amount\": \"-87.74\"}, {\"description\": \"Utility users tax\", \"amount\": \"12.53\"}], \"total_amount\": \"286.65\", \"currency\": \"USD\"}"
+    },
+    "bill_0170": {
+      "bill": {
+        "provider": "EVANS ELECTRIC COOPERATIVE",
+        "account_number": "06034084872",
+        "billing_period_start": "2024-07-07",
+        "billing_period_end": "2024-08-08",
+        "due_date": "2024-09-05",
+        "usage_amount": "518",
+        "usage_unit": "kWh",
+        "line_items": [
+          {
+            "description": "UNPAID BALANCE FROM LAST BILL",
+            "amount": "79.57"
+          },
+          {
+            "description": "ELECTRICITY SUPPLY",
+            "amount": "56.98"
+          },
+          {
+            "description": "RENEWABLE ENERGY RIDER",
+            "amount": "7.53"
+          },
+          {
+            "description": "GST",
+            "amount": "2.58"
+          }
+        ],
+        "total_amount": "146.66",
+        "currency": "CAD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 1972,
+      "output_tokens": 187,
+      "latency_seconds": 2.5919019170105457,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\": \"EVANS ELECTRIC COOPERATIVE\", \"account_number\": \"06034084872\", \"billing_period_start\": \"2024-07-07\", \"billing_period_end\": \"2024-08-08\", \"due_date\": \"2024-09-05\", \"usage_amount\": \"518\", \"usage_unit\": \"kWh\", \"line_items\": [{\"description\": \"UNPAID BALANCE FROM LAST BILL\", \"amount\": \"79.57\"}, {\"description\": \"ELECTRICITY SUPPLY\", \"amount\": \"56.98\"}, {\"description\": \"RENEWABLE ENERGY RIDER\", \"amount\": \"7.53\"}, {\"description\": \"GST\", \"amount\": \"2.58\"}], \"total_amount\": \"146.66\", \"currency\": \"CAD\"}"
+    },
+    "bill_0171": {
+      "bill": {
+        "provider": "Lake Jessicaborough Water Authority",
+        "account_number": "A9262566",
+        "billing_period_start": "2025-07-20",
+        "billing_period_end": "2025-08-16",
+        "due_date": "2025-09-07",
+        "usage_amount": "27.5",
+        "usage_unit": "m³",
+        "line_items": [
+          {
+            "description": "Water usage charge",
+            "amount": "72.33"
+          },
+          {
+            "description": "Sewer service",
+            "amount": "12.91"
+          },
+          {
+            "description": "Utility users tax",
+            "amount": "4.26"
+          }
+        ],
+        "total_amount": "89.50",
+        "currency": "USD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 2021,
+      "output_tokens": 164,
+      "latency_seconds": 2.262352833058685,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\": \"Lake Jessicaborough Water Authority\", \"account_number\": \"A9262566\", \"billing_period_start\": \"2025-07-20\", \"billing_period_end\": \"2025-08-16\", \"due_date\": \"2025-09-07\", \"usage_amount\": \"27.5\", \"usage_unit\": \"m³\", \"line_items\": [{\"description\": \"Water usage charge\", \"amount\": \"72.33\"}, {\"description\": \"Sewer service\", \"amount\": \"12.91\"}, {\"description\": \"Utility users tax\", \"amount\": \"4.26\"}], \"total_amount\": \"89.50\", \"currency\": \"USD\"}"
+    },
+    "bill_0173": {
+      "bill": {
+        "provider": "Arizona Telecom",
+        "account_number": "E7283215",
+        "billing_period_start": "2026-06-28",
+        "billing_period_end": "2026-07-29",
+        "due_date": "2026-08-23",
+        "usage_amount": null,
+        "usage_unit": null,
+        "line_items": [
+          {
+            "description": "Home Internet plan",
+            "amount": "41.12"
+          },
+          {
+            "description": "Utility users tax",
+            "amount": "3.70"
+          }
+        ],
+        "total_amount": "44.82",
+        "currency": "USD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 1990,
+      "output_tokens": 137,
+      "latency_seconds": 2.3139446249697357,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\": \"Arizona Telecom\", \"account_number\": \"E7283215\", \"billing_period_start\": \"2026-06-28\", \"billing_period_end\": \"2026-07-29\", \"due_date\": \"2026-08-23\", \"usage_amount\": null, \"usage_unit\": null, \"line_items\": [{\"description\": \"Home Internet plan\", \"amount\": \"41.12\"}, {\"description\": \"Utility users tax\", \"amount\": \"3.70\"}], \"total_amount\": \"44.82\", \"currency\": \"USD\"}"
+    },
+    "bill_0174": {
+      "bill": {
+        "provider": "Gonzalezhaven Fiber",
+        "account_number": "170 243 7654",
+        "billing_period_start": "2026-02-11",
+        "billing_period_end": "2026-03-10",
+        "due_date": null,
+        "usage_amount": null,
+        "usage_unit": null,
+        "line_items": [
+          {
+            "description": "Unpaid balance from last bill",
+            "amount": "73.00"
+          },
+          {
+            "description": "Unlimited Internet 300",
+            "amount": "77.70"
+          },
+          {
+            "description": "Regulatory recovery fee",
+            "amount": "6.88"
+          },
+          {
+            "description": "GST/HST",
+            "amount": "2.54"
+          }
+        ],
+        "total_amount": "160.12",
+        "currency": "CAD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 2047,
+      "output_tokens": 179,
+      "latency_seconds": 2.5428953329101205,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\": \"Gonzalezhaven Fiber\", \"account_number\": \"170 243 7654\", \"billing_period_start\": \"2026-02-11\", \"billing_period_end\": \"2026-03-10\", \"due_date\": null, \"usage_amount\": null, \"usage_unit\": null, \"line_items\": [{\"description\": \"Unpaid balance from last bill\", \"amount\": \"73.00\"}, {\"description\": \"Unlimited Internet 300\", \"amount\": \"77.70\"}, {\"description\": \"Regulatory recovery fee\", \"amount\": \"6.88\"}, {\"description\": \"GST/HST\", \"amount\": \"2.54\"}], \"total_amount\": \"160.12\", \"currency\": \"CAD\"}"
+    },
+    "bill_0180": {
+      "bill": {
+        "provider": "NEW KENNETHHAVEN NATURAL GAS",
+        "account_number": "00303662543",
+        "billing_period_start": "2025-05-27",
+        "billing_period_end": "2025-06-26",
+        "due_date": "2025-07-23",
+        "usage_amount": "155.8",
+        "usage_unit": "m³",
+        "line_items": [
+          {
+            "description": "UNPAID BALANCE FROM LAST BILL",
+            "amount": "99.64"
+          },
+          {
+            "description": "GAS SUPPLY CHARGE",
+            "amount": "165.15"
+          },
+          {
+            "description": "STATE AND LOCAL TAXES",
+            "amount": "6.61"
+          }
+        ],
+        "total_amount": "271.40",
+        "currency": "USD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 1970,
+      "output_tokens": 176,
+      "latency_seconds": 2.583838291000575,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\": \"NEW KENNETHHAVEN NATURAL GAS\", \"account_number\": \"00303662543\", \"billing_period_start\": \"2025-05-27\", \"billing_period_end\": \"2025-06-26\", \"due_date\": \"2025-07-23\", \"usage_amount\": \"155.8\", \"usage_unit\": \"m³\", \"line_items\": [{\"description\": \"UNPAID BALANCE FROM LAST BILL\", \"amount\": \"99.64\"}, {\"description\": \"GAS SUPPLY CHARGE\", \"amount\": \"165.15\"}, {\"description\": \"STATE AND LOCAL TAXES\", \"amount\": \"6.61\"}], \"total_amount\": \"271.40\", \"currency\": \"USD\"}"
+    },
+    "bill_0181": {
+      "bill": {
+        "provider": "Robles Gas Company",
+        "account_number": "1964-215-2265",
+        "billing_period_start": "2025-09-18",
+        "billing_period_end": "2025-10-19",
+        "due_date": "2025-11-15",
+        "usage_amount": "62.5",
+        "usage_unit": "m³",
+        "line_items": [
+          {
+            "description": "Natural gas usage",
+            "amount": "49.38"
+          },
+          {
+            "description": "Carbon levy",
+            "amount": "5.62"
+          },
+          {
+            "description": "Fixed monthly charge",
+            "amount": "2.58"
+          },
+          {
+            "description": "GST/HST",
+            "amount": "7.49"
+          }
+        ],
+        "total_amount": "65.07",
+        "currency": "CAD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 2037,
+      "output_tokens": 149,
+      "latency_seconds": 2.265108749968931,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\":\"Robles Gas Company\",\"account_number\":\"1964-215-2265\",\"billing_period_start\":\"2025-09-18\",\"billing_period_end\":\"2025-10-19\",\"due_date\":\"2025-11-15\",\"usage_amount\":\"62.5\",\"usage_unit\":\"m³\",\"line_items\":[{\"description\":\"Natural gas usage\",\"amount\":\"49.38\"},{\"description\":\"Carbon levy\",\"amount\":\"5.62\"},{\"description\":\"Fixed monthly charge\",\"amount\":\"2.58\"},{\"description\":\"GST/HST\",\"amount\":\"7.49\"}],\"total_amount\":\"65.07\",\"currency\":\"CAD\"}"
+    },
+    "bill_0182": {
+      "bill": {
+        "provider": "Connecticut Energy",
+        "account_number": "E1792025",
+        "billing_period_start": "2024-11-14",
+        "billing_period_end": "2024-12-12",
+        "due_date": "2024-12-30",
+        "usage_amount": "1012",
+        "usage_unit": "kWh",
+        "line_items": [
+          {
+            "description": "Previous balance",
+            "amount": "50.41"
+          },
+          {
+            "description": "Energy charge",
+            "amount": "182.16"
+          },
+          {
+            "description": "Sales tax",
+            "amount": "9.11"
+          }
+        ],
+        "total_amount": "241.68",
+        "currency": "USD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 1992,
+      "output_tokens": 153,
+      "latency_seconds": 2.401329457992688,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\": \"Connecticut Energy\", \"account_number\": \"E1792025\", \"billing_period_start\": \"2024-11-14\", \"billing_period_end\": \"2024-12-12\", \"due_date\": \"2024-12-30\", \"usage_amount\": \"1012\", \"usage_unit\": \"kWh\", \"line_items\": [{\"description\": \"Previous balance\", \"amount\": \"50.41\"}, {\"description\": \"Energy charge\", \"amount\": \"182.16\"}, {\"description\": \"Sales tax\", \"amount\": \"9.11\"}], \"total_amount\": \"241.68\", \"currency\": \"USD\"}"
+    },
+    "bill_0189": {
+      "bill": {
+        "provider": "South Dakota Telecom",
+        "account_number": "265 826 3128",
+        "billing_period_start": "2024-01-24",
+        "billing_period_end": "2024-02-22",
+        "due_date": "2024-03-20",
+        "usage_amount": null,
+        "usage_unit": null,
+        "line_items": [
+          {
+            "description": "Home Internet plan",
+            "amount": "107.16"
+          },
+          {
+            "description": "Regulatory recovery fee",
+            "amount": "9.48"
+          },
+          {
+            "description": "Static IP address",
+            "amount": "25.93"
+          },
+          {
+            "description": "State and local taxes",
+            "amount": "12.83"
+          }
+        ],
+        "total_amount": "155.40",
+        "currency": "USD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 2036,
+      "output_tokens": 175,
+      "latency_seconds": 1.9914053748361766,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\": \"South Dakota Telecom\", \"account_number\": \"265 826 3128\", \"billing_period_start\": \"2024-01-24\", \"billing_period_end\": \"2024-02-22\", \"due_date\": \"2024-03-20\", \"usage_amount\": null, \"usage_unit\": null, \"line_items\": [{\"description\": \"Home Internet plan\", \"amount\": \"107.16\"}, {\"description\": \"Regulatory recovery fee\", \"amount\": \"9.48\"}, {\"description\": \"Static IP address\", \"amount\": \"25.93\"}, {\"description\": \"State and local taxes\", \"amount\": \"12.83\"}], \"total_amount\": \"155.40\", \"currency\": \"USD\"}"
+    },
+    "bill_0190": {
+      "bill": {
+        "provider": "HOVILLE WATER AUTHORITY",
+        "account_number": "AC-21175-36",
+        "billing_period_start": "2025-08-17",
+        "billing_period_end": "2025-09-14",
+        "due_date": "2025-10-02",
+        "usage_amount": "20.5",
+        "usage_unit": "m³",
+        "line_items": [
+          {
+            "description": "WATER USAGE CHARGE",
+            "amount": "76.47"
+          },
+          {
+            "description": "SEWER SERVICE",
+            "amount": "5.89"
+          },
+          {
+            "description": "STORMWATER FEE",
+            "amount": "8.38"
+          },
+          {
+            "description": "STATE AND LOCAL TAXES",
+            "amount": "10.89"
+          }
+        ],
+        "total_amount": "101.63",
+        "currency": "USD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 1977,
+      "output_tokens": 190,
+      "latency_seconds": 2.552914374973625,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\": \"HOVILLE WATER AUTHORITY\", \"account_number\": \"AC-21175-36\", \"billing_period_start\": \"2025-08-17\", \"billing_period_end\": \"2025-09-14\", \"due_date\": \"2025-10-02\", \"usage_amount\": \"20.5\", \"usage_unit\": \"m³\", \"line_items\": [{\"description\": \"WATER USAGE CHARGE\", \"amount\": \"76.47\"}, {\"description\": \"SEWER SERVICE\", \"amount\": \"5.89\"}, {\"description\": \"STORMWATER FEE\", \"amount\": \"8.38\"}, {\"description\": \"STATE AND LOCAL TAXES\", \"amount\": \"10.89\"}], \"total_amount\": \"101.63\", \"currency\": \"USD\"}"
+    },
+    "bill_0198": {
+      "bill": {
+        "provider": "Margaretville Water Authority",
+        "account_number": "6500-425-4882",
+        "billing_period_start": "2026-06-02",
+        "billing_period_end": "2026-07-02",
+        "due_date": "2026-07-30",
+        "usage_amount": "31.8",
+        "usage_unit": "m³",
+        "line_items": [
+          {
+            "description": "Metered water",
+            "amount": "81.41"
+          },
+          {
+            "description": "Stormwater fee",
+            "amount": "14.93"
+          },
+          {
+            "description": "Loyalty credit",
+            "amount": "-13.49"
+          },
+          {
+            "description": "State and local taxes",
+            "amount": "9.63"
+          }
+        ],
+        "total_amount": "92.48",
+        "currency": "USD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 2047,
+      "output_tokens": 184,
+      "latency_seconds": 2.767049874877557,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\": \"Margaretville Water Authority\", \"account_number\": \"6500-425-4882\", \"billing_period_start\": \"2026-06-02\", \"billing_period_end\": \"2026-07-02\", \"due_date\": \"2026-07-30\", \"usage_amount\": \"31.8\", \"usage_unit\": \"m³\", \"line_items\": [{\"description\": \"Metered water\", \"amount\": \"81.41\"}, {\"description\": \"Stormwater fee\", \"amount\": \"14.93\"}, {\"description\": \"Loyalty credit\", \"amount\": \"-13.49\"}, {\"description\": \"State and local taxes\", \"amount\": \"9.63\"}], \"total_amount\": \"92.48\", \"currency\": \"USD\"}"
+    },
+    "bill_0199": {
+      "bill": {
+        "provider": "Nebraska Gas & Heating",
+        "account_number": "080 612 9439",
+        "billing_period_start": "2024-03-18",
+        "billing_period_end": "2024-04-18",
+        "due_date": "2024-05-16",
+        "usage_amount": "243.5",
+        "usage_unit": "m³",
+        "line_items": [
+          {
+            "description": "Natural gas usage",
+            "amount": "165.58"
+          },
+          {
+            "description": "Distribution charge",
+            "amount": "8.17"
+          },
+          {
+            "description": "Utility users tax",
+            "amount": "19.11"
+          }
+        ],
+        "total_amount": "192.86",
+        "currency": "USD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 2051,
+      "output_tokens": 133,
+      "latency_seconds": 2.170533249853179,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\":\"Nebraska Gas & Heating\",\"account_number\":\"080 612 9439\",\"billing_period_start\":\"2024-03-18\",\"billing_period_end\":\"2024-04-18\",\"due_date\":\"2024-05-16\",\"usage_amount\":\"243.5\",\"usage_unit\":\"m³\",\"line_items\":[{\"description\":\"Natural gas usage\",\"amount\":\"165.58\"},{\"description\":\"Distribution charge\",\"amount\":\"8.17\"},{\"description\":\"Utility users tax\",\"amount\":\"19.11\"}],\"total_amount\":\"192.86\",\"currency\":\"USD\"}"
+    },
+    "bill_0200": {
+      "bill": {
+        "provider": "WALLNET BROADBAND",
+        "account_number": "014 672 3849",
+        "billing_period_start": "2026-03-26",
+        "billing_period_end": "2026-04-27",
+        "due_date": "2026-05-24",
+        "usage_amount": null,
+        "usage_unit": null,
+        "line_items": [
+          {
+            "description": "PREVIOUS BALANCE",
+            "amount": "209.85"
+          },
+          {
+            "description": "UNLIMITED INTERNET 300",
+            "amount": "91.45"
+          },
+          {
+            "description": "MODEM RENTAL",
+            "amount": "10.72"
+          },
+          {
+            "description": "STATIC IP ADDRESS",
+            "amount": "7.19"
+          },
+          {
+            "description": "STATE AND LOCAL TAXES",
+            "amount": "12.03"
+          }
+        ],
+        "total_amount": "331.24",
+        "currency": "USD"
+      },
+      "error": null,
+      "validation": {
+        "passed": [
+          "line_items_sum",
+          "billing_period_order",
+          "due_date_window",
+          "total_positive",
+          "line_items_present",
+          "amount_precision"
+        ],
+        "failures": {},
+        "failed": [],
+        "all_passed": true
+      },
+      "retries": 0,
+      "attempts": [
+        {
+          "failed_checks": [],
+          "error": null
+        }
+      ],
+      "input_tokens": 1966,
+      "output_tokens": 200,
+      "latency_seconds": 2.6708083329722285,
+      "model": "claude-haiku-4-5-20251001",
+      "raw_output": "{\"provider\": \"WALLNET BROADBAND\", \"account_number\": \"014 672 3849\", \"billing_period_start\": \"2026-03-26\", \"billing_period_end\": \"2026-04-27\", \"due_date\": \"2026-05-24\", \"usage_amount\": null, \"usage_unit\": null, \"line_items\": [{\"description\": \"PREVIOUS BALANCE\", \"amount\": \"209.85\"}, {\"description\": \"UNLIMITED INTERNET 300\", \"amount\": \"91.45\"}, {\"description\": \"MODEM RENTAL\", \"amount\": \"10.72\"}, {\"description\": \"STATIC IP ADDRESS\", \"amount\": \"7.19\"}, {\"description\": \"STATE AND LOCAL TAXES\", \"amount\": \"12.03\"}], \"total_amount\": \"331.24\", \"currency\": \"USD\"}"
+    }
+  }
+}

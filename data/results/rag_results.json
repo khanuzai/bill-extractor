@@ -1,0 +1,1653 @@
+{
+  "split": "test",
+  "model": "claude-haiku-4-5",
+  "bills": 100,
+  "questions": [
+    {
+      "key": "S1 credit",
+      "kind": "semantic",
+      "question": "What is the 'Autopay discount' on the Lake Selena Power & Light bill, and how much was it?",
+      "bill_id": "bill_0004",
+      "expected_route": "semantic",
+      "routed": "semantic",
+      "route_method": "rules",
+      "route_reason": "matched semantic rules: what is this charge",
+      "route_correct": true,
+      "chunk_hit": true,
+      "bill_hit": true,
+      "exact_match": null,
+      "expected_values": [],
+      "abstained": false,
+      "cited_bills": [
+        "bill_0004"
+      ],
+      "answer": {
+        "question": "What is the 'Autopay discount' on the Lake Selena Power & Light bill, and how much was it?",
+        "route": "semantic",
+        "route_reason": "route given by the caller",
+        "route_method": "override",
+        "answer": "The Autopay discount on the Lake Selena Power & Light bill for account 07631165667 was $9.02.",
+        "answerable": true,
+        "citations": [
+          {
+            "bill_id": "bill_0004",
+            "page": 2
+          }
+        ],
+        "dropped_citations": [],
+        "chunks": [
+          {
+            "bill_id": "bill_0004",
+            "page_number": 2,
+            "chunk_index": 1,
+            "heading": "Lake Selena Power & Light bill, account 07631165667, billing period 2024-02-28 to 2024-03-26, page 2",
+            "text": "Bill details\n\nBilling period  2024-02-28 to 2024-03-26\n\nMeter  M-81080132\n\nTotal usage  601 kWh\n\nITEM  USD\n\nEnergy charge  66.11\n\nDelivery charge  5.26\n\nTransmission charge  3.78\n\nAutopay discount  -9.02\n\nSales tax  9.77\n\nPayment slip — return this portion with your payment.\n\nCustomer: Amy Valdez\n\nAccount number: 07631165667",
+            "similarity": 0.7487339527169614
+          },
+          {
+            "bill_id": "bill_0004",
+            "page_number": 1,
+            "chunk_index": 0,
+            "heading": "Lake Selena Power & Light bill, account 07631165667, billing period 2024-02-28 to 2024-03-26, page 1",
+            "text": "Lake Selena Power & Light\n\nAmy Valdez\n5133 Amanda Dam\nWhitemouth, IA 10381\n\nPlease Pay This Amount\n$75.90\n\nby 2024-04-18\n\nBill issued 2024-03-30. A full breakdown of your charges and your account details are on the next\npage. All amounts are shown in USD.\n\nPage 1 of 2",
+            "similarity": 0.7042270126478096
+          },
+          {
+            "bill_id": "bill_0004",
+            "page_number": 2,
+            "chunk_index": 2,
+            "heading": "Lake Selena Power & Light bill, account 07631165667, billing period 2024-02-28 to 2024-03-26, page 2",
+            "text": "Payable to: Lake Selena Power & Light\n\nPage 2 of 2",
+            "similarity": 0.6909337043762256
+          }
+        ],
+        "sql": null,
+        "sql_params": null,
+        "sql_columns": [],
+        "sql_rows": [],
+        "sql_error": null,
+        "input_tokens": 1055,
+        "output_tokens": 64
+      },
+      "input_tokens": 1055,
+      "output_tokens": 64
+    },
+    {
+      "key": "S2 extra charge",
+      "kind": "semantic",
+      "question": "What is the 'Delivery charge' charge on account 07631165667, and how much is it?",
+      "bill_id": "bill_0004",
+      "expected_route": "semantic",
+      "routed": "semantic",
+      "route_method": "rules",
+      "route_reason": "matched semantic rules: what is this charge",
+      "route_correct": true,
+      "chunk_hit": true,
+      "bill_hit": true,
+      "exact_match": null,
+      "expected_values": [],
+      "abstained": false,
+      "cited_bills": [
+        "bill_0004"
+      ],
+      "answer": {
+        "question": "What is the 'Delivery charge' charge on account 07631165667, and how much is it?",
+        "route": "semantic",
+        "route_reason": "route given by the caller",
+        "route_method": "override",
+        "answer": "The delivery charge on account 07631165667 is $5.26.",
+        "answerable": true,
+        "citations": [
+          {
+            "bill_id": "bill_0004",
+            "page": 2
+          }
+        ],
+        "dropped_citations": [],
+        "chunks": [
+          {
+            "bill_id": "bill_0004",
+            "page_number": 2,
+            "chunk_index": 2,
+            "heading": "Lake Selena Power & Light bill, account 07631165667, billing period 2024-02-28 to 2024-03-26, page 2",
+            "text": "Payable to: Lake Selena Power & Light\n\nPage 2 of 2",
+            "similarity": 0.40154682370183115
+          },
+          {
+            "bill_id": "bill_0004",
+            "page_number": 2,
+            "chunk_index": 1,
+            "heading": "Lake Selena Power & Light bill, account 07631165667, billing period 2024-02-28 to 2024-03-26, page 2",
+            "text": "Bill details\n\nBilling period  2024-02-28 to 2024-03-26\n\nMeter  M-81080132\n\nTotal usage  601 kWh\n\nITEM  USD\n\nEnergy charge  66.11\n\nDelivery charge  5.26\n\nTransmission charge  3.78\n\nAutopay discount  -9.02\n\nSales tax  9.77\n\nPayment slip — return this portion with your payment.\n\nCustomer: Amy Valdez\n\nAccount number: 07631165667",
+            "similarity": 0.39359470758564297
+          },
+          {
+            "bill_id": "bill_0004",
+            "page_number": 1,
+            "chunk_index": 0,
+            "heading": "Lake Selena Power & Light bill, account 07631165667, billing period 2024-02-28 to 2024-03-26, page 1",
+            "text": "Lake Selena Power & Light\n\nAmy Valdez\n5133 Amanda Dam\nWhitemouth, IA 10381\n\nPlease Pay This Amount\n$75.90\n\nby 2024-04-18\n\nBill issued 2024-03-30. A full breakdown of your charges and your account details are on the next\npage. All amounts are shown in USD.\n\nPage 1 of 2",
+            "similarity": 0.3701330578168588
+          }
+        ],
+        "sql": null,
+        "sql_params": null,
+        "sql_columns": [],
+        "sql_rows": [],
+        "sql_error": null,
+        "input_tokens": 1052,
+        "output_tokens": 52
+      },
+      "input_tokens": 1052,
+      "output_tokens": 52
+    },
+    {
+      "key": "S3 previous balance",
+      "kind": "semantic",
+      "question": "What is the 'Previous balance' line on the Robinsonshire Power & Light bill?",
+      "bill_id": "bill_0001",
+      "expected_route": "semantic",
+      "routed": "semantic",
+      "route_method": "rules",
+      "route_reason": "matched semantic rules: what is this charge",
+      "route_correct": true,
+      "chunk_hit": true,
+      "bill_hit": true,
+      "exact_match": null,
+      "expected_values": [],
+      "abstained": false,
+      "cited_bills": [
+        "bill_0001"
+      ],
+      "answer": {
+        "question": "What is the 'Previous balance' line on the Robinsonshire Power & Light bill?",
+        "route": "semantic",
+        "route_reason": "route given by the caller",
+        "route_method": "override",
+        "answer": "The previous balance on the Robinsonshire Power & Light bill for account 06542351161 is $88.23.",
+        "answerable": true,
+        "citations": [
+          {
+            "bill_id": "bill_0001",
+            "page": 1
+          }
+        ],
+        "dropped_citations": [],
+        "chunks": [
+          {
+            "bill_id": "bill_0001",
+            "page_number": 1,
+            "chunk_index": 0,
+            "heading": "Robinsonshire Power & Light bill, account 06542351161, billing period 2024-09-07 to 2024-10-05, page 1",
+            "text": "Robinsonshire Power & Light  Account Number\n06542351161\n\nStatement Date: 10/06/2024\n\nGregory Baker\n161 Calderon River Suite 931\nLake Jeremyport, CO 31013\n\nBILLING SUMMARY\n\nService Period  09/07/2024 - 10/05/2024\n\nMeter  M-64752553\n\nUsage This Period  328 kWh\n\nDue Date  10/21/2024\n\nCHARGES\n\nDescription  Amount (USD)\n\nPrevious balance  88.23",
+            "similarity": 0.7247445747408537
+          },
+          {
+            "bill_id": "bill_0001",
+            "page_number": 1,
+            "chunk_index": 1,
+            "heading": "Robinsonshire Power & Light bill, account 06542351161, billing period 2024-09-07 to 2024-10-05, page 1",
+            "text": "Electricity usage  95.12\n\nUtility users tax  2.85\n\nAmount Due  186.20\n\nAll amounts are in USD. Questions about this bill? Contact Robinsonshire Power & Light customer care and quote your account\nnumber.",
+            "similarity": 0.6606462406341743
+          }
+        ],
+        "sql": null,
+        "sql_params": null,
+        "sql_columns": [],
+        "sql_rows": [],
+        "sql_error": null,
+        "input_tokens": 943,
+        "output_tokens": 63
+      },
+      "input_tokens": 943,
+      "output_tokens": 63
+    },
+    {
+      "key": "S4 CR notation",
+      "kind": "semantic",
+      "question": "What does 'CR' mean next to an amount on the WestNet Broadband bill?",
+      "bill_id": "bill_0013",
+      "expected_route": "semantic",
+      "routed": "semantic",
+      "route_method": "rules",
+      "route_reason": "matched semantic rules: explain",
+      "route_correct": true,
+      "chunk_hit": true,
+      "bill_hit": true,
+      "exact_match": null,
+      "expected_values": [],
+      "abstained": false,
+      "cited_bills": [
+        "bill_0013"
+      ],
+      "answer": {
+        "question": "What does 'CR' mean next to an amount on the WestNet Broadband bill?",
+        "route": "semantic",
+        "route_reason": "route given by the caller",
+        "route_method": "override",
+        "answer": "CR denotes a credit on the WestNet Broadband bill.",
+        "answerable": true,
+        "citations": [
+          {
+            "bill_id": "bill_0013",
+            "page": 1
+          }
+        ],
+        "dropped_citations": [],
+        "chunks": [
+          {
+            "bill_id": "bill_0013",
+            "page_number": 1,
+            "chunk_index": 1,
+            "heading": "WestNet Broadband bill, account 4363-495-7885, billing period 2024-06-14 to 2024-07-12, page 1",
+            "text": "Service interruption credit  26.44 CR\n\nGST  9.44\n\nCR denotes a credit. Late payments may be subject to interest. WestNet Broadband is a regulated utility service provider.",
+            "similarity": 0.6777011944233672
+          },
+          {
+            "bill_id": "bill_0013",
+            "page_number": 1,
+            "chunk_index": 0,
+            "heading": "WestNet Broadband bill, account 4363-495-7885, billing period 2024-06-14 to 2024-07-12, page 1",
+            "text": "WestNet Broadband\n\nPatrick Rivera\n4313 Wilson Plain Apt. 337  INVOICE DATE\n13-Jul-2024Jennyhaven, PA 37594\nACCOUNT NO.\n4363-495-7885\nYour service  PAY BY\nService from 14-Jun-2024 to 12-Jul-2024.  31-Jul-2024\nBALANCE OWING (CAD)\n$77.44\n\nAccount activity\n\nUnlimited Internet 300  67.87\n\nRegulatory recovery fee  2.91\n\nWi-Fi extender rental  23.66",
+            "similarity": 0.5165484527887758
+          }
+        ],
+        "sql": null,
+        "sql_params": null,
+        "sql_columns": [],
+        "sql_rows": [],
+        "sql_error": null,
+        "input_tokens": 949,
+        "output_tokens": 50
+      },
+      "input_tokens": 949,
+      "output_tokens": 50
+    },
+    {
+      "key": "S5 parentheses",
+      "kind": "semantic",
+      "question": "What do amounts in parentheses mean on the Pennsylvania Telecom statement?",
+      "bill_id": "bill_0017",
+      "expected_route": "semantic",
+      "routed": "semantic",
+      "route_method": "rules",
+      "route_reason": "matched semantic rules: explain",
+      "route_correct": true,
+      "chunk_hit": true,
+      "bill_hit": true,
+      "exact_match": null,
+      "expected_values": [],
+      "abstained": false,
+      "cited_bills": [
+        "bill_0017"
+      ],
+      "answer": {
+        "question": "What do amounts in parentheses mean on the Pennsylvania Telecom statement?",
+        "route": "semantic",
+        "route_reason": "route given by the caller",
+        "route_method": "override",
+        "answer": "Amounts in parentheses on the Pennsylvania Telecom statement are credits to your account.",
+        "answerable": true,
+        "citations": [
+          {
+            "bill_id": "bill_0017",
+            "page": 1
+          }
+        ],
+        "dropped_citations": [],
+        "chunks": [
+          {
+            "bill_id": "bill_0017",
+            "page_number": 1,
+            "chunk_index": 1,
+            "heading": "Pennsylvania Telecom bill, account U7278755, billing period 2025-05-17 to 2025-06-16, page 1",
+            "text": "Amounts in parentheses are credits to your account. Thank you for choosing Pennsylvania Telecom.",
+            "similarity": 0.6456231859697822
+          },
+          {
+            "bill_id": "bill_0017",
+            "page_number": 1,
+            "chunk_index": 0,
+            "heading": "Pennsylvania Telecom bill, account U7278755, billing period 2025-05-17 to 2025-06-16, page 1",
+            "text": "Pennsylvania Telecom\nYour monthly statement\n\nJamie Cantu\n636 Louis Mountains\nHughesberg, NM 05353\n\nYour account\n\nStatement issued  June 18, 2025\nBilling period from  May 17, 2025\nBilling period to  June 16, 2025\nAccount  U7278755\nPayment due  July 3, 2025\n\nWhat you owe\n\nHome Internet plan  $81.62\nSales tax  $7.35\n\nTotal Balance  $88.97 USD",
+            "similarity": 0.5533962909455646
+          }
+        ],
+        "sql": null,
+        "sql_params": null,
+        "sql_columns": [],
+        "sql_rows": [],
+        "sql_error": null,
+        "input_tokens": 893,
+        "output_tokens": 54
+      },
+      "input_tokens": 893,
+      "output_tokens": 54
+    },
+    {
+      "key": "S6 payment slip",
+      "kind": "semantic",
+      "question": "What does the payment slip on the Lake Selena Power & Light bill ask me to do?",
+      "bill_id": "bill_0004",
+      "expected_route": "semantic",
+      "routed": "semantic",
+      "route_method": "llm",
+      "route_reason": "matched no rule; model: The question asks about the content and instructions on a specific bill's payment slip, which requires reading the text printed on the bill rather than performing calculations or comparisons across structured fields.",
+      "route_correct": true,
+      "chunk_hit": true,
+      "bill_hit": true,
+      "exact_match": null,
+      "expected_values": [],
+      "abstained": false,
+      "cited_bills": [
+        "bill_0004"
+      ],
+      "answer": {
+        "question": "What does the payment slip on the Lake Selena Power & Light bill ask me to do?",
+        "route": "semantic",
+        "route_reason": "route given by the caller",
+        "route_method": "override",
+        "answer": "The payment slip on the Lake Selena Power & Light bill asks you to return it with your payment.",
+        "answerable": true,
+        "citations": [
+          {
+            "bill_id": "bill_0004",
+            "page": 2
+          }
+        ],
+        "dropped_citations": [],
+        "chunks": [
+          {
+            "bill_id": "bill_0004",
+            "page_number": 2,
+            "chunk_index": 2,
+            "heading": "Lake Selena Power & Light bill, account 07631165667, billing period 2024-02-28 to 2024-03-26, page 2",
+            "text": "Payable to: Lake Selena Power & Light\n\nPage 2 of 2",
+            "similarity": 0.7687559861686252
+          },
+          {
+            "bill_id": "bill_0004",
+            "page_number": 1,
+            "chunk_index": 0,
+            "heading": "Lake Selena Power & Light bill, account 07631165667, billing period 2024-02-28 to 2024-03-26, page 1",
+            "text": "Lake Selena Power & Light\n\nAmy Valdez\n5133 Amanda Dam\nWhitemouth, IA 10381\n\nPlease Pay This Amount\n$75.90\n\nby 2024-04-18\n\nBill issued 2024-03-30. A full breakdown of your charges and your account details are on the next\npage. All amounts are shown in USD.\n\nPage 1 of 2",
+            "similarity": 0.7576454281806946
+          },
+          {
+            "bill_id": "bill_0004",
+            "page_number": 2,
+            "chunk_index": 1,
+            "heading": "Lake Selena Power & Light bill, account 07631165667, billing period 2024-02-28 to 2024-03-26, page 2",
+            "text": "Bill details\n\nBilling period  2024-02-28 to 2024-03-26\n\nMeter  M-81080132\n\nTotal usage  601 kWh\n\nITEM  USD\n\nEnergy charge  66.11\n\nDelivery charge  5.26\n\nTransmission charge  3.78\n\nAutopay discount  -9.02\n\nSales tax  9.77\n\nPayment slip — return this portion with your payment.\n\nCustomer: Amy Valdez\n\nAccount number: 07631165667",
+            "similarity": 0.7522231039735008
+          }
+        ],
+        "sql": null,
+        "sql_params": null,
+        "sql_columns": [],
+        "sql_rows": [],
+        "sql_error": null,
+        "input_tokens": 1048,
+        "output_tokens": 57
+      },
+      "input_tokens": 1450,
+      "output_tokens": 107
+    },
+    {
+      "key": "S7 tax line",
+      "kind": "semantic",
+      "question": "What is the tax line on account 04332003791?",
+      "bill_id": "bill_0009",
+      "expected_route": "semantic",
+      "routed": "semantic",
+      "route_method": "rules",
+      "route_reason": "matched semantic rules: what is this charge",
+      "route_correct": true,
+      "chunk_hit": true,
+      "bill_hit": true,
+      "exact_match": null,
+      "expected_values": [],
+      "abstained": false,
+      "cited_bills": [
+        "bill_0009"
+      ],
+      "answer": {
+        "question": "What is the tax line on account 04332003791?",
+        "route": "semantic",
+        "route_reason": "route given by the caller",
+        "route_method": "override",
+        "answer": "The utility users tax on account 04332003791 is $6.21.",
+        "answerable": true,
+        "citations": [
+          {
+            "bill_id": "bill_0009",
+            "page": 2
+          }
+        ],
+        "dropped_citations": [],
+        "chunks": [
+          {
+            "bill_id": "bill_0009",
+            "page_number": 2,
+            "chunk_index": 1,
+            "heading": "Zacharymouth Water Authority bill, account 04332003791, billing period 2025-12-16 to 2026-01-16, page 2",
+            "text": "Bill details\n\nBilling period  2025-12-16 to 2026-01-16\n\nMeter  M-88957986\n\nTotal usage  30.6 m³\n\nITEM  USD\n\nMetered water  124.24\n\nUtility users tax  6.21\n\nPayment slip — return this portion with your payment.\n\nCustomer: Stephen Johnston\n\nAccount number: 04332003791\n\nPayable to: Zacharymouth Water Authority\n\nPage 2 of 2",
+            "similarity": 0.41478235545368725
+          },
+          {
+            "bill_id": "bill_0009",
+            "page_number": 1,
+            "chunk_index": 0,
+            "heading": "Zacharymouth Water Authority bill, account 04332003791, billing period 2025-12-16 to 2026-01-16, page 1",
+            "text": "Zacharymouth Water Authority\n\nStephen Johnston\n6320 Kimberly Forges Apt. 870\nPort David, DC 61402\n\nPlease Pay This Amount\n$130.45\n\nby 2026-02-09\n\nBill issued 2026-01-22. A full breakdown of your charges and your account details are on the next\npage. All amounts are shown in USD.\n\nPage 1 of 2",
+            "similarity": 0.3864966400565726
+          }
+        ],
+        "sql": null,
+        "sql_params": null,
+        "sql_columns": [],
+        "sql_rows": [],
+        "sql_error": null,
+        "input_tokens": 960,
+        "output_tokens": 53
+      },
+      "input_tokens": 960,
+      "output_tokens": 53
+    },
+    {
+      "key": "S8 internet plan",
+      "kind": "semantic",
+      "question": "Describe the internet plan on the East Edwardfurt Fiber bill.",
+      "bill_id": "bill_0010",
+      "expected_route": "semantic",
+      "routed": "semantic",
+      "route_method": "rules",
+      "route_reason": "matched semantic rules: explain",
+      "route_correct": true,
+      "chunk_hit": true,
+      "bill_hit": true,
+      "exact_match": null,
+      "expected_values": [],
+      "abstained": true,
+      "cited_bills": [],
+      "answer": {
+        "question": "Describe the internet plan on the East Edwardfurt Fiber bill.",
+        "route": "semantic",
+        "route_reason": "route given by the caller",
+        "route_method": "override",
+        "answer": "The bill provided does not contain a description of the internet plan. It only shows that a 'HOME INTERNET PLAN' charge of $60.24 was applied, but no details about the plan's specifications, speed, or features are included.",
+        "answerable": false,
+        "citations": [],
+        "dropped_citations": [],
+        "chunks": [
+          {
+            "bill_id": "bill_0010",
+            "page_number": 1,
+            "chunk_index": 0,
+            "heading": "EAST EDWARDFURT FIBER bill, account 01665876036, billing period 2025-11-08 to 2025-12-08, page 1",
+            "text": "EAST EDWARDFURT FIBER\nBILLING STATEMENT\n\nRANDY SHAH\n0546 MEDINA STREET APT. 734\nTUCKERFURT, MA 88171\n\nISSUED  12/14/2025\nPERIOD  11/08/2025-12/08/2025\n\nHOME INTERNET PLAN  60.24\nWI-FI EXTENDER RENTAL  12.29\nBILLING ADJUSTMENT  -10.15\nHST  5.08\n\nTOTAL DUE  CAD 67.46\nDUE  12/29/2025\n\nACCT 01665876036\nTHANK YOU",
+            "similarity": 0.7097275084094721
+          }
+        ],
+        "sql": null,
+        "sql_params": null,
+        "sql_columns": [],
+        "sql_rows": [],
+        "sql_error": null,
+        "input_tokens": 854,
+        "output_tokens": 70
+      },
+      "input_tokens": 854,
+      "output_tokens": 70
+    },
+    {
+      "key": "S9 late payments",
+      "kind": "semantic",
+      "question": "What does the Matthewfurt Municipal Water bill say about late payments?",
+      "bill_id": "bill_0018",
+      "expected_route": "semantic",
+      "routed": "semantic",
+      "route_method": "rules",
+      "route_reason": "matched semantic rules: says / printed",
+      "route_correct": true,
+      "chunk_hit": true,
+      "bill_hit": true,
+      "exact_match": null,
+      "expected_values": [],
+      "abstained": false,
+      "cited_bills": [
+        "bill_0018"
+      ],
+      "answer": {
+        "question": "What does the Matthewfurt Municipal Water bill say about late payments?",
+        "route": "semantic",
+        "route_reason": "route given by the caller",
+        "route_method": "override",
+        "answer": "According to the Matthewfurt Municipal Water bill, late payments may be subject to interest.",
+        "answerable": true,
+        "citations": [
+          {
+            "bill_id": "bill_0018",
+            "page": 1
+          }
+        ],
+        "dropped_citations": [],
+        "chunks": [
+          {
+            "bill_id": "bill_0018",
+            "page_number": 1,
+            "chunk_index": 1,
+            "heading": "Matthewfurt Municipal Water bill, account H6578091, billing period 2026-03-07 to 2026-04-06, page 1",
+            "text": "CR denotes a credit. Late payments may be subject to interest. Matthewfurt Municipal Water is a regulated utility service\nprovider.",
+            "similarity": 0.7884788043213617
+          },
+          {
+            "bill_id": "bill_0018",
+            "page_number": 1,
+            "chunk_index": 0,
+            "heading": "Matthewfurt Municipal Water bill, account H6578091, billing period 2026-03-07 to 2026-04-06, page 1",
+            "text": "Matthewfurt Municipal Water\n\nTammie Bright\n17240 Mark Centers Suite 556  INVOICE DATE\n08-Apr-2026East Amanda, OK 89865\nACCOUNT NO.\nH6578091\nYour usage  PAY BY\nMeter M-22196937 recorded 31.3 m³ between 07-  21-Apr-2026\nMar-2026 and 06-Apr-2026.\nBALANCE OWING (CAD)\n$61.46\n\nAccount activity\n\nMetered water  58.53\n\nGST/HST  2.93",
+            "similarity": 0.7237251565620223
+          }
+        ],
+        "sql": null,
+        "sql_params": null,
+        "sql_columns": [],
+        "sql_rows": [],
+        "sql_error": null,
+        "input_tokens": 926,
+        "output_tokens": 55
+      },
+      "input_tokens": 926,
+      "output_tokens": 55
+    },
+    {
+      "key": "S10 contact",
+      "kind": "semantic",
+      "question": "Who should I contact with questions about account 06542351161?",
+      "bill_id": "bill_0001",
+      "expected_route": "semantic",
+      "routed": "semantic",
+      "route_method": "rules",
+      "route_reason": "matched semantic rules: who / where / how to",
+      "route_correct": true,
+      "chunk_hit": true,
+      "bill_hit": true,
+      "exact_match": null,
+      "expected_values": [],
+      "abstained": false,
+      "cited_bills": [
+        "bill_0001"
+      ],
+      "answer": {
+        "question": "Who should I contact with questions about account 06542351161?",
+        "route": "semantic",
+        "route_reason": "route given by the caller",
+        "route_method": "override",
+        "answer": "You should contact Robinsonshire Power & Light customer care and quote your account number with any questions about account 06542351161.",
+        "answerable": true,
+        "citations": [
+          {
+            "bill_id": "bill_0001",
+            "page": 1
+          }
+        ],
+        "dropped_citations": [],
+        "chunks": [
+          {
+            "bill_id": "bill_0001",
+            "page_number": 1,
+            "chunk_index": 0,
+            "heading": "Robinsonshire Power & Light bill, account 06542351161, billing period 2024-09-07 to 2024-10-05, page 1",
+            "text": "Robinsonshire Power & Light  Account Number\n06542351161\n\nStatement Date: 10/06/2024\n\nGregory Baker\n161 Calderon River Suite 931\nLake Jeremyport, CO 31013\n\nBILLING SUMMARY\n\nService Period  09/07/2024 - 10/05/2024\n\nMeter  M-64752553\n\nUsage This Period  328 kWh\n\nDue Date  10/21/2024\n\nCHARGES\n\nDescription  Amount (USD)\n\nPrevious balance  88.23",
+            "similarity": 0.30618998408317566
+          },
+          {
+            "bill_id": "bill_0001",
+            "page_number": 1,
+            "chunk_index": 1,
+            "heading": "Robinsonshire Power & Light bill, account 06542351161, billing period 2024-09-07 to 2024-10-05, page 1",
+            "text": "Electricity usage  95.12\n\nUtility users tax  2.85\n\nAmount Due  186.20\n\nAll amounts are in USD. Questions about this bill? Contact Robinsonshire Power & Light customer care and quote your account\nnumber.",
+            "similarity": 0.29067484792024856
+          }
+        ],
+        "sql": null,
+        "sql_params": null,
+        "sql_columns": [],
+        "sql_rows": [],
+        "sql_error": null,
+        "input_tokens": 936,
+        "output_tokens": 64
+      },
+      "input_tokens": 936,
+      "output_tokens": 64
+    },
+    {
+      "key": "S11 no due date",
+      "kind": "semantic",
+      "question": "What does the Hendersonfurt Fiber bill say about when payment is due?",
+      "bill_id": "bill_0054",
+      "expected_route": "semantic",
+      "routed": "semantic",
+      "route_method": "rules",
+      "route_reason": "matched semantic rules: says / printed",
+      "route_correct": true,
+      "chunk_hit": true,
+      "bill_hit": true,
+      "exact_match": null,
+      "expected_values": [],
+      "abstained": false,
+      "cited_bills": [
+        "bill_0054"
+      ],
+      "answer": {
+        "question": "What does the Hendersonfurt Fiber bill say about when payment is due?",
+        "route": "semantic",
+        "route_reason": "route given by the caller",
+        "route_method": "override",
+        "answer": "The bill states that no payment date applies to this bill.",
+        "answerable": true,
+        "citations": [
+          {
+            "bill_id": "bill_0054",
+            "page": 1
+          }
+        ],
+        "dropped_citations": [],
+        "chunks": [
+          {
+            "bill_id": "bill_0054",
+            "page_number": 1,
+            "chunk_index": 0,
+            "heading": "Hendersonfurt Fiber bill, account G9241418, billing period 2025-12-02 to 2025-12-29, page 1",
+            "text": "Hendersonfurt Fiber\n\nBrittney Murphy\n6303 Sandy Crescent\nSalazarton, ME 87805\n\nPlease Pay This Amount\n$66.99\n\nNo payment date applies to this bill\n\nBill issued 2026-01-04. A full breakdown of your charges and your account details are on the next\npage. All amounts are shown in CAD.\n\nPage 1 of 2",
+            "similarity": 0.777703715699691
+          },
+          {
+            "bill_id": "bill_0054",
+            "page_number": 2,
+            "chunk_index": 1,
+            "heading": "Hendersonfurt Fiber bill, account G9241418, billing period 2025-12-02 to 2025-12-29, page 2",
+            "text": "Bill details\n\nBilling period  2025-12-02 to 2025-12-29\n\nITEM  CAD\n\nFiber 500 monthly plan  61.46\n\nGST  5.53\n\nPayment slip — return this portion with your payment.\n\nCustomer: Brittney Murphy\n\nAccount number: G9241418\n\nPayable to: Hendersonfurt Fiber\n\nPage 2 of 2",
+            "similarity": 0.7227792309058184
+          }
+        ],
+        "sql": null,
+        "sql_params": null,
+        "sql_columns": [],
+        "sql_rows": [],
+        "sql_error": null,
+        "input_tokens": 948,
+        "output_tokens": 47
+      },
+      "input_tokens": 948,
+      "output_tokens": 47
+    },
+    {
+      "key": "S12 named line",
+      "kind": "semantic",
+      "question": "What is the 'Distribution charge' line on the Millerview Natural Gas bill?",
+      "bill_id": "bill_0016",
+      "expected_route": "semantic",
+      "routed": "semantic",
+      "route_method": "rules",
+      "route_reason": "matched semantic rules: what is this charge",
+      "route_correct": true,
+      "chunk_hit": true,
+      "bill_hit": true,
+      "exact_match": null,
+      "expected_values": [],
+      "abstained": false,
+      "cited_bills": [
+        "bill_0016"
+      ],
+      "answer": {
+        "question": "What is the 'Distribution charge' line on the Millerview Natural Gas bill?",
+        "route": "semantic",
+        "route_reason": "route given by the caller",
+        "route_method": "override",
+        "answer": "The Distribution charge on the Millerview Natural Gas bill is $16.00 CAD.",
+        "answerable": true,
+        "citations": [
+          {
+            "bill_id": "bill_0016",
+            "page": 1
+          }
+        ],
+        "dropped_citations": [],
+        "chunks": [
+          {
+            "bill_id": "bill_0016",
+            "page_number": 1,
+            "chunk_index": 1,
+            "heading": "Millerview Natural Gas bill, account 808 760 3859, billing period 2025-02-01 to 2025-03-03, page 1",
+            "text": "Distribution charge  16.00\n\nPipeline safety fee  19.36\n\nGST  17.84\n\nAmount Due  216.06\n\nAll amounts are in CAD. Questions about this bill? Contact Millerview Natural Gas customer care and quote your account\nnumber.",
+            "similarity": 0.7045050229574797
+          },
+          {
+            "bill_id": "bill_0016",
+            "page_number": 1,
+            "chunk_index": 0,
+            "heading": "Millerview Natural Gas bill, account 808 760 3859, billing period 2025-02-01 to 2025-03-03, page 1",
+            "text": "Millerview Natural Gas  Account Number\n808 760 3859\n\nStatement Date: 03/07/2025\n\nLori Wolf\n7710 Jennifer Inlet\nNew Rickybury, MP 15372\n\nBILLING SUMMARY\n\nService Period  02/01/2025 - 03/03/2025\n\nMeter  M-12748467\n\nUsage This Period  187.2 m³\n\nDue Date  03/18/2025\n\nCHARGES\n\nDescription  Amount (CAD)\n\nNatural gas usage  162.86",
+            "similarity": 0.6636671228805681
+          }
+        ],
+        "sql": null,
+        "sql_params": null,
+        "sql_columns": [],
+        "sql_rows": [],
+        "sql_error": null,
+        "input_tokens": 941,
+        "output_tokens": 55
+      },
+      "input_tokens": 941,
+      "output_tokens": 55
+    },
+    {
+      "key": "S13 balance carried",
+      "kind": "semantic",
+      "question": "What is the 'Unpaid balance from last bill' line on account 4727-790-1043?",
+      "bill_id": "bill_0029",
+      "expected_route": "semantic",
+      "routed": "semantic",
+      "route_method": "rules",
+      "route_reason": "matched semantic rules: what is this charge",
+      "route_correct": true,
+      "chunk_hit": true,
+      "bill_hit": true,
+      "exact_match": null,
+      "expected_values": [],
+      "abstained": false,
+      "cited_bills": [
+        "bill_0029"
+      ],
+      "answer": {
+        "question": "What is the 'Unpaid balance from last bill' line on account 4727-790-1043?",
+        "route": "semantic",
+        "route_reason": "route given by the caller",
+        "route_method": "override",
+        "answer": "The unpaid balance from last bill on account 4727-790-1043 is CAD $134.53.",
+        "answerable": true,
+        "citations": [
+          {
+            "bill_id": "bill_0029",
+            "page": 2
+          }
+        ],
+        "dropped_citations": [],
+        "chunks": [
+          {
+            "bill_id": "bill_0029",
+            "page_number": 2,
+            "chunk_index": 2,
+            "heading": "West Sarahmouth Power & Light bill, account 4727-790-1043, billing period 2024-09-05 to 2024-10-06, page 2",
+            "text": "Payable to: West Sarahmouth Power & Light\n\nPage 2 of 2",
+            "similarity": 0.4921020283516604
+          },
+          {
+            "bill_id": "bill_0029",
+            "page_number": 2,
+            "chunk_index": 1,
+            "heading": "West Sarahmouth Power & Light bill, account 4727-790-1043, billing period 2024-09-05 to 2024-10-06, page 2",
+            "text": "Bill details\n\nBilling period  2024-09-05 to 2024-10-06\n\nMeter  M-89324609\n\nTotal usage  337 kWh\n\nITEM  CAD\n\nUnpaid balance from last bill  134.53\n\nElectricity usage  60.66\n\nDelivery charge  19.49\n\nHST  3.21\n\nPayment slip — return this portion with your payment.\n\nCustomer: Kimberly Acosta\n\nAccount number: 4727-790-1043",
+            "similarity": 0.4824298928719831
+          },
+          {
+            "bill_id": "bill_0029",
+            "page_number": 1,
+            "chunk_index": 0,
+            "heading": "West Sarahmouth Power & Light bill, account 4727-790-1043, billing period 2024-09-05 to 2024-10-06, page 1",
+            "text": "West Sarahmouth Power & Light\n\nKimberly Acosta\n3410 Robert Underpass\nBrownfort, PA 70762\n\nPlease Pay This Amount\n$217.89\n\nby 2024-10-22\n\nBill issued 2024-10-07. A full breakdown of your charges and your account details are on the next\npage. All amounts are shown in CAD.\n\nPage 1 of 2",
+            "similarity": 0.42879596776986384
+          }
+        ],
+        "sql": null,
+        "sql_params": null,
+        "sql_columns": [],
+        "sql_rows": [],
+        "sql_error": null,
+        "input_tokens": 1073,
+        "output_tokens": 61
+      },
+      "input_tokens": 1073,
+      "output_tokens": 61
+    },
+    {
+      "key": "U1 phone number",
+      "kind": "unanswerable",
+      "question": "What is the customer's phone number on account 4363-495-7885?",
+      "bill_id": "bill_0013",
+      "expected_route": "semantic",
+      "routed": "semantic",
+      "route_method": "llm",
+      "route_reason": "matched no rule; model: The phone number is contact information printed on the bill that requires reading the actual bill text, not a structured field that can be computed with SQL.",
+      "route_correct": true,
+      "chunk_hit": null,
+      "bill_hit": null,
+      "exact_match": null,
+      "expected_values": [],
+      "abstained": true,
+      "cited_bills": [],
+      "answer": {
+        "question": "What is the customer's phone number on account 4363-495-7885?",
+        "route": "semantic",
+        "route_reason": "route given by the caller",
+        "route_method": "override",
+        "answer": "The bills provided do not contain the customer's phone number for account 4363-495-7885.",
+        "answerable": false,
+        "citations": [],
+        "dropped_citations": [],
+        "chunks": [
+          {
+            "bill_id": "bill_0013",
+            "page_number": 1,
+            "chunk_index": 0,
+            "heading": "WestNet Broadband bill, account 4363-495-7885, billing period 2024-06-14 to 2024-07-12, page 1",
+            "text": "WestNet Broadband\n\nPatrick Rivera\n4313 Wilson Plain Apt. 337  INVOICE DATE\n13-Jul-2024Jennyhaven, PA 37594\nACCOUNT NO.\n4363-495-7885\nYour service  PAY BY\nService from 14-Jun-2024 to 12-Jul-2024.  31-Jul-2024\nBALANCE OWING (CAD)\n$77.44\n\nAccount activity\n\nUnlimited Internet 300  67.87\n\nRegulatory recovery fee  2.91\n\nWi-Fi extender rental  23.66",
+            "similarity": 0.39820681235709043
+          },
+          {
+            "bill_id": "bill_0013",
+            "page_number": 1,
+            "chunk_index": 1,
+            "heading": "WestNet Broadband bill, account 4363-495-7885, billing period 2024-06-14 to 2024-07-12, page 1",
+            "text": "Service interruption credit  26.44 CR\n\nGST  9.44\n\nCR denotes a credit. Late payments may be subject to interest. WestNet Broadband is a regulated utility service provider.",
+            "similarity": 0.2968342127302763
+          }
+        ],
+        "sql": null,
+        "sql_params": null,
+        "sql_columns": [],
+        "sql_rows": [],
+        "sql_error": null,
+        "input_tokens": 946,
+        "output_tokens": 40
+      },
+      "input_tokens": 1346,
+      "output_tokens": 83
+    },
+    {
+      "key": "U2 early payment",
+      "kind": "unanswerable",
+      "question": "What discount would account Y4700766 get for paying early?",
+      "bill_id": "bill_0022",
+      "expected_route": "semantic",
+      "routed": "semantic",
+      "route_method": "llm",
+      "route_reason": "matched no rule; model: The answer requires reading the specific terms and conditions printed on the bill for account Y4700766, which is textual information not captured in structured fields.",
+      "route_correct": true,
+      "chunk_hit": null,
+      "bill_hit": null,
+      "exact_match": null,
+      "expected_values": [],
+      "abstained": true,
+      "cited_bills": [],
+      "answer": {
+        "question": "What discount would account Y4700766 get for paying early?",
+        "route": "semantic",
+        "route_reason": "route given by the caller",
+        "route_method": "override",
+        "answer": "The bills provided do not contain information about early payment discounts for account Y4700766.",
+        "answerable": false,
+        "citations": [],
+        "dropped_citations": [],
+        "chunks": [
+          {
+            "bill_id": "bill_0022",
+            "page_number": 1,
+            "chunk_index": 1,
+            "heading": "Gordonton Power & Light bill, account Y4700766, billing period 2025-12-19 to 2026-01-19, page 1",
+            "text": "Energy charge  $83.16\nTransmission charge  $7.15\nRenewable energy rider  $5.10\nUtility users tax  $10.50\n\nTotal Balance  $105.91 USD\n\nAmounts in parentheses are credits to your account. Thank you for choosing Gordonton Power & Light.",
+            "similarity": 0.3540557796888639
+          },
+          {
+            "bill_id": "bill_0022",
+            "page_number": 1,
+            "chunk_index": 0,
+            "heading": "Gordonton Power & Light bill, account Y4700766, billing period 2025-12-19 to 2026-01-19, page 1",
+            "text": "Gordonton Power & Light\nYour monthly statement\n\nMicheal Wallace\nPSC 5921, Box 2499\nAPO AP 93844\n\nYour account\n\nStatement issued  January 22, 2026\nBilling period from  December 19, 2025\nBilling period to  January 19, 2026\nAccount  Y4700766\nMeter number  M-69847896\nConsumption  693 kWh\nPayment due  Upon receipt\n\nWhat you owe",
+            "similarity": 0.35215448996642473
+          }
+        ],
+        "sql": null,
+        "sql_params": null,
+        "sql_columns": [],
+        "sql_rows": [],
+        "sql_error": null,
+        "input_tokens": 935,
+        "output_tokens": 37
+      },
+      "input_tokens": 1331,
+      "output_tokens": 82
+    },
+    {
+      "key": "A1 highest total",
+      "kind": "aggregate",
+      "question": "Which bill has the highest total amount due?",
+      "bill_id": "bill_0091",
+      "expected_route": "aggregate",
+      "routed": "aggregate",
+      "route_method": "rules",
+      "route_reason": "matched aggregate rules: superlative",
+      "route_correct": true,
+      "chunk_hit": null,
+      "bill_hit": null,
+      "exact_match": true,
+      "expected_values": [
+        "358 573 0652",
+        "bill_0091",
+        "deannaside power & light"
+      ],
+      "abstained": false,
+      "cited_bills": [
+        "bill_0091"
+      ],
+      "answer": {
+        "question": "Which bill has the highest total amount due?",
+        "route": "aggregate",
+        "route_reason": "route given by the caller",
+        "route_method": "override",
+        "answer": "Bill 0091 has the highest total amount due at $631.80.",
+        "answerable": true,
+        "citations": [
+          {
+            "bill_id": "bill_0091",
+            "page": null
+          }
+        ],
+        "dropped_citations": [],
+        "chunks": [],
+        "sql": "SELECT id, total_amount FROM bills ORDER BY total_amount DESC LIMIT 1",
+        "sql_params": {},
+        "sql_columns": [
+          "id",
+          "total_amount"
+        ],
+        "sql_rows": [
+          [
+            "bill_0091",
+            "631.80"
+          ]
+        ],
+        "sql_error": null,
+        "input_tokens": 1775,
+        "output_tokens": 82
+      },
+      "input_tokens": 1775,
+      "output_tokens": 82
+    },
+    {
+      "key": "A2 lowest total",
+      "kind": "aggregate",
+      "question": "Which bill has the lowest total amount due?",
+      "bill_id": "bill_0173",
+      "expected_route": "aggregate",
+      "routed": "aggregate",
+      "route_method": "rules",
+      "route_reason": "matched aggregate rules: superlative",
+      "route_correct": true,
+      "chunk_hit": null,
+      "bill_hit": null,
+      "exact_match": true,
+      "expected_values": [
+        "arizona telecom",
+        "bill_0173",
+        "e7283215"
+      ],
+      "abstained": false,
+      "cited_bills": [
+        "bill_0173"
+      ],
+      "answer": {
+        "question": "Which bill has the lowest total amount due?",
+        "route": "aggregate",
+        "route_reason": "route given by the caller",
+        "route_method": "override",
+        "answer": "Bill 0173 has the lowest total amount due at $44.82.",
+        "answerable": true,
+        "citations": [
+          {
+            "bill_id": "bill_0173",
+            "page": null
+          }
+        ],
+        "dropped_citations": [],
+        "chunks": [],
+        "sql": "SELECT id, total_amount FROM bills ORDER BY total_amount ASC LIMIT 1",
+        "sql_params": {},
+        "sql_columns": [
+          "id",
+          "total_amount"
+        ],
+        "sql_rows": [
+          [
+            "bill_0173",
+            "44.82"
+          ]
+        ],
+        "sql_error": null,
+        "input_tokens": 1776,
+        "output_tokens": 83
+      },
+      "input_tokens": 1776,
+      "output_tokens": 83
+    },
+    {
+      "key": "A3 sum USD",
+      "kind": "aggregate",
+      "question": "What is the sum of the total amounts due on all USD bills?",
+      "bill_id": null,
+      "expected_route": "aggregate",
+      "routed": "aggregate",
+      "route_method": "rules",
+      "route_reason": "matched aggregate rules: statistic",
+      "route_correct": true,
+      "chunk_hit": null,
+      "bill_hit": null,
+      "exact_match": true,
+      "expected_values": [
+        "13976.44"
+      ],
+      "abstained": false,
+      "cited_bills": [],
+      "answer": {
+        "question": "What is the sum of the total amounts due on all USD bills?",
+        "route": "aggregate",
+        "route_reason": "route given by the caller",
+        "route_method": "override",
+        "answer": "The sum of the total amounts due on all USD bills is $13,976.44.",
+        "answerable": true,
+        "citations": [],
+        "dropped_citations": [],
+        "chunks": [],
+        "sql": "SELECT ROUND(SUM(total_amount), 2) FROM bills WHERE currency = %(currency)s",
+        "sql_params": {
+          "currency": "USD"
+        },
+        "sql_columns": [
+          "round"
+        ],
+        "sql_rows": [
+          [
+            "13976.44"
+          ]
+        ],
+        "sql_error": null,
+        "input_tokens": 1786,
+        "output_tokens": 85
+      },
+      "input_tokens": 1786,
+      "output_tokens": 85
+    },
+    {
+      "key": "A4 average CAD",
+      "kind": "aggregate",
+      "question": "What is the average total amount due across all CAD bills?",
+      "bill_id": null,
+      "expected_route": "aggregate",
+      "routed": "aggregate",
+      "route_method": "rules",
+      "route_reason": "matched aggregate rules: statistic",
+      "route_correct": true,
+      "chunk_hit": null,
+      "bill_hit": null,
+      "exact_match": true,
+      "expected_values": [
+        "145.78"
+      ],
+      "abstained": false,
+      "cited_bills": [],
+      "answer": {
+        "question": "What is the average total amount due across all CAD bills?",
+        "route": "aggregate",
+        "route_reason": "route given by the caller",
+        "route_method": "override",
+        "answer": "The average total amount due across all CAD bills is $145.78 CAD.",
+        "answerable": true,
+        "citations": [],
+        "dropped_citations": [],
+        "chunks": [],
+        "sql": "SELECT ROUND(AVG(total_amount), 2) FROM bills WHERE currency = %(currency)s",
+        "sql_params": {
+          "currency": "CAD"
+        },
+        "sql_columns": [
+          "round"
+        ],
+        "sql_rows": [
+          [
+            "145.78"
+          ]
+        ],
+        "sql_error": null,
+        "input_tokens": 1784,
+        "output_tokens": 86
+      },
+      "input_tokens": 1784,
+      "output_tokens": 86
+    },
+    {
+      "key": "A5 no due date",
+      "kind": "aggregate",
+      "question": "How many bills have no due date?",
+      "bill_id": null,
+      "expected_route": "aggregate",
+      "routed": "aggregate",
+      "route_method": "rules",
+      "route_reason": "matched aggregate rules: count",
+      "route_correct": true,
+      "chunk_hit": null,
+      "bill_hit": null,
+      "exact_match": true,
+      "expected_values": [
+        "10.00"
+      ],
+      "abstained": false,
+      "cited_bills": [],
+      "answer": {
+        "question": "How many bills have no due date?",
+        "route": "aggregate",
+        "route_reason": "route given by the caller",
+        "route_method": "override",
+        "answer": "10 bills have no due date.",
+        "answerable": true,
+        "citations": [],
+        "dropped_citations": [],
+        "chunks": [],
+        "sql": "SELECT COUNT(*) FROM bills WHERE due_date IS NULL",
+        "sql_params": {},
+        "sql_columns": [
+          "count"
+        ],
+        "sql_rows": [
+          [
+            "10"
+          ]
+        ],
+        "sql_error": null,
+        "input_tokens": 1754,
+        "output_tokens": 51
+      },
+      "input_tokens": 1754,
+      "output_tokens": 51
+    },
+    {
+      "key": "A6 previous balance",
+      "kind": "aggregate",
+      "question": "How many bills carry a balance forward from a previous bill?",
+      "bill_id": null,
+      "expected_route": "aggregate",
+      "routed": "aggregate",
+      "route_method": "rules",
+      "route_reason": "matched aggregate rules: count",
+      "route_correct": true,
+      "chunk_hit": null,
+      "bill_hit": null,
+      "exact_match": false,
+      "expected_values": [
+        "33.00"
+      ],
+      "abstained": false,
+      "cited_bills": [],
+      "answer": {
+        "question": "How many bills carry a balance forward from a previous bill?",
+        "route": "aggregate",
+        "route_reason": "route given by the caller",
+        "route_method": "override",
+        "answer": "14 bills contain line items related to previous balance.",
+        "answerable": true,
+        "citations": [],
+        "dropped_citations": [],
+        "chunks": [],
+        "sql": "SELECT COUNT(DISTINCT b.id) FROM bills b INNER JOIN line_items li ON b.id = li.bill_id WHERE li.description ILIKE %(description)s",
+        "sql_params": {
+          "description": "%previous%balance%"
+        },
+        "sql_columns": [
+          "count"
+        ],
+        "sql_rows": [
+          [
+            "14"
+          ]
+        ],
+        "sql_error": null,
+        "input_tokens": 1798,
+        "output_tokens": 97
+      },
+      "input_tokens": 1798,
+      "output_tokens": 97
+    },
+    {
+      "key": "A7 credits",
+      "kind": "aggregate",
+      "question": "How many bills include a credit or discount (a negative line item)?",
+      "bill_id": null,
+      "expected_route": "aggregate",
+      "routed": "aggregate",
+      "route_method": "rules",
+      "route_reason": "matched aggregate rules: count",
+      "route_correct": true,
+      "chunk_hit": null,
+      "bill_hit": null,
+      "exact_match": true,
+      "expected_values": [
+        "10.00"
+      ],
+      "abstained": false,
+      "cited_bills": [],
+      "answer": {
+        "question": "How many bills include a credit or discount (a negative line item)?",
+        "route": "aggregate",
+        "route_reason": "route given by the caller",
+        "route_method": "override",
+        "answer": "10 bills include a credit or discount, as indicated by the presence of at least one negative line item amount.",
+        "answerable": true,
+        "citations": [],
+        "dropped_citations": [],
+        "chunks": [],
+        "sql": "SELECT COUNT(DISTINCT bill_id) FROM line_items WHERE amount < 0",
+        "sql_params": {},
+        "sql_columns": [
+          "count"
+        ],
+        "sql_rows": [
+          [
+            "10"
+          ]
+        ],
+        "sql_error": null,
+        "input_tokens": 1772,
+        "output_tokens": 72
+      },
+      "input_tokens": 1772,
+      "output_tokens": 72
+    },
+    {
+      "key": "A8 total kWh",
+      "kind": "aggregate",
+      "question": "What is the total electricity usage in kWh across all bills?",
+      "bill_id": null,
+      "expected_route": "aggregate",
+      "routed": "aggregate",
+      "route_method": "rules",
+      "route_reason": "matched aggregate rules: across bills",
+      "route_correct": true,
+      "chunk_hit": null,
+      "bill_hit": null,
+      "exact_match": true,
+      "expected_values": [
+        "19847.00"
+      ],
+      "abstained": false,
+      "cited_bills": [],
+      "answer": {
+        "question": "What is the total electricity usage in kWh across all bills?",
+        "route": "aggregate",
+        "route_reason": "route given by the caller",
+        "route_method": "override",
+        "answer": "The total electricity usage in kWh across all bills is 19,847 kWh.",
+        "answerable": true,
+        "citations": [],
+        "dropped_citations": [],
+        "chunks": [],
+        "sql": "SELECT COALESCE(SUM(usage_amount), 0) FROM bills WHERE usage_unit = %(unit)s",
+        "sql_params": {
+          "unit": "kWh"
+        },
+        "sql_columns": [
+          "coalesce"
+        ],
+        "sql_rows": [
+          [
+            "19847"
+          ]
+        ],
+        "sql_error": null,
+        "input_tokens": 1792,
+        "output_tokens": 93
+      },
+      "input_tokens": 1792,
+      "output_tokens": 93
+    },
+    {
+      "key": "A9 most kWh",
+      "kind": "aggregate",
+      "question": "Which bill used the most electricity in kWh?",
+      "bill_id": "bill_0091",
+      "expected_route": "aggregate",
+      "routed": "aggregate",
+      "route_method": "rules",
+      "route_reason": "matched aggregate rules: superlative",
+      "route_correct": true,
+      "chunk_hit": null,
+      "bill_hit": null,
+      "exact_match": true,
+      "expected_values": [
+        "358 573 0652",
+        "bill_0091",
+        "deannaside power & light"
+      ],
+      "abstained": false,
+      "cited_bills": [
+        "bill_0091"
+      ],
+      "answer": {
+        "question": "Which bill used the most electricity in kWh?",
+        "route": "aggregate",
+        "route_reason": "route given by the caller",
+        "route_method": "override",
+        "answer": "Bill 0091 used the most electricity with 1123 kWh.",
+        "answerable": true,
+        "citations": [
+          {
+            "bill_id": "bill_0091",
+            "page": null
+          }
+        ],
+        "dropped_citations": [],
+        "chunks": [],
+        "sql": "SELECT bills.id, bills.usage_amount FROM bills WHERE bills.usage_unit = %(unit)s ORDER BY bills.usage_amount DESC NULLS LAST LIMIT 1",
+        "sql_params": {
+          "unit": "kWh"
+        },
+        "sql_columns": [
+          "id",
+          "usage_amount"
+        ],
+        "sql_rows": [
+          [
+            "bill_0091",
+            "1123"
+          ]
+        ],
+        "sql_error": null,
+        "input_tokens": 1808,
+        "output_tokens": 119
+      },
+      "input_tokens": 1808,
+      "output_tokens": 119
+    },
+    {
+      "key": "A10 flat fee",
+      "kind": "aggregate",
+      "question": "How many bills have no metered usage (flat-fee internet bills)?",
+      "bill_id": null,
+      "expected_route": "aggregate",
+      "routed": "aggregate",
+      "route_method": "rules",
+      "route_reason": "matched aggregate rules: count",
+      "route_correct": true,
+      "chunk_hit": null,
+      "bill_hit": null,
+      "exact_match": true,
+      "expected_values": [
+        "24.00"
+      ],
+      "abstained": false,
+      "cited_bills": [],
+      "answer": {
+        "question": "How many bills have no metered usage (flat-fee internet bills)?",
+        "route": "aggregate",
+        "route_reason": "route given by the caller",
+        "route_method": "override",
+        "answer": "There are 24 bills with no metered usage amount recorded in the collection.",
+        "answerable": true,
+        "citations": [],
+        "dropped_citations": [],
+        "chunks": [],
+        "sql": "SELECT COUNT(*) FROM bills WHERE usage_amount IS NULL",
+        "sql_params": {},
+        "sql_columns": [
+          "count"
+        ],
+        "sql_rows": [
+          [
+            "24"
+          ]
+        ],
+        "sql_error": null,
+        "input_tokens": 1768,
+        "output_tokens": 60
+      },
+      "input_tokens": 1768,
+      "output_tokens": 60
+    },
+    {
+      "key": "A11 largest credit",
+      "kind": "aggregate",
+      "question": "What is the largest single credit on any bill?",
+      "bill_id": null,
+      "expected_route": "aggregate",
+      "routed": "aggregate",
+      "route_method": "llm",
+      "route_reason": "matched both aggregate (superlative) and semantic (what is this charge) rules; model: Finding the largest single credit requires comparing and sorting numerical credit values across bills using SQL operations.",
+      "route_correct": true,
+      "chunk_hit": null,
+      "bill_hit": null,
+      "exact_match": false,
+      "expected_values": [
+        "-87.74",
+        "87.74"
+      ],
+      "abstained": false,
+      "cited_bills": [],
+      "answer": {
+        "question": "What is the largest single credit on any bill?",
+        "route": "aggregate",
+        "route_reason": "route given by the caller",
+        "route_method": "override",
+        "answer": "The largest single credit on any bill is $7.41.",
+        "answerable": true,
+        "citations": [],
+        "dropped_citations": [],
+        "chunks": [],
+        "sql": "SELECT MAX(amount) as largest_credit FROM line_items WHERE amount < 0",
+        "sql_params": {},
+        "sql_columns": [
+          "largest_credit"
+        ],
+        "sql_rows": [
+          [
+            "-7.41"
+          ]
+        ],
+        "sql_error": null,
+        "input_tokens": 2947,
+        "output_tokens": 103
+      },
+      "input_tokens": 3339,
+      "output_tokens": 135
+    },
+    {
+      "key": "A12 CAD count",
+      "kind": "aggregate",
+      "question": "How many bills are billed in CAD?",
+      "bill_id": null,
+      "expected_route": "aggregate",
+      "routed": "aggregate",
+      "route_method": "rules",
+      "route_reason": "matched aggregate rules: count",
+      "route_correct": true,
+      "chunk_hit": null,
+      "bill_hit": null,
+      "exact_match": true,
+      "expected_values": [
+        "28.00"
+      ],
+      "abstained": false,
+      "cited_bills": [],
+      "answer": {
+        "question": "How many bills are billed in CAD?",
+        "route": "aggregate",
+        "route_reason": "route given by the caller",
+        "route_method": "override",
+        "answer": "28 bills are billed in CAD.",
+        "answerable": true,
+        "citations": [],
+        "dropped_citations": [],
+        "chunks": [],
+        "sql": "SELECT COUNT(*) FROM bills WHERE currency = %(currency)s",
+        "sql_params": {
+          "currency": "CAD"
+        },
+        "sql_columns": [
+          "count"
+        ],
+        "sql_rows": [
+          [
+            "28"
+          ]
+        ],
+        "sql_error": null,
+        "input_tokens": 1766,
+        "output_tokens": 67
+      },
+      "input_tokens": 1766,
+      "output_tokens": 67
+    },
+    {
+      "key": "A13 average kWh",
+      "kind": "aggregate",
+      "question": "What is the average electricity usage per bill in kWh?",
+      "bill_id": null,
+      "expected_route": "aggregate",
+      "routed": "aggregate",
+      "route_method": "rules",
+      "route_reason": "matched aggregate rules: statistic",
+      "route_correct": true,
+      "chunk_hit": null,
+      "bill_hit": null,
+      "exact_match": true,
+      "expected_values": [
+        "735.07"
+      ],
+      "abstained": false,
+      "cited_bills": [],
+      "answer": {
+        "question": "What is the average electricity usage per bill in kWh?",
+        "route": "aggregate",
+        "route_reason": "route given by the caller",
+        "route_method": "override",
+        "answer": "The average electricity usage per bill is 735.07 kWh.",
+        "answerable": true,
+        "citations": [],
+        "dropped_citations": [],
+        "chunks": [],
+        "sql": "SELECT ROUND(AVG(usage_amount), 2) FROM bills WHERE usage_unit = %(unit)s",
+        "sql_params": {
+          "unit": "kWh"
+        },
+        "sql_columns": [
+          "round"
+        ],
+        "sql_rows": [
+          [
+            "735.07"
+          ]
+        ],
+        "sql_error": null,
+        "input_tokens": 1787,
+        "output_tokens": 86
+      },
+      "input_tokens": 1787,
+      "output_tokens": 86
+    },
+    {
+      "key": "A14 combined 2024",
+      "kind": "aggregate",
+      "question": "What is the combined amount due on all bills whose billing period started in 2024?",
+      "bill_id": null,
+      "expected_route": "aggregate",
+      "routed": "aggregate",
+      "route_method": "rules",
+      "route_reason": "matched aggregate rules: statistic, across bills",
+      "route_correct": true,
+      "chunk_hit": null,
+      "bill_hit": null,
+      "exact_match": true,
+      "expected_values": [
+        "8239.14"
+      ],
+      "abstained": false,
+      "cited_bills": [],
+      "answer": {
+        "question": "What is the combined amount due on all bills whose billing period started in 2024?",
+        "route": "aggregate",
+        "route_reason": "route given by the caller",
+        "route_method": "override",
+        "answer": "The combined amount due on all bills whose billing period started in 2024 is $8,239.14.",
+        "answerable": true,
+        "citations": [],
+        "dropped_citations": [],
+        "chunks": [],
+        "sql": "SELECT COALESCE(SUM(total_amount), 0) FROM bills WHERE billing_period_start >= %(start_date)s::date AND billing_period_start < %(end_date)s::date",
+        "sql_params": {
+          "start_date": "2024-01-01",
+          "end_date": "2025-01-01"
+        },
+        "sql_columns": [
+          "coalesce"
+        ],
+        "sql_rows": [
+          [
+            "8239.14"
+          ]
+        ],
+        "sql_error": null,
+        "input_tokens": 1841,
+        "output_tokens": 142
+      },
+      "input_tokens": 1841,
+      "output_tokens": 142
+    },
+    {
+      "key": "A15 average items",
+      "kind": "aggregate",
+      "question": "What is the average number of line items per bill?",
+      "bill_id": null,
+      "expected_route": "aggregate",
+      "routed": "aggregate",
+      "route_method": "llm",
+      "route_reason": "matched both aggregate (statistic, count) and semantic (what is this charge) rules; model: This question requires counting and averaging line items across bills, which is a mathematical computation over structured fields that can be performed with SQL aggregation.",
+      "route_correct": true,
+      "chunk_hit": null,
+      "bill_hit": null,
+      "exact_match": true,
+      "expected_values": [
+        "3.45"
+      ],
+      "abstained": false,
+      "cited_bills": [],
+      "answer": {
+        "question": "What is the average number of line items per bill?",
+        "route": "aggregate",
+        "route_reason": "route given by the caller",
+        "route_method": "override",
+        "answer": "The average number of line items per bill is 3.45.",
+        "answerable": true,
+        "citations": [],
+        "dropped_citations": [],
+        "chunks": [],
+        "sql": "SELECT ROUND(AVG(item_count), 2) FROM (SELECT COUNT(*) as item_count FROM line_items GROUP BY bill_id) subquery",
+        "sql_params": {},
+        "sql_columns": [
+          "round"
+        ],
+        "sql_rows": [
+          [
+            "3.45"
+          ]
+        ],
+        "sql_error": null,
+        "input_tokens": 1786,
+        "output_tokens": 81
+      },
+      "input_tokens": 2179,
+      "output_tokens": 123
+    }
+  ],
+  "skipped_questions": 0,
+  "cost_usd": "0.056087"
+}

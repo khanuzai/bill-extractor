@@ -101,6 +101,32 @@ More in [`DECISIONS.md`](DECISIONS.md) and [`src/parsers/README.md`](src/parsers
 - **Isolation was at the prompt level.** No prompt was written from test bills, but the coding agent that built the
   project rendered sample PDFs and ran the regex parser across all 200 bills while building it.
 
+## Question answering (RAG)
+
+Extracted bills are loaded into PostgreSQL as rows and as page-tagged text chunks with local embeddings
+(all-MiniLM-L6-v2, pgvector HNSW index). A question is routed by keyword rules, with the model deciding ambiguous
+cases. Aggregate questions ("highest", "average", "how many") get a model-written SQL query, validated as a single
+SELECT with every value as a bound parameter and run as a read-only role. Semantic questions retrieve the top 5
+chunks, scoped to a bill the question names. The model answers only from what came back, cites bill and page, and
+says so when the answer isn't there.
+
+30 questions over the 100 test-set bills ([`data/results/rag_results.md`](data/results/rag_results.md)):
+
+| Measure | Result |
+|---|---|
+| Routing accuracy | 30/30 |
+| Recall@5, right chunk (semantic) | 13/13 |
+| Exact match (aggregate, SQL result) | 13/15 |
+| Answered and cited the right bill (semantic) | 12/13 |
+| Abstained on unanswerable questions | 2/2 |
+| Cost of the 30 questions | $0.056 |
+
+The misses: a count that matched descriptions with `%previous%balance%` and missed "Balance forward"; "largest
+credit" computed as `MAX` of negative amounts; and one question ("describe the internet plan") where the model
+correctly found the line but declined because the bill gives no description. Questions are templates filled from
+the labels, so expected answers are computed, not hand-typed. Development used the dev split; the test split was
+scored once.
+
 ## Setup and usage
 
 Requires Python 3.11+ and Homebrew on macOS (other platforms: see the WeasyPrint install docs).
@@ -146,8 +172,17 @@ Run the tests (no test calls the real API):
 python -m pytest
 ```
 
-Docker Compose runs PostgreSQL with pgvector (`docker compose up -d`). Nothing uses it yet; it is for the planned
-RAG question-answering step.
+Question answering needs PostgreSQL with pgvector, and `POSTGRES_READONLY_PASSWORD` set in `.env`:
+
+```sh
+docker compose up -d
+python -m src.storage.ingest --split dev        # extract, chunk, embed and load the dev bills
+python -m src.rag.answer "Which bill has the highest total amount due?"
+python -m src.rag.eval --split dev              # -> data/results/rag_results_dev.{json,md}
+```
+
+Ingesting replaces the collection. `--split test` loads the test bills from the cached extractions, at no API cost.
+The first run downloads the embedding model (about 90 MB); after that it works offline.
 
 ## Project structure
 
@@ -157,10 +192,11 @@ src/generator/      Invents bill data, writes labels, renders PDFs through 5 lay
 src/parsers/        PDF text extraction and the regex baseline (2 target layouts)
 src/extraction/     LLM extraction: prompt, API client, validation checks, retry loop
 src/evaluation/     Scoring rules, test-set runner with an LLM cache, markdown report
-src/storage/        PostgreSQL / pgvector persistence (not built yet)
+src/storage/        PostgreSQL schema, writes, and the ingest CLI (chunking, embedding)
+src/rag/            Embeddings, routing, SQL answers, retrieval, grounded answers, RAG eval
 src/api/            FastAPI app (not built yet)
 data/labels/        Ground-truth labels and the dev/test id split
 data/generated/     Rendered PDFs (gitignored)
-data/results/       Evaluation results and the LLM cache
-tests/              Unit tests
+data/results/       Evaluation and RAG results, and the LLM caches
+tests/              Unit tests; database tests run when Postgres is up
 ```

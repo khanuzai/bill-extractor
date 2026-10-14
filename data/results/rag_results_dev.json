@@ -1,0 +1,1620 @@
+{
+  "split": "dev",
+  "model": "claude-haiku-4-5",
+  "bills": 100,
+  "questions": [
+    {
+      "key": "S1 credit",
+      "kind": "semantic",
+      "question": "What is the 'Loyalty credit' on the West Shannonberg Municipal Water bill, and how much was it?",
+      "bill_id": "bill_0034",
+      "expected_route": "semantic",
+      "routed": "semantic",
+      "route_method": "rules",
+      "route_reason": "matched semantic rules: what is this charge",
+      "route_correct": true,
+      "chunk_hit": true,
+      "bill_hit": true,
+      "exact_match": null,
+      "expected_values": [],
+      "abstained": false,
+      "cited_bills": [
+        "bill_0034"
+      ],
+      "answer": {
+        "question": "What is the 'Loyalty credit' on the West Shannonberg Municipal Water bill, and how much was it?",
+        "route": "semantic",
+        "route_reason": "route given by the caller",
+        "route_method": "override",
+        "answer": "The Loyalty credit on the West Shannonberg Municipal Water bill for account 963 259 5327 was $19.56.",
+        "answerable": true,
+        "citations": [
+          {
+            "bill_id": "bill_0034",
+            "page": 2
+          }
+        ],
+        "dropped_citations": [],
+        "chunks": [
+          {
+            "bill_id": "bill_0034",
+            "page_number": 2,
+            "chunk_index": 1,
+            "heading": "West Shannonberg Municipal Water bill, account 963 259 5327, billing period 2025-09-19 to 2025-10-17, page 2",
+            "text": "Bill details\n\nBilling period  2025-09-19 to 2025-10-17\n\nMeter  M-56506098\n\nTotal usage  31.7 m³\n\nITEM  USD\n\nWater usage charge  90.03\n\nStormwater fee  15.57\n\nInfrastructure renewal fee  16.64\n\nLoyalty credit  -19.56\n\nState and local taxes  9.78\n\nPayment slip — return this portion with your payment.\n\nCustomer: Julie Koch DDS",
+            "similarity": 0.7474022658227537
+          },
+          {
+            "bill_id": "bill_0034",
+            "page_number": 1,
+            "chunk_index": 0,
+            "heading": "West Shannonberg Municipal Water bill, account 963 259 5327, billing period 2025-09-19 to 2025-10-17, page 1",
+            "text": "West Shannonberg Municipal Water\n\nJulie Koch DDS\n733 Williams Haven Suite 974\nPort Danielberg, FM 35165\n\nPlease Pay This Amount\n$112.46\n\nby 2025-11-07\n\nBill issued 2025-10-23. A full breakdown of your charges and your account details are on the next\npage. All amounts are shown in USD.\n\nPage 1 of 2",
+            "similarity": 0.720214865214076
+          },
+          {
+            "bill_id": "bill_0034",
+            "page_number": 2,
+            "chunk_index": 2,
+            "heading": "West Shannonberg Municipal Water bill, account 963 259 5327, billing period 2025-09-19 to 2025-10-17, page 2",
+            "text": "Account number: 963 259 5327\n\nPayable to: West Shannonberg Municipal Water\n\nPage 2 of 2",
+            "similarity": 0.7183532882718284
+          }
+        ],
+        "sql": null,
+        "sql_params": null,
+        "sql_columns": [],
+        "sql_rows": [],
+        "sql_error": null,
+        "input_tokens": 1068,
+        "output_tokens": 65
+      },
+      "input_tokens": 1068,
+      "output_tokens": 65
+    },
+    {
+      "key": "S2 extra charge",
+      "kind": "semantic",
+      "question": "What is the 'Regulatory recovery fee' charge on account T8050097, and how much is it?",
+      "bill_id": "bill_0005",
+      "expected_route": "semantic",
+      "routed": "semantic",
+      "route_method": "rules",
+      "route_reason": "matched semantic rules: what is this charge",
+      "route_correct": true,
+      "chunk_hit": true,
+      "bill_hit": true,
+      "exact_match": null,
+      "expected_values": [],
+      "abstained": false,
+      "cited_bills": [
+        "bill_0005"
+      ],
+      "answer": {
+        "question": "What is the 'Regulatory recovery fee' charge on account T8050097, and how much is it?",
+        "route": "semantic",
+        "route_reason": "route given by the caller",
+        "route_method": "override",
+        "answer": "The Regulatory Recovery Fee charge on account T8050097 is $21.13.",
+        "answerable": true,
+        "citations": [
+          {
+            "bill_id": "bill_0005",
+            "page": 1
+          }
+        ],
+        "dropped_citations": [],
+        "chunks": [
+          {
+            "bill_id": "bill_0005",
+            "page_number": 1,
+            "chunk_index": 0,
+            "heading": "ARKANSAS TELECOM bill, account T8050097, billing period 2024-07-13 to 2024-08-12, page 1",
+            "text": "ARKANSAS TELECOM\nBILLING STATEMENT\n\nKIM BROWN\n91361 BETH CANYON\nSOUTH DIANESHIRE, NC 41968\n\nISSUED  08/15/2024\nPERIOD  07/13/2024-08/12/2024\n\nFIBER 500 MONTHLY PLAN  71.03\nREGULATORY RECOVERY FEE  21.13\nUTILITY USERS TAX  10.14\n\nTOTAL DUE  USD 102.30\n\nACCT T8050097\nTHANK YOU",
+            "similarity": 0.5593891669047872
+          }
+        ],
+        "sql": null,
+        "sql_params": null,
+        "sql_columns": [],
+        "sql_rows": [],
+        "sql_error": null,
+        "input_tokens": 831,
+        "output_tokens": 54
+      },
+      "input_tokens": 831,
+      "output_tokens": 54
+    },
+    {
+      "key": "S3 previous balance",
+      "kind": "semantic",
+      "question": "What is the 'Unpaid balance from last bill' line on the Davidstad Natural Gas bill?",
+      "bill_id": "bill_0006",
+      "expected_route": "semantic",
+      "routed": "semantic",
+      "route_method": "rules",
+      "route_reason": "matched semantic rules: what is this charge",
+      "route_correct": true,
+      "chunk_hit": true,
+      "bill_hit": true,
+      "exact_match": null,
+      "expected_values": [],
+      "abstained": false,
+      "cited_bills": [
+        "bill_0006"
+      ],
+      "answer": {
+        "question": "What is the 'Unpaid balance from last bill' line on the Davidstad Natural Gas bill?",
+        "route": "semantic",
+        "route_reason": "route given by the caller",
+        "route_method": "override",
+        "answer": "The unpaid balance from last bill on the Davidstad Natural Gas bill for account AC-42784-98 is $196.48.",
+        "answerable": true,
+        "citations": [
+          {
+            "bill_id": "bill_0006",
+            "page": 1
+          }
+        ],
+        "dropped_citations": [],
+        "chunks": [
+          {
+            "bill_id": "bill_0006",
+            "page_number": 1,
+            "chunk_index": 0,
+            "heading": "Davidstad Natural Gas bill, account AC-42784-98, billing period 2024-10-13 to 2024-11-11, page 1",
+            "text": "Davidstad Natural Gas  Account Number\nAC-42784-98\n\nStatement Date: 11/14/2024\n\nRobert Evans\n1182 Campbell Fords\nJamesview, NY 64533\n\nBILLING SUMMARY\n\nService Period  10/13/2024 - 11/11/2024\n\nMeter  M-01640052\n\nUsage This Period  142.8 m³\n\nDue Date  12/01/2024\n\nCHARGES\n\nDescription  Amount (USD)\n\nUnpaid balance from last bill  196.48",
+            "similarity": 0.7736640707454653
+          },
+          {
+            "bill_id": "bill_0006",
+            "page_number": 1,
+            "chunk_index": 1,
+            "heading": "Davidstad Natural Gas bill, account AC-42784-98, billing period 2024-10-13 to 2024-11-11, page 1",
+            "text": "Natural gas usage  147.08\n\nUtility users tax  5.88\n\nAmount Due  349.44\n\nAll amounts are in USD. Questions about this bill? Contact Davidstad Natural Gas customer care and quote your account\nnumber.",
+            "similarity": 0.6290104831444642
+          }
+        ],
+        "sql": null,
+        "sql_params": null,
+        "sql_columns": [],
+        "sql_rows": [],
+        "sql_error": null,
+        "input_tokens": 939,
+        "output_tokens": 65
+      },
+      "input_tokens": 939,
+      "output_tokens": 65
+    },
+    {
+      "key": "S4 CR notation",
+      "kind": "semantic",
+      "question": "What does 'CR' mean next to an amount on the Port Colleenhaven Water Authority bill?",
+      "bill_id": "bill_0003",
+      "expected_route": "semantic",
+      "routed": "semantic",
+      "route_method": "rules",
+      "route_reason": "matched semantic rules: explain",
+      "route_correct": true,
+      "chunk_hit": true,
+      "bill_hit": true,
+      "exact_match": null,
+      "expected_values": [],
+      "abstained": false,
+      "cited_bills": [
+        "bill_0003"
+      ],
+      "answer": {
+        "question": "What does 'CR' mean next to an amount on the Port Colleenhaven Water Authority bill?",
+        "route": "semantic",
+        "route_reason": "route given by the caller",
+        "route_method": "override",
+        "answer": "CR denotes a credit on the Port Colleenhaven Water Authority bill.",
+        "answerable": true,
+        "citations": [
+          {
+            "bill_id": "bill_0003",
+            "page": 1
+          }
+        ],
+        "dropped_citations": [],
+        "chunks": [
+          {
+            "bill_id": "bill_0003",
+            "page_number": 1,
+            "chunk_index": 1,
+            "heading": "Port Colleenhaven Water Authority bill, account AC-28809-57, billing period 2026-02-23 to 2026-03-22, page 1",
+            "text": "GST  10.51\n\nCR denotes a credit. Late payments may be subject to interest. Port Colleenhaven Water Authority is a regulated utility service\nprovider.",
+            "similarity": 0.6706951456847712
+          },
+          {
+            "bill_id": "bill_0003",
+            "page_number": 1,
+            "chunk_index": 0,
+            "heading": "Port Colleenhaven Water Authority bill, account AC-28809-57, billing period 2026-02-23 to 2026-03-22, page 1",
+            "text": "Port Colleenhaven Water Authority\n\nTimothy Koch\n03911 Cabrera Trace Apt. 278  INVOICE DATE\n24-Mar-2026West Allison, PA 55962\nACCOUNT NO.\nAC-28809-57\nYour usage  PAY BY\nMeter M-83465787 recorded 42.9 m³ between 23-  15-Apr-2026\nFeb-2026 and 22-Mar-2026.\nBALANCE OWING (CAD)\n$160.59\n\nAccount activity\n\nMetered water  135.56\n\nSewer service  14.52",
+            "similarity": 0.6256296448221934
+          }
+        ],
+        "sql": null,
+        "sql_params": null,
+        "sql_columns": [],
+        "sql_rows": [],
+        "sql_error": null,
+        "input_tokens": 947,
+        "output_tokens": 51
+      },
+      "input_tokens": 947,
+      "output_tokens": 51
+    },
+    {
+      "key": "S5 parentheses",
+      "kind": "semantic",
+      "question": "What do amounts in parentheses mean on the Nevada Energy statement?",
+      "bill_id": "bill_0012",
+      "expected_route": "semantic",
+      "routed": "semantic",
+      "route_method": "rules",
+      "route_reason": "matched semantic rules: explain",
+      "route_correct": true,
+      "chunk_hit": true,
+      "bill_hit": true,
+      "exact_match": null,
+      "expected_values": [],
+      "abstained": false,
+      "cited_bills": [
+        "bill_0012"
+      ],
+      "answer": {
+        "question": "What do amounts in parentheses mean on the Nevada Energy statement?",
+        "route": "semantic",
+        "route_reason": "route given by the caller",
+        "route_method": "override",
+        "answer": "Amounts in parentheses on the Nevada Energy statement are credits to your account.",
+        "answerable": true,
+        "citations": [
+          {
+            "bill_id": "bill_0012",
+            "page": 1
+          }
+        ],
+        "dropped_citations": [],
+        "chunks": [
+          {
+            "bill_id": "bill_0012",
+            "page_number": 1,
+            "chunk_index": 0,
+            "heading": "Nevada Energy bill, account AC-18506-71, billing period 2024-05-29 to 2024-06-27, page 1",
+            "text": "Nevada Energy\nYour monthly statement\n\nJack Snow\n2849 Marshall Views\nMarcusbury, MP 11860\n\nYour account\n\nStatement issued  June 30, 2024\nBilling period from  May 29, 2024\nBilling period to  June 27, 2024\nAccount  AC-18506-71\nMeter number  M-73799650\nConsumption  788 kWh\nPayment due  July 12, 2024\n\nWhat you owe",
+            "similarity": 0.5602733158902348
+          },
+          {
+            "bill_id": "bill_0012",
+            "page_number": 1,
+            "chunk_index": 1,
+            "heading": "Nevada Energy bill, account AC-18506-71, billing period 2024-05-29 to 2024-06-27, page 1",
+            "text": "Unpaid balance from last bill  $217.53\nElectricity supply  $228.52\nTransmission charge  $10.62\nGST  $16.74\n\nTotal Balance  $473.41 CAD\n\nAmounts in parentheses are credits to your account. Thank you for choosing Nevada Energy.",
+            "similarity": 0.5471866456977523
+          }
+        ],
+        "sql": null,
+        "sql_params": null,
+        "sql_columns": [],
+        "sql_rows": [],
+        "sql_error": null,
+        "input_tokens": 929,
+        "output_tokens": 52
+      },
+      "input_tokens": 929,
+      "output_tokens": 52
+    },
+    {
+      "key": "S6 payment slip",
+      "kind": "semantic",
+      "question": "What does the payment slip on the Harrison Gas Company bill ask me to do?",
+      "bill_id": "bill_0014",
+      "expected_route": "semantic",
+      "routed": "semantic",
+      "route_method": "llm",
+      "route_reason": "matched no rule; model: The question asks about the content and instructions on a specific bill document (payment slip), which requires reading the text printed on the bill rather than performing calculations or comparisons across structured fields.",
+      "route_correct": true,
+      "chunk_hit": true,
+      "bill_hit": true,
+      "exact_match": null,
+      "expected_values": [],
+      "abstained": false,
+      "cited_bills": [
+        "bill_0014"
+      ],
+      "answer": {
+        "question": "What does the payment slip on the Harrison Gas Company bill ask me to do?",
+        "route": "semantic",
+        "route_reason": "route given by the caller",
+        "route_method": "override",
+        "answer": "The payment slip on the Harrison Gas Company bill asks you to return it with your payment to Harrison Gas Company for account AC-20471-16.",
+        "answerable": true,
+        "citations": [
+          {
+            "bill_id": "bill_0014",
+            "page": 2
+          }
+        ],
+        "dropped_citations": [],
+        "chunks": [
+          {
+            "bill_id": "bill_0014",
+            "page_number": 1,
+            "chunk_index": 0,
+            "heading": "Harrison Gas Company bill, account AC-20471-16, billing period 2024-11-24 to 2024-12-23, page 1",
+            "text": "Harrison Gas Company\n\nKenneth Parks Jr.\n31869 Kimberly Light Suite 749\nTorreston, RI 97505\n\nPlease Pay This Amount\n$60.31\n\nby 2025-01-06\n\nBill issued 2024-12-24. A full breakdown of your charges and your account details are on the next\npage. All amounts are shown in USD.\n\nPage 1 of 2",
+            "similarity": 0.6875046081838257
+          },
+          {
+            "bill_id": "bill_0014",
+            "page_number": 2,
+            "chunk_index": 1,
+            "heading": "Harrison Gas Company bill, account AC-20471-16, billing period 2024-11-24 to 2024-12-23, page 2",
+            "text": "Bill details\n\nBilling period  2024-11-24 to 2024-12-23\n\nMeter  M-33412328\n\nTotal usage  71.8 m³\n\nITEM  USD\n\nGas supply charge  57.44\n\nUtility users tax  2.87\n\nPayment slip — return this portion with your payment.\n\nCustomer: Kenneth Parks Jr.\n\nAccount number: AC-20471-16\n\nPayable to: Harrison Gas Company\n\nPage 2 of 2",
+            "similarity": 0.6476238772981229
+          }
+        ],
+        "sql": null,
+        "sql_params": null,
+        "sql_columns": [],
+        "sql_rows": [],
+        "sql_error": null,
+        "input_tokens": 955,
+        "output_tokens": 65
+      },
+      "input_tokens": 1353,
+      "output_tokens": 116
+    },
+    {
+      "key": "S7 tax line",
+      "kind": "semantic",
+      "question": "What is the tax line on account AC-33158-69?",
+      "bill_id": "bill_0007",
+      "expected_route": "semantic",
+      "routed": "semantic",
+      "route_method": "rules",
+      "route_reason": "matched semantic rules: what is this charge",
+      "route_correct": true,
+      "chunk_hit": true,
+      "bill_hit": true,
+      "exact_match": null,
+      "expected_values": [],
+      "abstained": false,
+      "cited_bills": [
+        "bill_0007"
+      ],
+      "answer": {
+        "question": "What is the tax line on account AC-33158-69?",
+        "route": "semantic",
+        "route_reason": "route given by the caller",
+        "route_method": "override",
+        "answer": "The utility users tax on account AC-33158-69 is $3.58.",
+        "answerable": true,
+        "citations": [
+          {
+            "bill_id": "bill_0007",
+            "page": 1
+          }
+        ],
+        "dropped_citations": [],
+        "chunks": [
+          {
+            "bill_id": "bill_0007",
+            "page_number": 1,
+            "chunk_index": 1,
+            "heading": "Andersonport Water Authority bill, account AC-33158-69, billing period 2025-02-06 to 2025-03-10, page 1",
+            "text": "Metered water  $29.87\nUtility users tax  $3.58\n\nTotal Balance  $33.45 USD\n\nAmounts in parentheses are credits to your account. Thank you for choosing Andersonport Water Authority.",
+            "similarity": 0.4303418522461925
+          },
+          {
+            "bill_id": "bill_0007",
+            "page_number": 1,
+            "chunk_index": 0,
+            "heading": "Andersonport Water Authority bill, account AC-33158-69, billing period 2025-02-06 to 2025-03-10, page 1",
+            "text": "Andersonport Water Authority\nYour monthly statement\n\nTammy Young\n0256 Joseph Turnpike\nSouth Monicafort, IN 26659\n\nYour account\n\nStatement issued  March 14, 2025\nBilling period from  February 6, 2025\nBilling period to  March 10, 2025\nAccount  AC-33158-69\nMeter number  M-54330365\nConsumption  13.7 m³\nPayment due  March 30, 2025\n\nWhat you owe",
+            "similarity": 0.4085633918231628
+          }
+        ],
+        "sql": null,
+        "sql_params": null,
+        "sql_columns": [],
+        "sql_rows": [],
+        "sql_error": null,
+        "input_tokens": 933,
+        "output_tokens": 54
+      },
+      "input_tokens": 933,
+      "output_tokens": 54
+    },
+    {
+      "key": "S8 internet plan",
+      "kind": "semantic",
+      "question": "Describe the internet plan on the Arkansas Telecom bill.",
+      "bill_id": "bill_0005",
+      "expected_route": "semantic",
+      "routed": "semantic",
+      "route_method": "rules",
+      "route_reason": "matched semantic rules: explain",
+      "route_correct": true,
+      "chunk_hit": true,
+      "bill_hit": true,
+      "exact_match": null,
+      "expected_values": [],
+      "abstained": false,
+      "cited_bills": [
+        "bill_0005"
+      ],
+      "answer": {
+        "question": "Describe the internet plan on the Arkansas Telecom bill.",
+        "route": "semantic",
+        "route_reason": "route given by the caller",
+        "route_method": "override",
+        "answer": "The internet plan on the Arkansas Telecom bill is the Fiber 500 Monthly Plan, which costs $71.03 per month.",
+        "answerable": true,
+        "citations": [
+          {
+            "bill_id": "bill_0005",
+            "page": 1
+          }
+        ],
+        "dropped_citations": [],
+        "chunks": [
+          {
+            "bill_id": "bill_0005",
+            "page_number": 1,
+            "chunk_index": 0,
+            "heading": "ARKANSAS TELECOM bill, account T8050097, billing period 2024-07-13 to 2024-08-12, page 1",
+            "text": "ARKANSAS TELECOM\nBILLING STATEMENT\n\nKIM BROWN\n91361 BETH CANYON\nSOUTH DIANESHIRE, NC 41968\n\nISSUED  08/15/2024\nPERIOD  07/13/2024-08/12/2024\n\nFIBER 500 MONTHLY PLAN  71.03\nREGULATORY RECOVERY FEE  21.13\nUTILITY USERS TAX  10.14\n\nTOTAL DUE  USD 102.30\n\nACCT T8050097\nTHANK YOU",
+            "similarity": 0.7280538244215368
+          }
+        ],
+        "sql": null,
+        "sql_params": null,
+        "sql_columns": [],
+        "sql_rows": [],
+        "sql_error": null,
+        "input_tokens": 820,
+        "output_tokens": 65
+      },
+      "input_tokens": 820,
+      "output_tokens": 65
+    },
+    {
+      "key": "S9 late payments",
+      "kind": "semantic",
+      "question": "What does the New Ryanmouth Water Authority bill say about late payments?",
+      "bill_id": "bill_0008",
+      "expected_route": "semantic",
+      "routed": "semantic",
+      "route_method": "rules",
+      "route_reason": "matched semantic rules: says / printed",
+      "route_correct": true,
+      "chunk_hit": true,
+      "bill_hit": true,
+      "exact_match": null,
+      "expected_values": [],
+      "abstained": false,
+      "cited_bills": [
+        "bill_0008"
+      ],
+      "answer": {
+        "question": "What does the New Ryanmouth Water Authority bill say about late payments?",
+        "route": "semantic",
+        "route_reason": "route given by the caller",
+        "route_method": "override",
+        "answer": "According to the New Ryanmouth Water Authority bill, late payments may be subject to interest.",
+        "answerable": true,
+        "citations": [
+          {
+            "bill_id": "bill_0008",
+            "page": 1
+          }
+        ],
+        "dropped_citations": [],
+        "chunks": [
+          {
+            "bill_id": "bill_0008",
+            "page_number": 1,
+            "chunk_index": 1,
+            "heading": "New Ryanmouth Water Authority bill, account 6934-060-8835, billing period 2026-05-30 to 2026-06-28, page 1",
+            "text": "CR denotes a credit. Late payments may be subject to interest. New Ryanmouth Water Authority is a regulated utility service\nprovider.",
+            "similarity": 0.8015943765640259
+          },
+          {
+            "bill_id": "bill_0008",
+            "page_number": 1,
+            "chunk_index": 0,
+            "heading": "New Ryanmouth Water Authority bill, account 6934-060-8835, billing period 2026-05-30 to 2026-06-28, page 1",
+            "text": "New Ryanmouth Water Authority\n\nTravis Mccall\n484 Nguyen Square  INVOICE DATE\n02-Jul-2026Angelaborough, MT 87654\nACCOUNT NO.\n6934-060-8835\nYour usage  PAY BY\nMeter M-29946804 recorded 28.4 m³ between 30-  17-Jul-2026\nMay-2026 and 28-Jun-2026.\nBALANCE OWING (CAD)\n$111.01\n\nAccount activity\n\nWater consumption  99.12\n\nHST  11.89",
+            "similarity": 0.720500426262593
+          }
+        ],
+        "sql": null,
+        "sql_params": null,
+        "sql_columns": [],
+        "sql_rows": [],
+        "sql_error": null,
+        "input_tokens": 931,
+        "output_tokens": 55
+      },
+      "input_tokens": 931,
+      "output_tokens": 55
+    },
+    {
+      "key": "S10 contact",
+      "kind": "semantic",
+      "question": "Who should I contact with questions about account AC-42784-98?",
+      "bill_id": "bill_0006",
+      "expected_route": "semantic",
+      "routed": "semantic",
+      "route_method": "rules",
+      "route_reason": "matched semantic rules: who / where / how to",
+      "route_correct": true,
+      "chunk_hit": true,
+      "bill_hit": true,
+      "exact_match": null,
+      "expected_values": [],
+      "abstained": false,
+      "cited_bills": [
+        "bill_0006"
+      ],
+      "answer": {
+        "question": "Who should I contact with questions about account AC-42784-98?",
+        "route": "semantic",
+        "route_reason": "route given by the caller",
+        "route_method": "override",
+        "answer": "You should contact Davidstad Natural Gas customer care and quote your account number AC-42784-98 with any questions about this bill.",
+        "answerable": true,
+        "citations": [
+          {
+            "bill_id": "bill_0006",
+            "page": 1
+          }
+        ],
+        "dropped_citations": [],
+        "chunks": [
+          {
+            "bill_id": "bill_0006",
+            "page_number": 1,
+            "chunk_index": 0,
+            "heading": "Davidstad Natural Gas bill, account AC-42784-98, billing period 2024-10-13 to 2024-11-11, page 1",
+            "text": "Davidstad Natural Gas  Account Number\nAC-42784-98\n\nStatement Date: 11/14/2024\n\nRobert Evans\n1182 Campbell Fords\nJamesview, NY 64533\n\nBILLING SUMMARY\n\nService Period  10/13/2024 - 11/11/2024\n\nMeter  M-01640052\n\nUsage This Period  142.8 m³\n\nDue Date  12/01/2024\n\nCHARGES\n\nDescription  Amount (USD)\n\nUnpaid balance from last bill  196.48",
+            "similarity": 0.3475878627545921
+          },
+          {
+            "bill_id": "bill_0006",
+            "page_number": 1,
+            "chunk_index": 1,
+            "heading": "Davidstad Natural Gas bill, account AC-42784-98, billing period 2024-10-13 to 2024-11-11, page 1",
+            "text": "Natural gas usage  147.08\n\nUtility users tax  5.88\n\nAmount Due  349.44\n\nAll amounts are in USD. Questions about this bill? Contact Davidstad Natural Gas customer care and quote your account\nnumber.",
+            "similarity": 0.28099128234490367
+          }
+        ],
+        "sql": null,
+        "sql_params": null,
+        "sql_columns": [],
+        "sql_rows": [],
+        "sql_error": null,
+        "input_tokens": 931,
+        "output_tokens": 64
+      },
+      "input_tokens": 931,
+      "output_tokens": 64
+    },
+    {
+      "key": "S11 no due date",
+      "kind": "semantic",
+      "question": "What does the Brownberg Municipal Water bill say about when payment is due?",
+      "bill_id": "bill_0067",
+      "expected_route": "semantic",
+      "routed": "semantic",
+      "route_method": "rules",
+      "route_reason": "matched semantic rules: says / printed",
+      "route_correct": true,
+      "chunk_hit": true,
+      "bill_hit": true,
+      "exact_match": null,
+      "expected_values": [],
+      "abstained": false,
+      "cited_bills": [
+        "bill_0067"
+      ],
+      "answer": {
+        "question": "What does the Brownberg Municipal Water bill say about when payment is due?",
+        "route": "semantic",
+        "route_reason": "route given by the caller",
+        "route_method": "override",
+        "answer": "According to the Brownberg Municipal Water bill, payment is due upon receipt.",
+        "answerable": true,
+        "citations": [
+          {
+            "bill_id": "bill_0067",
+            "page": 1
+          }
+        ],
+        "dropped_citations": [],
+        "chunks": [
+          {
+            "bill_id": "bill_0067",
+            "page_number": 1,
+            "chunk_index": 0,
+            "heading": "Brownberg Municipal Water bill, account AC-69725-21, billing period 2024-09-24 to 2024-10-21, page 1",
+            "text": "Brownberg Municipal Water\nYour monthly statement\n\nMr. Christopher Walters\n29271 Christina Roads Suite 667\nSmithside, ID 96269\n\nYour account\n\nStatement issued  October 24, 2024\nBilling period from  September 24, 2024\nBilling period to  October 21, 2024\nAccount  AC-69725-21\nMeter number  M-05830033\nConsumption  40.4 m³\nPayment due  Upon receipt",
+            "similarity": 0.7424507890671035
+          },
+          {
+            "bill_id": "bill_0067",
+            "page_number": 1,
+            "chunk_index": 1,
+            "heading": "Brownberg Municipal Water bill, account AC-69725-21, billing period 2024-09-24 to 2024-10-21, page 1",
+            "text": "What you owe\n\nWater usage charge  $87.26\nUtility users tax  $7.85\n\nTotal Balance  $95.11 USD\n\nAmounts in parentheses are credits to your account. Thank you for choosing Brownberg Municipal Water.",
+            "similarity": 0.7310934502538128
+          }
+        ],
+        "sql": null,
+        "sql_params": null,
+        "sql_columns": [],
+        "sql_rows": [],
+        "sql_error": null,
+        "input_tokens": 924,
+        "output_tokens": 51
+      },
+      "input_tokens": 924,
+      "output_tokens": 51
+    },
+    {
+      "key": "S12 named line",
+      "kind": "semantic",
+      "question": "What is the 'Renewable energy rider' line on the Georgia Energy bill?",
+      "bill_id": "bill_0015",
+      "expected_route": "semantic",
+      "routed": "semantic",
+      "route_method": "rules",
+      "route_reason": "matched semantic rules: what is this charge",
+      "route_correct": true,
+      "chunk_hit": true,
+      "bill_hit": true,
+      "exact_match": null,
+      "expected_values": [],
+      "abstained": false,
+      "cited_bills": [
+        "bill_0015"
+      ],
+      "answer": {
+        "question": "What is the 'Renewable energy rider' line on the Georgia Energy bill?",
+        "route": "semantic",
+        "route_reason": "route given by the caller",
+        "route_method": "override",
+        "answer": "The Renewable Energy Rider line on the Georgia Energy bill for account AC-21024-99 is $21.09.",
+        "answerable": true,
+        "citations": [
+          {
+            "bill_id": "bill_0015",
+            "page": 1
+          }
+        ],
+        "dropped_citations": [],
+        "chunks": [
+          {
+            "bill_id": "bill_0015",
+            "page_number": 1,
+            "chunk_index": 0,
+            "heading": "GEORGIA ENERGY bill, account AC-21024-99, billing period 2025-01-07 to 2025-02-08, page 1",
+            "text": "GEORGIA ENERGY\nBILLING STATEMENT\n\nJESSICA HARRISON\n8877 CARLY MEADOWS SUITE 940\nEAST SUZANNESHIRE, OR 03220\n\nISSUED  02/14/2025\nPERIOD  01/07/2025-02/08/2025\nMTR M-49027874  216 kWh\n\nELECTRICITY USAGE  38.88\nRENEWABLE ENERGY RIDER  21.09\nTRANSMISSION CHARGE  5.41\nUTILITY USERS TAX  8.50\n\nTOTAL DUE  USD 73.88\nDUE  03/03/2025",
+            "similarity": 0.7297295815236241
+          },
+          {
+            "bill_id": "bill_0015",
+            "page_number": 1,
+            "chunk_index": 1,
+            "heading": "GEORGIA ENERGY bill, account AC-21024-99, billing period 2025-01-07 to 2025-02-08, page 1",
+            "text": "ACCT AC-21024-99\nTHANK YOU",
+            "similarity": 0.5858491556824427
+          }
+        ],
+        "sql": null,
+        "sql_params": null,
+        "sql_columns": [],
+        "sql_rows": [],
+        "sql_error": null,
+        "input_tokens": 915,
+        "output_tokens": 62
+      },
+      "input_tokens": 915,
+      "output_tokens": 62
+    },
+    {
+      "key": "S13 balance carried",
+      "kind": "semantic",
+      "question": "What is the 'Previous balance' line on account AC-49651-37?",
+      "bill_id": "bill_0020",
+      "expected_route": "semantic",
+      "routed": "semantic",
+      "route_method": "rules",
+      "route_reason": "matched semantic rules: what is this charge",
+      "route_correct": true,
+      "chunk_hit": true,
+      "bill_hit": true,
+      "exact_match": null,
+      "expected_values": [],
+      "abstained": false,
+      "cited_bills": [
+        "bill_0020"
+      ],
+      "answer": {
+        "question": "What is the 'Previous balance' line on account AC-49651-37?",
+        "route": "semantic",
+        "route_reason": "route given by the caller",
+        "route_method": "override",
+        "answer": "The previous balance on account AC-49651-37 is CAD 233.61.",
+        "answerable": true,
+        "citations": [
+          {
+            "bill_id": "bill_0020",
+            "page": 1
+          }
+        ],
+        "dropped_citations": [],
+        "chunks": [
+          {
+            "bill_id": "bill_0020",
+            "page_number": 1,
+            "chunk_index": 0,
+            "heading": "PORT RALPHVIEW MUNICIPAL WATER bill, account AC-49651-37, billing period 2024-08-22 to 2024-09-21, page 1",
+            "text": "PORT RALPHVIEW MUNICIPAL WATER\nBILLING STATEMENT\n\nSTEPHEN HOFFMAN\nPSC 3174, BOX 6120\nAPO AE 40394\n\nISSUED  09/25/2024\nPERIOD  08/22/2024-09/21/2024\nMTR M-11382675  25.3 m³\n\nPREVIOUS BALANCE  233.61\nWATER USAGE CHARGE  60.21\nGST  5.42\n\nTOTAL DUE  CAD 299.24\nDUE  10/17/2024\n\nACCT AC-49651-37\nTHANK YOU",
+            "similarity": 0.5164458751678467
+          }
+        ],
+        "sql": null,
+        "sql_params": null,
+        "sql_columns": [],
+        "sql_rows": [],
+        "sql_error": null,
+        "input_tokens": 852,
+        "output_tokens": 55
+      },
+      "input_tokens": 852,
+      "output_tokens": 55
+    },
+    {
+      "key": "U1 phone number",
+      "kind": "unanswerable",
+      "question": "What is the customer's phone number on account AC-64170-80?",
+      "bill_id": "bill_0011",
+      "expected_route": "semantic",
+      "routed": "semantic",
+      "route_method": "llm",
+      "route_reason": "matched no rule; model: The phone number is contact information printed on the bill that requires reading the actual bill text, not a structured field that can be computed with SQL.",
+      "route_correct": true,
+      "chunk_hit": null,
+      "bill_hit": null,
+      "exact_match": null,
+      "expected_values": [],
+      "abstained": true,
+      "cited_bills": [],
+      "answer": {
+        "question": "What is the customer's phone number on account AC-64170-80?",
+        "route": "semantic",
+        "route_reason": "route given by the caller",
+        "route_method": "override",
+        "answer": "The bills provided do not contain the customer's phone number for account AC-64170-80. Only the customer's name and mailing address are shown on the bill.",
+        "answerable": false,
+        "citations": [],
+        "dropped_citations": [],
+        "chunks": [
+          {
+            "bill_id": "bill_0011",
+            "page_number": 1,
+            "chunk_index": 0,
+            "heading": "South Mark Fiber bill, account AC-64170-80, billing period 2026-02-04 to 2026-03-04, page 1",
+            "text": "South Mark Fiber  Account Number\nAC-64170-80\n\nStatement Date: 03/06/2026\n\nMrs. Marie Harrington DDS\n09232 Caldwell Port\nSouth Holly, WI 48852\n\nBILLING SUMMARY\n\nService Period  02/04/2026 - 03/04/2026\n\nDue Date  03/27/2026\n\nCHARGES\n\nDescription  Amount (CAD)\n\nUnlimited Internet 300  114.28\n\nModem rental  20.05\n\nWi-Fi extender rental  8.05\n\nHST  9.97",
+            "similarity": 0.5274609327316284
+          },
+          {
+            "bill_id": "bill_0011",
+            "page_number": 1,
+            "chunk_index": 1,
+            "heading": "South Mark Fiber bill, account AC-64170-80, billing period 2026-02-04 to 2026-03-04, page 1",
+            "text": "Amount Due  152.35\n\nAll amounts are in CAD. Questions about this bill? Contact South Mark Fiber customer care and quote your account number.",
+            "similarity": 0.4644653520306743
+          }
+        ],
+        "sql": null,
+        "sql_params": null,
+        "sql_columns": [],
+        "sql_rows": [],
+        "sql_error": null,
+        "input_tokens": 922,
+        "output_tokens": 53
+      },
+      "input_tokens": 1320,
+      "output_tokens": 96
+    },
+    {
+      "key": "U2 early payment",
+      "kind": "unanswerable",
+      "question": "What discount would account AC-18506-71 get for paying early?",
+      "bill_id": "bill_0012",
+      "expected_route": "semantic",
+      "routed": "semantic",
+      "route_method": "llm",
+      "route_reason": "matched no rule; model: The answer requires reading the text and terms printed on the specific bill for account AC-18506-71 to find early payment discount information, which is not a structured field.",
+      "route_correct": true,
+      "chunk_hit": null,
+      "bill_hit": null,
+      "exact_match": null,
+      "expected_values": [],
+      "abstained": true,
+      "cited_bills": [],
+      "answer": {
+        "question": "What discount would account AC-18506-71 get for paying early?",
+        "route": "semantic",
+        "route_reason": "route given by the caller",
+        "route_method": "override",
+        "answer": "The bills provided do not contain information about early payment discounts for account AC-18506-71.",
+        "answerable": false,
+        "citations": [],
+        "dropped_citations": [],
+        "chunks": [
+          {
+            "bill_id": "bill_0012",
+            "page_number": 1,
+            "chunk_index": 0,
+            "heading": "Nevada Energy bill, account AC-18506-71, billing period 2024-05-29 to 2024-06-27, page 1",
+            "text": "Nevada Energy\nYour monthly statement\n\nJack Snow\n2849 Marshall Views\nMarcusbury, MP 11860\n\nYour account\n\nStatement issued  June 30, 2024\nBilling period from  May 29, 2024\nBilling period to  June 27, 2024\nAccount  AC-18506-71\nMeter number  M-73799650\nConsumption  788 kWh\nPayment due  July 12, 2024\n\nWhat you owe",
+            "similarity": 0.3345942297819722
+          },
+          {
+            "bill_id": "bill_0012",
+            "page_number": 1,
+            "chunk_index": 1,
+            "heading": "Nevada Energy bill, account AC-18506-71, billing period 2024-05-29 to 2024-06-27, page 1",
+            "text": "Unpaid balance from last bill  $217.53\nElectricity supply  $228.52\nTransmission charge  $10.62\nGST  $16.74\n\nTotal Balance  $473.41 CAD\n\nAmounts in parentheses are credits to your account. Thank you for choosing Nevada Energy.",
+            "similarity": 0.3083514456958446
+          }
+        ],
+        "sql": null,
+        "sql_params": null,
+        "sql_columns": [],
+        "sql_rows": [],
+        "sql_error": null,
+        "input_tokens": 931,
+        "output_tokens": 39
+      },
+      "input_tokens": 1329,
+      "output_tokens": 89
+    },
+    {
+      "key": "A1 highest total",
+      "kind": "aggregate",
+      "question": "Which bill has the highest total amount due?",
+      "bill_id": "bill_0012",
+      "expected_route": "aggregate",
+      "routed": "aggregate",
+      "route_method": "rules",
+      "route_reason": "matched aggregate rules: superlative",
+      "route_correct": true,
+      "chunk_hit": null,
+      "bill_hit": null,
+      "exact_match": true,
+      "expected_values": [
+        "ac-18506-71",
+        "bill_0012",
+        "nevada energy"
+      ],
+      "abstained": false,
+      "cited_bills": [
+        "bill_0012"
+      ],
+      "answer": {
+        "question": "Which bill has the highest total amount due?",
+        "route": "aggregate",
+        "route_reason": "route given by the caller",
+        "route_method": "override",
+        "answer": "Bill 0012 has the highest total amount due at $473.41.",
+        "answerable": true,
+        "citations": [
+          {
+            "bill_id": "bill_0012",
+            "page": null
+          }
+        ],
+        "dropped_citations": [],
+        "chunks": [],
+        "sql": "SELECT id, total_amount FROM bills ORDER BY total_amount DESC LIMIT 1",
+        "sql_params": {},
+        "sql_columns": [
+          "id",
+          "total_amount"
+        ],
+        "sql_rows": [
+          [
+            "bill_0012",
+            "473.41"
+          ]
+        ],
+        "sql_error": null,
+        "input_tokens": 1775,
+        "output_tokens": 82
+      },
+      "input_tokens": 1775,
+      "output_tokens": 82
+    },
+    {
+      "key": "A2 lowest total",
+      "kind": "aggregate",
+      "question": "Which bill has the lowest total amount due?",
+      "bill_id": "bill_0041",
+      "expected_route": "aggregate",
+      "routed": "aggregate",
+      "route_method": "rules",
+      "route_reason": "matched aggregate rules: superlative",
+      "route_correct": true,
+      "chunk_hit": null,
+      "bill_hit": null,
+      "exact_match": true,
+      "expected_values": [
+        "ac-34283-64",
+        "bill_0041",
+        "jimshire natural gas"
+      ],
+      "abstained": false,
+      "cited_bills": [
+        "bill_0041"
+      ],
+      "answer": {
+        "question": "Which bill has the lowest total amount due?",
+        "route": "aggregate",
+        "route_reason": "route given by the caller",
+        "route_method": "override",
+        "answer": "Bill 0041 has the lowest total amount due at $32.14.",
+        "answerable": true,
+        "citations": [
+          {
+            "bill_id": "bill_0041",
+            "page": null
+          }
+        ],
+        "dropped_citations": [],
+        "chunks": [],
+        "sql": "SELECT id, total_amount FROM bills ORDER BY total_amount ASC LIMIT 1",
+        "sql_params": {},
+        "sql_columns": [
+          "id",
+          "total_amount"
+        ],
+        "sql_rows": [
+          [
+            "bill_0041",
+            "32.14"
+          ]
+        ],
+        "sql_error": null,
+        "input_tokens": 1776,
+        "output_tokens": 83
+      },
+      "input_tokens": 1776,
+      "output_tokens": 83
+    },
+    {
+      "key": "A3 sum USD",
+      "kind": "aggregate",
+      "question": "What is the sum of the total amounts due on all USD bills?",
+      "bill_id": null,
+      "expected_route": "aggregate",
+      "routed": "aggregate",
+      "route_method": "rules",
+      "route_reason": "matched aggregate rules: statistic",
+      "route_correct": true,
+      "chunk_hit": null,
+      "bill_hit": null,
+      "exact_match": true,
+      "expected_values": [
+        "10498.98"
+      ],
+      "abstained": false,
+      "cited_bills": [],
+      "answer": {
+        "question": "What is the sum of the total amounts due on all USD bills?",
+        "route": "aggregate",
+        "route_reason": "route given by the caller",
+        "route_method": "override",
+        "answer": "The sum of the total amounts due on all USD bills is $10,498.98.",
+        "answerable": true,
+        "citations": [],
+        "dropped_citations": [],
+        "chunks": [],
+        "sql": "SELECT ROUND(SUM(total_amount), 2) FROM bills WHERE currency = %(currency)s",
+        "sql_params": {
+          "currency": "USD"
+        },
+        "sql_columns": [
+          "round"
+        ],
+        "sql_rows": [
+          [
+            "10498.98"
+          ]
+        ],
+        "sql_error": null,
+        "input_tokens": 1786,
+        "output_tokens": 85
+      },
+      "input_tokens": 1786,
+      "output_tokens": 85
+    },
+    {
+      "key": "A4 average CAD",
+      "kind": "aggregate",
+      "question": "What is the average total amount due across all CAD bills?",
+      "bill_id": null,
+      "expected_route": "aggregate",
+      "routed": "aggregate",
+      "route_method": "rules",
+      "route_reason": "matched aggregate rules: statistic",
+      "route_correct": true,
+      "chunk_hit": null,
+      "bill_hit": null,
+      "exact_match": true,
+      "expected_values": [
+        "164.58"
+      ],
+      "abstained": false,
+      "cited_bills": [],
+      "answer": {
+        "question": "What is the average total amount due across all CAD bills?",
+        "route": "aggregate",
+        "route_reason": "route given by the caller",
+        "route_method": "override",
+        "answer": "The average total amount due across all CAD bills is $164.58 CAD.",
+        "answerable": true,
+        "citations": [],
+        "dropped_citations": [],
+        "chunks": [],
+        "sql": "SELECT ROUND(AVG(total_amount), 2) FROM bills WHERE currency = %(currency)s",
+        "sql_params": {
+          "currency": "CAD"
+        },
+        "sql_columns": [
+          "round"
+        ],
+        "sql_rows": [
+          [
+            "164.58"
+          ]
+        ],
+        "sql_error": null,
+        "input_tokens": 1784,
+        "output_tokens": 86
+      },
+      "input_tokens": 1784,
+      "output_tokens": 86
+    },
+    {
+      "key": "A5 no due date",
+      "kind": "aggregate",
+      "question": "How many bills have no due date?",
+      "bill_id": null,
+      "expected_route": "aggregate",
+      "routed": "aggregate",
+      "route_method": "rules",
+      "route_reason": "matched aggregate rules: count",
+      "route_correct": true,
+      "chunk_hit": null,
+      "bill_hit": null,
+      "exact_match": true,
+      "expected_values": [
+        "12.00"
+      ],
+      "abstained": false,
+      "cited_bills": [],
+      "answer": {
+        "question": "How many bills have no due date?",
+        "route": "aggregate",
+        "route_reason": "route given by the caller",
+        "route_method": "override",
+        "answer": "12 bills have no due date.",
+        "answerable": true,
+        "citations": [],
+        "dropped_citations": [],
+        "chunks": [],
+        "sql": "SELECT COUNT(*) FROM bills WHERE due_date IS NULL",
+        "sql_params": {},
+        "sql_columns": [
+          "count"
+        ],
+        "sql_rows": [
+          [
+            "12"
+          ]
+        ],
+        "sql_error": null,
+        "input_tokens": 1754,
+        "output_tokens": 51
+      },
+      "input_tokens": 1754,
+      "output_tokens": 51
+    },
+    {
+      "key": "A6 previous balance",
+      "kind": "aggregate",
+      "question": "How many bills carry a balance forward from a previous bill?",
+      "bill_id": null,
+      "expected_route": "aggregate",
+      "routed": "aggregate",
+      "route_method": "rules",
+      "route_reason": "matched aggregate rules: count",
+      "route_correct": true,
+      "chunk_hit": null,
+      "bill_hit": null,
+      "exact_match": false,
+      "expected_values": [
+        "21.00"
+      ],
+      "abstained": false,
+      "cited_bills": [],
+      "answer": {
+        "question": "How many bills carry a balance forward from a previous bill?",
+        "route": "aggregate",
+        "route_reason": "route given by the caller",
+        "route_method": "override",
+        "answer": "6 bills contain line items related to previous balance.",
+        "answerable": true,
+        "citations": [],
+        "dropped_citations": [],
+        "chunks": [],
+        "sql": "SELECT COUNT(DISTINCT b.id) FROM bills b INNER JOIN line_items li ON b.id = li.bill_id WHERE li.description ILIKE %(description)s",
+        "sql_params": {
+          "description": "%previous%balance%"
+        },
+        "sql_columns": [
+          "count"
+        ],
+        "sql_rows": [
+          [
+            "6"
+          ]
+        ],
+        "sql_error": null,
+        "input_tokens": 1798,
+        "output_tokens": 97
+      },
+      "input_tokens": 1798,
+      "output_tokens": 97
+    },
+    {
+      "key": "A7 credits",
+      "kind": "aggregate",
+      "question": "How many bills include a credit or discount (a negative line item)?",
+      "bill_id": null,
+      "expected_route": "aggregate",
+      "routed": "aggregate",
+      "route_method": "rules",
+      "route_reason": "matched aggregate rules: count",
+      "route_correct": true,
+      "chunk_hit": null,
+      "bill_hit": null,
+      "exact_match": true,
+      "expected_values": [
+        "12.00"
+      ],
+      "abstained": false,
+      "cited_bills": [],
+      "answer": {
+        "question": "How many bills include a credit or discount (a negative line item)?",
+        "route": "aggregate",
+        "route_reason": "route given by the caller",
+        "route_method": "override",
+        "answer": "12 bills include a credit or discount, as indicated by the presence of at least one negative line item amount.",
+        "answerable": true,
+        "citations": [],
+        "dropped_citations": [],
+        "chunks": [],
+        "sql": "SELECT COUNT(DISTINCT bill_id) FROM line_items WHERE amount < 0",
+        "sql_params": {},
+        "sql_columns": [
+          "count"
+        ],
+        "sql_rows": [
+          [
+            "12"
+          ]
+        ],
+        "sql_error": null,
+        "input_tokens": 1772,
+        "output_tokens": 72
+      },
+      "input_tokens": 1772,
+      "output_tokens": 72
+    },
+    {
+      "key": "A8 total kWh",
+      "kind": "aggregate",
+      "question": "What is the total electricity usage in kWh across all bills?",
+      "bill_id": null,
+      "expected_route": "aggregate",
+      "routed": "aggregate",
+      "route_method": "rules",
+      "route_reason": "matched aggregate rules: across bills",
+      "route_correct": true,
+      "chunk_hit": null,
+      "bill_hit": null,
+      "exact_match": true,
+      "expected_values": [
+        "12786.00"
+      ],
+      "abstained": false,
+      "cited_bills": [],
+      "answer": {
+        "question": "What is the total electricity usage in kWh across all bills?",
+        "route": "aggregate",
+        "route_reason": "route given by the caller",
+        "route_method": "override",
+        "answer": "The total electricity usage across all bills is 12,786 kWh.",
+        "answerable": true,
+        "citations": [],
+        "dropped_citations": [],
+        "chunks": [],
+        "sql": "SELECT COALESCE(SUM(usage_amount), 0) FROM bills WHERE usage_unit = %(unit)s",
+        "sql_params": {
+          "unit": "kWh"
+        },
+        "sql_columns": [
+          "coalesce"
+        ],
+        "sql_rows": [
+          [
+            "12786"
+          ]
+        ],
+        "sql_error": null,
+        "input_tokens": 1792,
+        "output_tokens": 89
+      },
+      "input_tokens": 1792,
+      "output_tokens": 89
+    },
+    {
+      "key": "A9 most kWh",
+      "kind": "aggregate",
+      "question": "Which bill used the most electricity in kWh?",
+      "bill_id": "bill_0148",
+      "expected_route": "aggregate",
+      "routed": "aggregate",
+      "route_method": "rules",
+      "route_reason": "matched aggregate rules: superlative",
+      "route_correct": true,
+      "chunk_hit": null,
+      "bill_hit": null,
+      "exact_match": true,
+      "expected_values": [
+        "4531-943-3750",
+        "bill_0148",
+        "smith electric cooperative"
+      ],
+      "abstained": false,
+      "cited_bills": [
+        "bill_0148"
+      ],
+      "answer": {
+        "question": "Which bill used the most electricity in kWh?",
+        "route": "aggregate",
+        "route_reason": "route given by the caller",
+        "route_method": "override",
+        "answer": "Bill 0148 used the most electricity with 1061 kWh.",
+        "answerable": true,
+        "citations": [
+          {
+            "bill_id": "bill_0148",
+            "page": null
+          }
+        ],
+        "dropped_citations": [],
+        "chunks": [],
+        "sql": "SELECT bills.id, bills.usage_amount FROM bills WHERE bills.usage_unit = %(unit)s ORDER BY bills.usage_amount DESC NULLS LAST LIMIT 1",
+        "sql_params": {
+          "unit": "kWh"
+        },
+        "sql_columns": [
+          "id",
+          "usage_amount"
+        ],
+        "sql_rows": [
+          [
+            "bill_0148",
+            "1061"
+          ]
+        ],
+        "sql_error": null,
+        "input_tokens": 1808,
+        "output_tokens": 119
+      },
+      "input_tokens": 1808,
+      "output_tokens": 119
+    },
+    {
+      "key": "A10 flat fee",
+      "kind": "aggregate",
+      "question": "How many bills have no metered usage (flat-fee internet bills)?",
+      "bill_id": null,
+      "expected_route": "aggregate",
+      "routed": "aggregate",
+      "route_method": "rules",
+      "route_reason": "matched aggregate rules: count",
+      "route_correct": true,
+      "chunk_hit": null,
+      "bill_hit": null,
+      "exact_match": true,
+      "expected_values": [
+        "20.00"
+      ],
+      "abstained": false,
+      "cited_bills": [],
+      "answer": {
+        "question": "How many bills have no metered usage (flat-fee internet bills)?",
+        "route": "aggregate",
+        "route_reason": "route given by the caller",
+        "route_method": "override",
+        "answer": "There are 20 bills with no metered usage amount recorded in the collection.",
+        "answerable": true,
+        "citations": [],
+        "dropped_citations": [],
+        "chunks": [],
+        "sql": "SELECT COUNT(*) FROM bills WHERE usage_amount IS NULL",
+        "sql_params": {},
+        "sql_columns": [
+          "count"
+        ],
+        "sql_rows": [
+          [
+            "20"
+          ]
+        ],
+        "sql_error": null,
+        "input_tokens": 1768,
+        "output_tokens": 60
+      },
+      "input_tokens": 1768,
+      "output_tokens": 60
+    },
+    {
+      "key": "A11 largest credit",
+      "kind": "aggregate",
+      "question": "What is the largest single credit on any bill?",
+      "bill_id": null,
+      "expected_route": "aggregate",
+      "routed": "aggregate",
+      "route_method": "llm",
+      "route_reason": "matched both aggregate (superlative) and semantic (what is this charge) rules; model: Finding the largest single credit requires comparing and sorting numerical credit values across bills using SQL operations.",
+      "route_correct": true,
+      "chunk_hit": null,
+      "bill_hit": null,
+      "exact_match": false,
+      "expected_values": [
+        "-40.20",
+        "40.20"
+      ],
+      "abstained": false,
+      "cited_bills": [],
+      "answer": {
+        "question": "What is the largest single credit on any bill?",
+        "route": "aggregate",
+        "route_reason": "route given by the caller",
+        "route_method": "override",
+        "answer": "The largest single credit on any bill is $3.39.",
+        "answerable": true,
+        "citations": [],
+        "dropped_citations": [],
+        "chunks": [],
+        "sql": "SELECT MAX(amount) as largest_credit FROM line_items WHERE amount < 0",
+        "sql_params": {},
+        "sql_columns": [
+          "largest_credit"
+        ],
+        "sql_rows": [
+          [
+            "-3.39"
+          ]
+        ],
+        "sql_error": null,
+        "input_tokens": 2947,
+        "output_tokens": 103
+      },
+      "input_tokens": 3339,
+      "output_tokens": 135
+    },
+    {
+      "key": "A12 CAD count",
+      "kind": "aggregate",
+      "question": "How many bills are billed in CAD?",
+      "bill_id": null,
+      "expected_route": "aggregate",
+      "routed": "aggregate",
+      "route_method": "rules",
+      "route_reason": "matched aggregate rules: count",
+      "route_correct": true,
+      "chunk_hit": null,
+      "bill_hit": null,
+      "exact_match": true,
+      "expected_values": [
+        "30.00"
+      ],
+      "abstained": false,
+      "cited_bills": [],
+      "answer": {
+        "question": "How many bills are billed in CAD?",
+        "route": "aggregate",
+        "route_reason": "route given by the caller",
+        "route_method": "override",
+        "answer": "30 bills are billed in CAD.",
+        "answerable": true,
+        "citations": [],
+        "dropped_citations": [],
+        "chunks": [],
+        "sql": "SELECT COUNT(*) FROM bills WHERE currency = %(currency)s",
+        "sql_params": {
+          "currency": "CAD"
+        },
+        "sql_columns": [
+          "count"
+        ],
+        "sql_rows": [
+          [
+            "30"
+          ]
+        ],
+        "sql_error": null,
+        "input_tokens": 1766,
+        "output_tokens": 67
+      },
+      "input_tokens": 1766,
+      "output_tokens": 67
+    },
+    {
+      "key": "A13 average kWh",
+      "kind": "aggregate",
+      "question": "What is the average electricity usage per bill in kWh?",
+      "bill_id": null,
+      "expected_route": "aggregate",
+      "routed": "aggregate",
+      "route_method": "rules",
+      "route_reason": "matched aggregate rules: statistic",
+      "route_correct": true,
+      "chunk_hit": null,
+      "bill_hit": null,
+      "exact_match": true,
+      "expected_values": [
+        "608.86"
+      ],
+      "abstained": false,
+      "cited_bills": [],
+      "answer": {
+        "question": "What is the average electricity usage per bill in kWh?",
+        "route": "aggregate",
+        "route_reason": "route given by the caller",
+        "route_method": "override",
+        "answer": "The average electricity usage per bill is 608.86 kWh.",
+        "answerable": true,
+        "citations": [],
+        "dropped_citations": [],
+        "chunks": [],
+        "sql": "SELECT ROUND(AVG(usage_amount), 2) FROM bills WHERE usage_unit = %(unit)s",
+        "sql_params": {
+          "unit": "kWh"
+        },
+        "sql_columns": [
+          "round"
+        ],
+        "sql_rows": [
+          [
+            "608.86"
+          ]
+        ],
+        "sql_error": null,
+        "input_tokens": 1787,
+        "output_tokens": 86
+      },
+      "input_tokens": 1787,
+      "output_tokens": 86
+    },
+    {
+      "key": "A14 combined 2024",
+      "kind": "aggregate",
+      "question": "What is the combined amount due on all bills whose billing period started in 2024?",
+      "bill_id": null,
+      "expected_route": "aggregate",
+      "routed": "aggregate",
+      "route_method": "rules",
+      "route_reason": "matched aggregate rules: statistic, across bills",
+      "route_correct": true,
+      "chunk_hit": null,
+      "bill_hit": null,
+      "exact_match": true,
+      "expected_values": [
+        "7261.75"
+      ],
+      "abstained": false,
+      "cited_bills": [],
+      "answer": {
+        "question": "What is the combined amount due on all bills whose billing period started in 2024?",
+        "route": "aggregate",
+        "route_reason": "route given by the caller",
+        "route_method": "override",
+        "answer": "The combined amount due on all bills whose billing period started in 2024 is $7,261.75.",
+        "answerable": true,
+        "citations": [],
+        "dropped_citations": [],
+        "chunks": [],
+        "sql": "SELECT COALESCE(SUM(total_amount), 0) FROM bills WHERE billing_period_start >= %(start_date)s::date AND billing_period_start < %(end_date)s::date",
+        "sql_params": {
+          "start_date": "2024-01-01",
+          "end_date": "2025-01-01"
+        },
+        "sql_columns": [
+          "coalesce"
+        ],
+        "sql_rows": [
+          [
+            "7261.75"
+          ]
+        ],
+        "sql_error": null,
+        "input_tokens": 1841,
+        "output_tokens": 142
+      },
+      "input_tokens": 1841,
+      "output_tokens": 142
+    },
+    {
+      "key": "A15 average items",
+      "kind": "aggregate",
+      "question": "What is the average number of line items per bill?",
+      "bill_id": null,
+      "expected_route": "aggregate",
+      "routed": "aggregate",
+      "route_method": "llm",
+      "route_reason": "matched both aggregate (statistic, count) and semantic (what is this charge) rules; model: This question requires counting and averaging line items across bills, which is a mathematical computation over structured fields that can be performed with SQL aggregation.",
+      "route_correct": true,
+      "chunk_hit": null,
+      "bill_hit": null,
+      "exact_match": true,
+      "expected_values": [
+        "3.33"
+      ],
+      "abstained": false,
+      "cited_bills": [],
+      "answer": {
+        "question": "What is the average number of line items per bill?",
+        "route": "aggregate",
+        "route_reason": "route given by the caller",
+        "route_method": "override",
+        "answer": "The average number of line items per bill is 3.33.",
+        "answerable": true,
+        "citations": [],
+        "dropped_citations": [],
+        "chunks": [],
+        "sql": "SELECT ROUND(AVG(item_count), 2) FROM (SELECT COUNT(*) as item_count FROM line_items GROUP BY bill_id) subquery",
+        "sql_params": {},
+        "sql_columns": [
+          "round"
+        ],
+        "sql_rows": [
+          [
+            "3.33"
+          ]
+        ],
+        "sql_error": null,
+        "input_tokens": 1786,
+        "output_tokens": 81
+      },
+      "input_tokens": 2179,
+      "output_tokens": 123
+    }
+  ],
+  "skipped_questions": 0,
+  "cost_usd": "0.055602"
+}

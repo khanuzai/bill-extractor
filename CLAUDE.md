@@ -44,6 +44,16 @@ src/
     run.py           python -m src.evaluation.run [--limit N]; test set only, LLM cache
     report.py        Markdown results tables
   storage/       PostgreSQL / pgvector persistence
+    schema.sql       bills, line_items, chunks (vector(384), HNSW cosine index)
+    db.py            Connections (owner and read-only role), schema setup, writes
+    ingest.py        python -m src.storage.ingest --split dev|test; chunking strategy in docstring
+  rag/           Question answering over the ingested bills
+    embed.py         Local sentence-transformers embeddings (EMBEDDING_MODEL)
+    router.py        aggregate vs semantic: keyword rules, model for ambiguous questions
+    sql_answer.py    Model-written SQL, validated as one parameterized SELECT, run read-only
+    retrieve.py      Top-k chunks by cosine similarity, scoped to bills the question names
+    answer.py        python -m src.rag.answer "<question>"; grounded answer with citations
+    eval.py          python -m src.rag.eval --split dev|test; 30 templated questions
   api/           FastAPI app
 data/
   raw/           Source bill PDFs
@@ -81,9 +91,12 @@ label.
   any tuning may only be developed against bills listed in `data/labels/dev_ids.json`.
   Never read, run on, or inspect test-set bills (`data/labels/test_ids.json`): not
   their PDFs, their extracted text, their labels, or the model's output for them.
-- Tests never call the real Anthropic API; mock the client.
-- The test set is scored once, by `src.evaluation.run`. Never tune a prompt, check or
-  parser on its results.
+- Tests never call the real Anthropic API; mock the client. Database tests use a throwaway
+  `<POSTGRES_DB>_pytest` database and skip when Postgres is down.
+- RAG question answering reads through the read-only role only. Generated SQL must pass
+  `validate_select` and take every value as a bound parameter; never format values into SQL.
+- The test set is scored once, by `src.evaluation.run` and `src.rag.eval --split test`.
+  Never tune a prompt, check, question or parser on its results.
 - Dates are `date` and money/quantities are `Decimal` — never strings or floats.
 - Only add a dependency to `requirements.txt` when code actually uses it.
 - Never read, print, or echo the contents of `.env`. Read config through `os.environ` only.

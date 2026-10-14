@@ -21,8 +21,11 @@ the labels are correct by construction. reading answers back out of a generated 
 
 ## 2026-10-13 
 text compared case and whitespace-insensitive; dates and numbers exact
+
 three outcomes per field: correct, missing, wrong — because loud failure and silent failure are different problems
+
 None matching None counts as correct; a value invented where the label is None counts as wrong
+
 line items scored all-or-nothing in the main table, with a separate item-level breakdown
 
 

@@ -109,7 +109,7 @@ def _request_params(prompt: ExtractionPrompt, config: ExtractionConfig) -> dict[
         "model": config.model,
         "max_tokens": config.max_tokens,
         "system": prompt.system,
-        "messages": [{"role": "user", "content": prompt.user_message}],
+        "messages": [{"role": "user", "content": prompt.user_message}, *prompt.follow_up],
         "output_config": output_config,
     }
     if config.temperature is not None:

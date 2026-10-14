@@ -33,7 +33,9 @@ src/
   extraction/    LLM-based extraction (PDF text -> schema)
     prompt.py        Instructions + output schema (derived from UtilityBill) + bill text
     client.py        Anthropic API call with structured output, retries, usage
-    extract.py       extract_bill(pdf_path) -> ExtractionResult; never raises on bad output
+    validate.py      Label-free consistency checks -> ValidationReport (pure, no API)
+    extract.py       extract_bill(pdf_path) -> ExtractionResult; up to 2 correction retries
+                     on failed checks; never raises on bad output
     cli.py           python -m src.extraction.cli <dev-set pdf>
   evaluation/    Grades extraction output against labels and parsers
   storage/       PostgreSQL / pgvector persistence

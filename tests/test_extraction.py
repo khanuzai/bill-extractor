@@ -22,7 +22,7 @@ from src.extraction.client import (
     make_client,
     request_extraction,
 )
-from src.extraction.extract import extract_bill
+from src.extraction.extract import MAX_RETRIES, extract_bill
 from src.extraction.prompt import SYSTEM_PROMPT, build_output_schema, build_prompt
 from src.generator.data import generate_bill, generate_extras, make_faker
 from src.generator.render import render_pdf
@@ -247,28 +247,145 @@ def test_extract_bill_returns_validated_bill_and_usage(bill: UtilityBill, pdf_pa
         (_message("[1, 2, 3]"), "not a JSON object"),
         (_message('{"provider": "Acme Power"}'), "validation error"),
         (_message('{"provider": "Acme'), "not a JSON object"),
+    ],
+)
+def test_bad_model_response_is_retried_then_recorded_not_raised(
+    message: SimpleNamespace, expected_error: str, pdf_path: Path
+) -> None:
+    client = _client(*[message] * (MAX_RETRIES + 1))
+
+    result = extract_bill(pdf_path, client=client, config=CONFIG)
+
+    assert result.bill is None
+    assert result.validation is None
+    assert result.error is not None and expected_error in result.error
+    assert result.retries == MAX_RETRIES
+    assert client.messages.create.call_count == MAX_RETRIES + 1
+    assert (result.input_tokens, result.output_tokens) == (1200 * 3, 340 * 3)
+    assert result.raw_output == message.content[1].text
+    assert all(attempt.error is not None for attempt in result.attempts)
+
+
+@pytest.mark.parametrize(
+    ("message", "expected_error"),
+    [
         (_message('{"provider": "Acme', stop_reason="max_tokens"), "max_tokens"),
         (_message("", stop_reason="refusal"), "refusal"),
     ],
 )
-def test_bad_model_response_is_recorded_not_raised(message: SimpleNamespace, expected_error: str, pdf_path: Path) -> None:
+def test_refusal_and_truncation_are_not_retried(message: SimpleNamespace, expected_error: str, pdf_path: Path) -> None:
     client = _client(message)
 
     result = extract_bill(pdf_path, client=client, config=CONFIG)
 
     assert result.bill is None
     assert result.error is not None and expected_error in result.error
-    assert (result.input_tokens, result.output_tokens) == (1200, 340)
-    assert result.raw_output == message.content[1].text
-    assert client.messages.create.call_count == 1  # no retry on validation failure
+    assert result.retries == 0
+    assert client.messages.create.call_count == 1
 
 
 def test_invalid_field_value_is_recorded_with_the_field_name(bill: UtilityBill, pdf_path: Path) -> None:
     payload = json.loads(bill.model_dump_json()) | {"currency": "dollars", "billing_period_start": "03/15/2026"}
-    result = extract_bill(pdf_path, client=_client(_message(json.dumps(payload))), config=CONFIG)
+    message = _message(json.dumps(payload))
+    result = extract_bill(pdf_path, client=_client(*[message] * (MAX_RETRIES + 1)), config=CONFIG)
     assert result.bill is None
     assert result.error is not None
     assert "currency" in result.error and "billing_period_start" in result.error
+
+
+# --- validation retry -------------------------------------------------------
+
+
+def _with_total(bill: UtilityBill, total: str) -> str:
+    return json.dumps(json.loads(bill.model_dump_json()) | {"total_amount": total})
+
+
+def test_valid_first_attempt_sends_no_retry(bill: UtilityBill, pdf_path: Path) -> None:
+    client = _client(_message(bill.model_dump_json()))
+
+    result = extract_bill(pdf_path, client=client, config=CONFIG)
+
+    assert result.retries == 0
+    assert result.validation is not None and result.validation.all_passed
+    assert [attempt.failed_checks for attempt in result.attempts] == [[]]
+    assert client.messages.create.call_count == 1
+
+
+def test_failed_check_is_retried_with_bill_text_previous_json_and_message(bill: UtilityBill, pdf_path: Path) -> None:
+    wrong_total = bill.total_amount + 10
+    first_output = _with_total(bill, str(wrong_total))
+    client = _client(_message(first_output), _message(bill.model_dump_json()))
+
+    result = extract_bill(pdf_path, client=client, config=CONFIG)
+
+    assert result.bill == bill
+    assert result.retries == 1
+    assert result.validation is not None and result.validation.all_passed
+    assert [attempt.failed_checks for attempt in result.attempts] == [["line_items_sum"], []]
+    assert (result.input_tokens, result.output_tokens) == (2400, 680)
+
+    first, retry = (call.kwargs for call in client.messages.create.call_args_list)
+    assert len(first["messages"]) == 1
+    bill_turn, previous_turn, feedback_turn = retry["messages"]
+    assert bill_turn == first["messages"][0]
+    assert previous_turn == {"role": "assistant", "content": first_output}
+    assert feedback_turn["role"] == "user"
+    assert f"line items sum to {bill.total_amount} but total_amount is {wrong_total}" in feedback_turn["content"]
+    assert retry["system"] == first["system"]
+    assert retry["output_config"] == first["output_config"]
+
+
+def test_still_failing_bill_is_kept_with_its_best_attempt_and_report(bill: UtilityBill, pdf_path: Path) -> None:
+    worse = json.loads(bill.model_dump_json()) | {"total_amount": "-5.00"}  # fails sum and total_positive
+    off_by_ten = _with_total(bill, str(bill.total_amount + 10))  # fails sum only
+    client = _client(_message(json.dumps(worse)), _message(off_by_ten), _message(json.dumps(worse)))
+
+    result = extract_bill(pdf_path, client=client, config=CONFIG)
+
+    assert client.messages.create.call_count == MAX_RETRIES + 1
+    assert result.retries == MAX_RETRIES
+    assert result.bill is not None and result.bill.total_amount == bill.total_amount + 10
+    assert result.error is None
+    assert result.raw_output == off_by_ten
+    assert result.validation is not None and result.validation.failed == ["line_items_sum"]
+    assert [attempt.failed_checks for attempt in result.attempts] == [
+        ["line_items_sum", "total_positive"],
+        ["line_items_sum"],
+        ["line_items_sum", "total_positive"],
+    ]
+    assert (result.input_tokens, result.output_tokens) == (1200 * 3, 340 * 3)
+
+
+def test_tie_between_attempts_keeps_the_later_one(bill: UtilityBill, pdf_path: Path) -> None:
+    outputs = [_with_total(bill, str(bill.total_amount + offset)) for offset in (10, 20, 30)]
+    result = extract_bill(pdf_path, client=_client(*map(_message, outputs)), config=CONFIG)
+    assert result.raw_output == outputs[-1]
+
+
+def test_api_error_during_retry_keeps_the_best_attempt(
+    bill: UtilityBill, pdf_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    monkeypatch.setattr("src.extraction.client.time.sleep", lambda _: None)
+    off_by_ten = _with_total(bill, str(bill.total_amount + 10))
+    client = _client(_message(off_by_ten), *[_rate_limit_error() for _ in range(MAX_ATTEMPTS)])
+
+    result = extract_bill(pdf_path, client=client, config=CONFIG)
+
+    assert result.bill is not None and result.raw_output == off_by_ten
+    assert result.retries == 1
+    assert result.attempts[1].error is not None and "RateLimitError" in result.attempts[1].error
+    assert (result.input_tokens, result.output_tokens) == (1200, 340)
+
+
+def test_invalid_output_is_retried_with_the_schema_error(bill: UtilityBill, pdf_path: Path) -> None:
+    client = _client(_message('{"provider": "Acme Power"}'), _message(bill.model_dump_json()))
+
+    result = extract_bill(pdf_path, client=client, config=CONFIG)
+
+    assert result.bill == bill
+    assert result.retries == 1
+    feedback = client.messages.create.call_args.kwargs["messages"][-1]["content"]
+    assert "not a valid bill" in feedback and "account_number" in feedback
 
 
 def test_exhausted_transient_error_is_recorded(pdf_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
@@ -279,6 +396,7 @@ def test_exhausted_transient_error_is_recorded(pdf_path: Path, monkeypatch: pyte
 
     assert result.bill is None
     assert result.error is not None and "RateLimitError" in result.error
+    assert result.retries == 0
     assert (result.input_tokens, result.output_tokens, result.latency_seconds) == (0, 0, 0.0)
 
 
@@ -294,9 +412,25 @@ def test_cli_prints_result_for_a_dev_bill(
 
     assert cli.main([str(pdf_path)]) == 0
 
-    printed = json.loads(capsys.readouterr().out)
+    captured = capsys.readouterr()
+    printed = json.loads(captured.out)
     assert printed["bill"]["account_number"] == bill.account_number
     assert printed["input_tokens"] == 1200
+    assert printed["retries"] == 0
+    assert "Retries used: 0 of 2" in captured.err
+    assert "Validation: 6/6 checks passed" in captured.err
+
+
+def test_cli_summary_lists_failed_checks_per_attempt(bill: UtilityBill, pdf_path: Path) -> None:
+    off_by_ten = _with_total(bill, str(bill.total_amount + 10))
+    result = extract_bill(pdf_path, client=_client(*[_message(off_by_ten)] * 3), config=CONFIG)
+
+    summary = cli.format_summary(result)
+
+    assert "Retries used: 2 of 2" in summary
+    assert summary.count("Attempt") == 3 and "failed line_items_sum" in summary
+    assert "Validation: 5/6 checks passed" in summary
+    assert f"FAIL line_items_sum: line items sum to {bill.total_amount}" in summary
 
 
 def test_cli_refuses_test_set_bills(

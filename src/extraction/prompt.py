@@ -5,7 +5,8 @@ is the structured-output format, and the bill text is the user message, wrapped 
 tags so nothing printed on a bill can be mistaken for an instruction.
 """
 
-from dataclasses import dataclass
+from collections.abc import Sequence
+from dataclasses import dataclass, replace
 from typing import Any
 
 from anthropic import transform_schema
@@ -43,6 +44,17 @@ their original capitalisation, spacing and punctuation.
 """
 
 
+RETRY_INSTRUCTIONS = """\
+Your extraction above failed these consistency checks:
+
+{failures}
+
+Re-read the bill text and return the corrected JSON for the whole bill. Correct only \
+what the bill text supports: if a check failed because you missed, misread or \
+mis-signed something, fix it. Do not change a value the bill prints just to make a \
+check pass; if the bill itself is inconsistent, keep the values as printed."""
+
+
 @dataclass(frozen=True)
 class ExtractionPrompt:
     """Everything the model is sent for one bill."""
@@ -50,6 +62,9 @@ class ExtractionPrompt:
     system: str
     user_message: str
     output_schema: dict[str, Any]
+    follow_up: tuple[dict[str, str], ...] = ()
+    """Turns after the bill text when asking for a correction: the model's previous
+    output, then the feedback on it. Empty for a first attempt."""
 
 
 def build_output_schema() -> dict[str, Any]:
@@ -73,4 +88,17 @@ def build_prompt(bill_text: str) -> ExtractionPrompt:
         system=SYSTEM_PROMPT,
         user_message=build_user_message(bill_text),
         output_schema=build_output_schema(),
+    )
+
+
+def build_retry_prompt(prompt: ExtractionPrompt, previous_output: str, failures: Sequence[str]) -> ExtractionPrompt:
+    """Ask for a corrected extraction: the original bill text, the model's previous
+    JSON as its own turn, and the exact failure messages."""
+    feedback = RETRY_INSTRUCTIONS.format(failures="\n".join(f"- {failure}" for failure in failures))
+    return replace(
+        prompt,
+        follow_up=(
+            {"role": "assistant", "content": previous_output},
+            {"role": "user", "content": feedback},
+        ),
     )

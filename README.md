@@ -47,8 +47,10 @@ run replaces the previous run's `bill_*` files.
 python -m src.extraction.cli data/generated/<id>.pdf
 ```
 
-Prints an `ExtractionResult` as JSON: the extracted bill (or `null` with an `error`),
-token usage, and latency. Needs `ANTHROPIC_API_KEY` in `.env`. Use ids from
+Prints an `ExtractionResult` as JSON on stdout: the extracted bill (or `null` with an
+`error`), the validation report, per-attempt check failures, retries used, and token
+usage and latency summed over all attempts. A readable summary of the validation
+report and retry count goes to stderr. Needs `ANTHROPIC_API_KEY` in `.env`. Use ids from
 `data/labels/dev_ids.json` only; the CLI refuses test-set bills.
 
 ## Tests
